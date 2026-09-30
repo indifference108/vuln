@@ -1,0 +1,39 @@
+#! /bin/sh
+#AC10 gpio配置脚本
+
+SAVE_PATH=$(pwd)
+
+cd /sys/devices/virtual/misc/ugw_gpio/gpio_base/
+
+#系统灯
+echo 0 > gpio_index
+cd sys_led
+echo 35 > gpio_id
+echo 50 > freq
+echo 1 > pattern
+echo 1 > start
+cd ..
+
+#复位按键
+echo 32 > gpio_index
+cd reset_btn
+echo 36 > gpio_id
+#echo 16 > signal
+echo 80 > act_time
+echo 80 > inact_time
+echo 1 > start
+#echo xxx > pid
+cd ..
+
+#WPS按键
+echo 33 > gpio_index
+cd wps_btn
+echo 36 > gpio_id
+#echo 10 > signal
+echo 3 > act_time
+echo 30 > inact_time
+echo 1 > effect_time
+echo 1 > start
+cd ..
+
+cd $SAVE_PATH
