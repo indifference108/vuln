@@ -23,7 +23,7 @@
 | [2026/zaidmukaddam_Scira_SSRF](2026/zaidmukaddam_Scira_SSRF) | Scira `/api/proxy-image` SSRF | CWE-918 | 7.5 高危 | 已预留 CAN-2026-2038622，待提交 | 待分配 | 待报送 | 待报送 | 2026-09-30 |
 | [2024/code-projects_Pharmacy-Management-System_SQLi](2024/code-projects_Pharmacy-Management-System_SQLi) | Pharmacy Management System 1.0 `editManager` SQL 注入（历史归档，经 VulDB 报送） | CWE-89 | 6.3 中危 | 已公开 | CVE-2024-8138 | — | — | 2024-08-25 |
 | [2024/Tenda_AC8_缓冲区溢出](2024/Tenda_AC8_缓冲区溢出) | Tenda AC8 `formsetmacfiltercfg` 栈溢出（DoS），V16.03.33.05 | CWE-120 | 中危（CNVD v2 口径） | 已收录 | — | CNVD-2024-38754 | — | 2024-09-20 |
-| [2024/Tenda_AC10U_缓冲区溢出](2024/Tenda_AC10U_缓冲区溢出) | Tenda AC10U v1.0 `parse_macfilter_rule` 栈溢出（DoS/可 Ret2libc） | CWE-120 | 中危 | 已报送 | — | 待补 | — | 2024-11-08 |
+| [2024/Tenda_AC10U_缓冲区溢出](2024/Tenda_AC10U_缓冲区溢出) | Tenda AC10U v1.0 `parse_macfilter_rule` 栈溢出（DoS/可 Ret2libc） | CWE-120 | 高危 | 已收录 | — | CNVD-2024-45023 | — | 2024-10-03 |
 | [2025/Tenda_AC20_拒绝服务](2025/Tenda_AC20_拒绝服务) | Tenda AC20 `formSetFirewallCfg` 栈溢出（DoS），V16.03.08.12 | CWE-120 | 中危 | 已收录 | — | CNVD-2026-06063 | — | 2025-10-23 |
 
 状态流转：`发现验证 → 报告组成稿 → 已报送厂商 → 厂商确认 → 已修复/已分配编号 → 已公开`

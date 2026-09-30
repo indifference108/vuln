@@ -1,4 +1,4 @@
-# Tenda AC10U 缓冲区溢出 归档记录（CNVD 已报送，编号待补）
+# CNVD-2024-45023 归档记录（已收录）
 
 ## 漏洞概要
 
@@ -6,12 +6,15 @@
 - **类型**：通用型漏洞 / 二进制漏洞（栈溢出，CWE-120）
 - **调用链**：`httpd` 中 `formsetmacfiltercfg`（websGetVar 取 `rule_list`）→ `set_macfilter_rules` → `set_macfilter_rules_by_one` → `parse_macfilter_rule`（strcpy 未做长度检查）
 - **影响**：远程拒绝服务；通报中指出可进一步 Ret2libc 获取 Shell
+- **危害级别**：高危（通用—网络设备）
 - **通报日期**：2024-11-08
 
 ## 编号与时间线
 
-- **CNVD-ID**：待补（CNVD 报告页 https://www.cnvd.org.cn/user/myreport/20710556）
-- **收录状态**：以 CNVD 网站为准
+- **CNVD-ID**：CNVD-2024-45023
+- **原创漏洞证明**：CNVD-YCGN-202410094777
+- **收录时间**：2024-10-03
+- **CNVD 报告页**：https://www.cnvd.org.cn/user/myreport/20710556
 
 ## 目录说明
 
