@@ -20,7 +20,8 @@
 
 | 目录 | 漏洞 | CWE | CVSS v3.1 | 状态 | CVE | CNVD | CNNVD | 更新时间 |
 |------|------|-----|-----------|------|-----|------|-------|----------|
-| [2026/zaidmukaddam_Scira_SSRF](2026/zaidmukaddam_Scira_SSRF) | Scira `/api/proxy-image` SSRF | CWE-918 | 7.5 高危 | 报告组成稿，待报送 | 待分配 | 待报送 | 待报送 | 2026-09-30 |
+| [2026/zaidmukaddam_Scira_SSRF](2026/zaidmukaddam_Scira_SSRF) | Scira `/api/proxy-image` SSRF | CWE-918 | 7.5 高危 | 已预留 CAN-2026-2038622，待提交 | 待分配 | 待报送 | 待报送 | 2026-09-30 |
+| [2024/code-projects_Pharmacy-Management-System_SQLi](2024/code-projects_Pharmacy-Management-System_SQLi) | Pharmacy Management System 1.0 `editManager` SQL 注入（历史归档，经 VulDB 报送） | CWE-89 | 6.3 中危 | 已公开 | CVE-2024-8138 | — | — | 2024-08-25 |
 
 状态流转：`发现验证 → 报告组成稿 → 已报送厂商 → 厂商确认 → 已修复/已分配编号 → 已公开`
 
