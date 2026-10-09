@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><style>
+body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background: #fff; color: #1a1a2e; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 26px 30px; }
+h1 { font-size: 21px; margin: 0 0 6px; }
+h2 { font-size: 16px; border-left: 4px solid #c0392b; padding-left: 10px; margin: 18px 0 10px; }
+.sub { color: #666; font-size: 13px; }
+.kv { display: grid; grid-template-columns: 150px 1fr; row-gap: 7px; font-size: 13.5px; }
+.kv b { color: #555; }
+code, pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; font-family: Consolas, monospace; }
+pre { padding: 12px; font-size: 12.5px; white-space: pre-wrap; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #2d3a4a; color: #fff; padding: 7px 9px; text-align: left; }
+td { border-bottom: 1px solid #e5e8ec; padding: 6px 9px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+.tt { font-weight: 600; }
+.tm { color: #777; font-family: Consolas, monospace; font-size: 11.5px; }
+.badge { display: inline-block; background: #fdecea; color: #c0392b; border-radius: 4px; padding: 0 6px; font-size: 10.5px; margin-left: 5px; }
+.stat { display: flex; gap: 12px; margin: 10px 0; }
+.stat div { flex: 1; background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 10px; text-align: center; }
+.stat b { display: block; font-size: 22px; color: #c0392b; }
+.harm li { margin: 6px 0; font-size: 13.5px; line-height: 1.55; }
+.foot { color: #999; font-size: 11.5px; padding-top: 10px; }
+</style></head><body><div class="wrap">
+<h1>漏洞危害补充证明 — 未授权访问高校 AI 平台全部用户聊天记录</h1>
+<div class="sub">目标：广西工商职业技术学院（ai.gxgsxy.edu.cn） · FastGPT NoSQL 注入（CVE-2026-79483 同类） · 取证 2026-10-09 16:40 · 发现人 indifference108</div>
+
+<h2>四、危害说明（补充「危害程度较低」意见）</h2>
+<ul class="harm">
+<li><b>大规模学生个人信息泄露（373 条，非低危量级）：</b>匿名即可读取全校 373 条真实对话记录，覆盖在校证明、请假、奖助学金资格、休学申请、宿舍分配等教务学工数据；多条标题即包含学生敏感境遇（心理咨询、家庭矛盾），属《个人信息保护法》项下敏感个人信息。同样的漏洞在武汉政务场景已造成执法业务数据泄露（另案报送），危害性质相同、量级更大。</li>
+<li><b>对话全文可被进一步读取：</b>利用返回的 chatId 调用对话详情接口即可读取任意会话完整上下文，师生填写的个人信息、账号密码相关咨询将被完整获取，可直接用于精准社工与钓鱼。</li>
+<li><b>上下文投毒与答问操纵：</b>攻击者可向师生高频使用的事务问答场景投毒，操纵 AI 助手回答，干扰学校管理与学生决策（如伪造办事流程、诱导错误操作）。</li>
+<li><b>漏洞叠加风险：</b>该系统 FastGPT 版本低于 4.14.9.5，登录接口 NoSQL 注入（CVE-2026-40351，9.8 分）同样存在，可接管管理员账号，与本案叠加后形成「读取全部数据 + 完全控制平台」的完整攻击链。</li>
+<li><b>数据合规责任：</b>依据《数据安全法》第 27 条与等保 2.0 要求，教育系统未授权数据泄露可致监管通报与问责，修复具有紧迫性。</li>
+</ul>
+<div class="sub">修复建议：升级 FastGPT 至 4.14.9.5+；对 getHistories 等接口强制鉴权并对 $ne 等操作符做类型校验；WAF 层拦截含 MongoDB 操作符的请求体。</div>
+<div class="foot">图4/4 · 危害说明与修复建议</div>
+</div></body></html>

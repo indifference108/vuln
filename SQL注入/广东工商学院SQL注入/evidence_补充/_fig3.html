@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><style>
+body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background: #fff; color: #1a1a2e; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 26px 30px; }
+h1 { font-size: 21px; margin: 0 0 6px; }
+h2 { font-size: 16px; border-left: 4px solid #c0392b; padding-left: 10px; margin: 18px 0 10px; }
+.sub { color: #666; font-size: 13px; }
+.kv { display: grid; grid-template-columns: 150px 1fr; row-gap: 7px; font-size: 13.5px; }
+.kv b { color: #555; }
+code, pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; font-family: Consolas, monospace; }
+pre { padding: 12px; font-size: 12.5px; white-space: pre-wrap; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #2d3a4a; color: #fff; padding: 7px 9px; text-align: left; }
+td { border-bottom: 1px solid #e5e8ec; padding: 6px 9px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+.tt { font-weight: 600; }
+.tm { color: #777; font-family: Consolas, monospace; font-size: 11.5px; }
+.badge { display: inline-block; background: #fdecea; color: #c0392b; border-radius: 4px; padding: 0 6px; font-size: 10.5px; margin-left: 5px; }
+.stat { display: flex; gap: 12px; margin: 10px 0; }
+.stat div { flex: 1; background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 10px; text-align: center; }
+.stat b { display: block; font-size: 22px; color: #c0392b; }
+.harm li { margin: 6px 0; font-size: 13.5px; line-height: 1.55; }
+.foot { color: #999; font-size: 11.5px; padding-top: 10px; }
+</style></head><body><div class="wrap">
+<h1>漏洞危害补充证明 — 未授权访问高校 AI 平台全部用户聊天记录</h1>
+<div class="sub">目标：广西工商职业技术学院（ai.gxgsxy.edu.cn） · FastGPT NoSQL 注入（CVE-2026-79483 同类） · 取证 2026-10-09 16:40 · 发现人 indifference108</div>
+
+<h2>三、未授权获取的全部 373 条聊天记录（29-72 / 373）</h2>
+<div class="sub">样本持续包含学生个人事务：宿舍舍友查询、心理求助、家庭关系、校园卡密码等。</div>
+<table><tr><th style="width:40px">#</th><th>对话标题</th><th style="width:92px">日期</th><th style="width:190px">会话 ID</th></tr><tr><td>29</td><td class='tt'>理想体育的学校编码是什么</td><td class='tm'>2026-10-04</td><td class='tm'>aegtNqSuDuMiXlydywkhpHzX</td></tr>
+<tr><td>30</td><td class='tt'>需要在手机上操作什么嘛</td><td class='tm'>2026-10-03</td><td class='tm'>lJociK29UaH5cJq2Cz9AD7X1</td></tr>
+<tr><td>31</td><td class='tt'>预约</td><td class='tm'>2026-10-03</td><td class='tm'>sr27emaHkqRekwbtd9YgKYkk</td></tr>
+<tr><td>32</td><td class='tt'>家长进校怎么预约</td><td class='tm'>2026-10-03</td><td class='tm'>t116cT86hbHuPalwlurZulA9</td></tr>
+<tr><td>33</td><td class='tt'>手机</td><td class='tm'>2026-10-02</td><td class='tm'>of2y3eDUvvTxRgUJuZ3qW0HW</td></tr>
+<tr><td>34</td><td class='tt'>我喜鹊儿绑定的手机号我不用了我怎么改绑？ <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-02</td><td class='tm'>l6oDtPrg287Nb9H5rsz6bFnx</td></tr>
+<tr><td>35</td><td class='tt'>我是在手机上的</td><td class='tm'>2026-09-30</td><td class='tm'>g8vbtrasaH2gzebn1EXWCVVS</td></tr>
+<tr><td>36</td><td class='tt'>在哪里下载？</td><td class='tm'>2026-09-30</td><td class='tm'>lq3VZfowctsVMGQDVNraGFBf</td></tr>
+<tr><td>37</td><td class='tt'>怎么弄学生证明</td><td class='tm'>2026-09-29</td><td class='tm'>bB97LTRL0UjNriSwlKe5WZLJ</td></tr>
+<tr><td>38</td><td class='tt'>掌阅精选通行码</td><td class='tm'>2026-09-29</td><td class='tm'>hLptiUu75u5qXhiN8N4HrDtc</td></tr>
+<tr><td>39</td><td class='tt'>啥</td><td class='tm'>2026-09-29</td><td class='tm'>wZ0HEYRWV4TWLqmtNVDxcwCD</td></tr>
+<tr><td>40</td><td class='tt'>电费充错了怎么办？</td><td class='tm'>2026-09-29</td><td class='tm'>dJiuZrgbtUVa0kiIFPl8WEpm</td></tr>
+<tr><td>41</td><td class='tt'>我要心理活动中心的照片 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-29</td><td class='tm'>oLLQkFAbExsiOq1PK6o9wFwU</td></tr>
+<tr><td>42</td><td class='tt'>请问补办宿舍房卡在哪里</td><td class='tm'>2026-09-29</td><td class='tm'>qxzB51G5yMMoNTprnujKmGjX</td></tr>
+<tr><td>43</td><td class='tt'>我跟我家人关系不好，我该怎么办</td><td class='tm'>2026-09-29</td><td class='tm'>p4mrZWSeJGKU4ktII146fX5X</td></tr>
+<tr><td>44</td><td class='tt'>进学校可以谈恋爱吗 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-29</td><td class='tm'>p4mrZWSeJGKU4ktII146fX5X</td></tr>
+<tr><td>45</td><td class='tt'>军训免训怎么申请</td><td class='tm'>2026-09-27</td><td class='tm'>bmhC8CG1hzxhVxOescyBK21F</td></tr>
+<tr><td>46</td><td class='tt'>宿舍报修在哪里</td><td class='tm'>2026-09-25</td><td class='tm'>sOYtlsgLZtGsfsURnqOfWrOe</td></tr>
+<tr><td>47</td><td class='tt'>最强学院</td><td class='tm'>2026-09-25</td><td class='tm'>fBqSggMGRp3bCgrZzOGtjMoN</td></tr>
+<tr><td>48</td><td class='tt'>学校的校车在哪里预定？</td><td class='tm'>2026-09-25</td><td class='tm'>wk4USyEECbQ3knL5yvYvAtC6</td></tr>
+<tr><td>49</td><td class='tt'>有电子版录取通知书么</td><td class='tm'>2026-09-24</td><td class='tm'>bsDOiaXiyMeKj6pBlHB4HQ3g</td></tr>
+<tr><td>50</td><td class='tt'>有电子版录取通知书么</td><td class='tm'>2026-09-24</td><td class='tm'>d5gxt5wExW4SLGoFkBAS84aE</td></tr>
+<tr><td>51</td><td class='tt'>想知道舍友信息 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>dF1DQJbDvk2pts3imh9P5chI</td></tr>
+<tr><td>52</td><td class='tt'>想知道舍友信息 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>afiqjubBJJsZXxRgzTQE7UVw</td></tr>
+<tr><td>53</td><td class='tt'>怎么查询宿舍舍友名字 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>mJ9dOnDMTP1OHilGzEU4ac35</td></tr>
+<tr><td>54</td><td class='tt'>体育免修还要跑校园跑吗</td><td class='tm'>2026-09-24</td><td class='tm'>cGE30uyHAXFzd4IyT4Po9akV</td></tr>
+<tr><td>55</td><td class='tt'>我的是导员通过的，然后呢</td><td class='tm'>2026-09-24</td><td class='tm'>e0eotCb38enavzeb8yt7iJhI</td></tr>
+<tr><td>56</td><td class='tt'>？</td><td class='tm'>2026-09-24</td><td class='tm'>nG7LrcXcQY8pkORq64TcpKX5</td></tr>
+<tr><td>57</td><td class='tt'>我的申请在哪里看</td><td class='tm'>2026-09-24</td><td class='tm'>n6QPAR8PQhm7hl1FLbC8TrcA</td></tr>
+<tr><td>58</td><td class='tt'>学生</td><td class='tm'>2026-09-24</td><td class='tm'>jL5MKlaM0cinGeGOH8usYiHq</td></tr>
+<tr><td>59</td><td class='tt'>喜鹊儿密码忘记了，咋办呀 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>eWUMJQfq0r7qLLzYyUS0Y7tR</td></tr>
+<tr><td>60</td><td class='tt'>怎么请假</td><td class='tm'>2026-09-24</td><td class='tm'>hFtCqhQYY1Okzcz2we2wyTBn</td></tr>
+<tr><td>61</td><td class='tt'>学生在今日校园申请了在校证明通过后怎么拿</td><td class='tm'>2026-09-24</td><td class='tm'>aJMP8HjlNfuSl6E4o9OPD2wq</td></tr>
+<tr><td>62</td><td class='tt'>在哪里交电费</td><td class='tm'>2026-09-24</td><td class='tm'>vnsGTFWAF4kvV6fvp1nJ1zNs</td></tr>
+<tr><td>63</td><td class='tt'>二课积分48分可以拿励志奖学金吗 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>nbiNtWOVnI1lUspC0ZBEda2A</td></tr>
+<tr><td>64</td><td class='tt'>我说的是今日校园怎么请假</td><td class='tm'>2026-09-24</td><td class='tm'>abO27keFbuXBzdEMVlJqUIR2</td></tr>
+<tr><td>65</td><td class='tt'>自助借书机现在坏了吗</td><td class='tm'>2026-09-24</td><td class='tm'>gRuxsnjJc7CbSzKpbIJDgAU4</td></tr>
+<tr><td>66</td><td class='tt'>我是室内艺术设计专业大三学生， 本学期在</td><td class='tm'>2026-09-24</td><td class='tm'>zD2AVLdET0W2anTxRsNxJYOn</td></tr>
+<tr><td>67</td><td class='tt'>怎么充宿舍的电费</td><td class='tm'>2026-09-24</td><td class='tm'>lRKDD5NSeuqu0f8fvH6eODhk</td></tr>
+<tr><td>68</td><td class='tt'>我的辅导员老是已读不回，回消息也不解决问</td><td class='tm'>2026-09-24</td><td class='tm'>daP0J8sCeJwG0ieWJcGl9YsY</td></tr>
+<tr><td>69</td><td class='tt'>在校证明有什么作用</td><td class='tm'>2026-09-24</td><td class='tm'>nrp0SxEAwnDPhvp70skZ2r9j</td></tr>
+<tr><td>70</td><td class='tt'>现在还可以申请体育免考吗</td><td class='tm'>2026-09-24</td><td class='tm'>nPXUx0fuPGgxEChgG8jf9bh1</td></tr>
+<tr><td>71</td><td class='tt'>在校证明申请通过后怎么做</td><td class='tm'>2026-09-23</td><td class='tm'>cQf7K0Cb9qbMVXvoX11SYyDi</td></tr>
+<tr><td>72</td><td class='tt'>在校证明申请通过后怎么做</td><td class='tm'>2026-09-23</td><td class='tm'>uG88jo6xJW5RlpLqH8nkTrOK</td></tr></table>
+<div class="foot">图3/4 · 未授权读取的聊天记录（第 29-72 条，共 373 条已全部取证）</div>
+</div></body></html>

