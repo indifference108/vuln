@@ -59,6 +59,7 @@ SSRF/      # 服务端请求伪造（CWE-918）
 |------|------|-----|-----------|------|-----|------|----------|
 | [ItzCrazyKns_Vane_SSRF](SSRF/ItzCrazyKns_Vane_SSRF) | Vane `scrape_url` 工具 SSRF（LLM 工具调用直达 Playwright `page.goto`，可附 `file://` 读本地文件） | CWE-918 | 7.5 高危 | 已报送 MITRE CNA-LR，待审核 | CAN-2026-2038643（审核中） | 待报送 | 2026-09-30 |
 | [zaidmukaddam_Scira_SSRF](SSRF/zaidmukaddam_Scira_SSRF) | Scira `/api/proxy-image` SSRF | CWE-918 | 7.5 高危 | 已报送 MITRE CNA-LR，待审核 | CAN-2026-2038622（审核中） | 待报送 | 2026-09-30 |
+| [OpenWebUI_CVE-2026-45397_未授权RAG配置泄露](SSRF/OpenWebUI_CVE-2026-45397_未授权RAG配置泄露) | Open WebUI <0.9.5 `GET /api/v1/retrieval/` 未授权返回 RAG 配置（同模块 /config 有鉴权 403，缺口定向遗漏）；批量扫描 39 池 19 命中（49%），高价值：岳阳交投 ai.yyjtzc.com / 丽蟾科技 ds.chancloud.com / 中贸物联 oa.canyinyunfu.com | CWE-306 | 5.3 中危 | 扫描定案完成，待挑目标报送 | CVE-2026-45397 | 待报送 | 2026-10-09 |
 
 ### 逆向（固件/IoT）
 
