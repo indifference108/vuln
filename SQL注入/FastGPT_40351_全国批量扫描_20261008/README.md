@@ -25,6 +25,21 @@
 9. 药明/医药类 latest-fastgpt.pharmbrain.com、healthruway
 10. 城建/轨交类 gzmetroarticle.com.cn（广州地铁物资）、fastgpt.cityfun.com.cn（城云）
 
+## 纯 IP 归属初筛结果（2026-10-09 上午，证据 fg_pure_ip_org.json / fg_pure_ip_certs.json）
+
+101 个唯一 IP：**55 云厂商（阿里/腾讯/火山/京东等，低优先）/ 46 运营商自建**，对 46 个自建 IP 做命中端口+443 证书扫描，21 个拿到证书，新增高价值归属：
+
+| 归属 | IP:端口（命中实例） | 证书 |
+|---|---|---|
+| **威高集团**（追加 2 实例，与原 adpw.weigaogroup.com:9042 同端口部署） | 221.2.165.52:9042 / 222.175.220.22:9042 | CN=*.weigaogroup.com O=威高集团有限公司 |
+| **南方数码 SouthGIS**（2 实例） | 220.202.18.87:3000 / 220.202.18.88:3000(+81) | CN=*.southgis.com |
+| **上海安谱实验科技** | 222.71.169.52:9100 | CN=*.anpel.com.cn O=上海安谱实验科技股份有限公司 |
+| **美设国际物流集团** | 27.115.41.141:3000 | CN=*.amassfreight.com O=美设国际物流集团股份有限公司 |
+| 安陆市政府（第 2 出口 IP，与 msjx.anlu.gov.cn:3002 同服务） | 58.51.146.206:3002 | CN=msjx.anlu.gov.cn |
+| 待识别 | 222.71.239.114:7000 | CN=*.tyzx.sh.cn（命中端口即证书端口，上海） |
+
+另：218.197.0.41 归属标记 WHCY（武汉，疑高校网段，无证书待查）；150.242.59.203 标记北京工业大学（无证书）。
+
 ## 复扫/复验
 - 证据：`evidence/fg_national_probe.json`（逐目标对照组+实验组结果）
 - 脚本：`evidence/bulk_probe_readonly.py`（增量落盘，参数 起始 结束）
