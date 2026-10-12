@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-13",
+  "cve": "CVE-2026-28797",
+  "round": "关基专用切片（edu/gov/ac/org）",
+  "dorks": [
+    "body=\"RAGFlow\" && host=\"edu.cn\" -> 5",
+    "icon_hash=\"1808988715\" && host=\"edu.cn\" -> 6",
+    "body=\"RAGFlow\" && host=\"gov.cn\" -> 4",
+    "icon_hash=\"1808988715\" && host=\"gov.cn\" -> 4",
+    "body=\"RAGFlow\" && host=\"ac.cn\" -> 4",
+    "body=\"RAGFlow\" && host=\"org.cn\" -> 1"
+  ],
+  "confirmed": [
+    {
+      "target": "https://matgpt.lib-mat.ac.cn",
+      "version": "v0.24.0",
+      "org": "材料科学姑苏实验室（江苏省省级实验室，苏州；证书 O=材料科学姑苏实验室）",
+      "evidence": "7*7=49 + SBX class 泄露 + id canary 回显 uid=0(root)",
+      "level": "★★★ 省级科研机构"
+    },
+    {
+      "target": "https://matgpt-test.lib-mat.ac.cn",
+      "version": "v0.24.0",
+      "org": "材料科学姑苏实验室（测试环境，同证书）",
+      "evidence": "7*7=49 + SBX class 泄露 + id canary 回显 uid=0(root)",
+      "level": "★★★ 省级科研机构（测试环境）"
+    }
+  ],
+  "partial": [
+    {
+      "target": "https://itaics.sysu.edu.cn",
+      "org": "中山大学",
+      "note": "SSTI 确认无沙箱（7*7=49 + SBX<class 'str'>），但 exec 外带被前置 WAF 拦（403 Access Forbidden，3 种 Jinja 变体均拦）；RCE 未闭环"
+    },
+    {
+      "target": "http://www.zjzsrd.gov.cn:81",
+      "org": "舟山市嵊泗县人大（zsrd）",
+      "version": "v0.19.1 slim",
+      "note": "7*7=49 但 SBX 未泄露（沙箱受限，同诸暨部分命中模式），不可报"
+    }
+  ],
+  "dead": [
+    {"target": "https://aic-rag.pku.edu.cn", "org": "北京大学", "why": "register 404（注册关闭）"},
+    {"target": "https://talentservice.shhk.gov.cn:9443", "org": "上海虹口区人才服务中心", "why": "register 404（注册关闭）"},
+    {"target": "http://oa.hsu.edu.cn:8080", "org": "黄山学院", "why": "8080 拒连/502（目标侧关闭或白名单）"},
+    {"target": "http://aizjzx.hzpt.edu.cn", "org": "湖州职业技术学院", "why": "公网 DNS 不解析（校内网）"},
+    {"target": "http://ai.zecc.org.cn", "org": "ZECC 商会", "why": "非 RAGFlow（自定义前端），非关基"}
+  ],
+  "langflow_33017": {
+    "date": "2026-10-13",
+    "result": "3 个 CN 实例全部打不进：222.213.23.164:8080(1.7.2) 与 microware1985.cn(1.5.0.post1) auto_login 关+默认口令全失败+build_public_tmp 校验 Flow is not public(403)；crtvup 已升 1.12.5(404)。需 PUBLIC flow UUID，无凭证无法继续，线死",
+    "script": "scan\\langflow_33017_verify.py",
+    "evidence": "scan\\fofa_pool\\langflow_33017_verify.json"
+  }
+}
