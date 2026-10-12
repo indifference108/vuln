@@ -65,7 +65,7 @@ E:\kimi\
 | 8 | Vane SSRF CWE-918 | 通用 0day（LLM 工具直达 Playwright） | MITRE CAN-2026-2038643 审核中 |
 | 9 | Scira SSRF CWE-918 | 通用 0day（/api/proxy-image） | MITRE CAN-2026-2038622 审核中 |
 | 10 | **FastGPT 40351 登录 NoSQLi** | 武汉自规局（root/Owner 实测） | ★定案待提交，**录屏已收（evidence\QQ20261012-174726-HD.mp4），危害说明.docx 已出（10-12）**；**10-12 复测：未修复（$ne/$regex 通、$gt 被拒=修了一半），https 挂了改明文 http（写进危害）；归类：未授权访问（认证绕过），非 RCE**；10-09 双漏洞通报邮件已拟（vendor-disclosure-email.md）——先报局方（364889885@qq.com+电话双通道）再报 CNVD |
-| 11 | **FastGPT 40351 登录 NoSQLi** | 智学客教育云（19 高校入口同一后端） | ★定案待提交（证据+POC+入口清单齐，差录屏） |
+| 11 | **FastGPT 40351 登录 NoSQLi** | 智学客教育云（19 高校入口同一后端） | ★定案待提交，**录屏已收（evidence\QQ20261012-180353-HD.mp4），危害说明.docx+报送 zip 已出（10-12），复测仍可复现** |
 | 12 | **Open WebUI 45397 未授权 RAG 配置泄露** | 岳阳交投 ai.yyjtzc.com / 丽蟾科技 ds.chancloud.com / 中贸物联 oa.canyinyunfu.com（19/39 池命中） | ★定案待报送（复验证据齐，归档 vulns\SSRF\） |
 
 历史归档（2024-2025，在 vuln-repo/2024 2025）：Pharmacy SQLi CVE-2024-8138、Tenda AC8/AC10U/AC20（CNVD-2024-38754 / 45023 / 2026-06063）。
