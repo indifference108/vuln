@@ -64,9 +64,9 @@ E:\kimi\
 | 7 | 毕业生弱口令 CWE-521 | 福建农林大学研究生平台 | **已收录归档：CNVD-2026-39401**（原受理号 613312，10-02 归档，10-09 确认） |
 | 8 | Vane SSRF CWE-918 | 通用 0day（LLM 工具直达 Playwright） | MITRE CAN-2026-2038643 审核中 |
 | 9 | Scira SSRF CWE-918 | 通用 0day（/api/proxy-image） | MITRE CAN-2026-2038622 审核中 |
-| 10 | **FastGPT 40351 登录 NoSQLi** | 武汉自规局（root/Owner 实测） | ★定案待提交，**录屏已收（evidence\QQ20261012-174726-HD.mp4），危害说明.docx 已出（10-12）**；**10-12 复测：未修复（$ne/$regex 通、$gt 被拒=修了一半），https 挂了改明文 http（写进危害）；归类：未授权访问（认证绕过），非 RCE**；10-09 双漏洞通报邮件已拟（vendor-disclosure-email.md）——先报局方（364889885@qq.com+电话双通道）再报 CNVD |
-| 11 | **FastGPT 40351 登录 NoSQLi** | 智学客教育云（19 高校入口同一后端） | ★定案待提交，**录屏已收（evidence\QQ20261012-180353-HD.mp4），危害说明.docx+报送 zip 已出（10-12），复测仍可复现** |
-| 12 | **Open WebUI 45397 未授权 RAG 配置泄露** | 岳阳交投 ai.yyjtzc.com / 丽蟾科技 ds.chancloud.com / 中贸物联 oa.canyinyunfu.com（19/39 池命中） | ★定案待报送（复验证据齐，归档 vulns\SSRF\） |
+| 10 | **FastGPT 40351 登录 NoSQLi** | 武汉自规局（root/Owner 实测） | **已提交：CNVD-C-2026-661240（10-12 受理，未归档）**；录屏+危害说明.docx+报送zip 齐；**10-12 复测：未修复（$ne/$regex 通、$gt 被拒=修了一半），https 挂了改明文 http**；归类：未授权访问（认证绕过），非 RCE；通报邮件已发局公示邮箱 364889885@qq.com |
+| 11 | **FastGPT 40351 登录 NoSQLi** | 智学客教育云（19 高校入口同一后端） | **已提交：CNVD-C-2026-661246（10-12 受理，未归档）**；录屏+危害说明.docx+报送 zip 齐；通报邮件已发 zxk@zxkedu.com（+电话 010-88869017/88860977 跟进） |
+| 12 | **Open WebUI 45397 未授权 RAG 配置泄露** | 岳阳交投 ai.yyjtzc.com / 丽蟾科技 ds.chancloud.com / 中贸物联 oa.canyinyunfu.com（19/39 池命中） | **报送包已备（10-12）**：3 个事件型各出危害说明.docx（校验 PASSED）+报送 zip（事件型\ 子目录），10-12 复测三目标仍可利用（岳阳 https 已挂改 http，写进危害）；表单内容已备好待用户提交 |
 
 历史归档（2024-2025，在 vuln-repo/2024 2025）：Pharmacy SQLi CVE-2024-8138、Tenda AC8/AC10U/AC20（CNVD-2024-38754 / 45023 / 2026-06063）。
 
