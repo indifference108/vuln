@@ -1,0 +1,89 @@
+{
+ "confirmed": [
+  {
+   "target": "http://yinhezn.top:8080",
+   "version": "v0.17.0 slim",
+   "note": "归属待查(yinhe=银河?)"
+  },
+  {
+   "target": "http://47.107.245.193:8080",
+   "version": "v0.20.1 full",
+   "note": "阿里云"
+  },
+  {
+   "target": "https://llmrag.dataport.com.cn",
+   "version": "v0.17.0 full",
+   "note": "★上海数据港(上市/国资背景)"
+  },
+  {
+   "target": "http://114.55.141.252",
+   "version": "v0.16.0 full",
+   "note": "归属待查"
+  },
+  {
+   "target": "http://211.159.180.217",
+   "version": "v0.17.2 full",
+   "note": "腾讯云"
+  },
+  {
+   "target": "http://42.121.218.143",
+   "version": "v0.24.0",
+   "note": "归属待查"
+  },
+  {
+   "target": "http://111.4.230.42:8088",
+   "version": "v0.17.2 full",
+   "note": "★CERNET教育网(高校)"
+  },
+  {
+   "target": "http://221.224.159.123:8088",
+   "version": "v0.17.2 slim",
+   "note": "苏州电信段"
+  },
+  {
+   "target": "http://203.25.209.81:10000",
+   "version": "v0.17.2 slim",
+   "note": "归属待查"
+  },
+  {
+   "target": "http://111.200.57.50:60443",
+   "version": "v0.16.0 slim",
+   "note": "北京联通?归属待查"
+  }
+ ],
+ "partial": [
+  {
+   "target": "http://47.100.235.38:8080",
+   "version": "v0.19.1 slim",
+   "note": "7*7=49但exec链未回显(同诸暨模式)"
+  },
+  {
+   "target": "http://14.103.197.159:8080",
+   "version": "v0.19.1 slim",
+   "note": "同上部分命中"
+  },
+  {
+   "target": "https://testn8n5678.umi6.com:10443",
+   "version": "unknown",
+   "note": "注册开放但无TemplateParam组件"
+  }
+ ],
+ "dead": {
+  "register_disabled": [
+   "yuce.dingdongxiaoqu.com",
+   "218.23.96.244:1443",
+   "zoomtech2008.cn:8008"
+  ],
+  "sms_captcha": [
+   "1.92.213.49:280"
+  ],
+  "api404": [
+   "106.8.105.51",
+   "flow.mizhai.com",
+   "120.79.255.172:9997"
+  ]
+ },
+ "date": "2026-10-12",
+ "cve": "CVE-2026-28797",
+ "method": "ragflow_attack.py 7*7/SBX/id 只读 canary（已清理测试数据）"
+}

@@ -1,0 +1,401 @@
+{
+ "http://1.94.200.191:2160/": {
+  "target": "http://1.94.200.191:2160/",
+  "version": null,
+  "done": true
+ },
+ "https://1.94.4.170:3842/": {
+  "target": "https://1.94.4.170:3842/",
+  "version": null,
+  "done": true
+ },
+ "http://121.36.59.228:12300/": {
+  "target": "http://121.36.59.228:12300/",
+  "version": null,
+  "done": true
+ },
+ "https://116.205.96.14:9333/": {
+  "target": "https://116.205.96.14:9333/",
+  "version": null,
+  "done": true
+ },
+ "https://121.36.67.195:4063/": {
+  "target": "https://121.36.67.195:4063/",
+  "version": null,
+  "done": true
+ },
+ "https://121.36.24.242:5439/": {
+  "target": "https://121.36.24.242:5439/",
+  "version": null,
+  "done": true
+ },
+ "http://yuce.dingdongxiaoqu.com/": {
+  "target": "http://yuce.dingdongxiaoqu.com/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://8.210.196.45:10001/": {
+  "target": "http://8.210.196.45:10001/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "https://ragflow.shengxintech.com/": {
+  "target": "https://ragflow.shengxintech.com/",
+  "version": "v0.25.6",
+  "done": true
+ },
+ "http://remoteinquest.com:5601/": {
+  "target": "http://remoteinquest.com:5601/",
+  "version": null,
+  "done": true
+ },
+ "http://112.26.66.226:38081/": {
+  "target": "http://112.26.66.226:38081/",
+  "version": null,
+  "done": true
+ },
+ "http://1.92.213.49:280/": {
+  "target": "http://1.92.213.49:280/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://testn8n5678.umi6.com:10443/": {
+  "target": "https://testn8n5678.umi6.com:10443/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://218.23.96.244:1443/": {
+  "target": "https://218.23.96.244:1443/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://124.227.194.101:9999/": {
+  "target": "http://124.227.194.101:9999/",
+  "version": "v0.27.1",
+  "done": true
+ },
+ "https://47.116.115.217/": {
+  "target": "https://47.116.115.217/",
+  "version": "v0.26.2",
+  "done": true
+ },
+ "http://yinhezn.top:8080/": {
+  "target": "http://yinhezn.top:8080/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://47.100.235.38:8080/": {
+  "target": "http://47.100.235.38:8080/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://182.92.121.228:8080/": {
+  "target": "http://182.92.121.228:8080/",
+  "version": "v0.27.1",
+  "done": true
+ },
+ "http://47.107.245.193:8080/": {
+  "target": "http://47.107.245.193:8080/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://115.190.200.32:8080/": {
+  "target": "http://115.190.200.32:8080/",
+  "version": null,
+  "done": true
+ },
+ "http://115.190.150.146:8080/": {
+  "target": "http://115.190.150.146:8080/",
+  "version": "v0.26.3-36-g0fcfb3836",
+  "done": true
+ },
+ "http://14.103.197.159:8080/": {
+  "target": "http://14.103.197.159:8080/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://101.200.156.208:8080/": {
+  "target": "http://101.200.156.208:8080/",
+  "version": "v0.25.5",
+  "done": true
+ },
+ "http://123.56.152.167:8080/": {
+  "target": "http://123.56.152.167:8080/",
+  "version": null,
+  "done": true
+ },
+ "http://8.146.200.207:8080/": {
+  "target": "http://8.146.200.207:8080/",
+  "version": null,
+  "done": true
+ },
+ "https://ragflow.botanee.com.cn/": {
+  "target": "https://ragflow.botanee.com.cn/",
+  "version": "v0.27.0",
+  "done": true
+ },
+ "https://39.97.235.250/": {
+  "target": "https://39.97.235.250/",
+  "version": "v0.25.6",
+  "done": true
+ },
+ "https://106.8.105.51/": {
+  "target": "https://106.8.105.51/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://flow.mizhai.com/": {
+  "target": "https://flow.mizhai.com/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://ragflow.mapgin.com/": {
+  "target": "https://ragflow.mapgin.com/",
+  "version": "v0.27.1",
+  "done": true
+ },
+ "https://llmrag.dataport.com.cn/": {
+  "target": "https://llmrag.dataport.com.cn/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://km.chinalcs.com.cn/": {
+  "target": "https://km.chinalcs.com.cn/",
+  "version": null,
+  "done": true
+ },
+ "http://43.99.109.16/": {
+  "target": "http://43.99.109.16/",
+  "version": "v0.25.6",
+  "done": true
+ },
+ "http://106.14.26.177/": {
+  "target": "http://106.14.26.177/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "http://120.55.85.210/": {
+  "target": "http://120.55.85.210/",
+  "version": null,
+  "done": true
+ },
+ "http://47.112.200.35/": {
+  "target": "http://47.112.200.35/",
+  "version": "v0.27.1",
+  "done": true
+ },
+ "http://114.55.141.252/": {
+  "target": "http://114.55.141.252/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://211.159.180.217/": {
+  "target": "http://211.159.180.217/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://42.121.218.143/": {
+  "target": "http://42.121.218.143/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://120.79.244.87/": {
+  "target": "http://120.79.244.87/",
+  "version": "v0.27.1",
+  "done": true
+ },
+ "http://121.196.235.16/": {
+  "target": "http://121.196.235.16/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "http://111.4.230.42:8088/": {
+  "target": "http://111.4.230.42:8088/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://120.221.144.113:8088/": {
+  "target": "http://120.221.144.113:8088/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "http://221.224.159.123:8088/": {
+  "target": "http://221.224.159.123:8088/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://125.34.89.106:8088/": {
+  "target": "http://125.34.89.106:8088/",
+  "version": "v0.25.5",
+  "done": true
+ },
+ "http://120.198.23.70:8088/": {
+  "target": "http://120.198.23.70:8088/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://118.145.77.65:8088/": {
+  "target": "http://118.145.77.65:8088/",
+  "version": "v0.25.6",
+  "done": true
+ },
+ "http://223.107.91.142:8088/": {
+  "target": "http://223.107.91.142:8088/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://117.72.108.78:8088/": {
+  "target": "http://117.72.108.78:8088/",
+  "version": "v0.26.1",
+  "done": true
+ },
+ "http://8.166.122.58:8088/": {
+  "target": "http://8.166.122.58:8088/",
+  "version": null,
+  "done": true
+ },
+ "http://183.162.228.22:8088/": {
+  "target": "http://183.162.228.22:8088/",
+  "version": null,
+  "done": true
+ },
+ "https://120.79.255.172:9997/": {
+  "target": "https://120.79.255.172:9997/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://1.14.143.172:8099/": {
+  "target": "http://1.14.143.172:8099/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://www.zoomtech2008.cn:8008/": {
+  "target": "http://www.zoomtech2008.cn:8008/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://14.216.139.153:9999/": {
+  "target": "http://14.216.139.153:9999/",
+  "version": null,
+  "done": true
+ },
+ "http://113.108.63.150:8004/": {
+  "target": "http://113.108.63.150:8004/",
+  "version": null,
+  "done": true
+ },
+ "http://203.25.209.81:10000/": {
+  "target": "http://203.25.209.81:10000/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://111.200.57.50:60443/": {
+  "target": "http://111.200.57.50:60443/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://114.242.231.121:18081/": {
+  "target": "http://114.242.231.121:18081/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "http://116.204.118.236/": {
+  "target": "http://116.204.118.236/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://59.110.14.175:10000/": {
+  "target": "http://59.110.14.175:10000/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://115.190.11.214/": {
+  "target": "http://115.190.11.214/",
+  "version": "v0.26.0",
+  "done": true
+ },
+ "http://175.24.204.152:7071/": {
+  "target": "http://175.24.204.152:7071/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://27.115.64.75:18080/": {
+  "target": "http://27.115.64.75:18080/",
+  "version": "v0.25.5",
+  "done": true
+ },
+ "http://47.116.115.217:7071/": {
+  "target": "http://47.116.115.217:7071/",
+  "version": "v0.26.2",
+  "done": true
+ },
+ "http://47.117.191.212/": {
+  "target": "http://47.117.191.212/",
+  "version": "v0.27.2",
+  "done": true
+ },
+ "http://124.222.34.108/": {
+  "target": "http://124.222.34.108/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://175.24.235.22/": {
+  "target": "http://175.24.235.22/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "http://114.55.246.148:8118/": {
+  "target": "http://114.55.246.148:8118/",
+  "version": null,
+  "done": true
+ },
+ "http://116.62.189.156/": {
+  "target": "http://116.62.189.156/",
+  "oldapi": true,
+  "version": null,
+  "done": true
+ },
+ "https://114.55.3.99:4433/": {
+  "target": "https://114.55.3.99:4433/",
+  "version": "v0.26.4",
+  "done": true
+ },
+ "http://101.37.86.200/": {
+  "target": "http://101.37.86.200/",
+  "version": null,
+  "done": true
+ },
+ "http://8.148.77.196/": {
+  "target": "http://8.148.77.196/",
+  "version": null,
+  "done": true
+ },
+ "http://101.37.229.14/": {
+  "target": "http://101.37.229.14/",
+  "version": "v0.27.2",
+  "done": true
+ }
+}
