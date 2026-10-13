@@ -9,8 +9,8 @@
 | 3 | 西南联合研究生院 学堂在线 | https://swugs.yuketang.cn | 学号 + 学号后 4 位 + @swugs（swugs.ynu.edu.cn/news/notice/post/A9DS0uUpIv，2025-08-26） | ⏳ 云大公示仅给报名号后 5 位；三校（云大/云师大/昆工）研究生学号源待翻 | ⏳ |
 | 4 | 浙江中医药大学 学银在线（全校统一初始密码） | https://xueyinonline.com | 学号 + s654321s（jwc.zcmu.edu.cn/info/1079/11865.htm，2025-09-24 教务处） | ⏳ 未找到明文 学号公示 | ⏳ 密码全校通用，拿到学号即可登 |
 | 5 | 南京理工大学 雨课堂 | https://njust.yuketang.cn | njust + 学号后六位（gs.njust.edu.cn/66/7c/c14688a353916/page.htm，2025-09-04） | ⏳ 学位授予公示有「12 位学号+姓名」（gs.njust.edu.cn/c7/72/c14686a313202/page.htm），但为毕业生；在读生名单待翻 | ⏳ |
-| 6 | 福建理工大学 研究生教育管理信息系统 | yjsc.fjut.edu.cn 导航的 GMIS | 学号 + 123456 或 身份证后六位（yjsc.fjut.edu.cn/2025/0910/c1370a257359/page.htm，2025-09-10） | ⏳ 未翻；123456 通用，拿到学号即可登 | ⏳ |
-| 7 | 东南大学 智慧树 | https://www.zhihuishu.com（机构登录） | Zhihuishu@ + 学号后六位（jwc.seu.edu.cn MOOC 通知 PDF，2026 春季学期） | ⏳ 未翻 | ⏳ |
+| 6 | 福建理工大学 研究生教育管理信息系统 | yjsc 官网外链 `http://210.34.193.33/login.aspx`（仅校园网） | 学号 + 123456 或 身份证后六位（yjsc.fjut.edu.cn/2025/0910/c1370a257359/page.htm 原文，2025-09-10 ✅实锤） | ✅ 材料学院 2026-09-20 更名公示附表，20+ 个 10 位学号（2261604xxx） | ❌ 入口 210.34.193.33 公网不可达（curl 000），gmis./yjsglis./graduate. 子域均不存在 → 非互联网漏洞，不报 |
+| 7 | 东南大学 智慧树 | https://www.zhihuishu.com（机构登录，schoolId=5401） | Zhihuishu@ + 学号后六位（jwc.seu.edu.cn MOOC开课提醒PDF原文，2026-03 ✅实锤：「首次登录账号：学生学号（非一卡通号），初始密码：Zhihuishu@学号后六位」） | ✅ 交通学院 2026-09-12 推免名单 xlsx，41 个学号（_seu_ids.txt，附一卡通号）；接口 `POST passport.zhihuishu.com/user/validateCodeAndPassword`（secretStr=base64(encodeURI(JSON))，加密已还原） | ❌ 41 试 0 中（全部 status -1，无锁频）：疑似学生首登即改密（通知明示要求改），初始口令存活率≈0，不报 |
 | 8 | 东北农业大学 研究生管理系统（留学生线） | https://yjssv.neau.edu.cn | Neau + 学号后六位（graduate.neau.edu.cn/info/1147/4231.htm，2025-09-23 再次官方确认） | ❌ 留学生学号无任何公示 | ❌ |
 | 9 | 苏州大学 研究生管理信息系统（学生端） | yjs.suda.edu.cn 导航 | 学号 + 学号 + 身份证号后六位（welcome.suda.edu.cn/40/67/c31796a540775/page.psp，2025-07-31） | 🔶 需证件号后六位 | 🔶 |
 | 10 | 中国地质大学（武汉）研究生管理信息系统 | https://epo.cug.edu.cn | 学号 + 8 位生日（epo.cug.edu.cn/Help/help.aspx 系统帮助页自述） | 🔶 需生日 | 🔶 |

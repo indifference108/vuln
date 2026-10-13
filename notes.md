@@ -215,3 +215,10 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - 目录：`vulns/弱密钥/中国农业大学_信电学院本科生综合测评平台_默认口令/`（本地 + repos/vuln-repo 同构）。已齐：report-zh/en.md、audit-findings.md、STATUS.md、gen_cnvd_docx.py（已运行产出 docx）、poc/verify_cau_zcpj_weakpass.py（默认演示模式上限 3 账号、成功即停；`--check` 纯核验）、submission/vendor-disclosure-email.md（收件 cieetw@cau.edu.cn，抄送建议学校网络中心）。
 - CVSS v3.1 9.1 Critical，CWE-521，与川大同级。
 - 待办：用户录复现视频（登录页 → 通知规则页 → POST 登录 200+token）放入 evidence/；录完提交 CNVD + 发学院邮件。
+
+## 7.15 弱密钥续挖（2026-10-14 凌晨）：#7 东南、#6 福建理工 双双归档
+
+- **#7 东南大学×智慧树**：规则一手实锤（jwc MOOC PDF 2026-03「Zhihuishu@学号后六位」），学号源 41 个（交通学院推免 xlsx 2026-09-12，含学号+一卡通号+姓名）。已还原智慧树机构登录接口（`passport.zhihuishu.com/user/validateCodeAndPassword`，secretStr=base64(encodeURI(JSON{code,password,schoolId,validate}))，东南 schoolId=5401，脚本 `scan/_seu_zhs_batch.py` 可复用）。**41 试 0 中全 -1**：学生首登即改密（通知明示），初始口令存活率≈0 → 不报，归档。
+- **#6 福建理工 GMIS**：规则实锤（2025-09-10 通知「学号+123456 或身份证后六位」），学号源已得手（材料学院 2026-09-20 更名公示 20+ 个 10 位学号），但 GMIS 入口 210.34.193.33 仅校园网（公网 curl 000）→ 非互联网漏洞，不报。
+- 教训：① MOOC/平台型初始口令存活率低（首登强制改密或用户自觉改），优先找「官方通知发布、但系统不强制改密」的自研系统（农大模式）；② 验证前先探入口公网可达性，省得白挖学号源。
+- 剩余：#2 河北工大、#3 西南联研、#4 浙中医大、#5 南理工（学号源待挖）；新池待扩。
