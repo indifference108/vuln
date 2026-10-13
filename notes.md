@@ -1,7 +1,7 @@
 # Kimi 安全研究工作站 — 总笔记（notes.md）
 
 > 换 session 先读本文件。所有漏洞、资产、脚本、账号状态都在这里。
-> 最后更新：2026-10-09 11:40
+> 最后更新：2026-10-13 02:40
 
 ## 0. 一句话现状
 
@@ -142,6 +142,23 @@ E:\kimi\
 
 - 全文 `scan\weakpass_targets_20261012.md`：A 级 7（密码完全由公开学号推导：山东建筑大学×五思云评审/聊城大学(账号=密码=学号)/北京信息科技大学(学号+gsapp)/西南石油大学/重庆大学×智慧树/河北师大×维普/暨南大学）+ B 级 3（需生日或证件源：广东海洋大学/广州中医药大学/北京林业大学）。
 - 山东建筑大学链核实到平台层（五思云评审可达、有验证码→用户参与破）；其余验证步骤同川大模式（只验登录成功+身份页，不翻阅数据）。
+
+## 7.7 关基 RCE 轮（2026-10-13 凌晨）：Langflow 33017 线死 + RAGFlow 关基切片收 2 条 root RCE
+
+- **Langflow CVE-2026-33017（CN 3 实例）= 死线**：222.213.23.164:8080(1.7.2)、microware1985.cn(1.5.0.post1) auto_login 仍关、默认口令(4 组)全失败、`POST /api/v1/build_public_tmp/{uuid}/flow` 返回 403 "Flow is not public"（端点存在且有 PUBLIC 校验，无凭证拿不到 flow_id）；crtvup 已升 **1.12.5**（404）。脚本 `scan\langflow_33017_verify.py`，证据 `scan\fofa_pool\langflow_33017_verify.json`。**勿重挖**（除非某天拿到这些实例的账号或发现公开 flow UUID）。
+- **RAGFlow 关基切片补扫**（FOFA 组织域名切片法，一次命中）：`body="RAGFlow"/icon_hash=1808988715 && host="edu.cn|gov.cn|ac.cn|org.cn"` 共收 6 组 dork、9 个唯一关基主机。
+- **★新定案 2 条（root RCE）**：**matgpt.lib-mat.ac.cn** 与 **matgpt-test.lib-mat.ac.cn**（均 v0.24.0，证书 O=**材料科学姑苏实验室**=江苏省省级实验室，苏州）——注册开放，7*7=49 + SBX class 泄露 + `id` canary 回显 `uid=0(root)`，测试账号数据已清理。证据 `scan\fofa_pool\ragflow_govedu_20261013.json`。
+- 部分命中（不报）：**itaics.sysu.edu.cn（中山大学）** SSTI 无沙箱确认（7*7+class 泄露）但 exec 外带被前置 WAF 403 拦（3 种 Jinja 变体全拦）；zjzsrd.gov.cn:81（舟山人大，v0.19.1 slim 沙箱受限）。
+- 死：北大 aic-rag / 上海虹口人才 → 注册 404；黄山学院 oa:8080 → 拒连；湖州职院 → 公网不解析；ai.zecc.org.cn → 非 RAGFlow。
+- ragflow_attack.py 已修健壮性：jpost/jget 遇 WAF HTML 返回占位 JSON 不再崩（原 ai.naipu / sysu 崩因）。
+- RAGFlow 汇总现 13 台定案（`ragflow_28797_hits_20261012.json` 已补录 10-13 二轮 3 台）。
+
+## 7.8 端口/证书切片续扫（2026-10-13 上午，证据 ragflow_portslices_20261013.json）
+
+- 8443（32 台）/8099（22 台）/9443/10443 端口切片 + cert="集团/医院/医疗" 证书切片共新验 40+ 台：**新增定案仅 120.46.24.110:8099（v0.24.0 root，华为云福州，归属待查）**；ulink 国际学校（领科）与 ghdi.cn 集群（疑广东省水电设计院）RAGFlow 后端均 502。
+- 关基 RCE 现状盘点（id canary 回显定案 14 台）：**可报关基 4 条** = 姑苏实验室×2（matgpt + matgpt-test）+ 上海数据港（llmrag.dataport.com.cn）+ 清源至芯医疗科技（47.107.245.193，类器官药敏平台）；其余为云/企业裸 IP。
+- 中大 itaics.sysu.edu.cn：SSTI 无沙箱已实锤（7*7=49 + `<class 'str'>` 泄露），exec 外带被前置 WAF 403 拦（4 变体全灭），RCE 差外带一环，暂不可报。
+- 待续：8443 剩余 ~17 台按 region 细分；icon_hash && country="CN" 总池按 after=/banner 切片；FOFA 免费额度空窗期后回头补 cert="学院/学校/研究所"。
 
 ## 8. 挖掘机会雷达（详见各 CVE 影响版本，动手前复核 NVD）
 
