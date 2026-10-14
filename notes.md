@@ -239,3 +239,10 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **定性**：与东南智慧树同病——送审平台一年两批次窗口，通知明示「登录后请及时更改密码」，初始口令存活率≈0；秋季批次上传窗口 10-19/20 刚过也救不了。**死线归档，勿重挖。**
 - 复用资产：`_wsyps_verify.py`、`_wsyps_variants.py`、`_sdjzu_live_pairs.txt`（429 组 KYC，他校复用需换 /xs/{校代码}）。五思云服务多校（山师 10445、上师大 10270 等），但改密行为是平台级的，别家期望同样低。
 - **新线索入雷达**：lun51.com 系格式检测平台（青大 grad.qdu.edu.cn、山东科大 sdust.lun51l.com、地大武汉 cug.lun51.com 等），规则=**姓氏拼音首字母大写+学号后6位**（一手通知 2026-05），覆盖面广，但同样「首次登录后请修改密码」，优先级中。
+
+## 7.18 弱密钥新池三线结果（2026-10-14 傍晚）
+
+- **烟科/湖科 kingo 线死**：烟台科技学院强智教务「初始密码=学生学号」（教务处 2026-07-07 一手），但 jwxt.ytkj.edu.cn 公网 000 仅校内（同福建理工 GMIS 死法）；湖南科技学院 jw.huse.cn 公告自述「暂限校内使用」。教训复验：**先 curl 探入口再挖学号**。
+- **热海大 zfsoft 线（半成品，资产已备）**：海南热带海洋学院 2025-09-09 教务处公告——正方新教务系统 `http://zfjw.hntou.edu.cn/jwglxt/`，**全校非2025级初始密码 zfsoft123**（2025级=学号@hyxy）。公网 200 可达、**无验证码**（dlsfbxyzm=0）、RSA 登录已复刻：`scan/_zfsoft_login.py`（PKCS#1 v1.5 纯 Python 大整数，getPublicKey→hex2b64→POST login_slogin.html，yhm/mm/yzm）。**卡 KYC**：研究生奖学金公示 PDF（2026-10-12 两份，23 页）只有姓名+年级专业无学号；本科生源未挖。zfsoft123 是厂商级通用默认，任何带学号公示的 zfsoft 学校都能套此脚本。
+- **方法论**：正方系（zftal-ui）识别特征=login_getPublicKey.html + modulus/exponent AQAB；强智系=kingo CAS（_kingo_login.js）；五思云=MD5+userLoginType（已归档）。
+- 旧池剩：河北工大（规则=后六位，KYC 死）、浙中医大（s654321s，KYC 死）、西南联研/南理工（同上）。
