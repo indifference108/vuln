@@ -302,3 +302,14 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 
 - 218.26.6.46:9999（RAGFlow v0.24.0 root RCE）归属初筛：AS4837 CHINA169 山西、PTR=`46.6.26.218.internet.sx.cn`=**联通宽带接入池命名**→ 客户自建主机，联通仅为线路商；同机 3000 端口为默认 Gitea 1.21.10，无组织标识。**非关基，与 120.26.5.177（1code.cloud）/101.132.167.28（阿里云）同归「root RCE 实锤、归属不明」类，登记不报，待旁站/证书/ICP 线索再定**。
 - 联通系真正的目标是 `*.unicom.cn` 或带联通证书的 IP。
+
+## 7.25 华为 Agile Controller-Campus 弱口令双命中（admin/Huawei@123，2026-10-16 夜）
+
+- **新范围第一果**（三大运营商+中央部委 弱口令/RCE）：`body="eSight" && country="CN"` 池 228 结果/140 IP，其中 144 个标题是 **Agile Controller Login**（SecoSpace/OPMUI，华为 NAC 准入控制网管）。
+- **登录复刻（已跑通）**：GET /OPMUI/login.html 拿隐藏字段 hashcode（每页随机）→ POST **/OPMUI/business/tsmLogin!login.action**（注意挂在 /OPMUI 下，/business 裸路径 404），字段 userName/password/hashcode/validCode，明文无加密；成功返回 `{"data":"<32位令牌>","message":null}`，失败返回 data=1+「用户名或密码错误」。**失败计数按会话**（新会话即回 data=1），验证码连续失败才启用，单会话单试安全。脚本 `scan/_agile_login_try.py`/`_agile_batch.py`/`_agile_sweep.py`。
+- **★HIT×2（admin/Huawei@123，均 root 级 admin 主界面只读验证通过，系统管理/用户管理/认证授权/接入设备/告警管理菜单全可见）**：
+  - `https://183.136.145.78:10000` — 浙江宁波（AS4134 CHINANET 静态段，无 PTR）。归属不能坐实是电信自有资产（政企专线客户自建可能），**待核实归属后报送**。
+  - `https://221.237.179.20:8443` — 四川成都，PTR=`...broad.cd.sc.dynamic.163data.com.cn`=**电信宽带动态拨号池** → 客户自建，**登记不报送**（同 7.24 山西联通先例）。
+- **同轮 0 命中**：58.56.89.22:8443（济南）、58.251.76.205:8888（深圳联通网络）、123.7.85.16:8443、123.184.79.250:10000 六个候选口令全 miss；218.95.67.13:31945 无 hashcode（非登录页/已改路径）、223.87.98.4:31942 超时。
+- **已归档**：`vulns/弱密钥/宁波电信承载_华为AgileController-Campus网管_弱口令/` + `vulns/弱密钥/成都电信宽带承载_.../`（report-zh/en + audit-findings + STATUS + evidence 登录页/index页/成功响应 + poc/verify_agile_weakpwd.py 只读版）。
+- **教训**：运营商 IP≠运营商系统，宽带动态池 PTR（broad.*.dynamic）是客户自建的铁证；先查 PTR 再谈报送。池子还有 ~13 页可翻（FOFA url page=2..）。

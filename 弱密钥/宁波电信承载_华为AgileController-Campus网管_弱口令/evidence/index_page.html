@@ -1,0 +1,597 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:v="um:schemas-microsoft-com:vml" xmlns:o="um:schemas-microsoft-com:office:office">
+  <head><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"><meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,IE=8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    
+      
+	  	<title>Agile Controller</title>
+	  	
+   	
+    <script type="text/javascript" src="/OPMUI/scripts/ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="/OPMUI/scripts/ext/ext-all.js"></script>
+<script type="text/javascript" src="/OPMUI/scripts/ext/adapter/jquery/jquery.js"></script>
+<script type="text/javascript" src="/OPMUI/scripts/ext/extras/SearchField.js"></script>
+
+ 	<link rel="stylesheet" type="text/css" href="../../css/eSight-default/toolbar.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/file-upload.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/css/ext-all.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/xp-default/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../js/secospace/css/all-css.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/secospace/secospace.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/policies.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/secospace/draggable.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/css/ext-all-eSight.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/css/xtheme-gray.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/eSight-default/all.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap_modal.css" />
+    <script src="../../framework/uiframework.js"></script>
+     
+     
+        
+	 <script type="text/javascript">
+ 	 function getLocationParams(paramName){
+ 	 	 var reg = new RegExp("(^|\\?|&)"+ paramName +"=([^&]*)(\\s|&|$)", "i");
+            if (reg.test(location.href)) 
+                return unescape(RegExp.$2.replace(/\+/g, " ")); 
+            return "";
+ 	 }
+	 </script>
+	 <script type="text/javascript">
+	 	var tabMenuID = getLocationParams("tabMenuID");
+	 	var eHttpPort = getLocationParams('eHttpPort');
+ 	 	var eSight_Inter = false;
+ 	 	var pc_Flag = true;
+ 	 	var eSight_IP = 'null';
+ 	 	var $enableAccountAttr = 'false';
+ 	 	$enableAccountAttr = $enableAccountAttr === 'false' ? false : true;
+ 	 	
+ 	 	var domain = 'https:\/\/183.136.145.78:10000';
+ 	 	var isEnableMsv = '0';
+ 	 	var isEnablePgm = '0';
+ 	 	var loadJsPara = 'kU0pk95R4HTFYW9cD%2BQ8bABqsUG5g6SXo1XZNfPkWdldqeuncpJYuUyFx6ft5vkEfaFuAPPosXQPRhKplaLmuzce7I7WuYQbwFaUtZO1p2Q%3D';
+		UiFramework.getFrameworkDomain = function() {
+			return domain;
+		}
+ 	 </script>
+	
+	<script type="text/javascript">
+		var pixelMinWidth = 1360;
+	</script>
+	
+	
+	<script type="text/javascript" src="../../framework/lib/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../../framework/lib/jquery/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../../framework/lib/jquery/tree.jquery.js"></script>
+	<script type="text/javascript" src="../../framework/lib/jquery/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="../../framework/lib/jquery/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../framework/utils/smart_query.js"></script>
+	<script type="text/javascript" src="/portal/themes/default/3rd_plugin/jquery/js/jquery.i18n.properties.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../framework/lib/jquery/jqtree.css" />
+	<script type="text/javascript">
+        UiFramework.jq = $.noConflict(true);
+        var jq = UiFramework.jq;
+        UiFramework.Config.init('', 'zh_CN');
+        UiFramework.loadLanguageProperties('OPMUIRes', '/OPMUI/res/');
+    </script>
+
+    <script type="text/javascript" src="../../framework/adapters/extjs_compatible.js"></script>
+	
+	<script type="text/javascript" src="../../js/common/agileui/AgileUITimeField.js"></script>
+    <script type="text/javascript" src="../../js/common/agileui/advancedSearchPanel.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/button.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/customDisplayColumn.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/panel.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/window.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/message.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/search.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/select.js"></script>
+    <script type="text/javascript" src="../../js/common/agileui/grid.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/gridview.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/toolbar.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/tree.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/pagebarbutton.js"></script>
+    <script type="text/javascript" src="../../js/common/agileui/pagebar.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/searchWindow.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/selectTextArea.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/checkboxSelectionModel.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/fieldset.js"></script>
+    <script type="text/javascript" src="../../js/common/agileui/fileuploadfield.js"></script>	
+	<script type="text/javascript" src="../../js/common/agileui/tabpanel.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/TbuttonTriggerField.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/editGrid.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../js/secospace/css/5W1H.css" />
+
+	<script type="text/javascript" src="../../js/common/agileui/checkbox.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/radio.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/textfield.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/textarea.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/numberfield.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/datefield.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/datepicker.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/radioSelectionModel.js"></script>
+	<script type="text/javascript" src="../../js/common/agileui/tipsManager.js"></script>
+
+	<script type="text/javascript" src="../../framework/lib/jquery/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript" src="../../js/secospace/rolemgr/UserRolePanel.js"></script>
+    
+    <script type="text/javascript" src="../../js/locale/comm/DeleteDetailWin-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/DeleteDetailWin.js"></script>
+    <script type="text/javascript" src="../../js/common/agileui/navigationWindow.js"></script>
+    <script type="text/javascript" src="../../js/secospace/menuJson.js"></script>
+	<script type="text/javascript" src="../../scripts/jqueryui/js/jquery-ui-1.10.4.custom.min.js"></script>
+
+	<link rel="stylesheet" type="text/css"
+			href="/portal/themes/default/components/eview/css/eview/widgets/charttip.css" />
+	
+	<script type="text/javascript" src="/portal/themes/default/3rd_lib/3rdlib.min.js"></script>
+	<script type="text/javascript" src="../../framework/menu.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../css/eview_framework.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/eview_panelcontent.css" />
+    
+    <script type="text/javascript">
+    if (jQuery && !(jQuery.fn.tree)) {
+        jQuery.fn.tree = UiFramework.jq.fn.tree;
+    }
+    if (jQuery && !(jQuery.fn.getNiceScroll)) {
+        jQuery.fn.getNiceScroll = UiFramework.jq.fn.getNiceScroll;
+        jQuery.fn.niceScroll = UiFramework.jq.fn.niceScroll;
+    }   
+	 </script>   
+ 		<script type="text/javascript">
+    		
+    		var logParam = 'NxNVT13Yy\/VFEvVUTi9bDC+ZYt6OHozWQpef0zdGk9nA1VMyvrrXWTsQNdzrz62pxCCBGTVkPH1WTqcEw\/Adw61sQeqO\/KCKAmso5aGTjQFPKu1f8Rd0zdJ5pp+JMfJzOBJgCRJ9DrBCu4dUgWyR883KZEPiK7Rt4jZ1ceCQs4Nt5eQKdzBRzx1P4yQI3+mn';
+    		Ext.Ajax.request({
+				
+				url : domain + '/MSVConfig/msvCommon/loginAction!login.action' ,
+				method : 'post',
+				headers: {
+					'logParam': logParam
+				},
+				success : function(response,options){
+				},
+			   	failFun : function() {
+			    }
+			});
+    	</script>
+ 		<script type="text/javascript">
+    		
+    		var logParam = 'NxNVT13Yy\/VFEvVUTi9bDC+ZYt6OHozWQpef0zdGk9nA1VMyvrrXWTsQNdzrz62pxCCBGTVkPH1WTqcEw\/Adw61sQeqO\/KCKAmso5aGTjQFPKu1f8Rd0zdJ5pp+JMfJzOBJgCRJ9DrBCu4dUgWyR883KZEPiK7Rt4jZ1ceCQs4Nt5eQKdzBRzx1P4yQI3+mn';
+    		Ext.Ajax.request({
+				
+				url : domain + '/PGMConfig/pgmCommon/loginAction!login.action' ,
+				method : 'post',
+				headers: {
+					'logParam': logParam
+				},
+				success : function(response,options){
+				},
+			   	failFun : function() {
+			    }
+			});
+    	</script>  
+    <script type="text/javascript" src="operationCode.jsp"></script>
+     <script type="text/javascript" src="../../js/locale/secospace/index-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/login/login-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/menu-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/desktop-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/opm/rolemanager-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/opm/dynpermission-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/opm/pwdpolicy-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/opm/useronline-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/opm/sysuser-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/tParameter-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/policymgr/policy-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/policymgr/policyTemplate-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/opm/deploy/SwitchStyleWin-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/comm/UxGridPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/comm/component-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/comm/menu-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/comm/menuImgWin-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/comm/vtypes-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/OrgPort-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/GroupPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/OrgPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/userTransfer-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/orgperm/OrgPermPanel-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/agentStaticPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchDownConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchDownLogPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchListPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchStaticPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchTemplatePanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/serverDownPatchPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/patchmgr/patchWua-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/policymgr/PolicyPort-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/policymgr/PolicyTemplate-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/policymgr/TemplatePermMgr-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/portalmgr/PortalManager-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/report/report-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/report/loadPassedPolicyData-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/report/taskreport/TaskReportMgr-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/resmgr-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/datasource-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/ftpAssign-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/ApplyAccountToSACG-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/HardSacgPort-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/InterconnectionPort-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/RadiusAuthen-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/SoftSacgPort-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/SoftSACGService-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/TerminalAccessControl-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/applyorgtosacg-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/resmgr/accessctrl/SacgDevice-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/ldapserver/SynServicePanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/scmgr/ScOnlineMgr-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/scmgr/ScreenMonitorLog-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/scmgr/scServerConfig-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/scmgr/scZoneConfig-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/softDistribution/AssignTemplate-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/softDistribution/softTaskPanel-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/licenses/licenese-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/licenses/AgentDownLoadPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/licenses/AgentUploadPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/licenses/CertificatePanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/licenses/LinkConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/sysconfig/BulletinPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/sysconfig/SysConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/sysconfig/UpdateTaskPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/update/UpdatePackage-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/update/UpdateTask-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/update/VersionStatistic-zh_CN.js"></script>
+    <script type="text/javascript" src="operationCode.jsp"></script>
+    <script type="text/javascript" src="../../js/secospace/sysmgr/equipmentfind/scanPropertyGrid.js"></script>
+	<script type="text/javascript" src="../../js/locale/ext-lang-zh_CN.js" ></script>
+	<script type="text/javascript" src="../../js/locale/common-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/resmgr/datadump-zh_CN.js"></script>
+	<script type="text/javascript" src="../../js/locale/secospace/orgmgr/OnlineLimitMgr-zh_CN.js"></script>
+	
+<script type="text/javascript" src="../../js/locale/secospace/patchmgr/patch360ConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../batchLoadJSFileServlet?batchLoad_home-zh_CN.js"></script>
+	<script type="text/javascript" src="../../batchLoadJSFileServlet?secospace_home_inc.js"></script>
+    
+    <script type="text/javascript" src="../../js/locale/secospace/resmgr/datadump-zh_CN.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://183.136.145.78:10000/MSVConfig/loadCssFileServlet?loadJsPara=kU0pk95R4HTFYW9cD%2BQ8bABqsUG5g6SXo1XZNfPkWdldqeuncpJYuUyFx6ft5vkEfaFuAPPosXQPRhKplaLmuzce7I7WuYQbwFaUtZO1p2Q%3D&loadCommonCss.css" />
+    <script type="text/javascript" src="https://183.136.145.78:10000/MSVConfig/loadJsFileServlet?loadJsPara=kU0pk95R4HTFYW9cD%2BQ8bABqsUG5g6SXo1XZNfPkWdldqeuncpJYuUyFx6ft5vkEfaFuAPPosXQPRhKplaLmuzce7I7WuYQbwFaUtZO1p2Q%3D&browseLang=zh_CN&loadCommonJs.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://183.136.145.78:10000/PGMConfig/loadCssFileServlet?loadJsPara=kU0pk95R4HTFYW9cD%2BQ8bABqsUG5g6SXo1XZNfPkWdldqeuncpJYuUyFx6ft5vkEfaFuAPPosXQPRhKplaLmuzce7I7WuYQbwFaUtZO1p2Q%3D&loadCommonCss.css" />
+    <script type="text/javascript" src="https://183.136.145.78:10000/PGMConfig/loadJsFileServlet?loadJsPara=kU0pk95R4HTFYW9cD%2BQ8bABqsUG5g6SXo1XZNfPkWdldqeuncpJYuUyFx6ft5vkEfaFuAPPosXQPRhKplaLmuzce7I7WuYQbwFaUtZO1p2Q%3D&browseLang=zh_CN&loadCommonJs.js"></script>
+    
+    <script type="text/javascript" src="../../js/common/ux/RowExpander.js"></script>
+   
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/customize/socialType.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/usbmanager/transfer/transferRegister-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/usbmanager/transfer/transferTemplate-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/usbmanager/usbAuthorizationRulePanel/usbAuthorizationRulePanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/network/config/adminPrivilegeConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/network/config/IpAreaConfigPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/network/endpoint/deleteEndpointMgrPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/network/endpoint/endpointGroupMgrPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/network/endpoint/endpointMgrPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/SocialMediaConfigPanel-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../../js/secospace/ldapSync/LdapSyncPanel.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/ldapSync/LdapSyncPanel-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/sysmgr/customize/PageConfig-zh_CN.js"></script>
+    
+    <script type="text/javascript" src="../../js/secospace/orgmgr/RoleShineUpon.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/RoleShineUpon-zh_CN.js"></script>  
+    
+    <script type="text/javascript" src="../../js/secospace/orgmgr/ScAuthentServer.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/orgmgr/ScAuthentServer-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/locale/secospace/visitorAccount/questionaryStatPanel-zh_CN.js"></script>
+    
+
+    <script type="text/javascript" src="/portal/themes/default/components/eview/js/eview.basic.min.js"></script>
+    <script type="text/javascript" src="/portal/themes/default/components/eview/js/eview.charts.min.js"></script>
+
+    <script>
+    window.define = undefined;
+    window.require = undefined;
+    </script>
+
+    <script type="text/javascript" src="../../framework/lib/require.js"></script>
+    <script type="text/javascript" src='../../apps/main.app.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="../../css/eview_framework.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/eview_panelcontent.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/agileui/agileui-apps-all.css"/>
+
+     <script type="text/javascript">
+
+	 	var secospace_grid_page_limit = null;
+	 	
+	 	var pgm_grid_page_limit_10 = 10;
+
+		var secospace_current_login_user_info = null;
+
+		var secospace_contextPath = 'https://183.136.145.78:10000/OPMUI';
+
+		var secospace_softTask_contextPath = 'https://183.136.145.78:10000/OPMUI';
+
+		var allTemplatePermissionForCurUser = null;
+		var haveAllPolicyTemplate = false;
+		var licenseNote = '';
+		var licensePeak = '';
+		var licenseApply1 = '';
+		var licenseApply2 = '';
+		var copyright = '';
+		var company = '';
+		var vendor='';
+		var pagetitle='';
+		var licenseRevokeInfo="";
+		var licenseRetrievedInfo="";
+     </script>
+     
+     
+<script type="text/javascript" src="../../js/common/ux/component.js"></script>
+<script type="text/javascript" src="../../js/common/ux/URLArrays.js"></script>
+
+<script type="text/javascript" src="../../js/common/ux/policyPageBar.js"></script>
+<script type="text/javascript" src="../../js/common/ux/TbuttonTriggerField.js"></script>
+<script type="text/javascript" src="../../js/secospace/patchmgr/PatchGridFilters.js"></script>	
+    <script type="text/javascript" src="../../js/secospace/orgperm/OrgPermPanel.js"></script>
+    
+    <script type="text/javascript" src="../../js/secospace/policymgr/PolicyAssign.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/gridRowNumbererExtend.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/orgWindowPanel.js"></script>
+	<script type="text/javascript" src="../../js/secospace/secoWindow.js"></script>
+	<script type="text/javascript" src="../../js/common/ux/cacheWindow.js"></script>
+	<script type="text/javascript" src="../../js/secospace/secoHelpWin.js"></script>
+	<script type="text/javascript" src="../../js/secospace/policyWindow.js"></script>
+	<script type="text/javascript" src="../../js/secospace/homepage/homepage.js"></script>
+	<script type="text/javascript" src="../../js/secospace/sacgStateMonitorWin.js"></script>
+	<script type="text/javascript" src="../../js/secospace/ParameterMaker.js"></script>
+	<script type="text/javascript" src="../../js/secospace/HashMap.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/TreeGrid.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/AgileTreeGrid.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/BufferView.js"></script>
+	<script type="text/javascript" src="../../js/common/ux/GroupHeaderPlugin.js"></script>	
+	<script type="text/javascript" src="../../js/common/util.js"></script>    
+	<script type="text/javascript" src="../../js/common/ux/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../scripts/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/common/ux/BufferView.js"></script>
+     
+    <script type="text/javascript" src="../../js/secospace/report/ReportGridFilters.js"></script>
+	<script type="text/javascript" src="../../js/secospace/report/ReportPanel.js"></script>
+	<script type="text/javascript" src="../../js/secospace/report/personreport/PersonViolationReport.js"></script>
+	<script type="text/javascript" src="../../js/secospace/report/personreport/ReportConditionSelectWin.js"></script>
+	<script type="text/javascript" src="../../js/secospace/secoWindow.js"></script> 
+	<script type="text/javascript" src="../../js/secospace/resmgr/ldapserver/SynServicePanel.js"></script>
+	<script type="text/javascript" src="../../js/secospace/reportmgr/myself/CreateInstantReport.js"></script>
+    <script type="text/javascript" src="../../js/secospace/reportmgr/myself/CreateCycleReport.js"></script>	
+ 	<script type="text/javascript" src="../../js/secospace/orgperm/OrgPermPanel.js"></script>  
+ 	<script type="text/javascript" src="../../js/secospace/report/taskreport/NewTaskReport.js"></script>
+   
+	<script type="text/javascript">
+
+    var eViewErrorIcon = new Image();
+    eViewErrorIcon.src = '../../../portal/themes/default/components/eview/images/messagedialog/error.png';
+	 function SetCondWinHeight(){ 
+	   var iframeid=document.getElementById("iFrame");
+	   if (document.getElementById){ 
+	    if (iframeid && !window.opera){ 
+	     if (iframeid.contentDocument && iframeid.contentDocument.body.scrollHeight){ 
+	      iframeid.height = iframeid.contentDocument.body.scrollHeight; 
+	     }else if(iframeid.Document && iframeid.Document.body.scrollHeight){ 
+	      iframeid.height = iframeid.Document.body.scrollHeight; 
+	     } 
+	    } 
+	  } 
+	}
+	 
+
+	 var secospace_local = 'zh_CN';
+	 var secospace_isOracle = true;
+	 var reportMap = new JHashMap();
+	 window.onbeforeunload = function() {
+	 	
+	};
+	 
+
+	 Ext.namespace("secospace.login");
+    secospace.login.menuData = [{"children":null,"funcName":"#dashboard","iconCls":null,"id":"00000","menuName":"首页","orderID":1},{"children":[{"children":[{"children":null,"funcName":"#monitor\/currentalarms","iconCls":null,"id":"00006-00000-00000","menuName":"当前告警","orderID":1},{"children":null,"funcName":"#monitor\/historicalalarms","iconCls":null,"id":"00006-00000-00001","menuName":"历史告警","orderID":2},{"children":[{"children":null,"funcName":"#monitor\/alarmswitch","iconCls":null,"id":"00006-00000-00002-00001","menuName":"告警开关","orderID":1},{"children":null,"funcName":"#monitor\/thresholdcfg","iconCls":null,"id":"00006-00000-00002-00002","menuName":"告警阈值","orderID":2},{"children":null,"funcName":"#monitor\/alarmnotificationtemplate","iconCls":null,"id":"00006-00000-00002-00003","menuName":"通知内容模板","orderID":3},{"children":null,"funcName":"#monitor\/alarmnotificationrule","iconCls":null,"id":"00006-00000-00002-00004","menuName":"告警通知规则","orderID":4},{"children":null,"funcName":"#monitor\/alarmscfg","iconCls":null,"id":"00006-00000-00002-00005","menuName":"告警设置","orderID":5}],"funcName":null,"iconCls":null,"id":"00006-00000-00002","menuName":"告警设置","orderID":3}],"funcName":null,"iconCls":null,"id":"00006-00000","menuName":"告警管理","orderID":1},{"children":[{"children":null,"funcName":"#baseservices\/faulttrace","iconCls":null,"id":"00006-00001-00000","menuName":"故障定界","orderID":1},{"children":null,"funcName":"#systemconfig\/faulttraceconfig","iconCls":null,"id":"00006-00001-00001","menuName":"故障诊断配置","orderID":2},{"children":null,"funcName":"#systemconfig\/faulttraceexport","iconCls":null,"id":"00006-00001-00002","menuName":"导出业务跟踪事件","orderID":3}],"funcName":null,"iconCls":null,"id":"00006-00001","menuName":"故障定界","orderID":2}],"funcName":null,"iconCls":null,"id":"00006","menuName":"监控","orderID":2},{"children":[{"children":[{"children":null,"funcName":"secospace.orgmgr.OrgPanel","iconCls":"m-dep-rolemanagerpanel","id":"00001-00000-00000","menuName":"用户管理","orderID":1},{"children":null,"funcName":"#baseservices\/rolemanager","iconCls":"m-dep-rolemanagerpanel","id":"00001-00000-00001","menuName":"角色管理","orderID":2},{"children":null,"funcName":"secospace.resmgr.scmgr.ScOnlineManager","iconCls":"m-dep-onlineuserpanel","id":"00001-00000-00002","menuName":"在线用户管理","orderID":3},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SwitchLinePanel","iconCls":"m-dep-logspanel","id":"00001-00000-00004","menuName":"终端登录日志","orderID":5},{"children":null,"funcName":"secospace.sysmgr.sysconfig.RadiusSwitchLinePanel","iconCls":"m-dep-logspanel","id":"00001-00000-00005","menuName":"RADIUS日志","orderID":6},{"children":null,"funcName":"#acm\/tacacsrecord","iconCls":"","id":"00001-00000-00006","menuName":"HWTACACS日志","orderID":7},{"children":null,"funcName":"#acm\/anonymousauthmanager","iconCls":"m-tsm-anonymousauthpanel","id":"00001-00000-00007","menuName":"匿名认证管理","orderID":8},{"children":null,"funcName":"secospace.orgmgr.ipSegmentPanel","iconCls":"m-tsm-networkzonepanel","id":"00001-00000-00008","menuName":"终端IP地址范围","orderID":9},{"children":null,"funcName":"secospace.orgmgr.AccountBlackMgr","iconCls":"m-dep-rolemanagerpanel","id":"00001-00000-00009","menuName":"帐号黑名单管理","orderID":10},{"children":null,"funcName":"secospace.orgmgr.OnlineLimitMgr","iconCls":"m-dep-adminpanel","id":"00001-00000-00010","menuName":"用户在线时长管理","orderID":11},{"children":null,"funcName":"#baseservices\/onlineflowmanager","iconCls":"m-dep-adminpanel","id":"00001-00000-00016","menuName":"用户流量信息管理","orderID":12},{"children":null,"funcName":"#visitormanager\/weChatMappingMgr","iconCls":"m-dep-adminpanel","id":"00001-00000-00014","menuName":"免认证微信帐号管理","orderID":16},{"children":null,"funcName":"secospace.orgmgr.DepartmentAndIPAddressAreaConfig","iconCls":"m-dep-rolemanagerpanel","id":"00001-00000-00015","menuName":"用户组IP地址段配置","orderID":17}],"funcName":null,"iconCls":null,"id":"00001-00000","menuName":"用户","orderID":1},{"children":[{"children":null,"funcName":"secospace.devicemgr.NewDeviceMgrPanel","iconCls":null,"id":"00001-00001-00000","menuName":"设备管理","orderID":1},{"children":null,"funcName":"secospace.devicemgr.ProtocolProfileMgrPanel","iconCls":"m-dep-resourcepanel","id":"00001-00001-00001","menuName":"协议模板","orderID":2},{"children":null,"funcName":"#visitormanager\/visitorTerritoryallocation","iconCls":"","id":"00001-00001-00002","menuName":"区域管理","orderID":4}],"funcName":null,"iconCls":null,"id":"00001-00001","menuName":"设备","orderID":2},{"children":[{"children":null,"funcName":"secospace.endpointmgr.endpointIdentifyPanel","iconCls":"m-tsm-configurePanel","id":"00001-00002-00000","menuName":"终端列表","orderID":1},{"children":null,"funcName":"secospace.endpointmgr.IdentifyPolicyPanel","iconCls":"m-tsm-grouppanel","id":"00001-00002-00001","menuName":"识别策略","orderID":2},{"children":null,"funcName":"secospace.endpointmgr.probeScanConfigPanel","iconCls":"m-dep-sysconfigpanel","id":"00001-00002-00002","menuName":"扫描配置","orderID":3},{"children":null,"funcName":"secospace.endpointmgr.EndpointIdentifyLogPanel","iconCls":"m-dep-logspanel","id":"00001-00002-00003","menuName":"识别日志","orderID":4},{"children":null,"funcName":"secospace.endpointmgr.GlobalParaConf","iconCls":"m-tsm-configurePanel","id":"00001-00002-00004","menuName":"参数配置","orderID":5},{"children":null,"funcName":"secospace.sysmgr.sysconfig.CaLimitConfigPanel","iconCls":"m-dep-partialparameterpanel","id":"00001-00002-00005","menuName":"终端注册数量控制","orderID":6}],"funcName":null,"iconCls":null,"id":"00001-00002","menuName":"终端","orderID":3}],"funcName":null,"iconCls":null,"id":"00001","menuName":"资源","orderID":3},{"children":[{"children":[{"children":null,"funcName":"secospace.usergroupmgr.PolicyAuthorization","iconCls":null,"id":"00002-00000-00009","menuName":"快速授权","orderID":1},{"children":[{"children":null,"funcName":"secospace.policycenter.authenRulePanel","iconCls":"m-dep-dbconfigpanel","id":"00002-00000-00000-00000","menuName":"认证规则","orderID":1},{"children":null,"funcName":"secospace.policycenter.authorizationRulePanel","iconCls":"m-tsm-licensespanel","id":"00002-00000-00000-00001","menuName":"授权规则","orderID":2},{"children":null,"funcName":"secospace.policycenter.authorResultPanel","iconCls":"m-tsm-scinfopanel","id":"00002-00000-00000-00002","menuName":"授权结果","orderID":3}],"funcName":null,"iconCls":null,"id":"00002-00000-00000","menuName":"认证授权","orderID":2},{"children":[{"children":null,"funcName":"secospace.policycenter.quickStartPanel","iconCls":"m-dep-globalparameterpanel","id":"00002-00000-00001-00000","menuName":"快速入门","orderID":1},{"children":null,"funcName":"secospace.resmgr.accessctrl.newPortalGatewayPanel","iconCls":"m-dep-resourcepanel","id":"00002-00000-00001-00001","menuName":"接入设备","orderID":2},{"children":null,"funcName":"secospace.policycenter.policyment.TimeRangePanel","iconCls":"m-dep-dbconfigpanel","id":"00002-00000-00001-00002","menuName":"时间段","orderID":3},{"children":null,"funcName":"secospace.policycenter.policyment.DynamicACLPanel","iconCls":"m-dep-dbconfigpanel","id":"00002-00000-00001-00003","menuName":"动态ACL","orderID":4},{"children":null,"funcName":"secospace.policycenter.policyment.SSIDPanel","iconCls":"m-dep-dbconfigpanel","id":"00002-00000-00001-00005","menuName":"SSID","orderID":5},{"children":null,"funcName":"secospace.policycenter.policyment.CustomerConditionsPanel","iconCls":"m-dep-dbconfigpanel","id":"00002-00000-00001-00004","menuName":"定制条件","orderID":6},{"children":null,"funcName":"#policymentmanager\/mdmmanager","iconCls":"","id":"00002-00000-00001-00006","menuName":"MDM条件","orderID":7},{"children":null,"funcName":"#vlan\/vlanmanager","iconCls":null,"id":"00002-00000-00001-00007","menuName":"VLAN","orderID":8}],"funcName":null,"iconCls":null,"id":"00002-00000-00001","menuName":"策略元素","orderID":3},{"children":[{"children":null,"funcName":"#onboard\/onboardmanage","iconCls":"m-dep-globalparameterpanel","id":"00002-00000-00010-00000","menuName":"快速入门","orderID":1},{"children":null,"funcName":"#onboardmanager\/webmanager","iconCls":"","id":"00002-00000-00010-00002","menuName":"网络接入策略","orderID":2}],"funcName":null,"iconCls":null,"id":"00002-00000-00010","menuName":"Boarding管理","orderID":5},{"children":[{"children":null,"funcName":"#visitormanager\/visitoraccountguide","iconCls":"m-dep-globalparameterpanel","id":"00002-00000-00002-00000","menuName":"快速入门","orderID":1},{"children":null,"funcName":"#visitormanager\/accountmanager","iconCls":"m-tsm-visitoraccountmgrpanel","id":"00002-00000-00002-00001","menuName":"访客帐号管理","orderID":2},{"children":null,"funcName":"#visitormanager\/guestaccountpolicy","iconCls":"","id":"00002-00000-00002-00007","menuName":"访客帐号策略","orderID":3},{"children":null,"funcName":"#visitormanager\/guestmanager","iconCls":"m-dep-sysmenupanel","id":"00002-00000-00002-00002","menuName":"访客管理员","orderID":4},{"children":null,"funcName":"#visitormanager\/visitornotifytemplate","iconCls":"m-tsm-grouppanel","id":"00002-00000-00002-00003","menuName":"访客通知模板","orderID":5},{"children":null,"funcName":"#visitormanager\/guestapprove","iconCls":"","id":"00002-00000-00002-00004","menuName":"待审批访客","orderID":6},{"children":null,"funcName":"#visitormanager\/guestapproverecord","iconCls":"","id":"00002-00000-00002-00005","menuName":"访客审批记录","orderID":7},{"children":null,"funcName":"#visitormanager\/visitorconfigmanager","iconCls":"m-tsm-visitorconfigpanel","id":"00002-00000-00002-00006","menuName":"参数配置","orderID":8}],"funcName":null,"iconCls":null,"id":"00002-00000-00002","menuName":"访客管理","orderID":6},{"children":[{"children":null,"funcName":"#visitormanager\/pageconfig","iconCls":"m-tsm-grouppanel","id":"00002-00000-00003-00000","menuName":"页面定制","orderID":1},{"children":null,"funcName":"secospace.sysmgr.customize.TemplateMgrPanel","iconCls":"m-dep-sysmenupanel","id":"00002-00000-00003-00001","menuName":"认证和注册模板","orderID":2},{"children":null,"funcName":"#portalmanager","iconCls":null,"id":"00002-00000-00003-00005","menuName":"门户管理","orderID":3},{"children":null,"funcName":"#visitormanager\/languagetempmanager","iconCls":"m-dep-sysmenupanel","id":"00002-00000-00003-00002","menuName":"语言模板","orderID":4},{"children":null,"funcName":"secospace.sysmgr.material.MaterialMgrPanel","iconCls":"m-dep-sysmenupanel","id":"00002-00000-00003-00003","menuName":"页面定制素材","orderID":5},{"children":null,"funcName":"#visitormanager\/portalpageredirectrule","iconCls":"m-tsm-scinfopanel","id":"00002-00000-00003-00004","menuName":"Portal页面推送策略","orderID":6},{"children":null,"funcName":"secospace.sysmgr.customize.PageAccessRulePanel","iconCls":"m-tsm-scinfopanel","id":"00002-00000-00003-00006","menuName":"认证前允许访问页面","orderID":7}],"funcName":null,"iconCls":null,"id":"00002-00000-00003","menuName":"页面定制","orderID":7},{"children":[{"children":null,"funcName":"secospace.orgmgr.IpMacMgr","iconCls":"m-tsm-assetconfigpanel","id":"00002-00000-00005-00000","menuName":"IP\/MAC绑定管理","orderID":1},{"children":null,"funcName":"secospace.orgmgr.MacMgr","iconCls":"m-tsm-maclist","id":"00002-00000-00005-00001","menuName":"MAC黑白名单","orderID":2},{"children":null,"funcName":"secospace.policycenter.macDevicePanel","iconCls":"m-tsm-configurePanel","id":"00002-00000-00005-00002","menuName":"MAC旁路认证","orderID":3}],"funcName":null,"iconCls":null,"id":"00002-00000-00005","menuName":"MAC管理","orderID":9},{"children":[{"children":null,"funcName":"secospace.resmgr.configguide.configGuidePanel","iconCls":"m-dep-globalparameterpanel","id":"00002-00000-00007-00000","menuName":"快速入门","orderID":1},{"children":null,"funcName":"secospace.resmgr.accessctrl.SacgDevice","iconCls":"m-tsm-hardwaresacgpanel","id":"00002-00000-00007-00001","menuName":"硬件SACG配置","orderID":2},{"children":null,"funcName":"secospace.resmgr.accessctrl.AuthRulesPanel","iconCls":"m-tsm-licensespanel","id":"00002-00000-00007-00002","menuName":"硬件SACG策略组","orderID":3}],"funcName":null,"iconCls":null,"id":"00002-00000-00007","menuName":"硬件SACG","orderID":10},{"children":null,"funcName":"secospace.policycenter.RoamManagementPanel","iconCls":null,"id":"00002-00000-00012","menuName":"区域漫游策略","orderID":11}],"funcName":null,"iconCls":null,"id":"00002-00000","menuName":"准入控制","orderID":1},{"children":[{"children":null,"funcName":"#camanager\/caservermanager","iconCls":null,"id":"00002-00003-00000","menuName":"证书服务器配置","orderID":1},{"children":[{"children":null,"funcName":"#camanager\/rootcertificatemanager","iconCls":null,"id":"00002-00003-00001-00001","menuName":"根证书配置","orderID":1},{"children":null,"funcName":"#camanager\/issuedcertificatemanager","iconCls":null,"id":"00002-00003-00001-00002","menuName":"颁发证书管理","orderID":2},{"children":null,"funcName":"#camanager\/revokedcertificatemanager","iconCls":null,"id":"00002-00003-00001-00003","menuName":"吊销证书管理","orderID":3}],"funcName":null,"iconCls":null,"id":"00002-00003-00001","menuName":"内置CA管理","orderID":2},{"children":[{"children":null,"funcName":"#onboard\/scepmanager","iconCls":"m-dep-globalparameterpanel","id":"00002-00003-00002-00000","menuName":"SCEP证书服务器配置","orderID":1},{"children":null,"funcName":"#onboard\/ocspmanager","iconCls":"m-dep-adminpanel","id":"00002-00003-00002-00001","menuName":"OCSP服务器配置","orderID":2}],"funcName":null,"iconCls":null,"id":"00002-00003-00002","menuName":"第三方CA管理","orderID":3}],"funcName":null,"iconCls":null,"id":"00002-00003","menuName":"CA管理","orderID":2}],"funcName":null,"iconCls":null,"id":"00002","menuName":"策略","orderID":4},{"children":[{"children":[{"children":null,"funcName":"secospace.reportmgr.myself.ReportModelMgr","iconCls":"m-tsm-reporttemplatepanel","id":"00003-00000-00000","menuName":"报表模板","orderID":1},{"children":null,"funcName":"secospace.reportmgr.myself.FastReportMgr","iconCls":"m-tsm-immediatereportpanel","id":"00003-00000-00001","menuName":"即时报表","orderID":2},{"children":null,"funcName":"secospace.reportmgr.myself.CycleReportMgr","iconCls":"m-tsm-cyclereportpanel","id":"00003-00000-00002","menuName":"周期报表","orderID":3},{"children":null,"funcName":"secospace.reportmgr.myself.ReportTaskHistoryMgr","iconCls":"m-tsm-reporthistorypanel","id":"00003-00000-00003","menuName":"报表历史记录","orderID":4}],"funcName":null,"iconCls":null,"id":"00003-00000","menuName":"定制报表","orderID":3}],"funcName":null,"iconCls":null,"id":"00003","menuName":"报表","orderID":5},{"children":[{"children":[{"children":null,"funcName":"secospace.sysmgr.pwdpolicy.PwdComplexity","iconCls":"m-tsm-configurePanel2","id":"00004-00000-00000","menuName":"密码策略","orderID":1},{"children":null,"funcName":"secospace.role.RoleManagerPanel","iconCls":"m-dep-sysrolemanagerpanel","id":"00004-00000-00001","menuName":"角色管理","orderID":2},{"children":null,"funcName":"secospace.sysmgr.operationAuth.OperationAuthMgrPanel","iconCls":null,"id":"00004-00000-00006","menuName":"业务权限","orderID":3},{"children":null,"funcName":"secospace.sysmgr.rolemgr.SysUserPanel","iconCls":"m-tsm-grouppanel","id":"00004-00000-00002","menuName":"系统用户","orderID":4},{"children":null,"funcName":"secospace.sysmgr.rolemgr.UserOnlinePanel","iconCls":null,"id":"00004-00000-00004","menuName":"系统在线用户","orderID":6},{"children":[{"children":null,"funcName":"secospace.sysmgr.onlineMgr.ManagerOnlineMgrPanel","iconCls":"m-dep-dbconfigpanel","id":"00004-00000-00005-00000","menuName":"管理员登录日志","orderID":1},{"children":null,"funcName":"secospace.sysmgr.log.SystemOperationLog","iconCls":"m-dep-syslogspanel","id":"00004-00000-00005-00001","menuName":"管理员操作日志","orderID":2}],"funcName":null,"iconCls":null,"id":"00004-00000-00005","menuName":"系统日志","orderID":7}],"funcName":null,"iconCls":null,"id":"00004-00000","menuName":"系统管理员","orderID":1},{"children":[{"children":null,"funcName":"secospace.ldapSync.SyncMainPanel","iconCls":"m-tsm-celerityADService","id":"00004-00001-00001","menuName":"AD-LDAP同步","orderID":2},{"children":null,"funcName":"secospace.sysmgr.licenses.CertificatePanel","iconCls":"m-dep-certificatepanel","id":"00004-00001-00002","menuName":"证书认证配置管理","orderID":3},{"children":null,"funcName":"secospace.orgmgr.RadiusProxyPanel","iconCls":"m-tsm-scinfopanel","id":"00004-00001-00003","menuName":"RADIUS中继","orderID":4},{"children":null,"funcName":"secospace.orgmgr.RadiusTokenPanel","iconCls":"m-tsm-scinfopanel","id":"00004-00001-00004","menuName":"RADIUS Token","orderID":5},{"children":null,"funcName":"secospace.orgmgr.SocialMediaConfigPanel","iconCls":"m-dep-adminpanel","id":"00004-00001-00005","menuName":"第三方应用","orderID":6},{"children":null,"funcName":"secospace.orgmgr.ThirdPartyDatabase","iconCls":"m-dep-adminpanel","id":"00004-00001-00007","menuName":"第三方数据库","orderID":7},{"children":null,"funcName":"#mdm\/mdmserverconfig","iconCls":"m-dep-globalparameterpanel","id":"00004-00001-00010","menuName":"MDM服务器配置","orderID":10},{"children":null,"funcName":"secospace.http.HttpAuth","iconCls":"m-dep-adminpanel","id":"00004-00001-00011","menuName":"第三方HTTP服务器","orderID":11},{"children":null,"funcName":"#samlidp\/samlidpconfig","iconCls":"m-tsm-samlidpconfig","id":"00004-00001-00012","menuName":"SAML IdP配置","orderID":12}],"funcName":null,"iconCls":null,"id":"00004-00001","menuName":"外部认证源","orderID":2},{"children":[{"children":null,"funcName":"secospace.resmgr.guide.celerityAccidence","iconCls":"m-dep-globalparameterpanel","id":"00004-00004-00000","menuName":"快速入门","orderID":1},{"children":null,"funcName":"secospace.resmgr.scmgr.ScServerShowByListPanel","iconCls":"m-tsm-scconfigpanel","id":"00004-00004-00001","menuName":"SC服务器配置","orderID":2},{"children":null,"funcName":"secospace.resmgr.scmgr.ScServerShowByZonePanel","iconCls":"m-dep-sczoneconfigpanel","id":"00004-00004-00002","menuName":"区域配置","orderID":3},{"children":null,"funcName":"secospace.resmgr.appserver.ftpServer","iconCls":"m-dep-ftpserverpanel","id":"00004-00004-00003","menuName":"文件传输服务器配置","orderID":7},{"children":null,"funcName":"secospace.resmgr.appserver.FtpServerAssign","iconCls":"m-dep-ftpserverassignpanel","id":"00004-00004-00013","menuName":"文件传输服务器分配","orderID":8},{"children":null,"funcName":"secospace.mail.MailServer","iconCls":"m-dep-sysconfigpanel","id":"00004-00004-00004","menuName":"邮件服务器配置","orderID":10},{"children":null,"funcName":"secospace.sysmgr.log.Syslog","iconCls":"m-tsm-syslogserverpanel","id":"00004-00004-00005","menuName":"SysLog配置","orderID":11},{"children":null,"funcName":"secospace.sms.SmsServer","iconCls":"m-dep-sysconfigpanel","id":"00004-00004-00006","menuName":"短信服务器配置","orderID":12},{"children":null,"funcName":"secospace.asg.AsgDevicePanel","iconCls":"m-tsm-hardwaresacgpanel","id":"00004-00004-00007","menuName":"上网行为管理设备配置","orderID":13},{"children":null,"funcName":"secospace.report.datasource.ExtendDataSourcePanel","iconCls":"m-tsm-syslogserverpanel","id":"00004-00004-00014","menuName":"扩展数据源","orderID":15},{"children":null,"funcName":"secospace.report.trendreport.ReportConfigPanel","iconCls":"m-tsm-reportconfigpanel","id":"00004-00004-00015","menuName":"数据上报配置","orderID":16},{"children":null,"funcName":"secospace.sysmgr.licenses.ClassifyRegisterPanel","iconCls":"m-tsm-managecenterpanel","id":"00004-00004-00016","menuName":"分级管理","orderID":17},{"children":null,"funcName":"secospace.report.datasource.DataDumpPanel","iconCls":"m-dep-datasourcepanel","id":"00004-00004-00018","menuName":"数据清理","orderID":19},{"children":null,"funcName":"#cis\/cisconfigpanel","iconCls":"m-tsm-cisserverpanel","id":"00004-00004-00019","menuName":"RADIUS计费设备配置","orderID":20}],"funcName":null,"iconCls":null,"id":"00004-00004","menuName":"服务器配置","orderID":3},{"children":[{"children":[{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysGlobalAccessConfigPanel","iconCls":"m-dep-globalparameterconfigpanel","id":"00004-00003-00000-00001","menuName":"接入管理参数","orderID":1},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysGlobalWebTerminalConfigPanel","iconCls":"m-dep-globalparameterconfigpanel","id":"00004-00003-00000-00005","menuName":"Web终端参数","orderID":5},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysGlobalThirdPartConfigPanel","iconCls":"m-dep-globalparameterconfigpanel","id":"00004-00003-00000-00006","menuName":"第三方对接","orderID":6},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysGlobalNormalConfigPanel","iconCls":"m-dep-globalparameterconfigpanel","id":"00004-00003-00000-00007","menuName":"其他参数","orderID":7}],"funcName":null,"iconCls":null,"id":"00004-00003-00000","menuName":"全局参数","orderID":1},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysPartConfigPanel","iconCls":"m-dep-partialparameterpanel","id":"00004-00003-00001","menuName":"局部参数","orderID":2},{"children":null,"funcName":"secospace.sysmgr.sysconfig.SysUninstallPasswordConfigPanel","iconCls":"m-dep-partialparameterpanel","id":"00004-00003-00002","menuName":"防卸载密码生成","orderID":3}],"funcName":null,"iconCls":null,"id":"00004-00003","menuName":"终端参数配置","orderID":4},{"children":[{"children":[{"children":null,"funcName":"secospace.sysmgr.licenses.AgentUploadPanel","iconCls":"m-tsm-uploadagentpanel","id":"00004-00002-00000-00000","menuName":"软件上传","orderID":1},{"children":null,"funcName":"secospace.sysmgr.update.UpdatePackage","iconCls":"m-tsm-updatepackagepanel","id":"00004-00002-00000-00001","menuName":"升级包上传","orderID":2},{"children":null,"funcName":"secospace.sysmgr.update.UpdateTask","iconCls":"m-tsm-updatetaskpanel","id":"00004-00002-00000-00002","menuName":"任务管理","orderID":3},{"children":null,"funcName":"secospace.sysmgr.update.VersionStatistic","iconCls":"m-tsm-versionstatisticpanel","id":"00004-00002-00000-00003","menuName":"版本统计","orderID":4},{"children":null,"funcName":"secospace.sysmgr.update.AgentInfo","iconCls":"m-tsm-proxyinfoquerypanel","id":"00004-00002-00000-00004","menuName":"客户端明细","orderID":5},{"children":null,"funcName":"secospace.sysmgr.update.SoftwareInfo","iconCls":"m-tsm-softwaredistributepanel","id":"00004-00002-00000-00005","menuName":"第三方软件上传","orderID":6}],"funcName":null,"iconCls":null,"id":"00004-00002-00000","menuName":"软件管理","orderID":1}],"funcName":null,"iconCls":null,"id":"00004-00002","menuName":"客户端管理","orderID":5},{"children":[{"children":null,"funcName":"secospace.sysmgr.sysconfig.BulletinPanel","iconCls":"m-tsm-bullitonpanel","id":"00004-00005-00000","menuName":"系统公告","orderID":1}],"funcName":null,"iconCls":null,"id":"00004-00005","menuName":"公告配置","orderID":6},{"children":[{"children":null,"funcName":"secospace.sysmgr.licenses.LicensesInfoPanel","iconCls":"m-tsm-licensebrowsepanel","id":"00004-00006-00000","menuName":"License信息查看","orderID":1}],"funcName":null,"iconCls":null,"id":"00004-00006","menuName":"License管理","orderID":7}],"funcName":null,"iconCls":null,"id":"00004","menuName":"系统","orderID":6}];
+    		var menuData = secospace.login.menuData;
+    		var tempMenuData = [];
+    		if(Ext.isArray(menuData)){
+    			secospace.login.menu = {};
+    			for(var index = 0; index < menuData.length; ++index){
+    				var menuItem = menuData[index];
+    				secospace.login.menu[menuItem.id] = menuItem;
+    				if(null == menuItem.children){
+    					tempMenuData.push(menuItem);
+    				}
+    			}
+    		};
+    		for(var index = 0; index < menuData.length; ++index){
+    		    if(null != menuData[index].children){
+    		    	tempMenuData = tempMenuData.concat(menuData[index].children);
+    		    }
+    		}
+    		secospace.login.menuData = tempMenuData;
+
+
+    window.onerror= function() {
+	    return true;
+    };
+    
+    function SetCwinHeight(){ 
+	   var iframeid=document.getElementById("iFrame1");
+	   if (document.getElementById){ 
+	    if (iframeid && !window.opera){ 
+	     if (iframeid.contentDocument && iframeid.contentDocument.body.scrollHeight){ 
+	      iframeid.height = iframeid.contentDocument.body.scrollHeight; 
+	     }else if(iframeid.Document && iframeid.Document.body.scrollHeight){ 
+	      iframeid.height = iframeid.Document.body.scrollHeight; 
+	     } 
+	    } 
+	  } 
+	}
+    
+
+     function loadURI(){
+
+     	if (null == secospace_current_login_user_info) {
+     	Ext.Ajax.request({
+	     		   sync : false,
+			   url: '../../business/tsmLogin!getCurrentUserInfo.action',
+			   method: 'POST',
+			   success: function(response, options) {
+			   		if (response.responseText != null && response.responseText != '') {
+			   			secospace_current_login_user_info = Ext.decode(response.responseText).data;
+			   		}
+			   }
+		});
+		}
+		
+
+		var connLimit = Ext.lib.Ajax.getConnectionObject().conn;
+		connLimit.open('post','../../business/tsmLogin!getPageLimit.action?date='+(new Date()).getTime(),false);
+		connLimit.send(null);
+		if(connLimit.status == '200'){
+		
+			if (connLimit.responseText != null && connLimit.responseText != ''){
+				var result = Ext.util.JSON.decode(connLimit.responseText);
+	   			
+		   		if (result != null && result.data != null) {
+		   			secospace_grid_page_limit = result.data;
+		   			
+		   		}else{
+		   			secospace_grid_page_limit = 10;
+		   		}
+	   		}else{
+	   			secospace_grid_page_limit = 10;
+	   		}
+		}
+
+		var connLicense = Ext.lib.Ajax.getConnectionObject().conn;
+		connLicense.open('post','../../business/secoVendorAction!vendor.action',false);
+		connLicense.send(null);
+		if(connLicense.status == '200'){
+		
+			if (connLicense.responseText != null && connLicense.responseText != ''){
+				var result = Ext.util.JSON.decode(connLicense.responseText);
+		   		if (result != null && result.data != null) {
+		   			licenseNote = result.data.licenseNote;
+		   			licensePeak = result.data.licensePeak;
+		   			licenseApply1 = result.data.licenseApply1;
+		   			licenseApply2 = result.data.licenseApply2;
+		   			copyright = result.data.copyright;
+		   			company = result.data.company;
+		   			vendor = result.data.vendor;
+		   			pagetitle = result.data.title;
+		   			licenseRevokeInfo =  result.data.licenseRevokeInfo;
+		   			licenseRetrievedInfo = result.data.licenseRetrievedInfo;
+		   		}
+	   		}
+		}
+		if(!eSight_Inter){
+		
+		}
+		
+        
+        Ext.Ajax.request({
+               url: '../../secospace/dynpermissionAction!getCurUserAllTemplatePermisson.action',
+               method: 'POST',
+               success: function(response, options) {
+                    if (response.responseText != null && response.responseText != '') {
+                    	allTemplatePermissionForCurUser = Ext.decode(response.responseText).data[0];
+                        haveAllPolicyTemplate = Ext.decode(response.responseText).data[1].haveAll;
+                    }
+               }
+        });
+        
+        loadDeskTop();
+	 	 
+
+	 if(!eSight_Inter){
+		 var userAccount = secospace.login.getUserAccount();
+		 if(userAccount != 'RemoteAdmin')
+		 {
+		 	secospace.login.checkPassword();
+		 }else{
+		 	secospace.login.isNeedShow();
+		 }
+
+		 secospace.login.stateMonitor();
+
+		 secospace.login.licenseRevokeCheckAndlicenseInfoIsLack();
+		 lastLoginInfo();
+	 }
+	 }
+	 
+	 
+	 function _downloadLicenseGuide (url)
+	 {
+	 
+		 var panelElement = angular.element('<iframe style="width:0px;hieght:0px;" src="' + url + '"></iframe>');
+		 $(document.body).append(panelElement);
+       
+         setTimeout(function (){
+        	$(panelElement).remove();
+        
+         },1000) ; 
+	 }
+	</script>
+    <link rel="stylesheet" type="text/css" href="../../js/secospace/css/all-css.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/agileui/agileui-all.css" />
+    <script type="text/javascript" src="../../js/common/agileui/button.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../../js/secospace/css/securitygroup.css" />
+	<link rel="stylesheet" type="text/css" href="../../js/secospace/css/jquery.mCustomScrollbar.css" />
+	<link type="image/x-icon" href="../../images/eSight/default/layout/logo_huawei.ico" rel="shortcut icon" />
+  </head>
+  <body ng-controller="mainController">
+      
+      <div id='visitorAccountNavigatorMinBorder' class='navigatorMinimize' style='display:none;border-style: solid; border-width: 2px; border-color:#C9C9C9;'>
+            <div class="navigatorMinimizeWinTitleLine"></div>
+	      <div class='navigatorMinimizeBorder'>
+	        <span class='navagatorBorderSpan' style='cursor:pointer' onclick='menuHandler("secospace.visitorMgr.visitorAccountNavigationPanel")'>访客配置导航</span>
+            <span id='visitorConfigureMinimizeWin.closeButton' onmouseover='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.closeButtonOver()' onmouseout='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.closeButtonOut()' onclick='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.closeButtonHandler()' class='navagatorCloseButton'></span>
+	      	<span id='visitorConfigureMinimizeWin.restoreButton' onmouseover='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.restoreButtonOver()' onmouseout='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.restoreButtonOut()' onclick='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.restoreButtonHandler()' class='navagatorRestoreButton'></span>
+            <span id='visitorConfigureMinimizeWin.returnButton' onmouseover='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.returnButtonOver()' onmouseout='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.returnButtonOut()' onclick='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.returnButtonHandler()' class='navigatorToolReturn'></span>
+	      </div>
+	      <div class='navigatorMinimizeBody'>
+	      <div class='navagatorBodyDiv' style='float:left;'>
+	      <span class='navagatorBodyFont' onclick='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.previewStep()'>上一步</span>
+	      </div>
+          <div class='navagatorBodyDiv' style='float:right;'>
+	      <span class='navagatorBodyFont' onclick='secospace.visitorMgr.visitorConfigureMinimizeWinUtil.nextStep()'>下一步</span>
+	      </div>
+	      </div>
+      </div>
+  </body>
+</html>
