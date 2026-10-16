@@ -313,3 +313,4 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **同轮 0 命中**：58.56.89.22:8443（济南）、58.251.76.205:8888（深圳联通网络）、123.7.85.16:8443、123.184.79.250:10000 六个候选口令全 miss；218.95.67.13:31945 无 hashcode（非登录页/已改路径）、223.87.98.4:31942 超时。
 - **已归档**：`vulns/弱密钥/宁波电信承载_华为AgileController-Campus网管_弱口令/` + `vulns/弱密钥/成都电信宽带承载_.../`（report-zh/en + audit-findings + STATUS + evidence 登录页/index页/成功响应 + poc/verify_agile_weakpwd.py 只读版）。
 - **教训**：运营商 IP≠运营商系统，宽带动态池 PTR（broad.*.dynamic）是客户自建的铁证；先查 PTR 再谈报送。池子还有 ~13 页可翻（FOFA url page=2..）。
+- **10-16 深夜补轮**：4 台响应目标追加 5 个候选（Changeme123/ChangeMe_123/Admin123/esight/eSight@123）全 miss，每目标累计 11 口令，该切片榨干。**FOFA 浏览器登录态已失效**（导航显示「登录」，直链报 Cannot read properties of undefined），翻页需用户在 Chrome 重新登录 en.fofa.info（标签「zh indifference」）后再续。
