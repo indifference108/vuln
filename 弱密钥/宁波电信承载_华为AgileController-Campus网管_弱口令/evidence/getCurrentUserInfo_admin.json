@@ -1,0 +1,26 @@
+{
+ "data": {
+  "account": "admin",
+  "allowIpAddress": null,
+  "allowIpv6Address": null,
+  "email": "",
+  "hasPermission": false,
+  "isAdmin": 1,
+  "loginPwdModify": 0,
+  "mobileTelephone": "",
+  "onlineLimit": 10,
+  "remark": "",
+  "roleNames": null,
+  "source": null,
+  "status": 1,
+  "templateId": null,
+  "templateName": null,
+  "userID": "1",
+  "userName": "admin"
+ },
+ "message": null,
+ "sessionTimeOut": false,
+ "success": true,
+ "token": null,
+ "total": 0
+}
