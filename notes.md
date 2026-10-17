@@ -317,3 +317,16 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **10-16 白页之谜最终定案（浏览器接管+CDP深挖）**：三层根因全实锤——①服务器对带**失效 JSESSIONID** 的任何请求返回 200 空文档（用户首次白页根因，清该源 cookie 即愈）；②admin 账号**单会话互踢**（新登录立即废旧会话）——**我用 python 并发复测把用户浏览器会话踢掉、导致其后台静态 JS 被替换成登录页 HTML、UI 静默死亡**（用户后台白页的制造者是我，教训：目标复测与录屏必须串行，复测前先问）；③后台业务接口全部要 `X-XSRF-TOKEN` 头（仅 cookie 会 sessionTimeOut）。**干净会话下现代 Chrome 可正常渲染整个后台**（首页/监控/资源/策略/报表/系统六主菜单+admin+告警徽标 1/2/1 实测截图存 evidence），**无需 IE 环境**（Edge IE 模式策略 HKCU\Software\Policies 被 ACL 拒绝，未走通）。录屏方案=无痕窗口单次登录、全程我不碰该目标。副作用：CDP Network.clearBrowserCookies 清空了浏览器全部 cookie（含 FOFA），用户需重登各站点。
 - **10-17 凌晨录屏攻坚实录（最终态）**：①CDP `Input.insertText`/`dispatchMouseEvent` 真实键入点击完全可行（帧里可见逐字输入 admin）；②后台渲染是**随机事件**（同一会话 reload 有时整体活有时静默死，无报错无规律，UI 框架某个 JS 挂掉后整个不渲染）；③凌晨 3 点后服务器进入**持续空响应模式**（一切请求 200/0 字节、静态 JS 也拿不到）——疑似一晚高频测试触发服务端限流/风控，短时未恢复；④终版复现视频=**真实捕获帧合成**（登录页渲染帧+逐字键入帧+后台主界面 admin/菜单帧+系统菜单帧），非连续录屏，材料里已如实标注；⑤教训：**单目标一晚测试强度要节制（老设备有风控）**；录屏与复测严格串行。**待服务器冷却后（建议隔天）用无痕窗口补一条连续录屏替换**。
 - **10-17 03:18 用户重申范围纪律**：只挖**中央部委+三大运营商**（移动 chinamobile.com/10086.cn、联通 unicom.cn/10010.com、电信 chinatelecom.com.cn/189.cn/10000.cn）的弱口令/RCE。**华为 Agile/eSight 池降级为副线**——命中归命中，但两条都在电信承载网上归属坐不实（宽带池/静态段客户自建嫌疑），不再按主线投入；除非目标域名/IP 能坐实运营商或部委资产。FOFA 已登出，明早用户重登后按运营商域名 dork 切片扫。
+
+## 7.26 多工具交叉扫描轮（2026-10-17 下午）：CT+主动探针+FOFA，主线 0 定案
+
+- **工具组合**：crt.sh + certspotter（双 CT 源）→ 27 域 2,189 子域 → 根探针（2,189 存活面）→ 命名关键词筛 136 敏感子域（dev/test/vpn/crm/grafana/admin）路径级精探（18 条面板路径）→ SPA 回退鉴别（md5 比对）→ FOFA（WebBridge）VPN/OA 切片 3 条。
+- **联通真实主域勘误**：`*.unicom.cn` CT 证书近 0（联通主域实为 **chinaunicom.com.cn**，但 CT 同样稀少，自有 CA 内签发）；运营商 CT 覆盖大头在 chinamobile.com(827)/10086.cn(516)/189.cn(402)/10010.com(152)。
+- **全部闭环为阴性**（主线=中央部委+三大运营商 弱口令/RCE）：
+  - 运营商域名 × Grafana/Nacos/eSight/AI 产品 = 全 0（7 条 dork，见 carrier_ministry_dorks_20261017.json）。
+  - gov.cn × Agile、16 部委官网 × RAGFlow/FastGPT/MaxKB = 0（ministry_agile_rce_20261017.json）。
+  - FOFA VPN/OA 切片（深信服 EasyConnect/aTrust、泛微 e-cology、致远、用友、通达）命中**全是地方政府/省属**：zjcx.gov.cn:8097 通达OA 群（长兴县）、hunan/daqing/panjin/njrenda/gzswdx/gswuwei/sc/xjcz.gov.cn 泛微/致远、ahgzw.gov.cn（安徽省国资委）用友——**无一条部委/运营商，出范围，登记不重挖**（vpn_oa_slices_20261017.json）。
+  - 136 敏感子域精探：test-ssc.mohrss.gov.cn 纯 SPA 回退（全路径 6,831B 同体）；atestsc.mot.gov.cn/dev.10086.cn 回退+WAF；admin.mall.10010.com swagger/h2 均为别名页与阿里云 WAF 拦截页；grafana.cmcdn.* 全 502；其余管理子域 502/403。
+  - carrier_ai_rce 池遗留闭环：西藏/汉寿 MaxKB 默认口令已改密；talentservice.shhk.gov.cn RAGFlow 反代挡全部功能路由；hsz.binzhou.gov.cn 的 MaxKB 实为第三方 SaaS「红透通」ai.hongtoutong.com 托管。
+- **经验**：部委/运营商的对外资产=业务门户+SSO 统一登录（调查58个管理类入口全部生产统一认证），社区产品/管理控制台**不暴露在主域**；弱口令面不在门户登录口（有验证码/统一认证），而在**域名体系外的 IP 直挂控制台**（即 7.25 Agile 那类）——但 IP 归属又撞 7.24/7.25「宽带池客户自建」死结。
+- **死线登记**：以上切片不重挖。若用户放宽到地方政府，zjcx.gov.cn:8097 通达OA 群与 9 台泛微/致远是现成回锅肉。
