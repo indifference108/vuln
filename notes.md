@@ -333,3 +333,10 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **10-17 傍晚 cert 归属轮补记（10 dork 全阴）**：FOFA `cert=` 按运营商证书 O 字段反查叠产品指纹——控制台 12 联（Grafana/Nacos/Jenkins/Swagger/Druid/Solr/MongoExpress/RedisInsight/RabbitMQ/Kibana/Harbor/SonarQube）仅 3 IP（51.85.9.103/3.137.215.166/51.85.32.195，全境外云，仅 1 个 502 响应，FOFA 快照存疑）；eSight=0；AI 产品仅 183.47.242.116（sctel.com.cn 四川电信，现全端口 403 WAF）；VPN 仅 **211.137.206.49 = aTrust 2.0 build 27.0.0（telecomjs.com 江苏电信证书）**——资产登记，build 27.0.0 无公开未授权 RCE/弱口令，不报；by.gov.cn 出范围；Open WebUI/ct10000.com/chinaunicom.com.cn/wo.com.cn 全 0；堡垒机（JumpServer/Teleport/齐治/行云管家）×运营商证书=0。证据 cert_console/slices2/3/4_20261017.json。**运营商真资产的管理面收敛得很好，cert 路线穷尽。**
 - **10-17 夜 代码情报轮（grep.app，6 轮约 50 查询，0 可行动）**：域名+凭证词 regexp（距 60 内）全扫三大运营商+8 部委——命中全是噪声（go-libsecret 哈希、BERT tokenizer 的 10086 token 序号、WordPress 短代码）。唯二软情报：①smallfawn/QLScriptPublic `daily/chinaUnicom.py` 硬编码云南联通活动签名密钥（AES_KEY/SIGN_SALT，面向公开活动 API，非管理面）；②OpenList drivers/139 仅 API 地址无凭证。**grep.app 路线穷尽**。Bing/Gitee dork 待 WebBridge 扩展重连（用户浏览器已断开）后补。
 - **10-17 夜 补轮（Bing dork + aTrust CVE 核查）**：①Bing cn 版搜索算子全失效（site:/inurl: 被当普通词），dork 路线弃；②aTrust 27.0.0（211.137.206.49 江苏电信）核查深信服公告+aTrust CVE 史——服务端公开漏洞仅 SSL VPN SSRF（老 M 系列）、aTrust 公开 CVE 均为客户端本地提权/DLL 劫持，**服务端 build 27.0.0 无未授权 RCE**，维持登记不报。
+
+## 7.27 宁波 Agile 归属定案：宁波嘉菲环保设备自建，非电信资产（2026-10-17 夜）
+
+- **RDAP 铁证**：183.136.145.78 所在 /30（183.136.145.76-79）APNIC 注册名 **NINGBO-ZH-JIAFEI-ENVIRONMENTAL**，descr=**Ningbo Jiafei Environmental Protection Equipment Co.,LTD（宁波嘉菲环保设备有限公司）**，联系人 CN13-AP/XY3064-AP（CHINANET-ZJ 浙江电信代管注册）。PTR 无；证书 O=Huawei 产品默认证书无归属信息；同 IP 8443 同族华为网管页、23 端口开。
+- **结论**：与 7.24 山西联通/7.25 成都同款——**政企专线客户自建**，电信仅线路商。主线（运营商/部委）出局，案例已改名 `宁波嘉菲环保设备_华为AgileController-Campus网管_弱口令`（本地+repo 同步）。
+- **副线价值**：目标为有工商实体的民营公司（华为 NAC 准入网管 admin/Huawei@123 实锤、root 级管理面），形态与已报送的智学客教育云（19 高校同后端）一致——若用户放行，可按公司直报+CNVD 流程出材料。
+- 证据：`scan/attribution_ningbo_20261017.json`。轻触原则遵守（RDAP+单次证书+16 端口 connect+1 次 8443 GET）。
