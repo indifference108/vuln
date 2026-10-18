@@ -388,3 +388,15 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **踩坑**：① open-webui pip 包超 300s 超时需分批续装（pip 缓存增量）；② litellm 启动崩于 httpx 解析环境变量 `NO_PROXY=...[::1]`（Invalid port ':1]'）——**启动脚本必须清空 HTTP(S)_PROXY/NO_PROXY 全套代理变量**；③ 新版 litellm 无 `__version__` 属性，`pip show` 查版本。
 - Dify 无 docker 全量不可行：源码审计+单元测试模式作为验证闭环替代。
 - 用途：0day 挖→验闭环（黑盒复现 + 修补绕过验证），59822 修复版行为对照。
+
+## 7.34 域名限定矿池 + 40351 域名目标复验（2026-10-19）
+
+- **新标准（用户钦定 10-19）**：CVE 只挖 0day；国内目标必须 CNVD 认可单位（edu.cn/gov.cn/运营商域名可坐实），**纯 IP 云主机不报**（59822 阿里云案因此降级归档）。59822 材料保留备查。
+- **矿池**（FOFA `body=产品 && host=edu.cn/gov.cn`，12 组切片，证据 `scan/fofa_pool/ai_infra_domain_slices_20261019.json` + 指纹 `ai_domain_fp_20261019.json`）：
+  - FastGPT gov 9（武汉自规局 9001、连云港人大 4、南平 qyfw:8089、安陆 msjx:3002、nbkoyo 伪冒剔除）、edu 72
+  - Dify gov 46 / edu 156；Open WebUI edu 25；Langflow edu 22；LiteLLM edu 21；RAGFlow：北大 aic-rag、上海虹口:9443、舟山人大:81
+  - 大量误报（门户页 body 含关键词）：指纹必须用 title+API 格式双重确认
+- **40351 复验结果**（`fastgpt_40351_domain_verify_20261019.json`）：
+  - **命中 3**：南平 qyfw.xzfw.np.gov.cn:8089（root 登录成功，同单位新入口）、安陆 msjx.anlu.gov.cn:3002（root，原入口复发）、**武汉自规局 9001 双域名回归**（zfxxgk+ai，10-12 疑似修复→10-19 复通，修复无效）
+  - 排除：连云港（白名单网络不可达不重挖）、fei.chinaedu（PHP 应用误报）、gxgsxy（code 600 无法区分）、aufe/nbkoyo（非 FastGPT API）
+- **教训**：① requests 自动读系统代理环境变量（HTTP_PROXY=7897），政府/教育目标会因此假超时——**会话必须 `trust_env=False` 或显式 proxies**；② FastGPT 判定以登录接口 JSON 格式（code/statusText/data.token）为准，门户页误报多。
