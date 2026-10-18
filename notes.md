@@ -379,3 +379,12 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **材料**：`vulns/RCE/阿里云北京ECS_LiteLLM_MCP未授权访问_CVE-2026-59822/`（report-zh/en + audit-findings + STATUS + poc + evidence 七步原文）。**待用户录屏**（无痕窗口跑 `poc/check_cve_2026_59822.py` + /v1/models）。
 - **同轮副产（储备）**：① 8.138.131.119:9000（阿里云）LiteLLM **默认 master key sk-1234 未改**——无 key 401 vs 带 sk-1234 400 no_db 认证差异实锤，db 未连接暂无法扩大；② 103.210.236.75:9000 MCP 端点全 500（半瘫，非 59822 面）。
 - **教训**：FOFA 提取结果页 URL 时 `slice(0,90)` 会把 qbase64 截断成 Params Error——存 URL 必须完整；国内 IP requests 走代理 7897 不可靠（大量假失联），**国内目标一律直连**；LiteLLM `/get/litellm_version` 不存在时落到 UI catch-all 返回 HTML 200，**判版本命中必须验证 JSON**。
+
+## 7.33 本地 0day 验证靶场部署（2026-10-19 凌晨）
+
+- 本机无 docker（AutoCVE/Dify 全量部署受限）。改 pip 源码部署：
+- **Open WebUI**：venv `E:\kimi\venvs\openwebui`，`pip install open-webui`，跑于 `127.0.0.1:8181`（启动脚本 `start-owui.bat`，DATA_DIR 在 venv 内）。
+- **LiteLLM 1.106.0**：venv `E:\kimi\venvs\litellm`，`pip install "litellm[proxy]"`，跑于 `127.0.0.1:8400`（`proxy-config.yaml`：mock 模型 + master_key=sk-testmaster123；启动脚本 `start-litellm.bat`）。
+- **踩坑**：① open-webui pip 包超 300s 超时需分批续装（pip 缓存增量）；② litellm 启动崩于 httpx 解析环境变量 `NO_PROXY=...[::1]`（Invalid port ':1]'）——**启动脚本必须清空 HTTP(S)_PROXY/NO_PROXY 全套代理变量**；③ 新版 litellm 无 `__version__` 属性，`pip show` 查版本。
+- Dify 无 docker 全量不可行：源码审计+单元测试模式作为验证闭环替代。
+- 用途：0day 挖→验闭环（黑盒复现 + 修补绕过验证），59822 修复版行为对照。
