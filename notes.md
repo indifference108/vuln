@@ -370,3 +370,12 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **AutoCVE（larlarua/AutoCVE，1.2k★）**：已克隆 `repos/autocve`——Agent 驱动 CVE 挖掘平台（筛项目→审源码→验漏洞→出报告）。本机无 docker，全量部署待 docker+LLM key；已把它的 4 个审计 Agent（code-audit-finding/code-security/cve-report-writer/secknowledge）和报告模板库集成到 `tools/autocve_*`，可直接用于我们的报告流程。
 - **vulndb**：cve-search 需 MongoDB+Redis 过重，自建轻量版 `tools/vulndb/vulndb.py`（SQLite）：`kev` 同步 CISA 已知被利用目录（1748 条，2026.10.16 版）、`kevfind`/`search` 查产品漏洞。优先 Nday 选目标从此起步。
 - **Serv-U 15.1 @117.158.73.46:81 Nday 验证（失败归档）**：KEV 在册 4 条（2021-35211 SSH RCE/2024-28995 遍历/2021-35247/2026-28318）。22 端口关 → 35211 无面；按 bigb0x 公开 PoC 验 2024-28995（`/?InternalDir=../../../../Windows/&InternalFile=win.ini` 等 5 变体）全部回 ErrorCode 6「file does not exist」——**Web Client 文件预览特性未认证会话下不可用，无法确认**，无凭证不爆破，登记不重挖。
+
+## 7.32 Langflow 9198 灭线 + LiteLLM 59822 定案（2026-10-19 凌晨）
+
+- **主线选择**：按 KEV Nday 路线，先 Langflow CVE-2026-9198（auto_login 铸造 superuser token + validate/code exec，1.0.0-1.10.0）。
+- **Langflow 线（灭）**：FOFA `body="Langflow" && country="CN"` 按 7860/8080/3000/80/9000 五端口切片，33 候选。唯一版本命中 39.107.240.252（Langflow **0.2.7**，阿里云北京）——不在 9198 范围（理论可试 CVE-2025-3248），但 `/api/v1/validate/code` 一碰即 500/502（nginx 层，后端 worker 反复崩，0.1s 一致返回与 payload 无关）= **不可验，死线**。222.213.23.164:8080 持续 502 失联、microware1985.cn 443 不通。其余候选全为博客/安全产品/Docker API 等误报。证据 `scan/fofa_pool/langflow_9198_*.json`。**Langflow 线收掉。**
+- **LiteLLM 线（定案 ✅）**：FOFA `body="litellm" && country="CN"` 四端口切片，40 候选 → 12 个确认实例（/ui/ + /v1/models 401 LiteLLM 错误格式双特征）。**39.97.163.91:9000（阿里云 ECS 北京，模型 id audit/haiyue-fin 指向金融审计业务）确认 CVE-2026-59822**：伪造 `Authorization: Bearer oauth2-fake-canary` 打 `/mcp/`，initialize 200 SSE 回显 serverInfo=litellm-mcp-server 1.0.0，session→notifications 202→tools/prompts/resources list 全 200 = **未授权 MCP 握手完整打通**（KEV 在册，Wiz 蜜罐有在野利用观察）。修复版对照（北京移动 120.253.243.61:8080）同请求 401。附带同机 `/v1/models` 未授权 200（模型清单泄露）。
+- **材料**：`vulns/RCE/阿里云北京ECS_LiteLLM_MCP未授权访问_CVE-2026-59822/`（report-zh/en + audit-findings + STATUS + poc + evidence 七步原文）。**待用户录屏**（无痕窗口跑 `poc/check_cve_2026_59822.py` + /v1/models）。
+- **同轮副产（储备）**：① 8.138.131.119:9000（阿里云）LiteLLM **默认 master key sk-1234 未改**——无 key 401 vs 带 sk-1234 400 no_db 认证差异实锤，db 未连接暂无法扩大；② 103.210.236.75:9000 MCP 端点全 500（半瘫，非 59822 面）。
+- **教训**：FOFA 提取结果页 URL 时 `slice(0,90)` 会把 qbase64 截断成 Params Error——存 URL 必须完整；国内 IP requests 走代理 7897 不可靠（大量假失联），**国内目标一律直连**；LiteLLM `/get/litellm_version` 不存在时落到 UI catch-all 返回 HTML 200，**判版本命中必须验证 JSON**。

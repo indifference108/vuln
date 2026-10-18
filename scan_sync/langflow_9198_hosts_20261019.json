@@ -1,0 +1,65 @@
+{
+ "langflow_p7860": {
+  "hosts": [
+   "bigbelly.myds.me:7860",
+   "jensmac.ddns.net:7860",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iTGFuZ2Zsb3ciICYmIGNvdW50cnk9IkNOIiAmJiBwb3J0PSI3ODYwIg=="
+ },
+ "langflow_p8080": {
+  "hosts": [
+   "119.28.24.78:8080",
+   "129.204.230.209:8080",
+   "222.213.23.164:8080",
+   "121.41.3.33:8080",
+   "106.12.30.116:8080",
+   "2.nasicon.top:8080",
+   "18.163.189.48:8080",
+   "8.140.203.222:8080",
+   "agent-flow.quchiai.com:8080",
+   "111.229.156.173:8080",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iTGFuZ2Zsb3ciICYmIGNvdW50cnk9IkNOIiAmJiBwb3J0PSI4MDgwIg=="
+ },
+ "langflow_p3000": {
+  "hosts": [
+   "114.55.60.174:3000",
+   "117.21.56.24:3000",
+   "121.36.205.70:3000",
+   "18.162.60.181:3000",
+   "54.46.6.234:3000",
+   "95.40.116.179:3000",
+   "wenshu.chenxiaoshivivid.top:3000",
+   "flowise.chenxiaoshivivid.top:3000",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iTGFuZ2Zsb3ciICYmIGNvdW50cnk9IkNOIiAmJiBwb3J0PSIzMDAwIg=="
+ },
+ "langflow_p80": {
+  "hosts": [
+   "39.106.47.70",
+   "www.ihonker.com",
+   "www.ra0.cn",
+   "www.rhypjs.com",
+   "m.rhypjs.com",
+   "rhypjs.com",
+   "101.200.1.184",
+   "43.143.231.106",
+   "39.107.240.252",
+   "1.13.246.81",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iTGFuZ2Zsb3ciICYmIGNvdW50cnk9IkNOIiAmJiBwb3J0PSI4MCI="
+ },
+ "langflow_p9000": {
+  "hosts": [
+   "113.45.36.20:9000",
+   "1.94.4.170:9000",
+   "113.46.146.208:9000",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iTGFuZ2Zsb3ciICYmIGNvdW50cnk9IkNOIiAmJiBwb3J0PSI5MDAwIg=="
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "litellm_p7860": {
+  "hosts": [
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0ibGl0ZWxsbSIgJiYgY291bnRyeT0iQ04iICYmIHBvcnQ9Ijc4NjAi"
+ },
+ "litellm_p8080": {
+  "hosts": [
+   "47.93.116.125:8080",
+   "103.43.86.57:8080",
+   "47.92.218.29:8080",
+   "120.253.243.61:8080",
+   "43.129.186.15:8080",
+   "43.198.100.205:8080",
+   "124.221.145.179:8080",
+   "103.108.67.75:8080",
+   "120.53.24.252:8080",
+   "18.167.116.85:8080",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0ibGl0ZWxsbSIgJiYgY291bnRyeT0iQ04iICYmIHBvcnQ9IjgwODAi"
+ },
+ "litellm_p3000": {
+  "hosts": [
+   "115.211.157.65:3000",
+   "125.228.229.127:3000",
+   "106.12.185.76:3000",
+   "124.222.76.67:3000",
+   "82.157.113.33:3000",
+   "114.55.5.23:3000",
+   "8.153.89.200:3000",
+   "8.148.180.20:3000",
+   "111.161.65.106:3000",
+   "117.73.4.83:3000",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0ibGl0ZWxsbSIgJiYgY291bnRyeT0iQ04iICYmIHBvcnQ9IjMwMDAi"
+ },
+ "litellm_p80": {
+  "hosts": [
+   "129.211.163.85",
+   "8.130.189.124",
+   "116.62.210.45",
+   "119.3.185.42",
+   "nic.jxufe.edu.cn",
+   "47.102.85.76",
+   "82.157.193.186",
+   "139.196.12.113",
+   "151.240.28.4",
+   "101.36.121.243",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0ibGl0ZWxsbSIgJiYgY291bnRyeT0iQ04iICYmIHBvcnQ9IjgwIg=="
+ },
+ "litellm_p9000": {
+  "hosts": [
+   "43.143.225.231:9000",
+   "106.14.38.125:9000",
+   "218.77.58.42:9000",
+   "8.138.131.119:9000",
+   "129.226.180.61:9000",
+   "103.210.236.75:9000",
+   "106.53.123.96:9000",
+   "192.144.164.215:9000",
+   "39.97.163.91:9000",
+   "120.24.232.231:9000",
+   "x.com"
+  ],
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0ibGl0ZWxsbSIgJiYgY291bnRyeT0iQ04iICYmIHBvcnQ9IjkwMDAi"
+ }
+}
