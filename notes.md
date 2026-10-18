@@ -363,3 +363,10 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **归属判断**：同 7.24 模式——移动政企专线汇聚段，承载方城县政务客户资产，非移动自有系统。但属**移动承载的政府视频专网**，若日后发现弱口令/未授权，事件型报移动或报方城县政务都可说通。
 - 证据 `scan/fofa_pool/cmnet11715870_scan/fp_20261018.json`。
 - **10-18 /20 扩展扫描（117.158.64.0/20）**：以方城段为模板扫 16 个 /24 的 81/8000/554 三件套。37+80 个开放点，NVR 签名机（81+8000+554）共 16 台：方城段 8 台 + 新增 .66.98/.66.101/.71.252/.76.134/.76.137。**全部 admin/12345 单发 miss（401 已改密）**，/20 口径 0 命中。副产物：117.158.73.46:81 = Serv-U FTP v15.1（banner 确认，无匿名访问；版本低于 15.2.3.742，理论在 CVE-2021-35211 影响范围但验证需武器化利用，出范围登记）；117.158.69.240:81 = 「身份认证系统」门户页（网关拦截态，非产品登录口）。证据 `scan/fofa_pool/cmnet117158_*.json`。**CMNET 河南段海康默认口令面榨干，不重挖。**
+
+## 7.31 工具链部署 + Serv-U Nday 验证实录（2026-10-18 夜）
+
+- **文档整理**：新增 `E:\kimi\INDEX.md` 项目索引（目录地图/工具速查/主线纪律/回锅资产清单）。
+- **AutoCVE（larlarua/AutoCVE，1.2k★）**：已克隆 `repos/autocve`——Agent 驱动 CVE 挖掘平台（筛项目→审源码→验漏洞→出报告）。本机无 docker，全量部署待 docker+LLM key；已把它的 4 个审计 Agent（code-audit-finding/code-security/cve-report-writer/secknowledge）和报告模板库集成到 `tools/autocve_*`，可直接用于我们的报告流程。
+- **vulndb**：cve-search 需 MongoDB+Redis 过重，自建轻量版 `tools/vulndb/vulndb.py`（SQLite）：`kev` 同步 CISA 已知被利用目录（1748 条，2026.10.16 版）、`kevfind`/`search` 查产品漏洞。优先 Nday 选目标从此起步。
+- **Serv-U 15.1 @117.158.73.46:81 Nday 验证（失败归档）**：KEV 在册 4 条（2021-35211 SSH RCE/2024-28995 遍历/2021-35247/2026-28318）。22 端口关 → 35211 无面；按 bigb0x 公开 PoC 验 2024-28995（`/?InternalDir=../../../../Windows/&InternalFile=win.ini` 等 5 变体）全部回 ErrorCode 6「file does not exist」——**Web Client 文件预览特性未认证会话下不可用，无法确认**，无凭证不爆破，登记不重挖。
