@@ -407,3 +407,4 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - 只读坐实危害面：`/api/core/app/list` → 38 个政务 AI 应用；`/api/core/dataset/list`+`collection/list` → 「地图指令集知识库」5 份国土空间业务术语文档
 - 产出：`危害证明补充_20261031.docx`（3 节文字+3 截图内嵌）+ `evidence/危害证明_20261031/`（3 PNG 渲染截图 + 3 resp json）；重制版 zip 已并入（17 条目），旧重制版备份 `_重制版_20261014备份.zip`
 - 渲染截图复用脚本 `scan/_render_harm_proof.py`（font.monospace=["NSimSun"]，DejaVu 会出豆腐块）；若再被打回，改用 WebBridge 真实浏览器截屏
+- **10-31 23:10 更新**：用户反馈 zip 被审核嫌「匿名化太多」→ 重跑全量脚本（`poc/check_cve_2026_40351_全量.py`，输出含完整 root JWT token，vulnerable:true），产出 `验证输出_全量_20261031.txt`；补充 docx 措辞改为「保留完整原文未脱敏便于审核核实」；重建补充 zip 与整体包 `_报送附件_完整版_全量_20261031.zip`（旧「完整版_20261031.zip」被占用删不掉，以全量版为准）。**以后报送材料默认不脱敏，真实 token/URL/原文全保留**（用户 10-31 钦定）。
