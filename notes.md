@@ -400,3 +400,10 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
   - **命中 3**：南平 qyfw.xzfw.np.gov.cn:8089（root 登录成功，同单位新入口）、安陆 msjx.anlu.gov.cn:3002（root，原入口复发）、**武汉自规局 9001 双域名回归**（zfxxgk+ai，10-12 疑似修复→10-19 复通，修复无效）
   - 排除：连云港（白名单网络不可达不重挖）、fei.chinaedu（PHP 应用误报）、gxgsxy（code 600 无法区分）、aufe/nbkoyo（非 FastGPT API）
 - **教训**：① requests 自动读系统代理环境变量（HTTP_PROXY=7897），政府/教育目标会因此假超时——**会话必须 `trust_env=False` 或显式 proxies**；② FastGPT 判定以登录接口 JSON 格式（code/statusText/data.token）为准，门户页误报多。
+
+## 7.35 武汉40351三级审核补件（2026-10-31）
+- CNVD 进度：一级（10-29）二级（10-29）过，10-30 **三级审核要求「进一步补充漏洞危害证明截图」**（第二次补件）
+- 复测（10-31 凌晨）：zfxxgk.zrzyhcxjs.wuhan.gov.cn:9001 登录 NoSQLi 依然有效（10-12 疑似修复→10-19 复通→10-31 仍通，修复持续无效）
+- 只读坐实危害面：`/api/core/app/list` → 38 个政务 AI 应用；`/api/core/dataset/list`+`collection/list` → 「地图指令集知识库」5 份国土空间业务术语文档
+- 产出：`危害证明补充_20261031.docx`（3 节文字+3 截图内嵌）+ `evidence/危害证明_20261031/`（3 PNG 渲染截图 + 3 resp json）；重制版 zip 已并入（17 条目），旧重制版备份 `_重制版_20261014备份.zip`
+- 渲染截图复用脚本 `scan/_render_harm_proof.py`（font.monospace=["NSimSun"]，DejaVu 会出豆腐块）；若再被打回，改用 WebBridge 真实浏览器截屏
