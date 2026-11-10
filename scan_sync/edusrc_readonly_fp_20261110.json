@@ -937,9 +937,21 @@
    }
   ],
   "hit": false,
-  "why": "撤销：Grafana 6.x 不在 CVE-2021-43798（仅 8.0.0-beta1~8.3.0）影响范围，版本老不等于命中",
+  "why": "撤销误挂的 CVE-2021-43798（仅 8.0.0-beta1~8.3.0）；但 6.4.4 落在 CVE-2020-13379（3.0.1~7.0.1，修复 6.7.4，CVSS 8.2 未授权 SSRF）范围内 = 待验证 N-day 活线索",
   "status": 200,
-  "title": ""
+  "title": "",
+  "nday_lead": {
+   "cve": "CVE-2020-13379",
+   "affected": "3.0.1-7.0.1",
+   "fixed": "6.7.4 / 7.0.2",
+   "cvss": "8.2 High",
+   "status": "未验证（需自建金丝雀，本轮只读边界外）"
+  },
+  "same_instance_group": [
+   "gdcpic.stu.edu.cn:3000",
+   "gdc.stu.edu.cn:3000",
+   "gdcs.stu.edu.cn:3000"
+  ]
  },
  "grafana|gdc.stu.edu.cn:3000": {
   "group": "grafana",
@@ -955,9 +967,21 @@
    }
   ],
   "hit": false,
-  "why": "",
+  "why": "撤销误挂的 CVE-2021-43798（仅 8.0.0-beta1~8.3.0）；但 6.4.4 落在 CVE-2020-13379（3.0.1~7.0.1，修复 6.7.4，CVSS 8.2 未授权 SSRF）范围内 = 待验证 N-day 活线索",
   "status": 200,
-  "title": ""
+  "title": "",
+  "nday_lead": {
+   "cve": "CVE-2020-13379",
+   "affected": "3.0.1-7.0.1",
+   "fixed": "6.7.4 / 7.0.2",
+   "cvss": "8.2 High",
+   "status": "未验证（需自建金丝雀，本轮只读边界外）"
+  },
+  "same_instance_group": [
+   "gdcpic.stu.edu.cn:3000",
+   "gdc.stu.edu.cn:3000",
+   "gdcs.stu.edu.cn:3000"
+  ]
  },
  "grafana|gdcs.stu.edu.cn:3000": {
   "group": "grafana",
@@ -973,9 +997,21 @@
    }
   ],
   "hit": false,
-  "why": "",
+  "why": "撤销误挂的 CVE-2021-43798（仅 8.0.0-beta1~8.3.0）；但 6.4.4 落在 CVE-2020-13379（3.0.1~7.0.1，修复 6.7.4，CVSS 8.2 未授权 SSRF）范围内 = 待验证 N-day 活线索",
   "status": 200,
-  "title": ""
+  "title": "",
+  "nday_lead": {
+   "cve": "CVE-2020-13379",
+   "affected": "3.0.1-7.0.1",
+   "fixed": "6.7.4 / 7.0.2",
+   "cvss": "8.2 High",
+   "status": "未验证（需自建金丝雀，本轮只读边界外）"
+  },
+  "same_instance_group": [
+   "gdcpic.stu.edu.cn:3000",
+   "gdc.stu.edu.cn:3000",
+   "gdcs.stu.edu.cn:3000"
+  ]
  },
  "tomcat|www2.whou.edu.cn": {
   "group": "tomcat",

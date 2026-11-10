@@ -476,9 +476,11 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
   - R2-OA/中间件：ThinkPHP 287 / Exchange 4,215 / 若依 197 / 泛微 e-cology 加载失败 / 通达OA 137 / 致远 10,341
   - R2-弱口令面：JumpServer 15 / APISIX 1,843 / DVRDVS-Webs 0 / Kibana 0 / phpMyAdmin 6 / Swagger UI 若干
 - **只读验证**：129 个候选，只发 GET、不执行 payload、不读 env/heapdump/配置内容、不爆破；国内目标 `trust_env=False` 直连，限速 1.2s。证据 `edusrc_readonly_fp_20261110.json`（82 条）+ `edusrc_r2_fp_20261110.json`（47 条）。
-- **结果：0 确证洞**。两条命中经复核**撤销**：
-  1. `tyzf.aku.edu.cn:8084` `/actuator` 200 且 `Content-Type: application/vnd.spring-boot.actuator.v3+json`，但 `_links` 只有 `self/health/health-path` —— Spring Boot 默认暴露，无 env/heapdump/mappings，**不是洞**。
-  2. `gdcpic.stu.edu.cn:3000` Grafana 6.4.4 —— **CVE-2021-43798 仅影响 8.0.0-beta1～8.3.0**，6.x 不在范围；「版本老」≠「N-day 命中」，已撤销并把判定写死为 `v.startswith("8.")`。
+- **结果：0 确证洞（但保留 1 条活线索，见下）**。两条初判命中复核后分别处置：
+  1. `tyzf.aku.edu.cn:8084` `/actuator` 200 且 `Content-Type: application/vnd.spring-boot.actuator.v3+json`，但 `_links` 只有 `self/health/health-path` —— Spring Boot 默认 `management.endpoints.web.exposure.include=health`，无 env/heapdump/mappings/configprops，**不是洞，撤销**。19:45 延长到 15s 复核：`/actuator` 稳定 200/261B 不变，`/actuator/health` 仍 ReadTimeout（HealthIndicator 阻塞的可用性现象，不是漏洞，也不是「health 被关」的证据）；根路径 404、返回标准 Spring Boot JSON 错误体。
+  2. `gdcpic.stu.edu.cn:3000`（及 `gdc` / `gdcs.stu.edu.cn:3000`，三者 `commit=092e514` 完全相同 = **同一实例三个入口**）`/api/health` 返回 `version 6.4.4`。**撤销的是误挂的 CVE-2021-43798**（官方 Grafana 公告：仅影响 `8.0.0-beta1～8.3.0`，修复 8.0.7/8.1.8/8.2.7/8.3.1，CVSS 7.5，CISA KEV 在册，6.x 确实不在范围）。
+     **但结论不应写成「死线」**：6.4.4 落在 **CVE-2020-13379**（Grafana avatar 功能未授权 SSRF，影响 **3.0.1～7.0.1**，修复 **6.7.4 / 7.0.2**，CVSS v3 **8.2 High**、无需认证、EPSS 高位）的范围内。这是一个**待验证的 N-day 高危线索**，不是已定案的洞：本轮只发只读 GET，而验证 SSRF 需要让目标服务器向自建金丝雀发起出站请求，超出「只读」边界且本机无公网回调端点，故未验证、未定案、未报送。
+     ⚠️ 注意 §7.20（10-14）已对「汕大 gdc 系」做过 **admin/admin 等默认口令轮，全 no_hit**；本轮是**版本型 N-day** 新维度，不是重复挖弱口令。
 - **本轮新死线（勿重挖）**：
   - GeoServer edu 10 条只有 `map.xjau.edu.cn` 是真实例（`GeoServer: Welcome`），但 `/geoserver/rest/about/version.json` 401、欢迎页不暴露版本号，无法落 CVE-2024-36401，不定案；`geolab.ucas` / `ifarm.xjau` 是门户页误报。
   - **Jenkins `/script` 全 302/404**、**JBoss `/jmx-console` 全 404**、**Tomcat `/manager/html` 全 401/403** —— 三条未授权 RCE 管理面在 edu.cn 全线关闭。
@@ -487,11 +489,11 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
   - ThinkPHP 287 / 致远 10,341 / APISIX 1,843 / 通达OA 137 / 若依 197：FOFA body 关键词误报率极高（多为门户页含词或 SPA 登录页），**必须 title+API 双重确认**；通达 OA 9 个可见域名里 5 个跳登录页、4 个是门户；若依 8 个里 6 个是登录/门户页。
   - JumpServer 8 个 edu.cn 堡垒机全部是登录页（SPA 前端，`type=password` 不在首屏 HTML，不能据此判「无登录」）；phpMyAdmin ustc 6 个端口全超时；Swagger UI 候选 7/9 超时或 404。
 - **教训（补进总纲）**：
-  1. **版本判定必须核对 CVE 影响范围的下界和上界**，只比「小于修复版」会把 6.x 误判成 8.x 的洞。
+  1. **版本判定必须核对 CVE 影响范围的下界和上界**，只比「小于修复版」会把 6.x 误判成 8.x 的洞；**更要紧的是：撤销「挂错的 CVE」不等于宣告资产无洞**——发现老版本时应先查该版本段对应的 CVE（6.4.4 → CVE-2020-13379 而非 43798），再决定是死线还是活线索。判定脚本已把 43798 写死为 `v.startswith("8.")`，但后续要补 6.x/7.x 的独立规则。
   2. `/actuator` 200 只是入口，定案要看 `_links` 是否含 env/heapdump/configprops 等敏感端点；且绝不请求这些端点的**内容**。
   3. WebBridge 恢复顺序：`list_browser_tabs` → 无 tab 则 `navigate` 建 tab → 登录墙/验证码直接停、交用户破；`list_tabs` 返回空不代表扩展掉线。
   4. 本机 `python` 默认解释器（WorkBuddy 3.13）**没有 requests**；跑扫描脚本统一用 `C:\Python312\python.exe`（requests 2.33.1）。
   5. 国内 edu 目标 `trust_env=False` 直连稳定；`https` 优先、显式端口 3000/8080/8082/8084/8980/58080/9000 等走 `http`。
 
-- **下一步方向（若继续）**：① 弱密钥线改走「设备类 edu.cn」（`body="ISAPI" && host="edu.cn"`、门禁/打印机管理页），Web 应用弱口令 CNVD 不发证（§7.28）；② 本轮 31 个切片只取了每 dork 第 1 页，可用 `&& port=` / `&& after=` 切片扩池；③ 单点深挖 `map.xjau.edu.cn` GeoServer 版本（需厂商公告/公开 build 信息，不打 WFS 利用面）。
+- **下一步方向（若继续）**：① **优先单点复核 `gdcpic/gdc/gdcs.stu.edu.cn:3000` 的 CVE-2020-13379**（需自建金丝雀承接 `/avatar/*` 出站请求，只读、不取真实数据，取证用于 edusrc/CNVD 报送）；② 弱密钥线改走「设备类 edu.cn」（`body="ISAPI" && host="edu.cn"`、门禁/打印机管理页），Web 应用弱口令 CNVD 不发证（§7.28）；③ 本轮 31 个切片只取了每 dork 第 1 页，可用 `&& port=` / `&& after=` 切片扩池；④ 单点深挖 `map.xjau.edu.cn` GeoServer 版本（需厂商公告/公开 build 信息，不打 WFS 利用面）。
 

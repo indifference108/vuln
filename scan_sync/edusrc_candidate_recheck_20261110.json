@@ -1,0 +1,52 @@
+{
+ "ts": "2026-11-10 19:45",
+ "scope": "两条候选复核（用户追问）",
+ "actuator": {
+  "target": "http://tyzf.aku.edu.cn:8084",
+  "actuator_200_stable": true,
+  "len": 261,
+  "links": [
+   "self",
+   "health",
+   "health-path"
+  ],
+  "health_timeout_15s": true,
+  "conclusion": "默认 exposure=health，无敏感端点；health 超时为 HealthIndicator 阻塞的可用性现象，非漏洞。撤销成立。"
+ },
+ "grafana": {
+  "targets": [
+   "gdcpic.stu.edu.cn:3000",
+   "gdc.stu.edu.cn:3000",
+   "gdcs.stu.edu.cn:3000"
+  ],
+  "version": "6.4.4",
+  "commit": "092e514",
+  "same_instance": true,
+  "cve_43798": {
+   "affected": "8.0.0-beta1~8.3.0",
+   "fixed": [
+    "8.0.7",
+    "8.1.8",
+    "8.2.7",
+    "8.3.1"
+   ],
+   "cvss": "7.5 High",
+   "verdict": "6.4.4 不在范围，撤销成立"
+  },
+  "cve_2020_13379": {
+   "affected": "3.0.1~7.0.1",
+   "fixed": [
+    "6.7.4",
+    "7.0.2"
+   ],
+   "cvss": "8.2 High",
+   "auth": "none",
+   "verdict": "6.4.4 在范围内 = 待验证 N-day 活线索，非死线"
+  },
+  "conclusion": "上一轮「撤销」动作正确但结论下重了；本轮未验证 SSRF（需目标向自建金丝雀出站，超出只读边界）"
+ },
+ "references": [
+  "https://grafana.com/blog/grafana-8-3-1-8-2-7-8-1-8-and-8-0-7-released-with-high-severity-security-fix/",
+  "https://grafana.com/blog/2020/06/03/grafana-6.7.4-and-7.0.2-released-with-important-security-fix/"
+ ]
+}
