@@ -1,0 +1,98 @@
+{
+ "ts": "2026-11-10 21:55:08",
+ "boundary": "只读 GET 公开公示附件；不落地/不输出真实学号或证件号；只给计数与掩码",
+ "items": [
+  {
+   "parse": "ok",
+   "text_len": 38238,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://xsc.lvu.edu.cn/",
+   "file": "98e4e247-4477-4a8c-8a7a-933af570284b.doc",
+   "url": "https://xsc.lvu.edu.cn/_upload/article/files/07/09/6aadfbf049c8b29e46af15017ddd/98e4e247-4477-4a8c-8a7a-933af570284b.doc",
+   "http": 200,
+   "bytes": 43520,
+   "ctype": "application/msword"
+  },
+  {
+   "parse": "ok",
+   "text_len": 2090,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [
+    "姓名"
+   ],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://xsc.lvu.edu.cn/",
+   "file": "634af86a-5504-4b51-acad-238e01d0204e.docx",
+   "url": "https://xsc.lvu.edu.cn/_upload/article/files/f7/68/a79ba0b24bab9f86d0a65e471050/634af86a-5504-4b51-acad-238e01d0204e.docx",
+   "http": 200,
+   "bytes": 19057,
+   "ctype": "application/vnd.openxmlformats-officedocument"
+  },
+  {
+   "parse": "ok",
+   "text_len": 2491,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://xsc.lvu.edu.cn/",
+   "file": "d6396bbb-f975-4fd7-835a-8d70297dfeaa.docx",
+   "url": "https://xsc.lvu.edu.cn/_upload/article/files/72/bf/8fcf6842447e8dca594c645fd017/d6396bbb-f975-4fd7-835a-8d70297dfeaa.docx",
+   "http": 200,
+   "bytes": 15918,
+   "ctype": "application/vnd.openxmlformats-officedocument"
+  },
+  {
+   "parse": "ok",
+   "text_len": 12,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://rs.whcp.edu.cn/",
+   "file": "8235bf4b-d2c4-4f11-ac06-04616c785849.pdf",
+   "url": "https://rs.whcp.edu.cn/_upload/article/files/28/61/33fad3aa4127ad59cc8ede6b9585/8235bf4b-d2c4-4f11-ac06-04616c785849.pdf",
+   "http": 200,
+   "bytes": 1331196,
+   "ctype": "application/pdf"
+  },
+  {
+   "parse": "ok",
+   "text_len": 8,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://rs.whcp.edu.cn/",
+   "file": "028abb5e-dc03-4bb7-a411-3da9f025e21d.pdf",
+   "url": "https://rs.whcp.edu.cn/_upload/article/files/96/87/290301664c7c81c0b85aef698e4a/028abb5e-dc03-4bb7-a411-3da9f025e21d.pdf",
+   "http": 200,
+   "bytes": 1152127,
+   "ctype": "application/pdf"
+  },
+  {
+   "parse": "ok",
+   "text_len": 6,
+   "digit_8_12_count": 0,
+   "student_id_like_count": 0,
+   "sample_masked": [],
+   "table_keywords": [],
+   "note": "仅输出计数与掩码，不落地任何真实号码",
+   "site": "https://rs.whcp.edu.cn/",
+   "file": "f2b07335-0daa-4f60-bd8f-4a4074907ffc.pdf",
+   "url": "https://rs.whcp.edu.cn/_upload/article/files/6e/1c/adf1a65144afb143c61f3c7fc63a/f2b07335-0daa-4f60-bd8f-4a4074907ffc.pdf",
+   "http": 200,
+   "bytes": 2002673,
+   "ctype": "application/pdf"
+  }
+ ]
+}
