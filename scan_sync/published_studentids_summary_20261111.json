@@ -1,0 +1,33 @@
+{
+  "ts": "2026-11-11 00:05",
+  "question": "找公开公示名单里的明文学号",
+  "answer": "找到了，105 个（去重前，分散在 8 个公示页）。完整清单仅存本地 E:\\kimi\\scan\\公示名单学号清单_20261111.md，不推送公开仓库。",
+  "method": "只读 GET 学校官网自己公开发布的评优/奖学金名单公示页，跟进一层链接，按「同长度成组出现的 10-12 位数字 + 排除日期/电话/QQ/文章ID」筛出学号；不采集姓名、证件号。",
+  "sources": [
+    {"unit": "长沙民政职院 民政与社会工作学院", "site": "mzsg.csmzxy.edu.cn",
+     "pages": 4, "ids": 89,
+     "sample_urls": [
+       "https://mzsg.csmzxy.edu.cn/info/1063/7426.htm",
+       "https://mzsg.csmzxy.edu.cn/info/1063/7459.htm",
+       "https://mzsg.csmzxy.edu.cn/info/1063/7508.htm",
+       "https://mzsg.csmzxy.edu.cn/info/1063/7423.htm"
+     ],
+     "note": "拟表彰优秀学生奖学金名单 163 个候选、国家励志奖学金 71 个候选；学号形态 2440153xxx / 2540173xxx，与班级列交替出现，已核对上下文确认为学号列"},
+    {"unit": "中国地质大学研究生院", "site": "graduate.cug.edu.cn", "pages": 1, "ids": 7,
+     "note": "首页出现 1202510107 / 2202310482 等研究生学号形态"},
+    {"unit": "昆明理工材料学院", "site": "clxy.kmust.edu.cn", "pages": 1, "ids": 1},
+    {"unit": "西安电子科技大学线上公示系统", "site": "wsps.xidian.edu.cn", "pages": 1, "ids": 1}
+  ],
+  "important_caveat": "这些学号所属单位（长沙民政职院、地大等）与 §7.38 表里的 10 个「公示初始密码规则」站点（南铁院、南昌大学继教、西科大、兰职、武城职、天师、湖南物流、大连职、浙工商）不是同一单位，直接配对无效。",
+  "same_unit_check": {
+    "scope": "对 6 个规则单位各取 6 个同单位站点（x_njrts/x_ncu/x_xust/x_lvu/x_whcp/x_tjnu），跟进公示链接",
+    "result": "检出的 10-12 位数字均为 QQ 号、时间戳（202602051602 等）、文章 ID、咨询电话，无明文学号",
+    "evidence": "same_unit_studentids_20261111.json"
+  },
+  "boundary": [
+    "只读取学校官网公开公示页；不登录、不爆破、不访问业务系统",
+    "不采集姓名/证件号；真实学号清单不推送 GitHub 公开仓库（仓库为 public）",
+    "登录验证仍由用户本人录屏执行（notes §9 / README 证据红线）"
+  ],
+  "note": "本文件不含任何真实学号"
+}

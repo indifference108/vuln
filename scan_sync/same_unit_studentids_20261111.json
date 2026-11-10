@@ -1,0 +1,256 @@
+{
+ "ts": "2026-11-11 00:03:09",
+ "boundary": "只 GET 公开公示页/附件；不登录、不爆破、不采集姓名/证件号；清单仅存本地不推公开仓库",
+ "units": [
+  {
+   "unit": "njrts",
+   "sites": [
+    {
+     "site": "https://txxh.njrts.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://jjy.njrts.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://tdys.njrts.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://zn.njrts.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://cgmh.njrts.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://www.njrts.edu.cn/",
+     "pages": []
+    }
+   ]
+  },
+  {
+   "unit": "ncu",
+   "sites": [
+    {
+     "site": "https://jy.ncu.edu.cn:8085/",
+     "pages": [],
+     "error": "SSLError:HTTPSConnectionPool(host='jy.ncu.edu.cn', port=8085): Max retries exce"
+    },
+    {
+     "site": "https://jy.ncu.edu.cn:8086/",
+     "pages": [],
+     "error": "SSLError:HTTPSConnectionPool(host='jy.ncu.edu.cn', port=8086): Max retries exce"
+    },
+    {
+     "site": "https://jxmu.ncu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://kjy.ncu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://rsc.ncu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://bms.ncu.edu.cn/",
+     "pages": [
+      {
+       "title": "(首页)",
+       "url": "https://bms.ncu.edu.cn/",
+       "http": 200,
+       "id_count": 6,
+       "student_id_samples": [
+        "4251833634",
+        "8326225330",
+        "6286140446",
+        "1672231847",
+        "1603337742",
+        "5958467525"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "unit": "xust",
+   "sites": [
+    {
+     "site": "https://xkb.xust.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://kjc.xust.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://sjzw.xust.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://gjjl.xust.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://aqxy.xust.edu.cn/",
+     "pages": [
+      {
+       "title": "(首页)",
+       "url": "https://aqxy.xust.edu.cn/",
+       "http": 200,
+       "id_count": 3,
+       "student_id_samples": [
+        "2093267122",
+        "2742558038",
+        "7078955685"
+       ]
+      }
+     ]
+    },
+    {
+     "site": "https://jijinhui.xust.edu.cn/",
+     "pages": [
+      {
+       "title": "(首页)",
+       "url": "https://jijinhui.xust.edu.cn/",
+       "http": 200,
+       "id_count": 19,
+       "student_id_samples": [
+        "202602051602",
+        "202609211110",
+        "202610261538",
+        "202402221530",
+        "202503171453",
+        "202310161432",
+        "202412021706",
+        "202307101206",
+        "202610281400",
+        "202606081415",
+        "202610261113",
+        "202610271831"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "unit": "lvu",
+   "sites": [
+    {
+     "site": "https://qc.lvu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://jwc.lvu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://xdfw.lvu.edu.cn/",
+     "pages": [
+      {
+       "title": "(首页)",
+       "url": "https://xdfw.lvu.edu.cn/",
+       "http": 200,
+       "id_count": 3,
+       "student_id_samples": [
+        "20259254627",
+        "90639946726",
+        "94463984156"
+       ]
+      }
+     ]
+    },
+    {
+     "site": "https://jsxy.lvu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://xsc.lvu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://cm.lvu.edu.cn/",
+     "pages": []
+    }
+   ]
+  },
+  {
+   "unit": "whcp",
+   "sites": [
+    {
+     "site": "https://zb.whcp.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://ky.whcp.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://xg.whcp.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://rs.whcp.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://tw.whcp.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://www.whcp.edu.cn/",
+     "pages": [
+      {
+       "title": "(首页)",
+       "url": "https://www.whcp.edu.cn/",
+       "http": 200,
+       "id_count": 5,
+       "student_id_samples": [
+        "1347267979",
+        "5331267493",
+        "1386785554",
+        "5348169805",
+        "259355776539"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "unit": "tjnu",
+   "sites": [
+    {
+     "site": "https://yjszs.tjnu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://syzx.tjnu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://www.tjnu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://gjjl.tjnu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://gjxy.tjnu.edu.cn/",
+     "pages": []
+    },
+    {
+     "site": "https://xgwzxs.tjnu.edu.cn/",
+     "pages": []
+    }
+   ]
+  }
+ ]
+}
