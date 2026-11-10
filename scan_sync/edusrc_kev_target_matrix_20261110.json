@@ -1,0 +1,86 @@
+{
+  "ts": "2026-11-10 20:52",
+  "title": "KEV 情报驱动的 edusrc 目标矩阵（下一轮可直接执行的输入）",
+  "source": "tools/vulndb/vulndb.sqlite — CISA KEV 快照 2026-10-19，1748 条；2026 年条目 177 条，与 edu.cn 常见组件相关 55 条",
+  "boundary": "全程只读 GET；未执行任何 PoC/利用链、未爆破、未读取真实数据",
+  "method": "不再按产品名广撒网，改为「本地 KEV 新条目 → 反查已有 edu.cn 资产池 → 检查版本判定点是否可读」",
+  "rows": [
+    {
+      "component": "Citrix NetScaler / Gateway",
+      "kev_2026": ["CVE-2026-88772", "CVE-2026-88779", "CVE-2026-88771", "CVE-2026-19490", "CVE-2026-8452"],
+      "impact": "RCE / DoS / 未授权认证绕过",
+      "edu_assets": 14,
+      "confirmed_live": 8,
+      "hosts": ["yun.czie.edu.cn:4443", "app.tsari.tsinghua.edu.cn", "liesmarsvd.whu.edu.cn", "ysythgw.bupt.edu.cn", "cwcgw.bupt.edu.cn", "cloud.shems.edu.cn"],
+      "version_readable": false,
+      "blocker": "登录页为 Citrix Gateway / NetScaler AAA，HTML 与 JS 路径均不含版本串；KEV 库无 affected-version 字段",
+      "next_step": "需厂商公告的受影响 build 范围 + 只读可核验的版本判定端点（如官方 /vpn/ 响应头），否则不定案"
+    },
+    {
+      "component": "Zimbra Collaboration Suite",
+      "kev_2026": ["CVE-2026-73570"],
+      "impact": "未授权 OS 命令注入（经构造 SMTP 请求）",
+      "edu_assets": 12,
+      "confirmed_live": 6,
+      "hosts": ["mail.cs.sjtu.edu.cn", "mail2.cs.sjtu.edu.cn", "mail.acem.sjtu.edu.cn", "mail.cs.sjtu.edu.cn:8080"],
+      "version_readable": false,
+      "blocker": "登录页仅 'Zimbra Web Client Sign In'，无版本串；SMTP 面未探测（属主动利用，出只读边界）",
+      "next_step": "需从 /zimbraAdmin/ 或响应头取得版本号并对公告版本范围；不得发送构造 SMTP 请求"
+    },
+    {
+      "component": "Apache Tomcat",
+      "kev_2026": ["CVE-2026-34486"],
+      "impact": "EncryptInterceptor 绕过（需与 CVE-2025-24813 串联）",
+      "edu_assets": 872,
+      "confirmed_live": 9,
+      "version_readable": true,
+      "versions_seen": ["8.5.100", "9.0.62", "9.0.56", "7.0.82"],
+      "hosts": ["www2.whou.edu.cn", "zjcinfo.jit.edu.cn", "zwhz.nuaa.edu.cn", "fzllb.zjgsu.edu.cn"],
+      "blocker": "KEV 库缺 affected-version；CVE-2026-34486 需要 EncryptInterceptor 集群配置前置条件，仅有版本不构成可利用",
+      "next_step": "先核对该 CVE 的官方影响版本与配置前置条件，再看 edu.cn 上是否存在 EncryptInterceptor 集群面"
+    },
+    {
+      "component": "Apache ActiveMQ",
+      "kev_2026": ["CVE-2026-34197"],
+      "impact": "代码注入",
+      "edu_assets": 5,
+      "confirmed_live": 2,
+      "version_readable": false,
+      "blocker": "FOFA 命中 2 个均为高校门户页（body 关键词误报），无 ActiveMQ 管理台；精确 title=Apache ActiveMQ 为 0 结果",
+      "next_step": "该组件在 edu.cn FOFA 可见面无实例，勿重挖"
+    },
+    {
+      "component": "GitLab CE/EE",
+      "kev_2026": ["CVE-2026-85706"],
+      "impact": "路径遍历",
+      "edu_assets": 263,
+      "confirmed_live": 9,
+      "version_readable": false,
+      "blocker": "可见 host 多为实验室门户页；仅 git.ustc.edu.cn 返回 401，版本接口需认证",
+      "next_step": "若放行，可只读核对公开 /api/v4/version（多数实例需 token）"
+    },
+    {
+      "component": "VMware vCenter",
+      "kev_2026": ["CVE-2026-59310"],
+      "impact": "路径遍历",
+      "edu_assets": 4,
+      "confirmed_live": 0,
+      "version_readable": false,
+      "blocker": "vc8/vc-b.sau.edu.cn 双 scheme 全超时，FOFA 为历史快照",
+      "next_step": "当前不可达，登记不重挖"
+    }
+  ],
+  "summary": {
+    "fofa_slices_total": 79,
+    "readonly_probes_total": "约 200 个目标（第 1~7 轮累计）",
+    "confirmed_findings": 0,
+    "weak_key_leads": "10 条公示初始密码规则（§7.38 表），闭环缺「明文学号源 + 单入口 ≤5 组登录验证 + 录屏」",
+    "rce_status": "edu.cn 上 KEV 组件的精确 title 指纹极少；命中的真网关/登录页管理面全关或版本不可读，只读 GET 边界内无法定案"
+  },
+  "why_no_finding": [
+    "FOFA 免费版仅第 1 页 + body= 历史快照 → 门户页/新闻页误报占绝大多数",
+    "精确 title= 命中真组件后，未授权管理面（/script、/jmx-console、/manager/html、ISAPI、Nacos、Actuator）在 edu.cn 全线关闭",
+    "弱密钥定案需要公示明文学号 + 实际登录验证 + 录屏，需用户参与；同单位公示站只有招生简章/准考证通知，无名单页",
+    "版本型 N-day 定案需要可读版本串 + 官方受影响范围，NetScaler/Zimbra 登录页均不外露版本"
+  ]
+}

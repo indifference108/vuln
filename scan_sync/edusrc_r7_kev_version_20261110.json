@@ -1,0 +1,605 @@
+{
+ "ts": "2026-11-10 20:53:08",
+ "source": "tools/vulndb/vulndb.sqlite (CISA KEV 快照 2026-10-19, 1748 条)",
+ "boundary": "只读 GET 登录页；不执行 PoC/利用链、不爆破、不读真实数据",
+ "note": "KEV 库无 affected-version 字段，故本轮只判断版本串是否可读，不做 CVE 影响定案",
+ "items": [
+  {
+   "key": "edu_netscaler",
+   "host": "yun.czie.edu.cn:4443",
+   "status": 200,
+   "title": "NetScaler AAA",
+   "len": 42821,
+   "final_url": "https://yun.czie.edu.cn:4443/logon/LogonPoint/tmindex.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "none",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix",
+    "netscaler"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "app.tsari.tsinghua.edu.cn",
+   "status": 200,
+   "title": "Citrix Gateway",
+   "len": 42846,
+   "final_url": "https://app.tsari.tsinghua.edu.cn/logon/LogonPoint/index.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix",
+    "netscaler"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "qilab.nwu.edu.cn:9999",
+   "status": null,
+   "err": "ConnectionError:('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 1",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "tjjtcloud.tongji.edu.cn",
+   "status": null,
+   "err": "SSLError:HTTPSConnectionPool(host='tjjtcloud.tongji.edu.cn', port=443): Max retries excee",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "liesmarsvd.whu.edu.cn",
+   "status": 200,
+   "title": "Citrix Gateway",
+   "len": 2450,
+   "final_url": "https://liesmarsvd.whu.edu.cn/vpn/index.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "ysythgw.bupt.edu.cn",
+   "status": 200,
+   "title": "Citrix Gateway",
+   "len": 42846,
+   "final_url": "https://ysythgw.bupt.edu.cn/logon/LogonPoint/index.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix",
+    "netscaler"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "cwcgw.bupt.edu.cn",
+   "status": 200,
+   "title": "Citrix Gateway",
+   "len": 42846,
+   "final_url": "https://cwcgw.bupt.edu.cn/logon/LogonPoint/index.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix",
+    "netscaler"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_netscaler",
+   "host": "cloud.shems.edu.cn",
+   "status": 200,
+   "title": "Citrix Gateway",
+   "len": 42899,
+   "final_url": "https://cloud.shems.edu.cn/logon/LogonPoint/index.html",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "citrix",
+    "netscaler"
+   ],
+   "kev_cves": [
+    "CVE-2026-88772",
+    "CVE-2026-88779",
+    "CVE-2026-88771",
+    "CVE-2026-19490",
+    "CVE-2026-8452"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "mail.cs.sjtu.edu.cn:8080",
+   "status": 200,
+   "title": "Zimbra Web Client Sign In",
+   "len": 23281,
+   "final_url": "http://mail.cs.sjtu.edu.cn:8080/",
+   "ctype": "text/html;charset=utf-8",
+   "server": "",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "mail2.cs.sjtu.edu.cn",
+   "status": 200,
+   "title": "Zimbra Web Client Sign In",
+   "len": 23281,
+   "final_url": "https://mail2.cs.sjtu.edu.cn/",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "mail2.cs.sjtu.edu.cn:8080",
+   "status": 200,
+   "title": "Zimbra Web Client Sign In",
+   "len": 23281,
+   "final_url": "http://mail2.cs.sjtu.edu.cn:8080/",
+   "ctype": "text/html;charset=utf-8",
+   "server": "",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "mail.acem.sjtu.edu.cn",
+   "status": 200,
+   "title": "Zimbra Web Client Sign In",
+   "len": 23281,
+   "final_url": "https://mail.acem.sjtu.edu.cn/",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "mail.cs.sjtu.edu.cn",
+   "status": 200,
+   "title": "Zimbra Web Client Sign In",
+   "len": 23281,
+   "final_url": "https://mail.cs.sjtu.edu.cn/",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_zimbra",
+   "host": "c.git-zimbra-front.vpn.qtc.edu.cn",
+   "status": 200,
+   "title": "",
+   "len": 7478,
+   "final_url": "https://c.git-zimbra-front.vpn.qtc.edu.cn/",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Server",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "zimbra"
+   ],
+   "kev_cves": [
+    "CVE-2026-73570"
+   ]
+  },
+  {
+   "key": "edu_activemq",
+   "host": "nic.cqrk.edu.cn",
+   "status": 200,
+   "title": "éåºäººæç§æå­¦é¢ä¿¡æ¯åå»ºè®¾ä¸­å¿",
+   "len": 26567,
+   "final_url": "https://nic.cqrk.edu.cn/",
+   "ctype": "text/html",
+   "server": "nginx",
+   "version_strings": [
+    "3.3.1"
+   ],
+   "version_readable": true,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-34197"
+   ]
+  },
+  {
+   "key": "edu_activemq",
+   "host": "xxhzx.web.hebust.edu.cn",
+   "status": 200,
+   "title": "æ²³åç§æå¤§å­¦_ä¿¡ç®¡ä¸­å¿",
+   "len": 31213,
+   "final_url": "https://xxhzx.web.hebust.edu.cn/",
+   "ctype": "text/html",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-34197"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "www2.whou.edu.cn",
+   "status": 200,
+   "title": "Apache Tomcat/8.5.100",
+   "len": 11517,
+   "final_url": "https://www2.whou.edu.cn/",
+   "ctype": "text/html;charset=UTF-8",
+   "server": "",
+   "version_strings": [
+    "8.5.100"
+   ],
+   "version_readable": true,
+   "vendor_marker": [
+    "tomcat"
+   ],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "zjcinfo.jit.edu.cn",
+   "status": 200,
+   "title": "Apache Tomcat/9.0.62",
+   "len": 11136,
+   "final_url": "https://zjcinfo.jit.edu.cn/",
+   "ctype": "text/html;charset=UTF-8",
+   "server": "rump/c",
+   "version_strings": [
+    "9.0.62"
+   ],
+   "version_readable": true,
+   "vendor_marker": [
+    "tomcat"
+   ],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "jy-o.cdp.edu.cn",
+   "status": null,
+   "err": "ReadTimeout:HTTPSConnectionPool(host='jy-o.cdp.edu.cn', port=443): Read timed out. (read tim",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "jy-hr.cdp.edu.cn",
+   "status": null,
+   "err": "ReadTimeout:HTTPSConnectionPool(host='jy-hr.cdp.edu.cn', port=443): Read timed out. (read ti",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "zwhz.nuaa.edu.cn",
+   "status": 200,
+   "title": "Apache Tomcat/9.0.56",
+   "len": 11136,
+   "final_url": "https://zwhz.nuaa.edu.cn/",
+   "ctype": "text/html;charset=UTF-8",
+   "server": "none",
+   "version_strings": [
+    "9.0.56"
+   ],
+   "version_readable": true,
+   "vendor_marker": [
+    "tomcat"
+   ],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "jjh.hgnu.edu.cn",
+   "status": 404,
+   "title": "Not Found",
+   "len": 473,
+   "final_url": "https://jjh.hgnu.edu.cn/",
+   "ctype": "text/html; charset=us-ascii",
+   "server": "Microsoft-HTTPAPI/2.0",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "fzllb.zjgsu.edu.cn",
+   "status": 404,
+   "title": "Apache Tomcat/7.0.82 - Error report",
+   "len": 999,
+   "final_url": "https://fzllb.zjgsu.edu.cn/site/root/02/root/index/?1794315237355",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx/1.28.0",
+   "version_strings": [
+    "7.0.82"
+   ],
+   "version_readable": true,
+   "vendor_marker": [
+    "tomcat"
+   ],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_tomcat",
+   "host": "rscr.xmu.edu.cn",
+   "status": 200,
+   "title": "Apache Tomcat",
+   "len": 7742,
+   "final_url": "https://rscr.xmu.edu.cn/",
+   "ctype": "text/html",
+   "server": "",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "tomcat"
+   ],
+   "kev_cves": [
+    "CVE-2026-34486"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "cvrs.whu.edu.cn",
+   "status": 200,
+   "title": "武汉大学计算机视觉与遥感实验室（CVRS Lab）",
+   "len": 32837,
+   "final_url": "https://cvrs.whu.edu.cn/",
+   "ctype": "text/html; charset=utf-8",
+   "server": "",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "gitlab"
+   ],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "xxhc.ujs.edu.cn",
+   "status": 200,
+   "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼",
+   "len": 66051,
+   "final_url": "https://xxhc.ujs.edu.cn/",
+   "ctype": "text/html",
+   "server": "",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "gitlab"
+   ],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "zhxg.szut.edu.cn",
+   "status": 200,
+   "title": "",
+   "len": 161,
+   "final_url": "https://zhxg.szut.edu.cn/",
+   "ctype": "text/html",
+   "server": "none",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "git.ustc.edu.cn",
+   "status": 401,
+   "title": "",
+   "len": 148,
+   "final_url": "https://git.ustc.edu.cn/",
+   "ctype": "application/json",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "gitlab"
+   ],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "jy.wdu.edu.cn",
+   "status": 200,
+   "title": "",
+   "len": 158,
+   "final_url": "https://jy.wdu.edu.cn/",
+   "ctype": "text/html",
+   "server": "Microsoft-IIS/10.0",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "lug.ustc.edu.cn",
+   "status": 200,
+   "title": "LUG @ USTC",
+   "len": 21858,
+   "final_url": "https://lug.ustc.edu.cn/",
+   "ctype": "text/html",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [
+    "gitlab"
+   ],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "ipads.se.sjtu.edu.cn:1312",
+   "status": 400,
+   "title": "400 The plain HTTP request was sent to HTTPS port",
+   "len": 650,
+   "final_url": "http://ipads.se.sjtu.edu.cn:1312/",
+   "ctype": "text/html",
+   "server": "nginx",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_gitlab",
+   "host": "xgxt.dzvccm.edu.cn",
+   "status": 200,
+   "title": "",
+   "len": 163,
+   "final_url": "https://xgxt.dzvccm.edu.cn/",
+   "ctype": "text/html",
+   "server": "rump/e",
+   "version_strings": [],
+   "version_readable": false,
+   "vendor_marker": [],
+   "kev_cves": [
+    "CVE-2026-85706"
+   ]
+  },
+  {
+   "key": "edu_vcenter",
+   "host": "vc8.sau.edu.cn",
+   "status": null,
+   "err": "ConnectionError:HTTPSConnectionPool(host='vc8.sau.edu.cn', port=443): Max retries exceeded with ",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-59310"
+   ]
+  },
+  {
+   "key": "edu_vcenter",
+   "host": "vc-b.sau.edu.cn",
+   "status": null,
+   "err": "ConnectionError:HTTPSConnectionPool(host='vc-b.sau.edu.cn', port=443): Max retries exceeded with",
+   "version_readable": false,
+   "kev_cves": [
+    "CVE-2026-59310"
+   ]
+  }
+ ]
+}
