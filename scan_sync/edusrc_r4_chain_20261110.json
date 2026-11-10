@@ -1,0 +1,134 @@
+{
+ "ts": "2026-11-10 20:30:33",
+ "boundary": "只读 GET 公开页面；不登录、不爆破、不收集真实学号/身份证号（仅统计是否存在成串数字）",
+ "items": [
+  {
+   "name": "天津师范大学研究生报考服务系统",
+   "url": "https://yjszs.tjnu.edu.cn/",
+   "status": 200,
+   "rule": "准考证号 / 初始密码=居民身份证号(18位)",
+   "final_url": "https://yjszs.tjnu.edu.cn/logon",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [],
+   "forced_change": false
+  },
+  {
+   "name": "南京铁道职业技术学院统一身份认证",
+   "url": "https://webvpn.njrts.edu.cn/",
+   "status": 200,
+   "rule": "初始密码=身份证后六位@njrts",
+   "final_url": "https://webvpn.njrts.edu.cn/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/login?s",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [
+    "77726476706",
+    "2559434357",
+    "292473726",
+    "20211207",
+    "68204965"
+   ],
+   "forced_change": false
+  },
+  {
+   "name": "浙江工商大学研究生教育综合管理",
+   "url": "https://yjszhgl.zjgsu.edu.cn/",
+   "status": 200,
+   "rule": "默认密码=ZJGSU#身份证倒数第7-2位；首次登录强制改密",
+   "final_url": "https://yjszhgl.zjgsu.edu.cn/cas/login?service=https%3A%2F%2Fyjszhgl.zjgsu.edu.cn%2Fallogene%2Fpage%2Fhome.htm",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [],
+   "forced_change": true
+  },
+  {
+   "name": "湖南现代物流职院图书馆",
+   "url": "https://library.hmlc.edu.cn/",
+   "status": 200,
+   "rule": "账号=学号/工号，初始密码=身份证后六位",
+   "final_url": "https://library.hmlc.edu.cn/",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [],
+   "forced_change": false
+  },
+  {
+   "name": "西安科技大学统一身份认证",
+   "url": "https://ids.xust.edu.cn/",
+   "status": 200,
+   "rule": "初始密码=身份证后六位（2016级前=学号）",
+   "final_url": "http://ids.xust.edu.cn/authserver/login",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [
+    "83858897"
+   ],
+   "forced_change": false
+  },
+  {
+   "name": "南昌大学继续教育学院",
+   "url": "https://scept.ncu.edu.cn/",
+   "status": 200,
+   "rule": "账号=身份证号或学号，密码=ncu@身份证后六位",
+   "final_url": "https://scept.ncu.edu.cn/login",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [
+    "10080899"
+   ],
+   "forced_change": false
+  },
+  {
+   "name": "兰州职业技术学院统一支付",
+   "url": "https://pay.lvu.edu.cn/",
+   "status": 200,
+   "rule": "账号=学号，初始密码=身份证后六位",
+   "final_url": "https://pay.lvu.edu.cn/",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [],
+   "forced_change": false
+  },
+  {
+   "name": "武汉城市职业学院统一支付",
+   "url": "https://jfxt.whcp.edu.cn/",
+   "status": 200,
+   "rule": "用户名=学号，初始密码=身份证后六位",
+   "final_url": "https://jfxt.whcp.edu.cn/",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [],
+   "forced_change": false
+  },
+  {
+   "name": "大连职业技术学院统一身份认证",
+   "url": "https://webvpn.dlvtc.edu.cn/",
+   "status": 200,
+   "rule": "账号=10位学号，初始密码=原门户密码",
+   "final_url": "https://webvpn.dlvtc.edu.cn/http/77726476706e69737468656265737421f3f652d2233c7e447d468ca88d1b203b/cas/login?service=https%3A%2F%2F",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [
+    "77726476706",
+    "20250302",
+    "40404061",
+    "86402285",
+    "86402300"
+   ],
+   "forced_change": false
+  },
+  {
+   "name": "某统一身份认证平台",
+   "url": "https://authservernew.caii.edu.cn/",
+   "status": 200,
+   "rule": "首次登录强制修改默认密码",
+   "final_url": "https://authservernew.caii.edu.cn/authserver/login",
+   "publist_links": [],
+   "publist_link_count": 0,
+   "plaintext_id_like_samples": [
+    "14004857"
+   ],
+   "forced_change": true
+  }
+ ]
+}

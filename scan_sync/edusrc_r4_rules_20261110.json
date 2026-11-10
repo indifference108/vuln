@@ -1,0 +1,390 @@
+{
+ "ts": "2026-11-10 20:28:48",
+ "boundary": "只读 GET 公开公示页；不登录、不爆破、不取真实学号/身份证、不访问真实用户数据",
+ "excluded_duplicates": [
+  "fafu.edu.cn",
+  "scu.edu.cn",
+  "ncwu.edu.cn",
+  "henau.edu.cn"
+ ],
+ "items": [
+  {
+   "host": "sso.ecust.edu.cn",
+   "status": 200,
+   "title": "统一身份认证平台",
+   "len": 28611,
+   "final_url": "https://sso.ecust.edu.cn/authserver/login",
+   "keywords": [
+    "初始密码"
+   ],
+   "rule_snippets": [
+    "身份认证平台 账号登录 &nbsp; --> 验证码登录 &nbsp; --> 生物识别 &nbsp; --> 扫码登录 &nbsp; --> --> 账号激活 --> 忘记密码 初始密码 --> --> --> --> --> --> 手机扫码 安全登录 扫描成功 请在手机上「确认登录」 返回二维码 手机扫码 安全登录 扫码登录 本平台为互联网非涉密平台，严禁处理"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "map.fafu.edu.cn",
+   "status": null,
+   "err": "ConnectionError:HTTPSConnectionPool(host='map.fafu.edu.cn', port=443): Max retries exceeded with",
+   "excluded_duplicate": true
+  },
+  {
+   "host": "yjsy.fafu.edu.cn",
+   "status": null,
+   "err": "SSLError:HTTPSConnectionPool(host='yjsy.fafu.edu.cn', port=443): Max retries exceeded wit",
+   "excluded_duplicate": true
+  },
+  {
+   "host": "yjszs.tjnu.edu.cn",
+   "status": 200,
+   "title": "研究生报考服务系统",
+   "len": 10799,
+   "final_url": "https://yjszs.tjnu.edu.cn/logon",
+   "keywords": [
+    "初始密码",
+    "密码为",
+    "用户名为"
+   ],
+   "rule_snippets": [
+    " 研究生报考服务系统 研究生报考服务系统 天津师范大学 -请选择招生项目- 硕士研究生复试录取 博士研究生报考 全国优秀大学生夏令营 招生项目 系统登录的用户名为准考证号，初始密码为有效居民身份证号码，居民身份证为18位数字（最后一位为X），港澳台身份证、护照按证件号码填写。 用户名：报名号，密码：本人身份证号。 考生须严格按照报考条件及相关政策要求选择填报志"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "webvpn.dlvtc.edu.cn",
+   "status": 200,
+   "title": "数字校园统一身份认证 - 用户登录",
+   "len": 13353,
+   "final_url": "https://webvpn.dlvtc.edu.cn/http/77726476706e69737468656265737421f3f652d2233c7e447d468ca88d1b203b/cas/login?service=https%3A%2F%2F",
+   "keywords": [
+    "初始密码",
+    "账号为"
+   ],
+   "rule_snippets": [
+    " 数字校园统一身份认证 - 用户登录 WEBVPN 企业微信扫码登录 请使用企业微信扫码登录 --> 记住帐号(两周) 忘记密码？ 登陆须知 账号规则：学生登陆账号为10位学号，教工登陆账号为教工号。 密码规则：初始密码和原有门户登陆密码一致。 咨询电话：（内线）8720 联系我们 地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "www.xjyzy.edu.cn",
+   "status": 200,
+   "title": "辛集应用技术职业学院",
+   "len": 585031,
+   "final_url": "https://www.xjyzy.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "icas.jnu.edu.cn",
+   "status": 200,
+   "title": "统一身份认证平台",
+   "len": 21915,
+   "final_url": "https://icas.jnu.edu.cn/cas/login?service=https%3A%2F%2Fauth4.jnu.edu.cn%2Fcas_auth%2Fpublic%2FcasLogin%3FverifyID%3D127b164776754",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "career.ecnu.edu.cn",
+   "status": 200,
+   "title": "æ­£å¨è¿å ¥åä¸å¸å¤§å°±ä¸ä¿¡æ¯ç½",
+   "len": 762,
+   "final_url": "https://career.ecnu.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "webvpn.njrts.edu.cn",
+   "status": 200,
+   "title": "统一身份认证平台",
+   "len": 20770,
+   "final_url": "https://webvpn.njrts.edu.cn/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/login?s",
+   "keywords": [
+    "初始密码"
+   ],
+   "rule_snippets": [
+    "内各级网站和系统。 用户可以在校园信息门户右上角点击控制面板进入个人设置，维护统一身份认证系统个人信息。 使用过程中遇到问题，请咨询图文与信息技术中心:025-68204965。 初始密码：本人身份证号后六位@njrts &emsp;&emsp;&emsp;&emsp;&emsp;如：123456@njrts --> --> 生物识别 账号登录 验证码登录 扫码登录"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "yjszhgl.zjgsu.edu.cn",
+   "status": 200,
+   "title": "浙江工商大学研究生教育综合管理",
+   "len": 3241,
+   "final_url": "https://yjszhgl.zjgsu.edu.cn/cas/login?service=https%3A%2F%2Fyjszhgl.zjgsu.edu.cn%2Fallogene%2Fpage%2Fhome.htm",
+   "keywords": [
+    "默认密码",
+    "密码为"
+   ],
+   "rule_snippets": [
+    " 浙江工商大学研究生教育综合管理 研究生教育综合管理信息系统 统一身份认证 记住密码--> 登录 旧版入口 忘记密码？ 登录提示： 1.默认密码为“ZJGSU#身份证倒数第7位至倒数第2位”，例“ZJGSU#000000”，首次登录时必须重新设置密码。 2.若无法登录系统，请咨询各学院教学秘书。 研究生院 办公网 关于我们 "
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "mail.alu.shmtu.edu.cn",
+   "status": 200,
+   "title": "上海海事大学 - 邮箱用户登录",
+   "len": 48835,
+   "final_url": "https://mail.alu.shmtu.edu.cn/",
+   "keywords": [
+    "默认密码"
+   ],
+   "rule_snippets": [
+    "维码登录 成功扫描，请在手机上确认登录 返回重新扫描 账号与登录说明 邮箱账号格式： 学号@alu.shmtu.edu.cn （登录时不需要输入后缀域名） 登录后系统会强制要求修改默认密码，请务必牢记；为安全起见，强烈建议绑定密保手机、微信。 默认密码规则请通过统一身份认证登录数字平台后查看。 邮箱问题咨询电话： 38284491 &nbsp; &nbsp; &nb"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "practice.czie.edu.cn",
+   "status": 200,
+   "title": "ä¹ è®¯äºå®ä¹ ç®¡çå¹³å°,å ¨é¢æºè½çå®ä¹ å®è®­ä¿¡æ¯åç®¡çç³»ç»",
+   "len": 36938,
+   "final_url": "https://practice.czie.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "mail.shmtu.edu.cn",
+   "status": 200,
+   "title": "上海海事大学教师邮件系统",
+   "len": 19204,
+   "final_url": "https://mail.shmtu.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "library.hmlc.edu.cn",
+   "status": 200,
+   "title": "湖南现代物流职业技术学院图书馆 -公共检索系统",
+   "len": 54763,
+   "final_url": "https://library.hmlc.edu.cn/",
+   "keywords": [
+    "初始密码",
+    "默认密码",
+    "密码为",
+    "账号为"
+   ],
+   "rule_snippets": [
+    "条件 其他限制条件 文献类型： 馆藏地址： 分馆： 排序： 取 消 确 定 请输入账号和密码登录我的图书馆 {{ login.confirmWords }} 登录说明 1.教职工的账号为工号，学生的账号为学号。 2.初始密码默认为本人身份证号后六位，如您修改过密码，则以修改后的密码为准。 3.为了您的账号安全，请及时修改默认密码。 热门借阅图书 {{ item.X"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jmlog.hueb.edu.cn",
+   "status": 200,
+   "title": "",
+   "len": 73,
+   "final_url": "https://jmlog.hueb.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jwgl.xynun.edu.cn",
+   "status": 200,
+   "title": "教学管理信息服务平台",
+   "len": 21132,
+   "final_url": "https://jwgl.xynun.edu.cn/xtgl/login_slogin.html",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "authservernew.caii.edu.cn",
+   "status": 200,
+   "title": "统一身份认证平台",
+   "len": 26538,
+   "final_url": "https://authservernew.caii.edu.cn/authserver/login",
+   "keywords": [
+    "默认密码"
+   ],
+   "rule_snippets": [
+    " 温馨提示 1. 统一身份认证是数字校园的一个基础服务，提供统一的用户管理、身份认证、安全保障服务，通过统一身份认证后，将登陆网上服务大厅。 2. 初次使用统一身份认证系统需要修改默认密码，新密码两次输入要一致，同时必须符合密码复杂度要求。 3. 忘记密码可以通过手机短信找回，未绑定手机的用户，请联系网络运行管理科人工服务。 账号登录 &nbsp; --> 验证码登"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "cdo-career.fdsm.fudan.edu.cn",
+   "status": 200,
+   "title": "é¦é¡µ",
+   "len": 60050,
+   "final_url": "https://cdo-career.fdsm.fudan.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "wlxxzx.bbmu.edu.cn",
+   "status": 200,
+   "title": "èå å»ç§å¤§å­¦ - ä¿¡æ¯åç®¡çå¤",
+   "len": 23588,
+   "final_url": "https://wlxxzx.bbmu.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jwxt.cqgyzy.edu.cn",
+   "status": 200,
+   "title": "教学管理信息服务平台",
+   "len": 20322,
+   "final_url": "https://jwxt.cqgyzy.edu.cn/jwglxt/xtgl/login_slogin.html",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "ids.xust.edu.cn",
+   "status": 200,
+   "title": "统一身份认证平台",
+   "len": 39589,
+   "final_url": "http://ids.xust.edu.cn/authserver/login",
+   "keywords": [
+    "初始密码",
+    "身份证后六位",
+    "身份证后",
+    "密码为"
+   ],
+   "rule_snippets": [
+    "成功 请在手机上「确认登录」 返回二维码 手机扫码 安全登录 扫码登录 其他登录方式 QQ登录 微信登录 登录提示： 1、门户大厅登录用户名：教职工为工号；学生为学号。 2、密码：初始密码为身份证后六位(备注：2016级学生及之前入校的初始密码为学号)。 3、登录前可进入 \"帮助说明\" 查看相关说明信息。 4、如有疑问，请致电信息网络中心 电话:029-838588"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "scept.ncu.edu.cn",
+   "status": 200,
+   "title": "登录",
+   "len": 13358,
+   "final_url": "https://scept.ncu.edu.cn/login",
+   "keywords": [
+    "身份证后六位",
+    "身份证后"
+   ],
+   "rule_snippets": [
+    "密码？ 登录 通知 为了提高南昌大学继续教育学院网络教学服务平台的信息安全，已对登录密码进行重置。登录请选择【机构账号登录】，账号可使用【身份证号或学号】，登录密码请使用【ncu@身份证后六位】的方式登录！登录平台后可根据系统提示和个人意愿修改符合规范要求新密码。 "
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "pay.lvu.edu.cn",
+   "status": 200,
+   "title": "兰州职业技术学院校园统一支付平台",
+   "len": 25945,
+   "final_url": "https://pay.lvu.edu.cn/",
+   "keywords": [
+    "初始密码",
+    "身份证后六位",
+    "身份证后",
+    "密码为",
+    "账号为"
+   ],
+   "rule_snippets": [
+    ".在校生请通过智慧校园登录缴费！校外人员的登录密码以具体通知为准。 2.如缴费失败,请先查询银行是否已扣款,如已扣款系统会在1~2个工作日处理该订单,切勿重复交费。 3.新生登录时账号为学号，初始密码为本人身份证后六位。 请在校生通过电脑网页端智慧校园登录缴费平台。&nbsp;&nbsp; [2025-10-27] &nbsp; 登录方式 用户名 证件号 &nbs"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "portal.dlou.edu.cn",
+   "status": 200,
+   "title": "统一身份认证中心",
+   "len": 13975,
+   "final_url": "https://portal.dlou.edu.cn/auth/oauth/login",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jfxt.whcp.edu.cn",
+   "status": 200,
+   "title": "武汉城市职业学院校园统一支付平台",
+   "len": 25513,
+   "final_url": "https://jfxt.whcp.edu.cn/",
+   "keywords": [
+    "身份证后六位",
+    "身份证后",
+    "密码为",
+    "用户名为"
+   ],
+   "rule_snippets": [
+    "统 &nbsp; &nbsp; &nbsp; &nbsp; 初次使用者请点击下载查阅:&nbsp; 使用说明 武汉城市职业学院校园统一支付平台 1.在校生登陆用户名为学号,初始登陆密码为身份证后六位 2.如缴费失败,请先查询银行是否已扣款,如已扣款系统会在1~2个工作日处理该订单,切勿重复交费 3.缴费步骤说明： ①正常缴费学生需分别点选学费住宿费缴费和代收项目缴"
+   ],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jwmis.cfec.edu.cn",
+   "status": 200,
+   "title": "Loading...",
+   "len": 2576,
+   "final_url": "https://jwmis.cfec.edu.cn/login",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "www.sxgkd.edu.cn",
+   "status": 200,
+   "title": "å±±è¥¿å·¥ç¨ç§æèä¸å¤§å­¦",
+   "len": 124681,
+   "final_url": "https://www.sxgkd.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "mpa.zjgsu.edu.cn",
+   "status": 200,
+   "title": "浙江工商大学公共管理学院",
+   "len": 62872,
+   "final_url": "https://mpa.zjgsu.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "jgxy.ycit.edu.cn",
+   "status": 200,
+   "title": "çåå·¥å­¦é¢ç»æµç®¡çå­¦é¢",
+   "len": 39010,
+   "final_url": "https://jgxy.ycit.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "wlaq.njau.edu.cn",
+   "status": 200,
+   "title": "æ ¡å­ç½ç»å®å ¨ä¸é¢ç½",
+   "len": 22550,
+   "final_url": "https://wlaq.njau.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "xszj.njau.edu.cn",
+   "status": 200,
+   "title": "åäº¬åä¸å¤§å­¦å­¦çä¹å®¶",
+   "len": 27526,
+   "final_url": "https://xszj.njau.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  },
+  {
+   "host": "xsc.sicau.edu.cn",
+   "status": 200,
+   "title": "å å§å­¦å·¥é¨(å¤)",
+   "len": 55115,
+   "final_url": "https://xsc.sicau.edu.cn/",
+   "keywords": [],
+   "rule_snippets": [],
+   "excluded_duplicate": false
+  }
+ ]
+}

@@ -1,0 +1,1333 @@
+{
+ "hik_isapi|lgb.fjjxu.edu.cn": {
+  "group": "hik_isapi",
+  "host": "lgb.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://lgb.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 301,
+    "len": 24,
+    "title": "",
+    "ctype": "text/plain",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "æ²¡ææ¾å°èµæºæä»¶"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|aiaq.dufe.edu.cn": {
+  "group": "hik_isapi",
+  "host": "aiaq.dufe.edu.cn",
+  "probes": [
+   {
+    "url": "https://aiaq.dufe.edu.cn/ISAPI/System/deviceInfo",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|lq.fjjxu.edu.cn": {
+  "group": "hik_isapi",
+  "host": "lq.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://lq.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|wcmfileapi.zznu.edu.cn:8002": {
+  "group": "hik_isapi",
+  "host": "wcmfileapi.zznu.edu.cn:8002",
+  "probes": [
+   {
+    "url": "http://wcmfileapi.zznu.edu.cn:8002/ISAPI/System/deviceInfo",
+    "status": 302,
+    "len": 139,
+    "title": "302 Found",
+    "ctype": "text/html",
+    "server": "rums/b",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>rums/b</center>\r\n</body>\r\n</html>\r\n"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|xydc.fjjxu.edu.cn": {
+  "group": "hik_isapi",
+  "host": "xydc.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xydc.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|instructors.svchr.edu.cn:8443": {
+  "group": "hik_isapi",
+  "host": "instructors.svchr.edu.cn:8443",
+  "probes": [
+   {
+    "url": "https://instructors.svchr.edu.cn:8443/ISAPI/System/deviceInfo",
+    "status": 404,
+    "len": 1009,
+    "title": "404 Page Not Found",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/10.0",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<!-- Copyright 1999-2026. WebPros International GmbH. All rights reserved. -->\r\n<html lang=\"en\" dir=\"ltr\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, init"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|belyapp.fld.fjjxu.edu.cn": {
+  "group": "hik_isapi",
+  "host": "belyapp.fld.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://belyapp.fld.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='belyapp.fld.fjjxu.edu.cn', port=443): Max retries exce"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hik_isapi|oled.fjjxu.edu.cn": {
+  "group": "hik_isapi",
+  "host": "oled.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oled.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|med.xmu.edu.cn": {
+  "group": "access_ctrl",
+  "host": "med.xmu.edu.cn",
+  "probes": [
+   {
+    "url": "https://med.xmu.edu.cn/",
+    "status": 200,
+    "len": 48293,
+    "title": "å¦é¨å¤§å­¦å»å­¦é¢",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n  <meta charset=\"utf-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />\r\n  <meta name=\"renderer\" content=\"webkit\">\r\n  <meta name=\"viewport\" content=\"wi"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|cjrh.fjnu.edu.cn": {
+  "group": "access_ctrl",
+  "host": "cjrh.fjnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://cjrh.fjnu.edu.cn/",
+    "status": 301,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "server": "openresty",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|door.gxmu.edu.cn": {
+  "group": "access_ctrl",
+  "host": "door.gxmu.edu.cn",
+  "probes": [
+   {
+    "url": "https://door.gxmu.edu.cn/",
+    "status": 200,
+    "len": 14387,
+    "title": "å»å¤§æºè½é¨ç¦ç³»ç»",
+    "ctype": "text/html",
+    "server": "nginx/1.20.1",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<meta\r\n\t"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|access.ybipc.edu.cn": {
+  "group": "access_ctrl",
+  "host": "access.ybipc.edu.cn",
+  "probes": [
+   {
+    "url": "https://access.ybipc.edu.cn/",
+    "status": 200,
+    "len": 1740,
+    "title": "门禁管理系统",
+    "ctype": "text/html; charset=utf-8",
+    "server": "nginx/1.30.6",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|smartaccess.hit.edu.cn": {
+  "group": "access_ctrl",
+  "host": "smartaccess.hit.edu.cn",
+  "probes": [
+   {
+    "url": "https://smartaccess.hit.edu.cn/",
+    "status": 200,
+    "len": 814,
+    "title": "æºæ §é¨ç¦",
+    "ctype": "text/html",
+    "server": "nginx/1.26.3",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<html>\n\n<head>\n  <link rel=\"stylesheet\" href=\"./assets/uni.9e9583d9.css\">\n\n  <meta charset=\"UTF-8\" />\n  <script>\n    var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.suppor"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "access_ctrl|fk.sctbc.edu.cn": {
+  "group": "access_ctrl",
+  "host": "fk.sctbc.edu.cn",
+  "probes": [
+   {
+    "url": "https://fk.sctbc.edu.cn/",
+    "status": 200,
+    "len": 27424,
+    "title": "æºè½é¨ç¦ç®¡çå¹³å°",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n <meta name=\"renderer\" content=\"webkit\">\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|fao.sdust.edu.cn": {
+  "group": "papercut",
+  "host": "fao.sdust.edu.cn",
+  "probes": [
+   {
+    "url": "https://fao.sdust.edu.cn/app",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "server": "none",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capab"
+   },
+   {
+    "url": "https://fao.sdust.edu.cn/",
+    "status": 200,
+    "len": 49549,
+    "title": "å±±ä¸ç§æå¤§å­¦åä½äº¤æµå¤",
+    "ctype": "text/html",
+    "server": "none",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n\r\n<html>\r\n\r\n<head>\r\n\r\n    <!-- Meta Tags -->\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n\r\n    <!-- Title -->\r\n    <title>å±±ä¸ç§æå¤§å­¦å"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|www.moi-lab.zju.edu.cn": {
+  "group": "papercut",
+  "host": "www.moi-lab.zju.edu.cn",
+  "probes": [
+   {
+    "url": "https://www.moi-lab.zju.edu.cn/app",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='www.moi-lab.zju.edu.cn', port=443): Max retries exceed"
+   },
+   {
+    "url": "https://www.moi-lab.zju.edu.cn/",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='www.moi-lab.zju.edu.cn', port=443): Max retries exceed"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|tzb.cqjtu.edu.cn": {
+  "group": "papercut",
+  "host": "tzb.cqjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://tzb.cqjtu.edu.cn/app",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+   },
+   {
+    "url": "https://tzb.cqjtu.edu.cn/",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|ie-school.sustech.edu.cn": {
+  "group": "papercut",
+  "host": "ie-school.sustech.edu.cn",
+  "probes": [
+   {
+    "url": "https://ie-school.sustech.edu.cn/app",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='ie-school.sustech.edu.cn', port=443): Max retries exce"
+   },
+   {
+    "url": "https://ie-school.sustech.edu.cn/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='ie-school.sustech.edu.cn', port=443): Max retries exce"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|cryoboat.zju.edu.cn": {
+  "group": "papercut",
+  "host": "cryoboat.zju.edu.cn",
+  "probes": [
+   {
+    "url": "https://cryoboat.zju.edu.cn/app",
+    "status": 404,
+    "len": 149,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n\t<body>\r\n\t<center><h1>404 Not Found</h1></center>\r\n\t\t<hr><center>nginx</center>\r\n\t</body>\r\n</html>"
+   },
+   {
+    "url": "https://cryoboat.zju.edu.cn/",
+    "status": 200,
+    "len": 32900,
+    "title": "Cryoboat课题组",
+    "ctype": "text/html; charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE HTML>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n<meta name=\"viewport\"\n      content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n<meta http-equiv=\"X-"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "papercut|fxyen.henu.edu.cn": {
+  "group": "papercut",
+  "host": "fxyen.henu.edu.cn",
+  "probes": [
+   {
+    "url": "https://fxyen.henu.edu.cn/app",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "server": "WebServer/X.X.X",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capab"
+   },
+   {
+    "url": "https://fxyen.henu.edu.cn/",
+    "status": 200,
+    "len": 15920,
+    "title": "Henu School Of Law",
+    "ctype": "text/html",
+    "server": "WebServer/X.X.X",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.1\" />\r\n    <meta name=\"description\" content=\"Henan University School Of L"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "activemq|nic.cqrk.edu.cn": {
+  "group": "activemq",
+  "host": "nic.cqrk.edu.cn",
+  "probes": [
+   {
+    "url": "https://nic.cqrk.edu.cn/admin/",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a "
+   },
+   {
+    "url": "https://nic.cqrk.edu.cn/",
+    "status": 200,
+    "len": 26567,
+    "title": "éåºäººæç§æå­¦é¢ä¿¡æ¯åå»ºè®¾ä¸­å¿",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html lang=\"zh-cn\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n<meta name=\"viewport\" content=\"width=de"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "activemq|xxhzx.web.hebust.edu.cn": {
+  "group": "activemq",
+  "host": "xxhzx.web.hebust.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxhzx.web.hebust.edu.cn/admin/",
+    "status": 302,
+    "len": 138,
+    "title": "302 Found",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+   },
+   {
+    "url": "https://xxhzx.web.hebust.edu.cn/",
+    "status": 200,
+    "len": 31213,
+    "title": "æ²³åç§æå¤§å­¦_ä¿¡ç®¡ä¸­å¿",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!doctype html>\n<html><head><meta charset=\"utf-8\"> \n<title>æ²³åç§æå¤§å­¦_ä¿¡ç®¡ä¸­å¿</title> \n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1\"> \n<link rel=\"style"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "vcenter|vc8.sau.edu.cn": {
+  "group": "vcenter",
+  "host": "vc8.sau.edu.cn",
+  "probes": [
+   {
+    "url": "https://vc8.sau.edu.cn/",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='vc8.sau.edu.cn', port=443): Max retries exceeded with "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "vcenter|vc-b.sau.edu.cn": {
+  "group": "vcenter",
+  "host": "vc-b.sau.edu.cn",
+  "probes": [
+   {
+    "url": "https://vc-b.sau.edu.cn/",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='vc-b.sau.edu.cn', port=443): Max retries exceeded with"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "bigip|moodle.scnu.edu.cn": {
+  "group": "bigip",
+  "host": "moodle.scnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://moodle.scnu.edu.cn/",
+    "status": 200,
+    "len": 132676,
+    "title": "首页 | 砺儒云课堂",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n\n<html  dir=\"ltr\" lang=\"zh\" xml:lang=\"zh\">\n<head>\n    <title>首页 | 砺儒云课堂</title>\n    <link rel=\"shortcut icon\" href=\"https://moodle.scnu.edu.cn/pluginfile.php/1/core_admin/favicon/64x64/1793859451/favicon."
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "bigip|remote.intl.zju.edu.cn": {
+  "group": "bigip",
+  "host": "remote.intl.zju.edu.cn",
+  "probes": [
+   {
+    "url": "https://remote.intl.zju.edu.cn/",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "server": "BigIP",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ofbiz|ofbiz.1.vpn.zjtie.edu.cn": {
+  "group": "ofbiz",
+  "host": "ofbiz.1.vpn.zjtie.edu.cn",
+  "probes": [
+   {
+    "url": "https://ofbiz.1.vpn.zjtie.edu.cn/",
+    "status": 200,
+    "len": 7472,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "Server",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head>\r\n<!-- 旧方案 >\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE7\" />\r\n<! 旧方案 -->\r\n\r\n<meta http-equiv=\"Pragma\" content=\"no-cache\">\r\n<meta http-equiv=\"Cache-Control\" content=\"no-cache\" >\r\n<meta http-eq"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ofbiz|xwc.xhsysu.edu.cn": {
+  "group": "ofbiz",
+  "host": "xwc.xhsysu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xwc.xhsysu.edu.cn/",
+    "status": 502,
+    "len": 551,
+    "title": "502 Bad Gateway",
+    "ctype": "text/html",
+    "server": "none",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>none</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!--"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|mail.cs.sjtu.edu.cn:8080": {
+  "group": "zimbra",
+  "host": "mail.cs.sjtu.edu.cn:8080",
+  "probes": [
+   {
+    "url": "http://mail.cs.sjtu.edu.cn:8080/",
+    "status": 200,
+    "len": 23281,
+    "title": "Zimbra Web Client Sign In",
+    "ctype": "text/html;charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<!-- set this class so CSS definitions that now use REM size, would work relative to this.\n\tSince now almost everything is relative to one of the 2 absolute font size classese -->\n<html class=\"user_font_s"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|mail2.cs.sjtu.edu.cn": {
+  "group": "zimbra",
+  "host": "mail2.cs.sjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://mail2.cs.sjtu.edu.cn/",
+    "status": 200,
+    "len": 23281,
+    "title": "Zimbra Web Client Sign In",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<!-- set this class so CSS definitions that now use REM size, would work relative to this.\n\tSince now almost everything is relative to one of the 2 absolute font size classese -->\n<html class=\"user_font_s"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|mail2.cs.sjtu.edu.cn:8080": {
+  "group": "zimbra",
+  "host": "mail2.cs.sjtu.edu.cn:8080",
+  "probes": [
+   {
+    "url": "http://mail2.cs.sjtu.edu.cn:8080/",
+    "status": 200,
+    "len": 23281,
+    "title": "Zimbra Web Client Sign In",
+    "ctype": "text/html;charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<!-- set this class so CSS definitions that now use REM size, would work relative to this.\n\tSince now almost everything is relative to one of the 2 absolute font size classese -->\n<html class=\"user_font_s"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|mail.acem.sjtu.edu.cn": {
+  "group": "zimbra",
+  "host": "mail.acem.sjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://mail.acem.sjtu.edu.cn/",
+    "status": 200,
+    "len": 23281,
+    "title": "Zimbra Web Client Sign In",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<!-- set this class so CSS definitions that now use REM size, would work relative to this.\n\tSince now almost everything is relative to one of the 2 absolute font size classese -->\n<html class=\"user_font_s"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|mail.cs.sjtu.edu.cn": {
+  "group": "zimbra",
+  "host": "mail.cs.sjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://mail.cs.sjtu.edu.cn/",
+    "status": 200,
+    "len": 23281,
+    "title": "Zimbra Web Client Sign In",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\n<!-- set this class so CSS definitions that now use REM size, would work relative to this.\n\tSince now almost everything is relative to one of the 2 absolute font size classese -->\n<html class=\"user_font_s"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "zimbra|c.git-zimbra-front.vpn.qtc.edu.cn": {
+  "group": "zimbra",
+  "host": "c.git-zimbra-front.vpn.qtc.edu.cn",
+  "probes": [
+   {
+    "url": "https://c.git-zimbra-front.vpn.qtc.edu.cn/",
+    "status": 200,
+    "len": 7478,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "Server",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head>\r\n\r\n<meta http-equiv=\"Pragma\" content=\"no-cache\">\r\n<meta http-equiv=\"Cache-Control\" content=\"no-cache\" >\r\n<meta http-equiv=\"Cache-Control\" content=\"must-revalidate\" >\r\n<meta http-equiv=\"Expires\" content=\"-1"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|yun.czie.edu.cn:4443": {
+  "group": "netscaler",
+  "host": "yun.czie.edu.cn:4443",
+  "probes": [
+   {
+    "url": "http://yun.czie.edu.cn:4443/",
+    "status": 400,
+    "len": 649,
+    "title": "400 The plain HTTP request was sent to HTTPS port",
+    "ctype": "text/html",
+    "server": "none",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\r\n<head><title>400 The plain HTTP request was sent to HTTPS port</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<center>The plain HTTP request was sent to HTTPS port</center>\r\n<hr><center>none</"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|app.tsari.tsinghua.edu.cn": {
+  "group": "netscaler",
+  "host": "app.tsari.tsinghua.edu.cn",
+  "probes": [
+   {
+    "url": "https://app.tsari.tsinghua.edu.cn/",
+    "status": 302,
+    "len": 411,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><script type=\"text/javascript\" src=\"/vpn/resources.js\"></script><script type=\"text/javascript\" src=\"/vpn/init/redirection_body_resources.js\">"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|qilab.nwu.edu.cn:9999": {
+  "group": "netscaler",
+  "host": "qilab.nwu.edu.cn:9999",
+  "probes": [
+   {
+    "url": "http://qilab.nwu.edu.cn:9999/",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 1"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|tjjtcloud.tongji.edu.cn": {
+  "group": "netscaler",
+  "host": "tjjtcloud.tongji.edu.cn",
+  "probes": [
+   {
+    "url": "https://tjjtcloud.tongji.edu.cn/",
+    "status": null,
+    "err": "SSLError:HTTPSConnectionPool(host='tjjtcloud.tongji.edu.cn', port=443): Max retries excee"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|liesmarsvd.whu.edu.cn": {
+  "group": "netscaler",
+  "host": "liesmarsvd.whu.edu.cn",
+  "probes": [
+   {
+    "url": "https://liesmarsvd.whu.edu.cn/",
+    "status": 302,
+    "len": 398,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><script type=\"text/javascript\" src=\"/vpn/resources.js\"></script><script type=\"text/javascript\" src=\"/vpn/init/redirection_body_resources.js\">"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|ysythgw.bupt.edu.cn": {
+  "group": "netscaler",
+  "host": "ysythgw.bupt.edu.cn",
+  "probes": [
+   {
+    "url": "https://ysythgw.bupt.edu.cn/",
+    "status": 302,
+    "len": 411,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><script type=\"text/javascript\" src=\"/vpn/resources.js\"></script><script type=\"text/javascript\" src=\"/vpn/init/redirection_body_resources.js\">"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|cwcgw.bupt.edu.cn": {
+  "group": "netscaler",
+  "host": "cwcgw.bupt.edu.cn",
+  "probes": [
+   {
+    "url": "https://cwcgw.bupt.edu.cn/",
+    "status": 302,
+    "len": 411,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><script type=\"text/javascript\" src=\"/vpn/resources.js\"></script><script type=\"text/javascript\" src=\"/vpn/init/redirection_body_resources.js\">"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "netscaler|cloud.shems.edu.cn": {
+  "group": "netscaler",
+  "host": "cloud.shems.edu.cn",
+  "probes": [
+   {
+    "url": "https://cloud.shems.edu.cn/",
+    "status": 302,
+    "len": 411,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><script type=\"text/javascript\" src=\"/vpn/resources.js\"></script><script type=\"text/javascript\" src=\"/vpn/init/redirection_body_resources.js\">"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|xxhc.ujs.edu.cn": {
+  "group": "esxi",
+  "host": "xxhc.ujs.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxhc.ujs.edu.cn/",
+    "status": 200,
+    "len": 66051,
+    "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼",
+    "ctype": "text/html",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head>\r\n\r\n\r\n<meta http-equiv=\"X-UA-Compatible\" conten"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|it.whit.edu.cn": {
+  "group": "esxi",
+  "host": "it.whit.edu.cn",
+  "probes": [
+   {
+    "url": "https://it.whit.edu.cn/",
+    "status": 200,
+    "len": 42180,
+    "title": "èæ¹èä¸ææ¯å¤§å­¦-ä¿¡æ¯åå»ºè®¾ä¸ç®¡çå¤",
+    "ctype": "text/html",
+    "server": "*********",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n\r\n<head>\r\n    <meta name=\"format-detection\" content=\"telephone=no\" />\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatib"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|press.ecust.edu.cn:9443": {
+  "group": "esxi",
+  "host": "press.ecust.edu.cn:9443",
+  "probes": [
+   {
+    "url": "http://press.ecust.edu.cn:9443/",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|xxzx.tynu.edu.cn": {
+  "group": "esxi",
+  "host": "xxzx.tynu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxzx.tynu.edu.cn/",
+    "status": 200,
+    "len": 33481,
+    "title": "ä¿¡æ¯åå»ºè®¾ä¸ç®¡çä¸­å¿",
+    "ctype": "text/html",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" style=\"overflow: auto;\"><head>\r\n<title>ä¿¡æ¯åå»ºè®¾ä¸ç®¡çä¸­å¿</title><me"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|xxs.tjut.edu.cn": {
+  "group": "esxi",
+  "host": "xxs.tjut.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxs.tjut.edu.cn/",
+    "status": 200,
+    "len": 46554,
+    "title": "ç½ç»å®å ¨åä¿¡æ¯ååå ¬å®¤",
+    "ctype": "text/html",
+    "server": "WebServer",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|japec.edu.cn:8085": {
+  "group": "esxi",
+  "host": "japec.edu.cn:8085",
+  "probes": [
+   {
+    "url": "http://japec.edu.cn:8085/",
+    "status": 400,
+    "len": 48,
+    "title": "",
+    "ctype": "",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "Client sent an HTTP request to an HTTPS server.\n"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "esxi|wlzx.ldpoly.edu.cn": {
+  "group": "esxi",
+  "host": "wlzx.ldpoly.edu.cn",
+  "probes": [
+   {
+    "url": "https://wlzx.ldpoly.edu.cn/",
+    "status": 200,
+    "len": 68200,
+    "title": "网络信息管理中心",
+    "ctype": "text/html; charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html lang=\"zh\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>网络信息管理中心</title>\r\n    <meta name=\"keywords\" content=\"\">\r\n   "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|pris.bit.edu.cn": {
+  "group": "h3c",
+  "host": "pris.bit.edu.cn",
+  "probes": [
+   {
+    "url": "https://pris.bit.edu.cn/",
+    "status": 200,
+    "len": 13470,
+    "title": "æ¨¡å¼è¯å«ä¸æºè½ç³»ç»ç ç©¶æ",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/htm"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|genai.shanghaitech.edu.cn": {
+  "group": "h3c",
+  "host": "genai.shanghaitech.edu.cn",
+  "probes": [
+   {
+    "url": "https://genai.shanghaitech.edu.cn/",
+    "status": 404,
+    "len": 3305640,
+    "title": "404",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<title>404</title>\r\n\t</head>\r\n\t<style type=\"text/css\">\r\n\t\tbody {\r\n\t\t\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAOpCAYAAAD7Tjo"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|ygx.sxu.edu.cn": {
+  "group": "h3c",
+  "host": "ygx.sxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://ygx.sxu.edu.cn/",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|jjh.ccut.edu.cn": {
+  "group": "h3c",
+  "host": "jjh.ccut.edu.cn",
+  "probes": [
+   {
+    "url": "https://jjh.ccut.edu.cn/",
+    "status": 200,
+    "len": 42041,
+    "title": "é¿æ¥å·¥ä¸å¤§å­¦æ ¡åæ»ä¼æè²åå±åºéä¼",
+    "ctype": "text/html",
+    "server": "*********",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html><html><head>\r\n\r\n\r\n\r\n<title>é¿æ¥å·¥ä¸å¤§å­¦æ ¡åæ»ä¼æè²åå±åºéä¼</title><META Name=\"keywords\" Content=\"é¿æ¥å·¥ä¸å¤§å­¦æ ¡åæ»ä¼æè²åå±åºéä¼\" />\r\n\r\n\r\n<meta name=\"description\""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|xxc.lyu.edu.cn": {
+  "group": "h3c",
+  "host": "xxc.lyu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxc.lyu.edu.cn/",
+    "status": 200,
+    "len": 42549,
+    "title": "ä¿¡æ¯å¤",
+    "ctype": "text/html",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html class=\"webplus-main\"  >\r\n<head>\r\n<meta name=\"viewport\" content=\"width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0\"/>\r\n<meta charset=\"utf-8\">\r\n<meta http-equ"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|chat.shanghaitech.edu.cn": {
+  "group": "h3c",
+  "host": "chat.shanghaitech.edu.cn",
+  "probes": [
+   {
+    "url": "https://chat.shanghaitech.edu.cn/",
+    "status": 404,
+    "len": 3305640,
+    "title": "404",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<title>404</title>\r\n\t</head>\r\n\t<style type=\"text/css\">\r\n\t\tbody {\r\n\t\t\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAOpCAYAAAD7Tjo"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|kczyw.whit.edu.cn": {
+  "group": "h3c",
+  "host": "kczyw.whit.edu.cn",
+  "probes": [
+   {
+    "url": "https://kczyw.whit.edu.cn/",
+    "status": 200,
+    "len": 20824,
+    "title": "èæ¹èä¸ææ¯å¤§å­¦-è¯¾ç¨èµæºä¸­å¿",
+    "ctype": "text/html",
+    "server": "*********",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html><head><title>èæ¹èä¸ææ¯å¤§å­¦-è¯¾ç¨èµæºä¸­å¿</title><META Name=\"keywords\" Content=\"èæ¹èä¸ææ¯å¤§å­¦-è¯¾ç¨èµæºä¸­å¿\" />\r\n\r\n\r\n\r\n\r\n<meta http-equiv=\"X-UA-Compatible\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|nm.yibinu.edu.cn": {
+  "group": "h3c",
+  "host": "nm.yibinu.edu.cn",
+  "probes": [
+   {
+    "url": "https://nm.yibinu.edu.cn/",
+    "status": 200,
+    "len": 31601,
+    "title": "å®å®¾å­¦é¢ä¿¡æ¯ä¸­å¿",
+    "ctype": "text/html",
+    "server": "rump/e",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n    <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta Â http-equiv=\"X-UA-Compatible\" Â content=\"IE=9\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scal"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "h3c|hpc.shanghaitech.edu.cn": {
+  "group": "h3c",
+  "host": "hpc.shanghaitech.edu.cn",
+  "probes": [
+   {
+    "url": "https://hpc.shanghaitech.edu.cn/",
+    "status": 404,
+    "len": 3305640,
+    "title": "404",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<title>404</title>\r\n\t</head>\r\n\t<style type=\"text/css\">\r\n\t\tbody {\r\n\t\t\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAOpCAYAAAD7Tjo"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ruijie|www.imnu.edu.cn": {
+  "group": "ruijie",
+  "host": "www.imnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://www.imnu.edu.cn/",
+    "status": 200,
+    "len": 74090,
+    "title": "å èå¤å¸èå¤§å­¦",
+    "ctype": "text/html",
+    "server": "Apache",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<title>åèå¤å¸èå¤§å­¦</title><meta name=\"pageType\" content=\"1\">\r\n<meta name=\"pageTitle\" content=\"åèå¤å¸èå¤§å­¦\">\r\n<META Name=\"keywords\" Content=\""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ruijie|ic.imnu.edu.cn": {
+  "group": "ruijie",
+  "host": "ic.imnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://ic.imnu.edu.cn/",
+    "status": 200,
+    "len": 38034,
+    "title": "ä¿¡æ¯ä¸­å¿",
+    "ctype": "text/html",
+    "server": "Apache",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"renderer\" content=\"webkit\" />\r\n    <meta name=\"force-rendering\" content=\"webkit\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" cont"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ruijie|wse.hhu.edu.cn": {
+  "group": "ruijie",
+  "host": "wse.hhu.edu.cn",
+  "probes": [
+   {
+    "url": "https://wse.hhu.edu.cn/",
+    "status": 200,
+    "len": 143907,
+    "title": "Water Science and Engineering",
+    "ctype": "text/html;charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n        <title>Water Science and Engineering"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ruijie|api.m.dlut.edu.cn": {
+  "group": "ruijie",
+  "host": "api.m.dlut.edu.cn",
+  "probes": [
+   {
+    "url": "https://api.m.dlut.edu.cn/",
+    "status": 404,
+    "len": 2644,
+    "title": "微哨授权提示404",
+    "ctype": "text/html; charset=utf-8",
+    "server": "ngx_openresty",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<html>\n  <head>\n    <meta charset='utf-8'> \n    <title>微哨授权提示404</title>\n    <meta name=\"robots\" content=\"all\">\n    <meta name=\"author\" content=\"Ruijie-Whistle\">\n    <meta name=\"Copyright\" content=\"Ruijie-Whistle\">\n    <"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "ruijie|iop.qlu.edu.cn": {
+  "group": "ruijie",
+  "host": "iop.qlu.edu.cn",
+  "probes": [
+   {
+    "url": "https://iop.qlu.edu.cn/",
+    "status": 200,
+    "len": 6012,
+    "title": "齐鲁工业大学(山东省科学院）-IOP物联网智慧教学融合平台 - 用户登录",
+    "ctype": "text/html; charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "device_info": false,
+    "default_pwd_hint": false,
+    "version_hints": [],
+    "head": "<script>\r\n    if (self != top) { top.location = self.location; }\r\n</script>\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>齐鲁工业大学(山东省科学院）-IOP物联网智慧教学融合平台 - 用户登录</title>\r\n    <meta http-"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ }
+}

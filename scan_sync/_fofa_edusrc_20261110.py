@@ -53,7 +53,52 @@ BATCH5 = {
     "edu_phpmyadmin": 'title="phpMyAdmin" && host="edu.cn"',
     "edu_swagger":    '(title="Swagger UI" || body="swagger-ui") && host="edu.cn"',
 }
+# === 第三轮：目标重设（判定点驱动） ===
+# 弱密钥只挑「设备类」（CNVD 才给证，§7.28）；RCE 只挑 KEV 在册、版本/指纹可读的 N-day。
+BATCH6 = {   # KEV 在册 N-day RCE，历史 31 切片从未查过
+    "edu_papercut":  '(title="PaperCut" || body="PaperCut") && host="edu.cn"',
+    "edu_activemq":  '(title="ActiveMQ" || body="ActiveMQ") && host="edu.cn"',
+    "edu_vcenter":   '(title="vCenter" || body="ID_VC_Welcome") && host="edu.cn"',
+    "edu_bigip":     '(title="BIG-IP" || body="BIG-IP") && host="edu.cn"',
+    "edu_ofbiz":     '(title="OFBiz" || body="OFBiz") && host="edu.cn"',
+    "edu_zimbra":    '(title="Zimbra" || body="Zimbra") && host="edu.cn"',
+}
+BATCH7 = {   # 设备类弱密钥（打印机/门禁/NVR/交换机），CNVD 给证对口
+    "edu_access_ctrl":   '(title="门禁" || body="门禁管理系统") && host="edu.cn"',
+    "edu_hik_isapi":     '(server="DVRDVS-Webs" || body="/ISAPI/") && host="edu.cn"',
+    "edu_printer_panel": '(title="Web Image Monitor" || title="HP LaserJet") && host="edu.cn"',
+    "edu_h3c":           '(title="H3C" || body="H3C") && host="edu.cn"',
+    "edu_ruijie":        '(title="锐捷" || body="Ruijie") && host="edu.cn"',
+    "edu_nvr":           '(title="NVR" || body="网络硬盘录像机") && host="edu.cn"',
+}
+BATCH8 = {   # 判定点精确切片 + 扩池
+    "edu_papercut_p9191": 'title="PaperCut" && port="9191" && host="edu.cn"',
+    "edu_activemq_p8161": 'title="ActiveMQ" && port="8161" && host="edu.cn"',
+    "edu_springcloudgw":  'body="spring.cloud.gateway" && host="edu.cn"',
+    "edu_esxi":           '(title="ESXi" || body="VMware ESXi") && host="edu.cn"',
+    "edu_netscaler":      '(title="NetScaler" || body="Citrix Gateway") && host="edu.cn"',
+    "edu_moveit":         '(body="MOVEit" || title="MOVEit") && host="edu.cn"',
+}
+# 第四轮：按项目已成功的弱密钥模式（公示初始密码规则 + 明文学号）反推目标，而非扫产品名
+BATCH9 = {
+    "edu_initpwd":    'body="初始密码" && host="edu.cn"',
+    "edu_defaultpwd": 'body="默认密码" && host="edu.cn"',
+    "edu_idcard6":    '(body="身份证后六位" || body="学号后六位") && host="edu.cn"',
+    "edu_zhcp":       '(title="综合测评" || body="综合测评") && host="edu.cn"',
+    "edu_yjs":        '(title="研究生综合服务" || body="研究生综合服务平台") && host="edu.cn"',
+    "edu_xk":         '(title="校际课程互选" || body="校际课程互选") && host="edu.cn"',
+}
+# RCE 侧去掉泛 body 关键词，只用精确 title（降低门户页误报）
+BATCH10 = {
+    "edu_papercut_t": 'title="PaperCut" && host="edu.cn"',
+    "edu_activemq_t": 'title="Apache ActiveMQ" && host="edu.cn"',
+    "edu_zimbra_t":   'title="Zimbra Web Client" && host="edu.cn"',
+    "edu_ofbiz_t":    'title="OFBiz" && host="edu.cn"',
+    "edu_vcenter_t":  'title="VMware vCenter" && host="edu.cn"',
+    "edu_bigip_t":    'title="BIG-IP" && host="edu.cn"',
+}
 ALL = {"1": BATCH1, "2": BATCH2, "3": BATCH3, "4": BATCH4, "5": BATCH5,
+       "6": BATCH6, "7": BATCH7, "8": BATCH8, "9": BATCH9, "10": BATCH10,
        "probe": {"probe_jenkins": '(title="Jenkins" || body="Jenkins") && host="edu.cn"'}}
 
 
@@ -107,9 +152,10 @@ EXTRACT = """(() => {
   }
   const hosts = [];
   out.forEach(x => { if (x.indexOf('edu.cn') >= 0 || x.indexOf(':') >= 0) hosts.push(x); });
-  const gate = lower.indexOf('captcha') >= 0 || lower.indexOf('人机') >= 0 ||
-               lower.indexOf('verify you') >= 0 || lower.indexOf('just a moment') >= 0 ||
-               lower.indexOf('请登录') >= 0 || lower.indexOf('log in to') >= 0 ||
+  // 只在真正的 FOFA 验证页停机；结果明细里出现 captcha 字样（如 Citrix CSP 头）不算门禁
+  const gate = (location.href.indexOf('/captcha') >= 0 &&
+                (lower.indexOf('confirm humanity') >= 0 || b.indexOf('Please click in order') >= 0)) ||
+               (lower.indexOf('824001') >= 0 && lower.indexOf('requires registered user') >= 0) ||
                lower.indexOf('access denied') >= 0 || lower.indexOf('请求过于频繁') >= 0;
   const m = b.match(/([0-9][0-9,]*)\\s*(results|条)/i);
   return JSON.stringify({

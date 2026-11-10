@@ -1,0 +1,446 @@
+{
+ "ts": "2026-11-10 20:22:40",
+ "boundary": "只读 GET 登录页；不 POST、不爆破、不执行 payload、不读真实数据",
+ "items": [
+  {
+   "group": "access_ctrl",
+   "url": "https://door.gxmu.edu.cn/",
+   "final_url": "https://door.gxmu.edu.cn/",
+   "status": 200,
+   "len": 14387,
+   "title": "å»å¤§æºè½é¨ç¦ç³»ç»",
+   "ctype": "text/html",
+   "server": "nginx/1.20.1",
+   "inputs": [],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [
+    "1.0",
+    "1.1",
+    "1.0",
+    "1.1",
+    "1.0"
+   ],
+   "has_captcha": false,
+   "vendor_hints": []
+  },
+  {
+   "group": "access_ctrl",
+   "url": "https://access.ybipc.edu.cn/",
+   "final_url": "https://access.ybipc.edu.cn/",
+   "status": 200,
+   "len": 1740,
+   "title": "门禁管理系统",
+   "ctype": "text/html; charset=utf-8",
+   "server": "nginx/1.30.6",
+   "inputs": [],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": []
+  },
+  {
+   "group": "access_ctrl",
+   "url": "https://smartaccess.hit.edu.cn/",
+   "final_url": "https://smartaccess.hit.edu.cn/",
+   "status": 200,
+   "len": 814,
+   "title": "æºæ §é¨ç¦",
+   "ctype": "text/html",
+   "server": "nginx/1.26.3",
+   "inputs": [],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": []
+  },
+  {
+   "group": "access_ctrl",
+   "url": "https://fk.sctbc.edu.cn/",
+   "final_url": "https://fk.sctbc.edu.cn/",
+   "status": 200,
+   "len": 27424,
+   "title": "æºè½é¨ç¦ç®¡çå¹³å°",
+   "ctype": "text/html",
+   "server": "nginx",
+   "inputs": [
+    {
+     "name": "username",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "password",
+     "type": "password",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": true,
+   "vendor_hints": []
+  },
+  {
+   "group": "zimbra",
+   "url": "http://mail.cs.sjtu.edu.cn:8080/",
+   "final_url": "http://mail.cs.sjtu.edu.cn:8080/",
+   "status": 200,
+   "len": 23281,
+   "title": "Zimbra Web Client Sign In",
+   "ctype": "text/html;charset=utf-8",
+   "server": "",
+   "inputs": [
+    {
+     "name": "loginOp",
+     "type": "hidden",
+     "value": "login"
+    },
+    {
+     "name": "login_csrf",
+     "type": "hidden",
+     "value": "f919cbba-fe41-4dfa-988f-4f807f"
+    },
+    {
+     "name": "username",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "password",
+     "type": "password",
+     "value": ""
+    },
+    {
+     "name": "zrememberme",
+     "type": "checkbox",
+     "value": "1"
+    },
+    {
+     "name": "",
+     "type": "button",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "zimbra"
+   ]
+  },
+  {
+   "group": "zimbra",
+   "url": "https://mail2.cs.sjtu.edu.cn/",
+   "final_url": "https://mail2.cs.sjtu.edu.cn/",
+   "status": 200,
+   "len": 23281,
+   "title": "Zimbra Web Client Sign In",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "inputs": [
+    {
+     "name": "loginOp",
+     "type": "hidden",
+     "value": "login"
+    },
+    {
+     "name": "login_csrf",
+     "type": "hidden",
+     "value": "1a0f6208-355c-423b-8538-bcee68"
+    },
+    {
+     "name": "username",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "password",
+     "type": "password",
+     "value": ""
+    },
+    {
+     "name": "zrememberme",
+     "type": "checkbox",
+     "value": "1"
+    },
+    {
+     "name": "",
+     "type": "button",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "zimbra"
+   ]
+  },
+  {
+   "group": "zimbra",
+   "url": "https://mail.acem.sjtu.edu.cn/",
+   "final_url": "https://mail.acem.sjtu.edu.cn/",
+   "status": 200,
+   "len": 23281,
+   "title": "Zimbra Web Client Sign In",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "inputs": [
+    {
+     "name": "loginOp",
+     "type": "hidden",
+     "value": "login"
+    },
+    {
+     "name": "login_csrf",
+     "type": "hidden",
+     "value": "4724b7e3-f95e-4770-bd71-50dcfb"
+    },
+    {
+     "name": "username",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "password",
+     "type": "password",
+     "value": ""
+    },
+    {
+     "name": "zrememberme",
+     "type": "checkbox",
+     "value": "1"
+    },
+    {
+     "name": "",
+     "type": "button",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "zimbra"
+   ]
+  },
+  {
+   "group": "zimbra",
+   "url": "https://mail.cs.sjtu.edu.cn/",
+   "final_url": "https://mail.cs.sjtu.edu.cn/",
+   "status": 200,
+   "len": 23281,
+   "title": "Zimbra Web Client Sign In",
+   "ctype": "text/html;charset=utf-8",
+   "server": "nginx",
+   "inputs": [
+    {
+     "name": "loginOp",
+     "type": "hidden",
+     "value": "login"
+    },
+    {
+     "name": "login_csrf",
+     "type": "hidden",
+     "value": "06b7dba5-a693-4ce2-825a-9d270b"
+    },
+    {
+     "name": "username",
+     "type": "text",
+     "value": ""
+    },
+    {
+     "name": "password",
+     "type": "password",
+     "value": ""
+    },
+    {
+     "name": "zrememberme",
+     "type": "checkbox",
+     "value": "1"
+    },
+    {
+     "name": "",
+     "type": "button",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "zimbra"
+   ]
+  },
+  {
+   "group": "netscaler",
+   "url": "https://app.tsari.tsinghua.edu.cn/",
+   "final_url": "https://app.tsari.tsinghua.edu.cn/logon/LogonPoint/index.html",
+   "status": 200,
+   "len": 42846,
+   "title": "Citrix Gateway",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "inputs": [
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "citrix",
+    "netscaler"
+   ]
+  },
+  {
+   "group": "netscaler",
+   "url": "https://liesmarsvd.whu.edu.cn/",
+   "final_url": "https://liesmarsvd.whu.edu.cn/vpn/index.html",
+   "status": 200,
+   "len": 2450,
+   "title": "Citrix Gateway",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "inputs": [],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "citrix"
+   ]
+  },
+  {
+   "group": "netscaler",
+   "url": "https://ysythgw.bupt.edu.cn/",
+   "final_url": "https://ysythgw.bupt.edu.cn/logon/LogonPoint/index.html",
+   "status": 200,
+   "len": 42846,
+   "title": "Citrix Gateway",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "inputs": [
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "citrix",
+    "netscaler"
+   ]
+  },
+  {
+   "group": "netscaler",
+   "url": "https://cloud.shems.edu.cn/",
+   "final_url": "https://cloud.shems.edu.cn/logon/LogonPoint/index.html",
+   "status": 200,
+   "len": 42899,
+   "title": "Citrix Gateway",
+   "ctype": "text/html; charset=utf-8",
+   "server": "Apache",
+   "inputs": [
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "search",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "checkbox",
+     "value": ""
+    }
+   ],
+   "hardcoded_password_values": [],
+   "default_pwd_hints": [],
+   "version_hints": [],
+   "has_captcha": false,
+   "vendor_hints": [
+    "citrix",
+    "netscaler"
+   ]
+  }
+ ]
+}
