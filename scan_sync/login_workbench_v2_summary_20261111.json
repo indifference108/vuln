@@ -1,0 +1,30 @@
+{
+ "ts": "2026-11-11 00:57",
+ "version": "v2 rule engine",
+ "rules": [
+  {
+   "id": "R1",
+   "password": "ID-card last 6 (upper X)",
+   "basis": "official published PDF 2.1",
+   "source": "xxc.csmzxy.edu.cn business-flow PDF",
+   "requires": "local sid,id6 CSV; skipped if absent"
+  },
+  {
+   "id": "R2",
+   "password": "student ID itself",
+   "basis": "same-class CAS public fallback",
+   "source": "Yangtze Normal University service-hall notice"
+  },
+  {
+   "id": "R3",
+   "password": "last 6 of student ID",
+   "basis": "inferred, no university-specific evidence",
+   "source": "common practice at peer institutions"
+  }
+ ],
+ "form_chain": "fill username + passwordText, dispatch input/change/keyup/blur, click a#login_submit (saltPassword is computed in click handler)",
+ "real_failure_text": "您提供的用户名或者密码有误 (regex-fixed after first attempt was missed)",
+ "trial": "D01 under R2 -> failed and written back; switching to R3 triggered captcha -> stopped for human",
+ "limits": "3 sourced rules only, no brute force; max 5 consecutive attempts; stop on hit/lock/forced-change/captcha; no post-login data; plaintext passwords never logged",
+ "boundary": "CSV with real student IDs and optional ID6 CSV stay local only"
+}
