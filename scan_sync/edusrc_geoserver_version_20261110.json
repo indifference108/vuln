@@ -1,0 +1,123 @@
+{
+ "ts": "2026-11-10 19:26:58",
+ "items": [
+  {
+   "host": "map.xjau.edu.cn",
+   "probes": [
+    {
+     "url": "https://map.xjau.edu.cn/geoserver/web/",
+     "status": 200,
+     "title": "GeoServer: Welcome",
+     "ctype": "text/html;charset=UTF-8",
+     "version": null,
+     "len": 33820
+    },
+    {
+     "url": "https://map.xjau.edu.cn/geoserver/",
+     "status": 200,
+     "title": "GeoServer: Redirecting",
+     "ctype": "text/html;charset=UTF-8",
+     "version": null,
+     "len": 697
+    }
+   ],
+   "version": null,
+   "affected": null
+  },
+  {
+   "host": "geolab.ucas.edu.cn",
+   "probes": [
+    {
+     "url": "https://geolab.ucas.edu.cn/geoserver/web/",
+     "status": 404,
+     "title": "404 Not Found",
+     "ctype": "text/html; charset=iso-8859-1",
+     "version": null,
+     "len": 196
+    },
+    {
+     "url": "https://geolab.ucas.edu.cn/geoserver/",
+     "status": 404,
+     "title": "404 Not Found",
+     "ctype": "text/html; charset=iso-8859-1",
+     "version": null,
+     "len": 196
+    }
+   ],
+   "version": null,
+   "affected": null
+  },
+  {
+   "host": "ifarm.xjau.edu.cn",
+   "probes": [
+    {
+     "url": "https://ifarm.xjau.edu.cn/geoserver/web/",
+     "status": 404,
+     "title": "智慧农场",
+     "ctype": "text/html; charset=utf-8",
+     "version": null,
+     "len": 27820
+    },
+    {
+     "url": "https://ifarm.xjau.edu.cn/geoserver/",
+     "status": 404,
+     "title": "智慧农场",
+     "ctype": "text/html; charset=utf-8",
+     "version": null,
+     "len": 27816
+    }
+   ],
+   "version": null,
+   "affected": null
+  },
+  {
+   "host": "sdjn.bnu.edu.cn",
+   "probes": [
+    {
+     "url": "https://sdjn.bnu.edu.cn/geoserver/web/",
+     "status": 502,
+     "title": "è®¿é®åºé - 502",
+     "ctype": "text/html",
+     "version": null,
+     "len": 2770
+    },
+    {
+     "url": "https://sdjn.bnu.edu.cn/geoserver/",
+     "status": 502,
+     "title": "è®¿é®åºé - 502",
+     "ctype": "text/html",
+     "version": null,
+     "len": 2770
+    }
+   ],
+   "version": null,
+   "affected": null
+  },
+  {
+   "host": "geoshikong.whcp.edu.cn",
+   "probes": [
+    {
+     "url": "https://geoshikong.whcp.edu.cn/geoserver/web/",
+     "status": 502,
+     "title": "502 Bad Gateway",
+     "ctype": "text/html",
+     "version": null,
+     "len": 552
+    },
+    {
+     "url": "https://geoshikong.whcp.edu.cn/geoserver/",
+     "status": 502,
+     "title": "502 Bad Gateway",
+     "ctype": "text/html",
+     "version": null,
+     "len": 552
+    }
+   ],
+   "version": null,
+   "affected": null
+  }
+ ],
+ "cve": "CVE-2024-36401 (GeoServer XXE->RCE, CISA KEV, CVSS 9.8)",
+ "affected": "<2.23.4, 2.24.0, 2.25.0 ; fixed 2.23.4 / 2.24.1 / 2.25.1",
+ "note": "仅读取公开欢迎页文本中的版本号；未请求 WFS/REST 利用面，未发送任何 payload"
+}

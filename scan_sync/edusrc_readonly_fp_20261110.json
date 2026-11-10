@@ -1,0 +1,1595 @@
+{
+ "geoserver|sdjn.bnu.edu.cn": {
+  "url": "https://sdjn.bnu.edu.cn/geoserver/web/",
+  "status": 502,
+  "len": 2770,
+  "title": "è®¿é®åºé - 502",
+  "ctype": "text/html",
+  "server": "none",
+  "keys": [],
+  "hit": false,
+  "why": "",
+  "attempts": [
+   {
+    "url": "https://sdjn.bnu.edu.cn/geoserver/rest/about/version.json",
+    "status": 502,
+    "len": 2770,
+    "title": "è®¿é®åºé - 502",
+    "ctype": "text/html",
+    "server": "none",
+    "keys": [],
+    "hit": false,
+    "why": ""
+   }
+  ]
+ },
+ "geoserver|imap.ucas.edu.cn": {
+  "url": "https://imap.ucas.edu.cn/geoserver/rest/about/version.json",
+  "status": 200,
+  "len": 17403,
+  "title": "采集系统用户登录页面",
+  "ctype": "text/html;charset=UTF-8",
+  "server": "",
+  "keys": [],
+  "hit": false,
+  "why": "",
+  "attempts": []
+ },
+ "geoserver|map.xjau.edu.cn": {
+  "url": "https://map.xjau.edu.cn/geoserver/web/",
+  "status": 200,
+  "len": 33820,
+  "title": "GeoServer: Welcome",
+  "ctype": "text/html;charset=UTF-8",
+  "server": "nginx",
+  "keys": [
+   "GeoServer"
+  ],
+  "hit": false,
+  "why": "",
+  "attempts": [
+   {
+    "url": "https://map.xjau.edu.cn/geoserver/rest/about/version.json",
+    "status": 401,
+    "len": 713,
+    "title": "HTTP Status 401 – Unauthorized",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "keys": [],
+    "hit": false,
+    "why": ""
+   }
+  ]
+ },
+ "geoserver|geolab.ucas.edu.cn": {
+  "url": "https://geolab.ucas.edu.cn/geoserver/web/",
+  "status": 404,
+  "len": 196,
+  "title": "404 Not Found",
+  "ctype": "text/html; charset=iso-8859-1",
+  "server": "Apache",
+  "keys": [],
+  "hit": false,
+  "why": "",
+  "attempts": [
+   {
+    "url": "https://geolab.ucas.edu.cn/geoserver/rest/about/version.json",
+    "status": 404,
+    "len": 196,
+    "title": "404 Not Found",
+    "ctype": "text/html; charset=iso-8859-1",
+    "server": "Apache",
+    "keys": [],
+    "hit": false,
+    "why": ""
+   }
+  ]
+ },
+ "geoserver|geoshikong.whcp.edu.cn": {
+  "url": "https://geoshikong.whcp.edu.cn/geoserver/web/",
+  "status": 502,
+  "len": 552,
+  "title": "502 Bad Gateway",
+  "ctype": "text/html",
+  "server": "rump/c",
+  "keys": [],
+  "hit": false,
+  "why": "",
+  "attempts": [
+   {
+    "url": "https://geoshikong.whcp.edu.cn/geoserver/rest/about/version.json",
+    "status": 502,
+    "len": 552,
+    "title": "502 Bad Gateway",
+    "ctype": "text/html",
+    "server": "rump/c",
+    "keys": [],
+    "hit": false,
+    "why": ""
+   }
+  ]
+ },
+ "geoserver|ifarm.xjau.edu.cn": {
+  "url": "https://ifarm.xjau.edu.cn/geoserver/web/",
+  "status": 404,
+  "len": 27820,
+  "title": "智慧农场",
+  "ctype": "text/html; charset=utf-8",
+  "server": "nginx",
+  "keys": [],
+  "hit": false,
+  "why": "",
+  "attempts": [
+   {
+    "url": "https://ifarm.xjau.edu.cn/geoserver/rest/about/version.json",
+    "status": 404,
+    "len": 27839,
+    "title": "智慧农场",
+    "ctype": "text/html; charset=utf-8",
+    "server": "nginx",
+    "keys": [],
+    "hit": false,
+    "why": ""
+   }
+  ]
+ },
+ "actuator|tyzf.aku.edu.cn:8084": {
+  "url": "http://tyzf.aku.edu.cn:8084/actuator",
+  "status": 200,
+  "len": 261,
+  "title": "",
+  "ctype": "application/json",
+  "server": "",
+  "keys": [
+   "_links"
+  ],
+  "hit": false,
+  "why": "复核：仅 health 端点，默认配置，不构成洞",
+  "attempts": []
+ },
+ "actuator|ai.ynjtc.edu.cn": {
+  "group": "actuator",
+  "host": "ai.ynjtc.edu.cn",
+  "probes": [
+   {
+    "url": "https://ai.ynjtc.edu.cn/actuator",
+    "status": 404,
+    "len": 111,
+    "title": "",
+    "ctype": "application/json;charset=UTF-8",
+    "body_head": "{\"timestamp\":\"2026-11-10T11:28:19.004+0000\",\"path\":\"/actuator\",\"status\":404,\"error\":\"Not Found\",\"message\":null}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|dd.hzjy.edu.cn": {
+  "group": "actuator",
+  "host": "dd.hzjy.edu.cn",
+  "probes": [
+   {
+    "url": "https://dd.hzjy.edu.cn/actuator",
+    "status": 404,
+    "len": 87,
+    "title": "",
+    "ctype": "application/json",
+    "body_head": "{\"timestamp\":\"2026-11-10 19:28:20\",\"status\":404,\"error\":\"Not Found\",\"path\":\"/actuator\"}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|org.xjtu.edu.cn": {
+  "group": "actuator",
+  "host": "org.xjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://org.xjtu.edu.cn/actuator",
+    "status": 404,
+    "len": 129,
+    "title": "",
+    "ctype": "application/json;charset=UTF-8",
+    "body_head": "{\"timestamp\":\"2026-11-10T19:28:23.180+0800\",\"status\":404,\"error\":\"Not Found\",\"message\":\"No message available\",\"path\":\"/actuator\"}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|dacx.cqupt.edu.cn": {
+  "group": "actuator",
+  "host": "dacx.cqupt.edu.cn",
+  "probes": [
+   {
+    "url": "https://dacx.cqupt.edu.cn/actuator",
+    "status": 404,
+    "len": 96,
+    "title": "",
+    "ctype": "application/json",
+    "body_head": "{\n\t\"timestamp\":\"2026-11-10 03:09:27\",\n\t\"status\":404,\n\t\"error\":\"Not Found\",\n\t\"path\":\"/actuator\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|zhxygateway.gdipu.edu.cn": {
+  "group": "actuator",
+  "host": "zhxygateway.gdipu.edu.cn",
+  "probes": [
+   {
+    "url": "https://zhxygateway.gdipu.edu.cn/actuator",
+    "status": 403,
+    "len": 555,
+    "title": "403 Forbidden",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx/1.26.1</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome frie"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": "403 Forbidden"
+ },
+ "actuator|ai.ahszu.edu.cn": {
+  "group": "actuator",
+  "host": "ai.ahszu.edu.cn",
+  "probes": [
+   {
+    "url": "https://ai.ahszu.edu.cn/actuator",
+    "status": 404,
+    "len": 111,
+    "title": "",
+    "ctype": "application/json;charset=UTF-8",
+    "body_head": "{\"timestamp\":\"2026-11-10T11:28:26.608+0000\",\"path\":\"/actuator\",\"status\":404,\"error\":\"Not Found\",\"message\":null}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|ai.aqnu.edu.cn": {
+  "group": "actuator",
+  "host": "ai.aqnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://ai.aqnu.edu.cn/actuator",
+    "status": 404,
+    "len": 111,
+    "title": "",
+    "ctype": "application/json;charset=UTF-8",
+    "body_head": "{\"timestamp\":\"2026-11-10T11:28:28.094+0000\",\"path\":\"/actuator\",\"status\":404,\"error\":\"Not Found\",\"message\":null}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|pay.nufe.edu.cn": {
+  "group": "actuator",
+  "host": "pay.nufe.edu.cn",
+  "probes": [
+   {
+    "url": "https://pay.nufe.edu.cn/actuator",
+    "status": 404,
+    "len": 141,
+    "title": "",
+    "ctype": "application/json",
+    "body_head": "{\"timestamp\":\"2026-11-10T11:28:29.575+0000\",\"path\":\"/actuator\",\"status\":404,\"error\":\"Not Found\",\"message\":null,\"requestId\":\"7a878e11-854770\"}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "actuator|ss.knet.ex2.https.443.ipv6.cqust.edu.cn": {
+  "group": "actuator",
+  "host": "ss.knet.ex2.https.443.ipv6.cqust.edu.cn",
+  "probes": [
+   {
+    "url": "https://ss.knet.ex2.https.443.ipv6.cqust.edu.cn/actuator",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='ss.knet.ex2.https.443.ipv6.cqust.edu.cn', port=443): M"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "actuator|nanolab.jxnu.edu.cn": {
+  "group": "actuator",
+  "host": "nanolab.jxnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://nanolab.jxnu.edu.cn/actuator",
+    "status": 301,
+    "len": 34,
+    "title": "",
+    "ctype": "text/plain",
+    "body_head": "htm file not found ,redirecting..."
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 301,
+  "title": ""
+ },
+ "actuator|zkxb.xjtu.edu.cn": {
+  "group": "actuator",
+  "host": "zkxb.xjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://zkxb.xjtu.edu.cn/actuator",
+    "status": 403,
+    "len": 548,
+    "title": "403 Forbidden",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly er"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": "403 Forbidden"
+ },
+ "actuator|jmsa.hrbeu.edu.cn": {
+  "group": "actuator",
+  "host": "jmsa.hrbeu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jmsa.hrbeu.edu.cn/actuator",
+    "status": 404,
+    "len": 1163,
+    "title": "404 - ÕÒ²»µ½ÎÄ¼þ»òÄ¿Â¼¡£",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\"/>\r\n<title>404 - ÕÒ²»µ½ÎÄ¼þ»òÄ¿Â¼¡£</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EE"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 - ÕÒ²»µ½ÎÄ¼þ»òÄ¿Â¼¡£"
+ },
+ "actuator|journal_intecom.xidian.edu.cn": {
+  "group": "actuator",
+  "host": "journal_intecom.xidian.edu.cn",
+  "probes": [
+   {
+    "url": "https://journal_intecom.xidian.edu.cn/actuator",
+    "status": 404,
+    "len": 555,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.21.1</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome frie"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 Not Found"
+ },
+ "actuator|iisscs.aia.hust.edu.cn": {
+  "group": "actuator",
+  "host": "iisscs.aia.hust.edu.cn",
+  "probes": [
+   {
+    "url": "https://iisscs.aia.hust.edu.cn/actuator",
+    "status": 403,
+    "len": 6688,
+    "title": "æ¨çè®¿é®è¯·æ±å¯è½å¯¹ç½ç«é æå®å ¨å¨èï¼è¯·æ±å·²è¢«é»æ­ã",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>æ¨çè®¿é®è¯·æ±å¯è½å¯¹ç½ç«é æå®å¨å¨èï¼è¯·æ±å·²è¢«é»æ­ã</title><style>html{height:100%}body{background:#fff;height:100%;font-family:\"Helvetica Neue\",Helvetica,\"PingFang SC\",\"Hiragino Sans GB\",\"Microsoft YaHei\",\"å¾®è½¯éé»\",Arial,sans-serif;font-size:12px}body"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": "æ¨çè®¿é®è¯·æ±å¯è½å¯¹ç½ç«é æå®å ¨å¨èï¼è¯·æ±å·²è¢«é»æ­ã"
+ },
+ "actuator|small.shanghaitech.edu.cn": {
+  "group": "actuator",
+  "host": "small.shanghaitech.edu.cn",
+  "probes": [
+   {
+    "url": "https://small.shanghaitech.edu.cn/actuator",
+    "status": 404,
+    "len": 36972,
+    "title": "未找到页面 &#8211; Shanghaitech Microsystem And noveL transducers Laboratory",
+    "ctype": "text/html; charset=UTF-8",
+    "body_head": "<!DOCTYPE html>\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zh-Hans\">\r\n<head profile=\"http://gmpg.org/xfn/11\">\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n<link rel=\"stylesheet\" href=\"https://small.shanghaitech.edu.cn/wp-content/themes/EduSMALL/lib/css/reset.css\" type=\"text/css\" media=\"screen"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "未找到页面 &#8211; Shanghaitech Microsystem And noveL transducers Laboratory"
+ },
+ "actuator|jbe.jlu.edu.cn": {
+  "group": "actuator",
+  "host": "jbe.jlu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jbe.jlu.edu.cn/actuator",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='jbe.jlu.edu.cn', port=443): Max retries exceeded with "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "actuator|jrse.csu.edu.cn": {
+  "group": "actuator",
+  "host": "jrse.csu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jrse.csu.edu.cn/actuator",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='jrse.csu.edu.cn', port=443): Max retries exceeded with"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "jenkins|mse.chd.edu.cn": {
+  "group": "jenkins",
+  "host": "mse.chd.edu.cn",
+  "probes": [
+   {
+    "url": "https://mse.chd.edu.cn/api/json?tree=version",
+    "status": 302,
+    "len": 202,
+    "title": "302 Found",
+    "ctype": "text/html; charset=iso-8859-1",
+    "body_head": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"/api/json/main.psp\">here</a>.</p>\n</body></html>\n"
+   },
+   {
+    "url": "https://mse.chd.edu.cn/script",
+    "status": 302,
+    "len": 200,
+    "title": "302 Found",
+    "ctype": "text/html; charset=iso-8859-1",
+    "body_head": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"/script/main.psp\">here</a>.</p>\n</body></html>\n"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 302,
+  "title": "302 Found"
+ },
+ "jenkins|www.icon.tsinghua.edu.cn": {
+  "group": "jenkins",
+  "host": "www.icon.tsinghua.edu.cn",
+  "probes": [
+   {
+    "url": "https://www.icon.tsinghua.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   },
+   {
+    "url": "https://www.icon.tsinghua.edu.cn/script",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404éè¯¯æç¤º"
+ },
+ "jenkins|enviro-lib.tongji.edu.cn": {
+  "group": "jenkins",
+  "host": "enviro-lib.tongji.edu.cn",
+  "probes": [
+   {
+    "url": "https://enviro-lib.tongji.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   },
+   {
+    "url": "https://enviro-lib.tongji.edu.cn/script",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404éè¯¯æç¤º"
+ },
+ "jenkins|mirrors.sau.edu.cn": {
+  "group": "jenkins",
+  "host": "mirrors.sau.edu.cn",
+  "probes": [
+   {
+    "url": "https://mirrors.sau.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly er"
+   },
+   {
+    "url": "https://mirrors.sau.edu.cn/script",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly er"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 Not Found"
+ },
+ "jenkins|mirrors4.sau.edu.cn": {
+  "group": "jenkins",
+  "host": "mirrors4.sau.edu.cn",
+  "probes": [
+   {
+    "url": "https://mirrors4.sau.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly er"
+   },
+   {
+    "url": "https://mirrors4.sau.edu.cn/script",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly er"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 Not Found"
+ },
+ "jenkins|jenkins.1.webvpn.zjjs.edu.cn": {
+  "group": "jenkins",
+  "host": "jenkins.1.webvpn.zjjs.edu.cn",
+  "probes": [
+   {
+    "url": "https://jenkins.1.webvpn.zjjs.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 1359,
+    "title": "Error Page",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Error Page</title>\n\t<style>\n\t.error_page {\n\t\twidth: 629px;\n\t\tpadding-top: 190px;\n\t\theight: 182px;\n\t\ttext-align: center;\n\t\tmargin: auto;\n\t}\n\t.error_page .error_page__left {\n\t\tfloat: left;\n\t\t"
+   },
+   {
+    "url": "https://jenkins.1.webvpn.zjjs.edu.cn/script",
+    "status": 404,
+    "len": 1359,
+    "title": "Error Page",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Error Page</title>\n\t<style>\n\t.error_page {\n\t\twidth: 629px;\n\t\tpadding-top: 190px;\n\t\theight: 182px;\n\t\ttext-align: center;\n\t\tmargin: auto;\n\t}\n\t.error_page .error_page__left {\n\t\tfloat: left;\n\t\t"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Error Page"
+ },
+ "jenkins|build-tux.scc.edu.cn": {
+  "group": "jenkins",
+  "host": "build-tux.scc.edu.cn",
+  "probes": [
+   {
+    "url": "https://build-tux.scc.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "body_head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/b400be09/scripts/redirect.js'></script></head><body style='background-color:white; color:white;'>\nAuthentication required\n<!--\n-->\n\n</body></html>                                                         "
+   },
+   {
+    "url": "https://build-tux.scc.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "body_head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/b400be09/scripts/redirect.js'></script></head><body style='background-color:white; color:white;'>\nAuthentication required\n<!--\n-->\n\n</body></html>                                                                                                   "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": ""
+ },
+ "jenkins|jenkins-static.www.vpn.gdxa.edu.cn": {
+  "group": "jenkins",
+  "host": "jenkins-static.www.vpn.gdxa.edu.cn",
+  "probes": [
+   {
+    "url": "https://jenkins-static.www.vpn.gdxa.edu.cn/api/json?tree=version",
+    "status": 302,
+    "len": 212,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "body_head": "<a href=\"https://vpn.gdxa.edu.cn:443/vpn_key/update?origin=https%3A%2F%2Fjenkins-static.www.vpn.gdxa.edu.cn%2Fapi%2Fjson%3Ftree%3Dversion&amp;reason=site+jenkins-static.www.vpn.gdxa.edu.cn+not+found\">Found</a>.\n\n"
+   },
+   {
+    "url": "https://jenkins-static.www.vpn.gdxa.edu.cn/script",
+    "status": 302,
+    "len": 191,
+    "title": "",
+    "ctype": "text/html; charset=utf-8",
+    "body_head": "<a href=\"https://vpn.gdxa.edu.cn:443/vpn_key/update?origin=https%3A%2F%2Fjenkins-static.www.vpn.gdxa.edu.cn%2Fscript&amp;reason=site+jenkins-static.www.vpn.gdxa.edu.cn+not+found\">Found</a>.\n\n"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 302,
+  "title": ""
+ },
+ "jenkins|sjc.shu.edu.cn": {
+  "group": "jenkins",
+  "host": "sjc.shu.edu.cn",
+  "probes": [
+   {
+    "url": "https://sjc.shu.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   },
+   {
+    "url": "https://sjc.shu.edu.cn/script",
+    "status": 404,
+    "len": 1693,
+    "title": "404éè¯¯æç¤º",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\r\n\t<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\r\n\t<meta http-equiv=\"Pragma\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache\" />  \r\n    <meta http-equiv=\"Expires\" content=\"0\" /"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404éè¯¯æç¤º"
+ },
+ "jboss|byjy.baiyun.edu.cn": {
+  "group": "jboss",
+  "host": "byjy.baiyun.edu.cn",
+  "probes": [
+   {
+    "url": "https://byjy.baiyun.edu.cn/",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "body_head": ""
+   },
+   {
+    "url": "https://byjy.baiyun.edu.cn/jmx-console",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "body_head": ""
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 302,
+  "title": ""
+ },
+ "jboss|ssdxyyyt.snnu.edu.cn:8082": {
+  "group": "jboss",
+  "host": "ssdxyyyt.snnu.edu.cn:8082",
+  "probes": [
+   {
+    "url": "http://ssdxyyyt.snnu.edu.cn:8082/",
+    "status": 200,
+    "len": 1517,
+    "title": "JBoss EAP 7",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\n<html>\n<head>\n\n    <title>JBoss EAP 7</title>\n    <!-- proper charset -->\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE8\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"eap.css\" />\n    <link rel=\"shortcut icon\" href=\"favicon.ico\" />\n</head>\n\n<body>\n\n<div id=\"container\" style=\"position: abso"
+   },
+   {
+    "url": "http://ssdxyyyt.snnu.edu.cn:8082/jmx-console",
+    "status": 404,
+    "len": 74,
+    "title": "Error",
+    "ctype": "text/html",
+    "body_head": "<html><head><title>Error</title></head><body>404 - Not Found</body></html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Error"
+ },
+ "jboss|ssdxyyca.snnu.edu.cn:8082": {
+  "group": "jboss",
+  "host": "ssdxyyca.snnu.edu.cn:8082",
+  "probes": [
+   {
+    "url": "http://ssdxyyca.snnu.edu.cn:8082/",
+    "status": 200,
+    "len": 1517,
+    "title": "JBoss EAP 7",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\n<html>\n<head>\n\n    <title>JBoss EAP 7</title>\n    <!-- proper charset -->\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE8\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"eap.css\" />\n    <link rel=\"shortcut icon\" href=\"favicon.ico\" />\n</head>\n\n<body>\n\n<div id=\"container\" style=\"position: abso"
+   },
+   {
+    "url": "http://ssdxyyca.snnu.edu.cn:8082/jmx-console",
+    "status": 404,
+    "len": 74,
+    "title": "Error",
+    "ctype": "text/html",
+    "body_head": "<html><head><title>Error</title></head><body>404 - Not Found</body></html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Error"
+ },
+ "jboss|cal.sysu.edu.cn": {
+  "group": "jboss",
+  "host": "cal.sysu.edu.cn",
+  "probes": [
+   {
+    "url": "https://cal.sysu.edu.cn/",
+    "status": 200,
+    "len": 1748,
+    "title": "Welcome to JBoss AS",
+    "ctype": "text/html",
+    "body_head": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n   <title>Welcome to JBoss AS</title>\n   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\n   <link rel=\"StyleSheet\" href=\"css/jboss.css\" type=\"text/css\"/>\n<"
+   },
+   {
+    "url": "https://cal.sysu.edu.cn/jmx-console",
+    "status": 404,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "body_head": ""
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": ""
+ },
+ "jboss|ssdxyyyt.snnu.edu.cn:8084": {
+  "group": "jboss",
+  "host": "ssdxyyyt.snnu.edu.cn:8084",
+  "probes": [
+   {
+    "url": "http://ssdxyyyt.snnu.edu.cn:8084/",
+    "status": 200,
+    "len": 1517,
+    "title": "JBoss EAP 7",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\n<html>\n<head>\n\n    <title>JBoss EAP 7</title>\n    <!-- proper charset -->\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=EmulateIE8\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"eap.css\" />\n    <link rel=\"shortcut icon\" href=\"favicon.ico\" />\n</head>\n\n<body>\n\n<div id=\"container\" style=\"position: abso"
+   },
+   {
+    "url": "http://ssdxyyyt.snnu.edu.cn:8084/jmx-console",
+    "status": 404,
+    "len": 74,
+    "title": "Error",
+    "ctype": "text/html",
+    "body_head": "<html><head><title>Error</title></head><body>404 - Not Found</body></html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Error"
+ },
+ "jboss|auth.neu.edu.cn": {
+  "group": "jboss",
+  "host": "auth.neu.edu.cn",
+  "probes": [
+   {
+    "url": "https://auth.neu.edu.cn/",
+    "status": 200,
+    "len": 1087,
+    "title": "",
+    "ctype": "text/html",
+    "body_head": "<!--\n  ~ Copyright 2016 Red Hat, Inc. and/or its affiliates\n  ~ and other contributors as indicated by the @author tags.\n  ~\n  ~ Licensed under the Apache License, Version 2.0 (the \"License\");\n  ~ you may not use this file except in compliance with the License.\n  ~ You may obtain a copy of the License at\n  ~\n  ~ http://www.apache.org/licenses/LICENSE-2.0\n  ~\n  ~ Unless required by applicable law o"
+   },
+   {
+    "url": "https://auth.neu.edu.cn/jmx-console",
+    "status": 404,
+    "len": 74,
+    "title": "Error",
+    "ctype": "text/html",
+    "body_head": "<html><head><title>Error</title></head><body>404 - Not Found</body></html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Error"
+ },
+ "jboss|sectm.neea.edu.cn:8082": {
+  "group": "jboss",
+  "host": "sectm.neea.edu.cn:8082",
+  "probes": [
+   {
+    "url": "http://sectm.neea.edu.cn:8082/",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 1"
+   },
+   {
+    "url": "http://sectm.neea.edu.cn:8082/jmx-console",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "grafana|mon.nju.edu.cn": {
+  "group": "grafana",
+  "host": "mon.nju.edu.cn",
+  "probes": [
+   {
+    "url": "https://mon.nju.edu.cn/api/health",
+    "status": 200,
+    "len": 101,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"database\": \"ok\",\n  \"version\": \"13.3.0\",\n  \"commit\": \"6f8ce3c693b493043ebcd4787566d2b6b118b0f0\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "grafana|status.hpc.sjtu.edu.cn": {
+  "group": "grafana",
+  "host": "status.hpc.sjtu.edu.cn",
+  "probes": [
+   {
+    "url": "https://status.hpc.sjtu.edu.cn/api/health",
+    "status": 200,
+    "len": 22,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"database\": \"ok\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "grafana|scc.ustc.edu.cn:3000": {
+  "group": "grafana",
+  "host": "scc.ustc.edu.cn:3000",
+  "probes": [
+   {
+    "url": "http://scc.ustc.edu.cn:3000/api/health",
+    "status": 200,
+    "len": 101,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"database\": \"ok\",\n  \"version\": \"13.3.0\",\n  \"commit\": \"6f8ce3c693b493043ebcd4787566d2b6b118b0f0\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "grafana|grafana-mail.webproxy.idp.cdjcc.edu.cn": {
+  "group": "grafana",
+  "host": "grafana-mail.webproxy.idp.cdjcc.edu.cn",
+  "probes": [
+   {
+    "url": "https://grafana-mail.webproxy.idp.cdjcc.edu.cn/api/health",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='grafana-mail.webproxy.idp.cdjcc.edu.cn', port=443): Ma"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "grafana|gdcpic.stu.edu.cn:3000": {
+  "group": "grafana",
+  "host": "gdcpic.stu.edu.cn:3000",
+  "probes": [
+   {
+    "url": "http://gdcpic.stu.edu.cn:3000/api/health",
+    "status": 200,
+    "len": 67,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"commit\": \"092e514\",\n  \"database\": \"ok\",\n  \"version\": \"6.4.4\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "撤销：Grafana 6.x 不在 CVE-2021-43798（仅 8.0.0-beta1~8.3.0）影响范围，版本老不等于命中",
+  "status": 200,
+  "title": ""
+ },
+ "grafana|gdc.stu.edu.cn:3000": {
+  "group": "grafana",
+  "host": "gdc.stu.edu.cn:3000",
+  "probes": [
+   {
+    "url": "http://gdc.stu.edu.cn:3000/api/health",
+    "status": 200,
+    "len": 67,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"commit\": \"092e514\",\n  \"database\": \"ok\",\n  \"version\": \"6.4.4\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "grafana|gdcs.stu.edu.cn:3000": {
+  "group": "grafana",
+  "host": "gdcs.stu.edu.cn:3000",
+  "probes": [
+   {
+    "url": "http://gdcs.stu.edu.cn:3000/api/health",
+    "status": 200,
+    "len": 67,
+    "title": "",
+    "ctype": "application/json; charset=UTF-8",
+    "body_head": "{\n  \"commit\": \"092e514\",\n  \"database\": \"ok\",\n  \"version\": \"6.4.4\"\n}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "tomcat|www2.whou.edu.cn": {
+  "group": "tomcat",
+  "host": "www2.whou.edu.cn",
+  "probes": [
+   {
+    "url": "https://www2.whou.edu.cn/manager/html",
+    "status": 403,
+    "len": 3529,
+    "title": "403 Access Denied",
+    "ctype": "text/html;charset=ISO-8859-1",
+    "body_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\r\n<html>\r\n <head>\r\n  <title>403 Access Denied</title>\r\n  <style type=\"text/css\">\r\n    <!--\r\n    BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;font-size:12px;}\r\n    H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}\r\n    PRE, TT {border:"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": "403 Access Denied"
+ },
+ "tomcat|zjcinfo.jit.edu.cn": {
+  "group": "tomcat",
+  "host": "zjcinfo.jit.edu.cn",
+  "probes": [
+   {
+    "url": "https://zjcinfo.jit.edu.cn/manager/html",
+    "status": 404,
+    "len": 767,
+    "title": "HTTP Status 404 – Not Found",
+    "ctype": "text/html;charset=utf-8",
+    "body_head": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – N"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "HTTP Status 404 – Not Found"
+ },
+ "tomcat|jy-o.cdp.edu.cn": {
+  "group": "tomcat",
+  "host": "jy-o.cdp.edu.cn",
+  "probes": [
+   {
+    "url": "https://jy-o.cdp.edu.cn/manager/html",
+    "status": null,
+    "err": "ReadTimeout:HTTPSConnectionPool(host='jy-o.cdp.edu.cn', port=443): Read timed out. (read tim"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "tomcat|jy-hr.cdp.edu.cn": {
+  "group": "tomcat",
+  "host": "jy-hr.cdp.edu.cn",
+  "probes": [
+   {
+    "url": "https://jy-hr.cdp.edu.cn/manager/html",
+    "status": null,
+    "err": "ReadTimeout:HTTPSConnectionPool(host='jy-hr.cdp.edu.cn', port=443): Read timed out. (read ti"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "tomcat|zwhz.nuaa.edu.cn": {
+  "group": "tomcat",
+  "host": "zwhz.nuaa.edu.cn",
+  "probes": [
+   {
+    "url": "https://zwhz.nuaa.edu.cn/manager/html",
+    "status": 403,
+    "len": 316932,
+    "title": "è®¿é®è¢«ç¦æ­¢",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n<html>\r\n\t<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi\">\r\n\t<title>è®¿é®è¢«ç¦æ­¢</title>\r\n\t<STYLE>\r\n\tTD {\r\n\t\tFONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial,"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 403,
+  "title": "è®¿é®è¢«ç¦æ­¢"
+ },
+ "tomcat|jjh.hgnu.edu.cn": {
+  "group": "tomcat",
+  "host": "jjh.hgnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jjh.hgnu.edu.cn/manager/html",
+    "status": 404,
+    "len": 473,
+    "title": "Not Found",
+    "ctype": "text/html; charset=us-ascii",
+    "body_head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Not Found</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"><script src=\"//g.alicdn.com/frontend-lib/frontend-lib/2.3.74/antidom.js\"></script><script src=\"//o.alicdn.com/frontend-lib/common-lib/jquery.min.js\"></script></HEAD>\r\n<BODY><h2>Not Found</h2>\r\n<hr><p>H"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Not Found"
+ },
+ "tomcat|fzllb.zjgsu.edu.cn": {
+  "group": "tomcat",
+  "host": "fzllb.zjgsu.edu.cn",
+  "probes": [
+   {
+    "url": "https://fzllb.zjgsu.edu.cn/manager/html",
+    "status": 404,
+    "len": 975,
+    "title": "Apache Tomcat/7.0.82 - Error report",
+    "ctype": "text/html;charset=utf-8",
+    "body_head": "<html><head><title>Apache Tomcat/7.0.82 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;col"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "Apache Tomcat/7.0.82 - Error report"
+ },
+ "tomcat|rscr.xmu.edu.cn": {
+  "group": "tomcat",
+  "host": "rscr.xmu.edu.cn",
+  "probes": [
+   {
+    "url": "https://rscr.xmu.edu.cn/manager/html",
+    "status": 401,
+    "len": 2637,
+    "title": "401 Unauthorized",
+    "ctype": "text/html",
+    "body_head": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\r\n<html>\r\n <head>\r\n  <title>401 Unauthorized</title>\r\n  <style type=\"text/css\">\r\n    <!--\r\n    BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;font-size:12px;}\r\n    H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}\r\n    PRE, TT {border"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 401,
+  "title": "401 Unauthorized"
+ },
+ "tomcat|gjxyexam.sdfmu.edu.cn": {
+  "group": "tomcat",
+  "host": "gjxyexam.sdfmu.edu.cn",
+  "probes": [
+   {
+    "url": "https://gjxyexam.sdfmu.edu.cn/manager/html",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='gjxyexam.sdfmu.edu.cn', port=443): Max retries exceede"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "weblogic|mis.sem.tsinghua.edu.cn": {
+  "group": "weblogic",
+  "host": "mis.sem.tsinghua.edu.cn",
+  "probes": [
+   {
+    "url": "https://mis.sem.tsinghua.edu.cn/",
+    "status": 200,
+    "len": 2032,
+    "title": "Index Page",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2//EN\">\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;CHARSET=iso-8859-1\">\n<!--\n* ***************************************************************\n*  This software and related documentation are provided under a\n*  license agreement containing restrictions on use and\n*  disclosure and are protected by intellectual property\n*  laws. Except as"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Index Page"
+ },
+ "weblogic|wlzx.ldpoly.edu.cn": {
+  "group": "weblogic",
+  "host": "wlzx.ldpoly.edu.cn",
+  "probes": [
+   {
+    "url": "https://wlzx.ldpoly.edu.cn/",
+    "status": 200,
+    "len": 68200,
+    "title": "网络信息管理中心",
+    "ctype": "text/html; charset=utf-8",
+    "body_head": "<!DOCTYPE html>\r\n<html lang=\"zh\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>网络信息管理中心</title>\r\n    <meta name=\"keywords\" content=\"\">\r\n    <meta name=\"description\" content=\"\">\r\n    <link rel=\"shortcut icon\" href=\"/954BFDB2D2B157E1507F87FC95724A92/pc/static/image/20.png\">\r\n    <link rel=\"stylesheet\" href=\"/954BFDB2D2B"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "网络信息管理中心"
+ },
+ "weblogic|ncrm.fdsm.fudan.edu.cn": {
+  "group": "weblogic",
+  "host": "ncrm.fdsm.fudan.edu.cn",
+  "probes": [
+   {
+    "url": "https://ncrm.fdsm.fudan.edu.cn/",
+    "status": 200,
+    "len": 2145,
+    "title": "Index Page",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2//EN\">\n<html><head>\n<!--<meta http-equiv=\"Content-Type\" content=\"text/html;CHARSET=iso-8859-1\">-->\n<meta HTTP-EQUIV='Refresh' CONTENT='0; URL=../psc/FDCRMPRD/EMPLOYEE/CRM/c/TZ_TY_MENU.FD_SSO_DIRECT_CMP.GBL?Page=FD_SSO_DIRECT_PG'>\n<meta http-equiv=\"Content-Type\" content=\"text/html;CHARSET=UTF-8\">\n<!--\n* *****************************************************"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Index Page"
+ },
+ "weblogic|jgdzz.yapt.edu.cn": {
+  "group": "weblogic",
+  "host": "jgdzz.yapt.edu.cn",
+  "probes": [
+   {
+    "url": "https://jgdzz.yapt.edu.cn/",
+    "status": null,
+    "err": "SSLError:HTTPSConnectionPool(host='jgdzz.yapt.edu.cn', port=443): Max retries exceeded wi"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "weblogic|ebs.shasteel.ex2.https.443.ipv6.cqust.edu.cn": {
+  "group": "weblogic",
+  "host": "ebs.shasteel.ex2.https.443.ipv6.cqust.edu.cn",
+  "probes": [
+   {
+    "url": "https://ebs.shasteel.ex2.https.443.ipv6.cqust.edu.cn/",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='ebs.shasteel.ex2.https.443.ipv6.cqust.edu.cn', port=44"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "gitlab|cvrs.whu.edu.cn": {
+  "group": "gitlab",
+  "host": "cvrs.whu.edu.cn",
+  "probes": [
+   {
+    "url": "https://cvrs.whu.edu.cn/",
+    "status": 200,
+    "len": 32837,
+    "title": "武汉大学计算机视觉与遥感实验室（CVRS Lab）",
+    "ctype": "text/html; charset=utf-8",
+    "body_head": "\n\n\n\n\n\n<!DOCTYPE html>\n<!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->\n<!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->\n<!--[if IE 8]>         <html class=\"no-js lt-ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <meta charset=\"utf-8\">\n  "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "武汉大学计算机视觉与遥感实验室（CVRS Lab）"
+ },
+ "gitlab|xxhc.ujs.edu.cn": {
+  "group": "gitlab",
+  "host": "xxhc.ujs.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxhc.ujs.edu.cn/",
+    "status": 200,
+    "len": 66051,
+    "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head>\r\n\r\n\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n<title>æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼</title><meta name=\"pageType\" conten"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼"
+ },
+ "gitlab|zhxg.szut.edu.cn": {
+  "group": "gitlab",
+  "host": "zhxg.szut.edu.cn",
+  "probes": [
+   {
+    "url": "https://zhxg.szut.edu.cn/",
+    "status": 200,
+    "len": 161,
+    "title": "",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <meta http-equiv=\"Refresh\" content=\"0; url=https://zhxg.szut.edu.cn/userhall\" />\r\n</head>\r\n\r\n<body>\r\n</body>\r\n\r\n</html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "gitlab|git.ustc.edu.cn": {
+  "group": "gitlab",
+  "host": "git.ustc.edu.cn",
+  "probes": [
+   {
+    "url": "https://git.ustc.edu.cn/",
+    "status": 401,
+    "len": 148,
+    "title": "",
+    "ctype": "application/json",
+    "body_head": "{\"message\":\"401 Unauthorized - 校外访问本站需要登录。External access requires sign-in. 外部合作者申请账号：gitlab@ustc.edu.cn\"}"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 401,
+  "title": ""
+ },
+ "gitlab|jy.wdu.edu.cn": {
+  "group": "gitlab",
+  "host": "jy.wdu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jy.wdu.edu.cn/",
+    "status": 200,
+    "len": 158,
+    "title": "",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <meta http-equiv=\"Refresh\" content=\"0; url=https://jy.wdu.edu.cn/userhall\" />\r\n</head>\r\n\r\n<body>\r\n</body>\r\n\r\n</html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "gitlab|lug.ustc.edu.cn": {
+  "group": "gitlab",
+  "host": "lug.ustc.edu.cn",
+  "probes": [
+   {
+    "url": "https://lug.ustc.edu.cn/",
+    "status": 200,
+    "len": 21860,
+    "title": "LUG @ USTC",
+    "ctype": "text/html",
+    "body_head": "<!doctype html>\n<!--\n  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose\n  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes\n  Copyright 2024-2026 iBug - ibugone.com | @iBug\n  Free for personal and commercial use under the MIT license\n  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE\n-->\n<html lang=\"zh-CN\" class=\"no-js\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "LUG @ USTC"
+ },
+ "gitlab|ipads.se.sjtu.edu.cn:1312": {
+  "group": "gitlab",
+  "host": "ipads.se.sjtu.edu.cn:1312",
+  "probes": [
+   {
+    "url": "http://ipads.se.sjtu.edu.cn:1312/",
+    "status": 400,
+    "len": 650,
+    "title": "400 The plain HTTP request was sent to HTTPS port",
+    "ctype": "text/html",
+    "body_head": "<html>\r\n<head><title>400 The plain HTTP request was sent to HTTPS port</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<center>The plain HTTP request was sent to HTTPS port</center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 400,
+  "title": "400 The plain HTTP request was sent to HTTPS port"
+ },
+ "gitlab|xgxt.dzvccm.edu.cn": {
+  "group": "gitlab",
+  "host": "xgxt.dzvccm.edu.cn",
+  "probes": [
+   {
+    "url": "https://xgxt.dzvccm.edu.cn/",
+    "status": 200,
+    "len": 163,
+    "title": "",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <meta http-equiv=\"Refresh\" content=\"0; url=https://xgxt.dzvccm.edu.cn/userhall\" />\r\n</head>\r\n\r\n<body>\r\n</body>\r\n\r\n</html>"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "confluence|xzxx.dxb.scut.edu.cn": {
+  "group": "confluence",
+  "host": "xzxx.dxb.scut.edu.cn",
+  "probes": [
+   {
+    "url": "https://xzxx.dxb.scut.edu.cn/",
+    "status": 200,
+    "len": 11212,
+    "title": "Apache Tomcat/9.0.118",
+    "ctype": "text/html;charset=UTF-8",
+    "body_head": "\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\" />\n        <title>Apache Tomcat/9.0.118</title>\n        <link href=\"favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <link href=\"tomcat.css\" rel=\"stylesheet\" type=\"text/css\" />\n    </head>\n\n    <body>\n        <div id=\"wrapper\">\n            <div id=\"navigation\" class=\"curved container\">\n                <span id=\"nav-"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Apache Tomcat/9.0.118"
+ },
+ "confluence|zccg.jxutcm.edu.cn": {
+  "group": "confluence",
+  "host": "zccg.jxutcm.edu.cn",
+  "probes": [
+   {
+    "url": "https://zccg.jxutcm.edu.cn/",
+    "status": 200,
+    "len": 11408,
+    "title": "Apache Tomcat/8.5.95",
+    "ctype": "text/html;charset=UTF-8",
+    "body_head": "\r\n\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n    <head>\r\n        <meta charset=\"UTF-8\" />\r\n        <title>Apache Tomcat/8.5.95</title>\r\n        <link href=\"favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\r\n        <link href=\"tomcat.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    </head>\r\n\r\n    <body>\r\n        <div id=\"wrapper\">\r\n            <div id=\"navigation\" class=\"curved container\">\r\n                "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Apache Tomcat/8.5.95"
+ },
+ "confluence|jxgltea.hfut.edu.cn:8980": {
+  "group": "confluence",
+  "host": "jxgltea.hfut.edu.cn:8980",
+  "probes": [
+   {
+    "url": "http://jxgltea.hfut.edu.cn:8980/",
+    "status": 200,
+    "len": 11212,
+    "title": "Apache Tomcat/8.5.100",
+    "ctype": "text/html;charset=UTF-8",
+    "body_head": "\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\" />\n        <title>Apache Tomcat/8.5.100</title>\n        <link href=\"favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <link href=\"tomcat.css\" rel=\"stylesheet\" type=\"text/css\" />\n    </head>\n\n    <body>\n        <div id=\"wrapper\">\n            <div id=\"navigation\" class=\"curved container\">\n                <span id=\"nav-"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Apache Tomcat/8.5.100"
+ },
+ "confluence|hqsh.hdu.edu.cn": {
+  "group": "confluence",
+  "host": "hqsh.hdu.edu.cn",
+  "probes": [
+   {
+    "url": "https://hqsh.hdu.edu.cn/",
+    "status": 200,
+    "len": 11210,
+    "title": "Apache Tomcat/8.5.88",
+    "ctype": "text/html;charset=UTF-8",
+    "body_head": "\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\" />\n        <title>Apache Tomcat/8.5.88</title>\n        <link href=\"favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <link href=\"tomcat.css\" rel=\"stylesheet\" type=\"text/css\" />\n    </head>\n\n    <body>\n        <div id=\"wrapper\">\n            <div id=\"navigation\" class=\"curved container\">\n                <span id=\"nav-h"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "Apache Tomcat/8.5.88"
+ },
+ "confluence|clsc.bfsu.edu.cn": {
+  "group": "confluence",
+  "host": "clsc.bfsu.edu.cn",
+  "probes": [
+   {
+    "url": "https://clsc.bfsu.edu.cn/",
+    "status": 200,
+    "len": 50732,
+    "title": "ä¸­å½è±æ±è¯­æ¯è¾ç ç©¶ä¼è¯­æåºè¯­è¨å­¦ä¸ä¸å§åä¼",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"zh\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>ä¸­å½è±æ±è¯­æ¯è¾ç ç©¶ä¼è¯­æåºè¯­è¨å­¦ä¸ä¸å§åä¼</title><meta name=\"pageType\" content=\"1\">\r\n<meta name=\"pageTitle\" content=\"ä¸­å½è±æ±è¯­æ¯è¾ç ç©¶ä¼è¯­æåº"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "ä¸­å½è±æ±è¯­æ¯è¾ç ç©¶ä¼è¯­æåºè¯­è¨å­¦ä¸ä¸å§åä¼"
+ },
+ "confluence|wlxxyfw.nepu.edu.cn": {
+  "group": "confluence",
+  "host": "wlxxyfw.nepu.edu.cn",
+  "probes": [
+   {
+    "url": "https://wlxxyfw.nepu.edu.cn/",
+    "status": 200,
+    "len": 26469,
+    "title": "ä¸åç³æ²¹å¤§å­¦ç½ç»ä¸ä¿¡æ¯æå¡ç½ç«",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"utf-8\">\r\n<title>ä¸åç³æ²¹å¤§å­¦ç½ç»ä¸ä¿¡æ¯æå¡ç½ç«</title><meta name=\"pageType\" content=\"1\">\r\n<meta name=\"pageTitle\" content=\"ä¸åç³æ²¹å¤§å­¦ç½ç»ä¸ä¿¡æ¯æå¡ç½ç«\">\r\n<META Name=\"keywords\" Content=\"ä¸åç³æ²¹å¤§å­¦ç½ç»ä¸ä¿¡æ¯æå¡ç½ç«ç»\" />\r\n\r\n<link rel=\"stylesheet\" href=\"css/default.css\" />\r\n<link rel=\"stylesheet\" hre"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "ä¸åç³æ²¹å¤§å­¦ç½ç»ä¸ä¿¡æ¯æå¡ç½ç«"
+ },
+ "printer|en.ntu.edu.cn": {
+  "group": "printer",
+  "host": "en.ntu.edu.cn",
+  "probes": [
+   {
+    "url": "https://en.ntu.edu.cn/",
+    "status": 200,
+    "len": 67207,
+    "title": "NANTONG UNIVERSITY",
+    "ctype": "text/html",
+    "body_head": "<!DOCTYPE html><HTML class=\"webplus-main\"  ><HEAD><TITLE>NANTONG UNIVERSITY</TITLE><META Name=\"keywords\" Content=\"Home--Nantong University\" />\r\n\r\n\r\n\r\n\r\n<META content=\"IE=edge,chrome=1\" http-equiv=\"X-UA-Compatible\">\r\n<META charset=\"utf-8\">\r\n<META content=\"IE=EmulateIE9,chrome=1\" http-equiv=\"X-UA-Compatible\">\r\n<META name=\"description\" content=\"ä¸»é¡µè±æç½ç«\">\r\n\r\n\r\n<link type=\"text/css\" href=\"/_"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "NANTONG UNIVERSITY"
+ },
+ "printer|zcpt.ccnu.edu.cn": {
+  "group": "printer",
+  "host": "zcpt.ccnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://zcpt.ccnu.edu.cn/",
+    "status": 200,
+    "len": 63107,
+    "title": "华中师范大学直采平台",
+    "ctype": "text/html; charset=utf-8",
+    "body_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"keywords\" content=\"\">\n    <meta name=\"description\" content=\"\">\n    <link re"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "华中师范大学直采平台"
+ },
+ "printer|career.cupk.edu.cn": {
+  "group": "printer",
+  "host": "career.cupk.edu.cn",
+  "probes": [
+   {
+    "url": "https://career.cupk.edu.cn/",
+    "status": 200,
+    "len": 325,
+    "title": "",
+    "ctype": "text/html",
+    "body_head": "ï»¿\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <title></title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html><script language=\"javascript\" type=\"text/javascript\">\r\n    // ä»¥ä¸æ¹å¼ç´æ¥è·³è½¬\r\n    window.location.href = 'CupkJY/Web';\r\n</script>\r\n"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "printer|lib.jsafc.edu.cn": {
+  "group": "printer",
+  "host": "lib.jsafc.edu.cn",
+  "probes": [
+   {
+    "url": "https://lib.jsafc.edu.cn/",
+    "status": 200,
+    "len": 56451,
+    "title": "æ±èåæèä¸ææ¯å­¦é¢å¾ä¹¦é¦",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html\r\n  PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n  <title>æ±èåæèä¸ææ¯å­¦é¢å¾ä¹¦é¦</title><META Name=\"keywords\" Content=\"æ±èåæèä¸ææ¯å­¦é¢å¾ä¹¦é¦\" />\r\n\r\n  <link hre"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æ±èåæèä¸ææ¯å­¦é¢å¾ä¹¦é¦"
+ },
+ "printer|fxzx.ahnu.edu.cn": {
+  "group": "printer",
+  "host": "fxzx.ahnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://fxzx.ahnu.edu.cn/",
+    "status": 200,
+    "len": 35695,
+    "title": "å®å¾½å¸èå¤§å­¦éå±å¤å ´ä¸­å­¦",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"zh-cn\">\r\n<head>\r\n    <meta charset=\"gbk\">\r\n    <title>å®å¾½å¸èå¤§å­¦éå±å¤å´ä¸­å­¦</title><meta name=\"pageType\" content=\"1\">\r\n<meta name=\"pageTitle\" content=\"å®å¾½å¸èå¤§å­¦éå±å¤å´ä¸­å­¦\">\r\n<META Name=\"keywords\" Content=\"å®å¾½å¸èå¤§å­¦éå±å¤å´ä¸­å­¦\" />\r\n\r\n    \r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"dfiles/12842/template2018/css/re"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "å®å¾½å¸èå¤§å­¦éå±å¤å ´ä¸­å­¦"
+ },
+ "hikvision|zsw.lsu.edu.cn": {
+  "group": "hikvision",
+  "host": "zsw.lsu.edu.cn",
+  "probes": [
+   {
+    "url": "https://zsw.lsu.edu.cn/",
+    "status": 301,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "body_head": ""
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 301,
+  "title": ""
+ },
+ "hikvision|imeec.wzu.edu.cn": {
+  "group": "hikvision",
+  "host": "imeec.wzu.edu.cn",
+  "probes": [
+   {
+    "url": "https://imeec.wzu.edu.cn/",
+    "status": 200,
+    "len": 20264,
+    "title": "æºè½å¶é å·¥ç¨å®è®­ä¸­å¿",
+    "ctype": "text/html",
+    "body_head": "ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<title>æºè½å¶é å·¥ç¨å®è®­ä¸­å¿</title><meta name=\"pageType\" content=\"1\">\r\n<meta name=\"pageTitle\" content=\"æºè½å¶é å·¥ç¨å®è®­ä¸­å¿\">\r\n<META Name=\"keywords\" Content=\"æºè½å¶é å·¥ç¨å®è®­ä¸­å¿\" />\r\n\r\n<meta"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æºè½å¶é å·¥ç¨å®è®­ä¸­å¿"
+ }
+}

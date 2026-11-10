@@ -1,0 +1,36 @@
+{
+ "target": "http://tyzf.aku.edu.cn:8084",
+ "ts": "2026-11-10 19:26:03",
+ "probes": [
+  {
+   "path": "/",
+   "status": 404,
+   "ctype": "application/json",
+   "server": "",
+   "len": 89,
+   "body_head": "{\"timestamp\":\"2026-11-10T11:26:01.820+00:00\",\"status\":404,\"error\":\"Not Found\",\"path\":\"/\"}"
+  },
+  {
+   "path": "/actuator",
+   "status": 200,
+   "ctype": "application/vnd.spring-boot.actuator.v3+json",
+   "server": "",
+   "len": 261,
+   "body_head": "{\"_links\":{\"self\":{\"href\":\"http://tyzf.aku.edu.cn:8084/actuator\",\"templated\":false},\"health\":{\"href\":\"http://tyzf.aku.edu.cn:8084/actuator/health\",\"templated\":false},\"health-path\":{\"href\":\"http://tyzf.aku.edu.cn:8084/actuator/health/{*path}\",\"templated\":true}}}"
+  },
+  {
+   "path": "/actuator/health",
+   "status": null,
+   "err": "ReadTimeout:HTTPConnectionPool(host='tyzf.aku.edu.cn', port=8084): Read timed out. (read timeout=8)"
+  }
+ ],
+ "exposed_endpoint_names": [
+  "self",
+  "health",
+  "health-path"
+ ],
+ "actuator_confirmed": true,
+ "sensitive_endpoints_listed": [],
+ "note": "仅读取 /actuator 的端点名清单；未请求 env/heapdump 等端点内容，未访问任何真实配置或用户数据",
+ "scope": "aku.edu.cn = 安康学院（edu.cn 认可单位）；8084 = 疑似统一支付/统一认证业务子系统"
+}

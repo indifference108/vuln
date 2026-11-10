@@ -1,0 +1,11 @@
+{
+ "ts": "2026-11-10 19:15:13",
+ "state": {
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0iZWR1LmNuIg%3D%3D",
+  "title": "FOFA Search Engine",
+  "text": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nAPI\n2,050,100\n条匹配结果\n(0 条独立IP )\n，\n2616\nms\n，关键词搜索。\n最近一年\nhttps://szb.gdfs.edu.cn\n443\n\n马克思主义学院\n\n211.66.80.162\n\nChina/Beijing/Beijing\n\n4538\n\nChina Education and Research Network Center\n\ngdfs.edu.cn\n\n2026-11-10\n\n******\n\nHeader\nProducts\n839615301\nHTTP/1.1 200 OK\nConnection: close\nContent-Length: 18366\nAccept-Ranges: bytes\nCache-Control: max-age=600\nContent-Language: zh-CN\nContent-Type: text/html\nDate: Tue, 10 Nov 2026 11:11:38 GMT\nEtag: \"47be-65fda2f883bad-gzip\"\nExpires: Tue, 10 Nov 2026 11:21:38 GMT\nLast-Modified: Mon, 09 Nov 2026 16:09:25 GMT\nServer: ******\n",
+  "captcha": false,
+  "loginbox": false
+ },
+ "note": "FOFA gateway hit: login wall + Confirm Humanity captcha"
+}

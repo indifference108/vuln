@@ -1,0 +1,526 @@
+{
+ "probe_jenkins": {
+  "hosts": [
+   "mse.chd.edu.cn",
+   "www.icon.tsinghua.edu.cn",
+   "enviro-lib.tongji.edu.cn",
+   "mirrors.sau.edu.cn",
+   "mirrors4.sau.edu.cn",
+   "jenkins.1.webvpn.zjjs.edu.cn",
+   "build-tux.scc.edu.cn",
+   "jenkins-static.www.vpn.gdxa.edu.cn",
+   "sjc.shu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "127",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJKZW5raW5zIiB8fCBib2R5PSJKZW5raW5zIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n8\n6\n4\nMore\nTOP FIDv2\nmGwdHRlAk3nHmpRUJmWN8AxwAjXpbSDa\n42\n6eKGhOhETks6qEx5rrjP8p3k7cuagSG3\n18\n1khoPPpFwa19AHivO5S9LgC5pk03cjQl\n9\nnIydiEWt59ci/u+YnXy/FPL4qIx6gTJa\n6\nsrlRurVb/l0kYgGZSdfLdZYPfAIDpNNy\n4\nTOP COUNTRIES/REGIONS\nCN\n126\nHong Kong Special Administrative Region\n1\nTOP OPEN PORTS\n443\n77\n80\n47\n4430\n1\n50000\n1\n8080\n1\nTOP SERVERS\nnginx\n20\nServer\n19\nSangine\n9\nnginx/1.20.1\n4\nTOP TITLES",
+  "dork": "(title=\"Jenkins\" || body=\"Jenkins\") && host=\"edu.cn\""
+ },
+ "edu_geoserver": {
+  "hosts": [
+   "sdjn.bnu.edu.cn",
+   "imap.ucas.edu.cn",
+   "map.xjau.edu.cn",
+   "geolab.ucas.edu.cn",
+   "geoshikong.whcp.edu.cn",
+   "ifarm.xjau.edu.cn"
+  ],
+  "n": 6,
+  "cnt": "10",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJHZW9TZXJ2ZXIiIHx8IGJvZHk9Ikdlb1NlcnZlciIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n2\n2\n2\nMore\nTOP FIDv2\n4r1uBMFWIT+XWMmtHscUn3QcfWYaNz9a\n2\njs+eJAih13k9n8boUcDLusGmuZeEJ5nl\n2\nQr1/dNq9KyXXC05/a0EGNs6PELqWFQKX\n2\nmhZfHE5U859LPoTOtHLG6ZBdjAvNnFXm\n2\nuETl9atT9QHaHFySGLjsDC5eADHnzUq+\n1\nTOP COUNTRIES/REGIONS\nCN\n10\nTOP OPEN PORTS\n443\n5\n80\n5\nTOP SERVERS\nnginx\n3\nApache\n2\nnone\n2\nrump/c\n2\nTOP TITLES\n智慧农场欢迎您！\n2\nError 404 - Not Found\n2\n中国科学院大学GIS实验室\n2\n综合概况\n2\nGeoServer: Redirectin",
+  "dork": "(title=\"GeoServer\" || body=\"GeoServer\") && host=\"edu.cn\""
+ },
+ "edu_jenkins": {
+  "hosts": [
+   "mse.chd.edu.cn",
+   "www.icon.tsinghua.edu.cn",
+   "enviro-lib.tongji.edu.cn",
+   "mirrors.sau.edu.cn",
+   "mirrors4.sau.edu.cn",
+   "jenkins.1.webvpn.zjjs.edu.cn",
+   "build-tux.scc.edu.cn",
+   "jenkins-static.www.vpn.gdxa.edu.cn",
+   "sjc.shu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "127",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJKZW5raW5zIiB8fCBib2R5PSJKZW5raW5zIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n8\n6\n4\nMore\nTOP FIDv2\nmGwdHRlAk3nHmpRUJmWN8AxwAjXpbSDa\n42\n6eKGhOhETks6qEx5rrjP8p3k7cuagSG3\n18\n1khoPPpFwa19AHivO5S9LgC5pk03cjQl\n9\nnIydiEWt59ci/u+YnXy/FPL4qIx6gTJa\n6\nsrlRurVb/l0kYgGZSdfLdZYPfAIDpNNy\n4\nTOP COUNTRIES/REGIONS\nCN\n126\nHong Kong Special Administrative Region\n1\nTOP OPEN PORTS\n443\n77\n80\n47\n4430\n1\n50000\n1\n8080\n1\nTOP SERVERS\nnginx\n20\nServer\n19\nSangine\n9\nnginx/1.20.1\n4\nTOP TITLES",
+  "dork": "(title=\"Jenkins\" || body=\"Jenkins\") && host=\"edu.cn\""
+ },
+ "edu_gitlab": {
+  "hosts": [
+   "cvrs.whu.edu.cn",
+   "xxhc.ujs.edu.cn",
+   "zhxg.szut.edu.cn",
+   "git.ustc.edu.cn",
+   "2298.edu.cn.zlseeey.cn",
+   "jy.wdu.edu.cn",
+   "lug.ustc.edu.cn",
+   "ipads.se.sjtu.edu.cn:1312",
+   "xgxt.dzvccm.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "263",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJHaXRMYWIiIHx8IGJvZHk9IkdpdExhYiIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n\nLoading\n\n263\nresults\n(0 unique IP )\n,\n6507\nms\n,Keyword Search.\nPast year\nhttps://cvrs.whu.edu.cn\nGiRv0tciru+PsgH3Xpz/OreWMEiEgtl9\n2\n443\n\n武汉大学计算机视觉与遥感实验室（CVRS Lab）\n\n115.156.123.33\n\nChina/Hubei/Wuhan\n\n4538\n\nChina Education and Research Network Center\n\nwhu.edu.cn\n\n2026-11-10\n\nHeader\nProducts\n-1045542814\nHTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 32837\r\nContent-Language: zh-cn\r\nConten",
+  "dork": "(title=\"GitLab\" || body=\"GitLab\") && host=\"edu.cn\""
+ },
+ "edu_confluence": {
+  "hosts": [
+   "www2.whou.edu.cn",
+   "gjxyexam.sdfmu.edu.cn",
+   "xzxx.dxb.scut.edu.cn",
+   "zccg.jxutcm.edu.cn",
+   "jxgltea.hfut.edu.cn:8980",
+   "hqsh.hdu.edu.cn",
+   "clsc.bfsu.edu.cn",
+   "wlxxyfw.nepu.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "401",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJDb25mbHVlbmNlIiB8fCBib2R5PSJDb25mbHVlbmNlIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n253\n10\n4\nMore\nTOP FIDv2\nmO+hGKzvHq0A27vCaa1XF1c9BXUTvGwR\n254\nmGwdHRlAk3nHmpRUJmWN8AxwAjXpbSDa\n55\n6eKGhOhETks6qEx5rrjP8p3k7cuagSG3\n28\n1khoPPpFwa19AHivO5S9LgC5pk03cjQl\n10\nhanX6noCmcgG4SOQ8TJdOJlxk43Gao43\n10\nTOP COUNTRIES/REGIONS\nCN\n401\nTOP OPEN PORTS\n443\n140\n80\n112\n8080\n25\n82\n18\n8000\n14\nTOP SERVERS\nServer\n31\nnginx\n29\nnone\n11\nSangine\n10\nTOP TITLES\nApache Tomcat/8.5.100\n22\nApache Tomcat",
+  "dork": "(title=\"Confluence\" || body=\"Confluence\") && host=\"edu.cn\""
+ },
+ "edu_weblogic": {
+  "hosts": [
+   "mis.sem.tsinghua.edu.cn",
+   "wlzx.ldpoly.edu.cn",
+   "ncrm.fdsm.fudan.edu.cn",
+   "jgdzz.yapt.edu.cn",
+   "ebs.shasteel.ex2.https.443.ipv6.cqust.edu.cn"
+  ],
+  "n": 5,
+  "cnt": "11",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJXZWJMb2dpYyIgfHwgYm9keT0iV2ViTG9naWMiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n1\nTOP FIDv2\nCz/bvDPJel0QCPXDIL1QjPC5ly0uBwyv\n3\nuKjHar+OyY3b2fZZMjpOPuaYeB0++g1O\n2\nX2pmZoSqmyTIltix0YdpeiVVZ4sIidIp\n2\nr/w/lYu1lqKoeoOKqhZLNoZsIEpvhy81\n2\n5TgiaL22JRa0PYqYJfXJXFKsZjfAjzkX\n1\nTOP COUNTRIES/REGIONS\nCN\n11\nTOP OPEN PORTS\n443\n6\n80\n5\nTOP SERVERS\nnginx\n3\nReyzar-CDN/5.3.1\n2\nTOP TITLES\nIndex Page\n5\nError 503--Service Unavailable\n2\n网络安全宣传周专题网\n2\nDefault BEA WebLogic Server Web Ser",
+  "dork": "(title=\"WebLogic\" || body=\"WebLogic\") && host=\"edu.cn\""
+ },
+ "edu_springboot": {
+  "hosts": [
+   "tyzf.aku.edu.cn:8084",
+   "ai.ynjtc.edu.cn",
+   "dd.hzjy.edu.cn",
+   "org.xjtu.edu.cn",
+   "dacx.cqupt.edu.cn",
+   "zhxygateway.gdipu.edu.cn",
+   "ai.ahszu.edu.cn",
+   "ai.aqnu.edu.cn",
+   "pay.nufe.edu.cn",
+   "ss.knet.ex2.https.443.ipv6.cqust.edu.cn"
+  ],
+  "n": 10,
+  "cnt": "1,194",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJXaGl0ZWxhYmVsIEVycm9yIFBhZ2UiIHx8IGJvZHk9IldoaXRlbGFiZWwgRXJyb3IgUGFnZSIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n205\n16\n10\nMore\nTOP FIDv2\nei+72hlCv31JZWqtih9BcoqJjPhIfRDj\n508\njjACJpTgFbtl0tzRxCRj7Zg1yE7dFNFE\n387\nSKQUSK0/ikbdVcPdccUkaiim0U3GdMB+\n279\njFmgFjCJDirz5/fn2tb73MtAe8YnnXnG\n7\nM7ESS24D8KDGSubQIllPNI84K8pEX8Q9\n3\nTOP COUNTRIES/REGIONS\nCN\n1,192\nUS\n2\nTOP OPEN PORTS\n443\n413\n80\n368\n91\n78\n8087\n43\n8092\n21\nTOP SERVERS\nnginx\n171\nwisedu\n107\nopenresty\n104\n******\n97\nTOP TITLES\n404\n293\n结果\n2\n1,194\nresu",
+  "dork": "(title=\"Whitelabel Error Page\" || body=\"Whitelabel Error Page\") && host=\"edu.cn\""
+ },
+ "edu_grafana": {
+  "hosts": [
+   "mon.nju.edu.cn",
+   "status.hpc.sjtu.edu.cn",
+   "scc.ustc.edu.cn:3000",
+   "grafana-mail.webproxy.idp.cdjcc.edu.cn",
+   "gdcpic.stu.edu.cn:3000",
+   "gdc.stu.edu.cn:3000",
+   "gdcs.stu.edu.cn:3000"
+  ],
+  "n": 7,
+  "cnt": "17",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IkdyYWZhbmEiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n13\n3\nTOP FIDv2\nyyOSJuP5Jnd3wAj+AxOi7IAJtmK9I4Sd\n4\niHSQYmdDB2K5t0OmlHNwgIHIQH3ayyLv\n3\nMRt0V9OrCaz0YVIeNDji82i7bKz5zzBC\n3\n7VBXtw65nQg6CLL+dn/tepLJxnLDpxp+\n3\n1GztoIF8Hc92jQgB4cdB9mJ2/ihL9yfY\n1\nTOP COUNTRIES/REGIONS\nCN\n16\nUS\n1\nTOP OPEN PORTS\n443\n8\n3000\n5\n80\n3\n4000\n1\nTOP SERVERS\nnginx\n4\nnginx/1.20.1\n3\nVarnish\n1\nnginx/1.24.0 (Ubuntu)\n1\nTOP TITLES\nGrafana\n16\nFastly error: unknown domain gr",
+  "dork": "title=\"Grafana\" && host=\"edu.cn\""
+ },
+ "edu_nacos": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9Ik5hY29zIiAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n1776\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "title=\"Nacos\" && host=\"edu.cn\""
+ },
+ "edu_druid": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJEcnVpZCIgfHwgYm9keT0iRHJ1aWQgU3RhdCIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n544\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "(title=\"Druid\" || body=\"Druid Stat\") && host=\"edu.cn\""
+ },
+ "edu_tomcat": {
+  "hosts": [
+   "www2.whou.edu.cn",
+   "zjcinfo.jit.edu.cn",
+   "jy-o.cdp.edu.cn",
+   "jy-hr.cdp.edu.cn",
+   "zwhz.nuaa.edu.cn",
+   "jjh.hgnu.edu.cn",
+   "fzllb.zjgsu.edu.cn",
+   "rscr.xmu.edu.cn",
+   "gjxyexam.sdfmu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "872",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IkFwYWNoZSBUb21jYXQiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n651\n6\n5\nMore\nTOP FIDv2\nmO+hGKzvHq0A27vCaa1XF1c9BXUTvGwR\n358\nwrwXSGJ4bKXQDWFEPU/RIBiJCBfq4UZN\n114\nuBSjiVBMHyFAysGmuYImm5BftAWfEGNU\n102\nFobugKWW7XUrcx9dzYcEM2agl5PSCBHZ\n57\nZhPxTC2NnFX2UDkrSJb1Sxj3EXXN3R+1\n53\nTOP COUNTRIES/REGIONS\nCN\n872\nTOP OPEN PORTS\n80\n194\n443\n171\n8080\n111\n8095\n48\n8090\n30\nTOP SERVERS\nApache-Coyote/1.1\n166\n******\n60\nnginx\n54\nnone\n37\nTOP TITLES\nApache Tomcat\n52\nApache",
+  "dork": "title=\"Apache Tomcat\" && host=\"edu.cn\""
+ },
+ "edu_solr": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJBcGFjaGUgU29sciIgfHwgYm9keT0iU29sciBBZG1pbiIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n322\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "(title=\"Apache Solr\" || body=\"Solr Admin\") && host=\"edu.cn\""
+ },
+ "edu_hardcode_pwd": {
+  "hosts": [
+   "email.whu.edu.cn",
+   "wxxt.gxmzu.edu.cn",
+   "mail.imnu.edu.cn",
+   "ir.bjut.edu.cn",
+   "mail.stu.cdut.edu.cn",
+   "kyybgxx.cic.tsinghua.edu.cn",
+   "mail.tsinghua-zj.edu.cn",
+   "gsas.zjou.edu.cn",
+   "dbaapply.phbs.pku.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "28,632",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0idHlwZT1wYXNzd29yZCIgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n999+\n999+\n999+\nMore\nTOP FIDv2\noV/Sa8NO132Dx/qBmv51p+zH7m/bMa4j\n512\n8GT5QlSVoCKA3KdeaALdeDIPIl6qiMfl\n324\nn178vdard8Obd7A0U75fYwapPauW+a+b\n307\ne9JGHEpOQFLKA6Bb6tOpmgfw3f48OKsA\n300\nE8ngUvJv3eWc1+TIfuUwkllF7/VOpExy\n278\nTOP COUNTRIES/REGIONS\nCN\n27,744\nHong Kong Special Administrative Region\n790\nUS\n46\nSG\n40\nCZ\n5\nTOP OPEN PORTS\n443\n13,359\n80\n9,718\n4430\n799\n8887\n495\n8080\n407\nTOP SERVERS\nngi",
+  "dork": "body=\"type=password\" && host=\"edu.cn\""
+ },
+ "edu_hikvision": {
+  "hosts": [
+   "zsw.lsu.edu.cn",
+   "imeec.wzu.edu.cn"
+  ],
+  "n": 2,
+  "cnt": "6",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iZG9jL3BhZ2UvbG9naW4uYXNwIiAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nTOP FIDv2\nxJT6P8rdOKWa18/fBs1fXxUq/QLwg6P2\n3\nTZf685x/e6cO7VqlPd8CeD9l7+92vzHM\n3\nTOP COUNTRIES/REGIONS\nCN\n6\nTOP OPEN PORTS\n443\n4\n80\n2\nTOP SERVERS\n**********\n3\nnginx\n3\nTOP TITLES\n丽水学院招生信息网\n3\n智能制造工程实训中心\n3\n6\nresults\n(4 unique IP )\n,\n1191\nms\n,Keyword Search.\nPast year\nhttps://zsw.lsu.edu.cn\nTZf685x/e6cO7VqlPd8CeD9l7+92vzHM\n3\n443\n\n丽水学院招生信息网\n\n59.79.130.35\n\nChina/Shanghai/Shanghai\n\n4538\n\nChina Educ",
+  "dork": "body=\"doc/page/login.asp\" && host=\"edu.cn\""
+ },
+ "edu_printer": {
+  "hosts": [
+   "en.ntu.edu.cn",
+   "zcpt.ccnu.edu.cn",
+   "career.cupk.edu.cn",
+   "lib.jsafc.edu.cn",
+   "2298.edu.cn.zlseeey.cn",
+   "edu.cn.oqpppci.cn",
+   "fxzx.ahnu.edu.cn"
+  ],
+  "n": 7,
+  "cnt": "50",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9IkhQIExhc2VySmV0IiB8fCBib2R5PSJCcm90aGVyIiB8fCBib2R5PSJDYW5vbiIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n4\n4\n2\nMore\nTOP FIDv2\nQ7CAIKa0boO076Wt1zJJjLJZElIwAGuA\n4\n73Xf1ihcFUz9lp0TvVkZfVdRwlE8Sqk6\n4\nDY9HV2doK3wVpnrvVCkJw7ePBiemhkQa\n4\nj36qLD923ljRyHgbVz92lT3n3dHONTu+\n3\nfjSP2JmN/sGpA9xFb47CQxhbhojLF0y9\n2\nTOP COUNTRIES/REGIONS\nCN\n38\nHong Kong Special Administrative Region\n11\nCL\n1\nTOP OPEN PORTS\n443\n26\n80\n23\n8001\n1\nTOP SERVERS\nnginx\n14\n**********\n4\nNginx Microsoft-HTTPAPI/2.0\n4\nWHU-AppSrv 1.0",
+  "dork": "(body=\"HP LaserJet\" || body=\"Brother\" || body=\"Canon\") && host=\"edu.cn\""
+ },
+ "edu_jboss": {
+  "hosts": [
+   "byjy.baiyun.edu.cn",
+   "ssdxyyyt.snnu.edu.cn:8082",
+   "ssdxyyca.snnu.edu.cn:8082",
+   "cal.sysu.edu.cn",
+   "ssdxyyyt.snnu.edu.cn:8084",
+   "auth.neu.edu.cn",
+   "sectm.neea.edu.cn:8082"
+  ],
+  "n": 7,
+  "cnt": "10",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJKQm9zcyIgfHwgYm9keT0iSkJvc3MiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n3\n3\n2\nMore\nTOP FIDv2\ncCZGM7NdPoaCLcUimtQmbcSEPbRjUsV4\n3\nFfTPjD5WkzQ9xhgtzmHwkx+k21dQ4EDv\n2\nim97tObui94TuBbCUY/zbcqcJiAxmgQX\n2\nSKPBgPpXaUcsP+/QBO+taTiLy7BtJhKR\n2\nCzK6NpJ74KAPn11FSTD7I00Ak9q4c/02\n1\nTOP COUNTRIES/REGIONS\nCN\n10\nTOP OPEN PORTS\n443\n3\n80\n3\n8082\n3\n8084\n1\nTOP SERVERS\nnginx\n3\nTOP TITLES\nJBoss EAP 7\n3\nWelcome to JBoss AS\n2\nWelcome to Keycloak\n2\n智慧白云教育大数据云平台\n2\nWelcome to JBoss&",
+  "dork": "(title=\"JBoss\" || body=\"JBoss\") && host=\"edu.cn\""
+ },
+ "edu_zabbix": {
+  "hosts": [
+   "skins.vpn.sqmc.edu.cn:9443",
+   "ops.vpn.sqmc.edu.cn:9443",
+   "api.auth.scan.vpn.sqmc.edu.cn:9443",
+   "testing1.vpn.sqmc.edu.cn:9443",
+   "wwwci.vpn.sqmc.edu.cn:9443",
+   "en.vpn.sqmc.edu.cn:9443",
+   "ilonwcms.vpn.sqmc.edu.cn:9443",
+   "www.sit.vpn.sqmc.edu.cn:9443",
+   "we-latin.vpn.sqmc.edu.cn:9443",
+   "new.vpn.sqmc.edu.cn:9443"
+  ],
+  "n": 10,
+  "cnt": "161",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IlphYmJpeCIgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n160\n1\nTOP FIDv2\nAna0mNHgca5FIKmc0ykR53GnZTyPRrIn\n157\nAJefIo85JvM/EPhn0hB6s+vtq2UcB+3k\n3\n0r+ka/VXq25Zx/mXHQWKtGPeiC+ZdC7r\n1\nTOP COUNTRIES/REGIONS\nCN\n161\nTOP OPEN PORTS\n9443\n157\n443\n2\n80\n1\n8081\n1\nTOP SERVERS\nJSP3/2.0.14\n157\nMulti-Factor Web Gateway\n2\nnginx\n1\nwebserver\n1\nTOP TITLES\nops center: Zabbix\n157\nzbx.dlufl.edu.cn: Zabbix\n2\nComposed installation: Zabbix\n1\nZabbix\n1\n161\nresults\n(4",
+  "dork": "title=\"Zabbix\" && host=\"edu.cn\""
+ },
+ "edu_apollo": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJBcG9sbG8iIHx8IGJvZHk9ImFwb2xsby1hZG1pbnNlcnZpY2UiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n497\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "(title=\"Apollo\" || body=\"apollo-adminservice\") && host=\"edu.cn\""
+ },
+ "edu_actuator": {
+  "hosts": [
+   "nanolab.jxnu.edu.cn",
+   "zkxb.xjtu.edu.cn",
+   "jmsa.hrbeu.edu.cn",
+   "journal_intecom.xidian.edu.cn",
+   "iisscs.aia.hust.edu.cn",
+   "small.shanghaitech.edu.cn",
+   "jbe.jlu.edu.cn",
+   "jrse.csu.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "23",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iYWN0dWF0b3IiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n5\n2\n2\nMore\nTOP FIDv2\ni8GydDoO+m4O5Ld3aK+VSCP3SzcXyiPJ\n2\nM5aPTyLJWDNAaXSukilu+tafCHfQJ3Wj\n2\nifQ2aNzTsCcBS/G2Y/xjqqXLjs50dq1o\n2\nfEzzWTVyWn+52esPTemKFKP/FSuTj8rN\n2\ng4nbapIMB2MTAZVqF7YkCpoQMa5+WJEl\n2\nTOP COUNTRIES/REGIONS\nCN\n23\nTOP OPEN PORTS\n443\n12\n80\n11\nTOP SERVERS\nnginx\n7\nnone\n5\nApache\n2\nServer\n2\nTOP TITLES\nJournal of Marine Science and Application\n2\nAAII实验室\n2\nShanghaitech Microsyste",
+  "dork": "body=\"actuator\" && host=\"edu.cn\""
+ },
+ "edu_thinkphp": {
+  "hosts": [
+   "jxgl.math.nuaa.edu.cn",
+   "alumni.tjut.edu.cn",
+   "www.icst.pku.edu.cn",
+   "wict.pku.edu.cn",
+   "xxhc.ujs.edu.cn",
+   "www.wict.pku.edu.cn",
+   "edf.tjut.edu.cn",
+   "nkuaa.nankai.edu.cn",
+   "tianjinforum.nankai.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "287",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iVGhpbmtQSFAiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n191\n5\n4\nMore\nTOP FIDv2\nBo4eZeIQvJqfk1Tavrst4Ck5A2bBTmKm\n188\nxm4z+YYRJKGEvKtnitHZugSW+Sr6IoRJ\n8\n1j0iTPyVRwBU2btlQ27ucEe6Qkv7Q2Np\n6\n7qc+n1b4myPr0bSTK882uV3iy89V1Iuc\n5\nmIfoCv6kKKVaAmTcSeLF3MHMl+JAPrza\n4\nTOP COUNTRIES/REGIONS\nCN\n284\nHong Kong Special Administrative Region\n3\nTOP OPEN PORTS\n1080\n185\n80\n51\n443\n48\n82\n1\n85\n1\nTOP SERVERS\nApache\n188\nnginx\n30\nWebServer\n7\n*********\n6\nTOP TITLES\n",
+  "dork": "body=\"ThinkPHP\" && host=\"edu.cn\""
+ },
+ "edu_exchange": {
+  "hosts": [
+   "gjy.trzy.edu.cn",
+   "lcc.dukekunshan.edu.cn",
+   "gsi.dukekunshan.edu.cn",
+   "www.sgg.whu.edu.cn",
+   "english.btbu.edu.cn",
+   "bjf.pku.edu.cn",
+   "www.gs.sjtu.edu.cn",
+   "smileenglish.ecnu.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "4,215",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJPdXRsb29rIiB8fCBib2R5PSJFeGNoYW5nZSIpICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n48\n39\n35\nMore\nTOP FIDv2\n5NfHxZ88vlYnO5/v7FsbVHZoY5T+UqJ1\n25\nsqyIUxb7lRAj7n3Z5CnFo/BhwbfVF7VF\n24\nuh4TPi2ZkmfgOPUtZQVmMfEbpX+TtnL2\n20\nSlJz/HfeZh+3gQ6nkX4KQrei7rYja4OP\n17\n2lpU4m5CkGp7dNE09h5JOhDZQbuGYQnQ\n10\nTOP COUNTRIES/REGIONS\nCN\n4,183\nHong Kong Special Administrative Region\n12\nTaiwan, Province of China\n10\nSG\n5\nAU\n2\nTOP OPEN PORTS\n443\n2,300\n80\n1,895\n8080\n8\n8081\n2\n8182\n2\nTOP SERVERS\nn",
+  "dork": "(title=\"Outlook\" || body=\"Exchange\") && host=\"edu.cn\""
+ },
+ "edu_ruoyi": {
+  "hosts": [
+   "college.gxjy.sdei.edu.cn",
+   "shfw.scau.edu.cn",
+   "gxjy.sdei.edu.cn",
+   "sydwgl.jxutcm.edu.cn",
+   "bigscreen.uwh.edu.cn:58080",
+   "ektm.uwh.edu.cn:58080",
+   "print.uwh.edu.cn:58080",
+   "zhzg.nudt.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "197",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9IuiLpeS%2BnSIgfHwgYm9keT0iUnVvWWkiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n43\n8\n4\nMore\nTOP FIDv2\nxF8pDZlsPYk+ulPAXWuAgAC0W1gSgaNA\n21\ne9wCxOOb1b3jz6fdcZpJNx6qw3uc7cbV\n5\nw6gi8b219X2ks64ooYUeGzVprmf1AGbY\n4\nR2cDlnw/WR0k1/95cAaEiDG3LzcsOAtv\n4\nHgyHGiB5yS2vnCiYmsaoeOdljuV3MyJZ\n4\nTOP COUNTRIES/REGIONS\nCN\n197\nTOP OPEN PORTS\n443\n69\n80\n62\n58080\n21\n8080\n8\n100\n5\nTOP SERVERS\nnginx/1.24.0\n25\nnone\n17\nnginx\n14\nrump/c\n6\nTOP TITLES\n缴费平台\n6\n登录\n5\n登录重工乐跑后台管理系统\n5\n登录\n4\n197\nresults",
+  "dork": "(body=\"若依\" || body=\"RuoYi\") && host=\"edu.cn\""
+ },
+ "edu_ecology": {
+  "hosts": [],
+  "n": 0,
+  "cnt": null,
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iZS1jb2xvZ3kiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n\n[45012] API request frequency out of limit\n\nRefresh and try.\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us\n\nAPI rate limit exceeded",
+  "dork": "body=\"e-cology\" && host=\"edu.cn\""
+ },
+ "edu_tongda": {
+  "hosts": [
+   "xblx.whu.edu.cn",
+   "oa.nnnu.edu.cn",
+   "xxzx.sdwm.edu.cn",
+   "oa.zmu.edu.cn",
+   "oa.gxstnu.edu.cn",
+   "oa.sole.ecnu.edu.cn",
+   "oa.henu.edu.cn",
+   "nsmp.whu.edu.cn",
+   "oa.jzu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "137",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9IumAmui%2Bvk9BIiB8fCBib2R5PSJ0b25nZGEiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n117\n4\n2\nMore\nTOP FIDv2\n/Sf83uC2L/gXJjHuEJi8vMCoOzREhaj9\n8\ngScFVpCjKGV/uqWsFRYCvQ8Pm+4iFRKO\n8\nclqTJT1YfXrHG5mIX63V02/jBnhv+dVC\n6\nFaAF8HumzN54Y2Kc0rWNbmjz91ti9GPn\n4\nYyVrN2FmJ3DAVpQ8yrvkisPuHbCsHgS5\n4\nTOP COUNTRIES/REGIONS\nCN\n137\nTOP OPEN PORTS\n443\n57\n80\n53\n8000\n6\n8090\n4\n86\n4\nTOP SERVERS\nnginx\n69\nnone\n14\nrump/d\n12\nrump/c\n9\nTOP TITLES\n通达OA网络智能办公系统\n8\n山东科技大学 党委办公室（学校办公室、法治工作办公室）\n4\n山东科技大学网",
+  "dork": "(body=\"通达OA\" || body=\"tongda\") && host=\"edu.cn\""
+ },
+ "edu_seeyon": {
+  "hosts": [
+   "www.hpl.edu.cn",
+   "www.scst.edu.cn",
+   "skc.jnu.edu.cn",
+   "gjxy.gzhs.edu.cn",
+   "math.yulinu.edu.cn",
+   "ihmm.ustb.edu.cn",
+   "ssp.cufe.edu.cn",
+   "hsss.ustc.edu.cn",
+   "ncee.whu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "10,341",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9InNlZXlvbiIgfHwgYm9keT0i6Ie06L%2BcIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n962\n312\n282\nMore\nTOP FIDv2\nX9WcvPx5ddT8iqqGa/wyjQ2F8jBA8uBN\n976\nQMHuJUPtDBpHsdzaaf6ePgjMh0EDUomR\n171\nIMtJck2YIhnBSm9OYjmG2avH7oSGSKlg\n171\n+3N8L2dR4yOboteMF/0NpjYqvk78JSBO\n70\nO2GIUqnDBOiwxfOCFHN0xMbuUSMtlRhn\n44\nTOP COUNTRIES/REGIONS\nCN\n10,262\nHong Kong Special Administrative Region\n62\nUS\n12\nZA\n3\nTaiwan, Province of China\n2\nTOP OPEN PORTS\n443\n5,385\n80\n4,748\n8080\n61\n8066\n18\n8443\n13\nTOP",
+  "dork": "(body=\"seeyon\" || body=\"致远\") && host=\"edu.cn\""
+ },
+ "edu_jumpserver": {
+  "hosts": [
+   "ywfw.jcut.edu.cn",
+   "jump.mtc.edu.cn",
+   "bh.snnu.edu.cn:4433",
+   "baoleiji.snnu.edu.cn",
+   "japec.edu.cn:8099",
+   "baoleiji.hbut.edu.cn",
+   "jumpserver.zqu.edu.cn",
+   "jumps.neepu.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "15",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9Ikp1bXBTZXJ2ZXIiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n2\nTOP FIDv2\n0i9nlVP3CdVr7OX86z3yOdATY20C3lgB\n6\npXLWN0LZtyngk9k49bgDqh+RtfDMqXLL\n6\n1GJRWoHT3Tq+d2gbE9w9Vj5bLnujdXnj\n2\n5c56vc1wO79Eo/ZomRgvejC5M522LCcP\n1\nTOP COUNTRIES/REGIONS\nCN\n15\nTOP OPEN PORTS\n443\n10\n80\n3\n4433\n1\n8099\n1\nTOP SERVERS\nnginx\n11\nJSP3/2.0.14\n1\nnginx/1.24.0 (Ubuntu)\n1\nTOP TITLES\nJumpServer\n14\nJumpServer 开源堡垒机\n1\n15\nresults\n(12 unique IP )\n,\n340\nms\n,Keyword Search.\nPast yea",
+  "dork": "title=\"JumpServer\" && host=\"edu.cn\""
+ },
+ "edu_apisix": {
+  "hosts": [
+   "tsp.imaa.edu.cn",
+   "www.sii.edu.cn",
+   "all.ecnu.edu.cn",
+   "zhicheng.cufe.edu.cn",
+   "xsc.bua.edu.cn",
+   "moa.xmu.edu.cn",
+   "news.byau.edu.cn",
+   "zhsz.bua.edu.cn",
+   "grtsg.gzarts.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "1,843",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJBcGFjaGUgQVBJU0lYIiB8fCBib2R5PSJhcGlzaXgiKSAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n4\n2\n2\nMore\nTOP FIDv2\nyWU6vuXfunRfdl7sBJIvSvU50RDDk8/F\n1,320\npM6mQscf7vPGbEn/Dfi5KyV5M0sL+Nw0\n519\neJP6frXzYusjgdzGWfpTw2U7wSLNmofd\n3\nINrHnBUEMQftO9K5tZLArEhbsknaUEJJ\n1\nTOP COUNTRIES/REGIONS\nCN\n1,843\nTOP OPEN PORTS\n443\n926\n80\n692\n9091\n114\n8530\n43\n8531\n43\nTOP SERVERS\nopenresty\n631\nrichctrl\n36\nwaf\n8\n*********\n3\nTOP TITLES\n302 Found\n1,099\n400 The plain HTTP request was sent to HTTPS port",
+  "dork": "(title=\"Apache APISIX\" || body=\"apisix\") && host=\"edu.cn\""
+ },
+ "edu_dvr": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iRFZSRFZTLVdlYnMiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n494\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "body=\"DVRDVS-Webs\" && host=\"edu.cn\""
+ },
+ "edu_kibana": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IktpYmFuYSIgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n675\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "title=\"Kibana\" && host=\"edu.cn\""
+ },
+ "edu_phpmyadmin": {
+  "hosts": [
+   "cnote.ustc.edu.cn:10388",
+   "cnote.ustc.edu.cn:8090",
+   "cnote.ustc.edu.cn:10188",
+   "woke.ustc.edu.cn:10388",
+   "woke.ustc.edu.cn:10188",
+   "woke.ustc.edu.cn:8090"
+  ],
+  "n": 6,
+  "cnt": "6",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9InBocE15QWRtaW4iICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n6\nTOP FIDv2\n4n9k5DHL7unulnQjo7KAYJwOAVWTAIdj\n6\nTOP COUNTRIES/REGIONS\nCN\n6\nTOP OPEN PORTS\n10188\n2\n10388\n2\n8090\n2\nTOP SERVERS\nnginx\n6\nTOP TITLES\nphpMyAdmin\n6\n6\nresults\n(1 unique IP )\n,\n169\nms\n,Keyword Search.\nPast year\ncnote.ustc.edu.cn:10388\n4n9k5DHL7unulnQjo7KAYJwOAVWTAIdj\n167\n10388\n\nphpMyAdmin\n\n202.38.92.84\n\nChina/Anhui/Hefei\n\n4538\n\nChina Education and Research Network Center\n\nustc",
+  "dork": "title=\"phpMyAdmin\" && host=\"edu.cn\""
+ },
+ "edu_swagger": {
+  "hosts": [
+   "lib.pdsu.edu.cn:6066",
+   "ssdj.xtu.edu.cn.idceo.cn:9000",
+   "49288.edu.cn.kjdog.cn",
+   "xwksapi.jxjy.ouc.edu.cn",
+   "mhall.zufedfc.edu.cn:9000",
+   "tsg.xjvu.edu.cn:19999",
+   "ldgx-api.fjou.edu.cn",
+   "danzhao.zit.edu.cn:9990",
+   "yktbxgl.gxnu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "10",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSJTd2FnZ2VyIFVJIiB8fCBib2R5PSJzd2FnZ2VyLXVpIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n4\n2\n2\nMore\nTOP FIDv2\n4v5/gXgVe8DTDd+iPnjJ7S3x9c06aTz6\n4\nWn9PT7TEO/lzd6UVmOnk2tbVv0voy+jW\n2\nJoVp+veLgrZZk44WNrngHijgCgfwLYCQ\n2\n2Z2YBUtwJCLLxrhtWmnGoGXjvgChqAgC\n1\nOeM3K5y5mRfbntH9Hzm36PShZyEeSkou\n1\nTOP COUNTRIES/REGIONS\nCN\n8\nHong Kong Special Administrative Region\n2\nTOP OPEN PORTS\n443\n4\n9000\n2\n19999\n1\n6066\n1\n80\n1\nTOP SERVERS\nnginx\n3\nMicrosoft-IIS/10.0\n2\nMicrosoft-IIS/8.5\n2\nKestrel\n1\nT",
+  "dork": "(title=\"Swagger UI\" || body=\"swagger-ui\") && host=\"edu.cn\""
+ }
+}

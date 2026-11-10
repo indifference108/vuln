@@ -1,0 +1,952 @@
+{
+ "jumpserver|ywfw.jcut.edu.cn": {
+  "group": "jumpserver",
+  "host": "ywfw.jcut.edu.cn",
+  "probes": [
+   {
+    "url": "https://ywfw.jcut.edu.cn/",
+    "status": 200,
+    "len": 4902,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://ywfw.jcut.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|jump.mtc.edu.cn": {
+  "group": "jumpserver",
+  "host": "jump.mtc.edu.cn",
+  "probes": [
+   {
+    "url": "https://jump.mtc.edu.cn/",
+    "status": 200,
+    "len": 4902,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://jump.mtc.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|bh.snnu.edu.cn:4433": {
+  "group": "jumpserver",
+  "host": "bh.snnu.edu.cn:4433",
+  "probes": [
+   {
+    "url": "https://bh.snnu.edu.cn:4433/",
+    "status": 200,
+    "len": 3524,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://bh.snnu.edu.cn:4433/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|baoleiji.snnu.edu.cn": {
+  "group": "jumpserver",
+  "host": "baoleiji.snnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://baoleiji.snnu.edu.cn/",
+    "status": 200,
+    "len": 3524,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://baoleiji.snnu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|japec.edu.cn:8099": {
+  "group": "jumpserver",
+  "host": "japec.edu.cn:8099",
+  "probes": [
+   {
+    "url": "http://japec.edu.cn:8099/",
+    "status": 400,
+    "len": 48,
+    "title": "",
+    "ctype": "",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "http://japec.edu.cn:8099/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 400,
+  "title": ""
+ },
+ "jumpserver|baoleiji.hbut.edu.cn": {
+  "group": "jumpserver",
+  "host": "baoleiji.hbut.edu.cn",
+  "probes": [
+   {
+    "url": "https://baoleiji.hbut.edu.cn/",
+    "status": 200,
+    "len": 4902,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://baoleiji.hbut.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|jumpserver.zqu.edu.cn": {
+  "group": "jumpserver",
+  "host": "jumpserver.zqu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jumpserver.zqu.edu.cn/",
+    "status": 200,
+    "len": 4902,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://jumpserver.zqu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "jumpserver|jumps.neepu.edu.cn": {
+  "group": "jumpserver",
+  "host": "jumps.neepu.edu.cn",
+  "probes": [
+   {
+    "url": "https://jumps.neepu.edu.cn/",
+    "status": 200,
+    "len": 4902,
+    "title": "JumpServer",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": true,
+    "has_phpmyadmin": false,
+    "final_url": "https://jumps.neepu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "JumpServer"
+ },
+ "phpmyadmin|cnote.ustc.edu.cn:10388": {
+  "group": "phpmyadmin",
+  "host": "cnote.ustc.edu.cn:10388",
+  "probes": [
+   {
+    "url": "http://cnote.ustc.edu.cn:10388/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='cnote.ustc.edu.cn', port=10388): Max retries exceeded w"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "phpmyadmin|cnote.ustc.edu.cn:8090": {
+  "group": "phpmyadmin",
+  "host": "cnote.ustc.edu.cn:8090",
+  "probes": [
+   {
+    "url": "http://cnote.ustc.edu.cn:8090/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='cnote.ustc.edu.cn', port=8090): Max retries exceeded wi"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "phpmyadmin|cnote.ustc.edu.cn:10188": {
+  "group": "phpmyadmin",
+  "host": "cnote.ustc.edu.cn:10188",
+  "probes": [
+   {
+    "url": "http://cnote.ustc.edu.cn:10188/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='cnote.ustc.edu.cn', port=10188): Max retries exceeded w"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "phpmyadmin|woke.ustc.edu.cn:10388": {
+  "group": "phpmyadmin",
+  "host": "woke.ustc.edu.cn:10388",
+  "probes": [
+   {
+    "url": "http://woke.ustc.edu.cn:10388/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='woke.ustc.edu.cn', port=10388): Max retries exceeded wi"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "phpmyadmin|woke.ustc.edu.cn:10188": {
+  "group": "phpmyadmin",
+  "host": "woke.ustc.edu.cn:10188",
+  "probes": [
+   {
+    "url": "http://woke.ustc.edu.cn:10188/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='woke.ustc.edu.cn', port=10188): Max retries exceeded wi"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "phpmyadmin|woke.ustc.edu.cn:8090": {
+  "group": "phpmyadmin",
+  "host": "woke.ustc.edu.cn:8090",
+  "probes": [
+   {
+    "url": "http://woke.ustc.edu.cn:8090/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='woke.ustc.edu.cn', port=8090): Max retries exceeded wit"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "tongda|xblx.whu.edu.cn": {
+  "group": "tongda",
+  "host": "xblx.whu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xblx.whu.edu.cn/",
+    "status": 200,
+    "len": 1149355,
+    "title": "æ­¦æ±å¤§å­¦å­¦æ¥ï¼çå­¦çï¼",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://xblx.whu.edu.cn/zh/home/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æ­¦æ±å¤§å­¦å­¦æ¥ï¼çå­¦çï¼"
+ },
+ "tongda|oa.nnnu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.nnnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.nnnu.edu.cn/",
+    "status": 200,
+    "len": 13696,
+    "title": "南宁师范大学网络协同办公系统",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://oa.nnnu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "南宁师范大学网络协同办公系统"
+ },
+ "tongda|xxzx.sdwm.edu.cn": {
+  "group": "tongda",
+  "host": "xxzx.sdwm.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxzx.sdwm.edu.cn/",
+    "status": 200,
+    "len": 21230,
+    "title": "å±±ä¸å¤è´¸èä¸å­¦é¢ä¿¡æ¯ææ¯ä¸­å¿",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://xxzx.sdwm.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "å±±ä¸å¤è´¸èä¸å­¦é¢ä¿¡æ¯ææ¯ä¸­å¿"
+ },
+ "tongda|oa.zmu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.zmu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.zmu.edu.cn/",
+    "status": 200,
+    "len": 9215,
+    "title": "遵义医科大学OA办公系统",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://oa.zmu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "遵义医科大学OA办公系统"
+ },
+ "tongda|oa.gxstnu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.gxstnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.gxstnu.edu.cn/",
+    "status": 200,
+    "len": 7844,
+    "title": "广西科技师范学院OA办公系统",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://oa.gxstnu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "广西科技师范学院OA办公系统"
+ },
+ "tongda|oa.sole.ecnu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.sole.ecnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.sole.ecnu.edu.cn/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='oa.sole.ecnu.edu.cn', port=443): Max retries exceeded "
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "tongda|oa.henu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.henu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.henu.edu.cn/",
+    "status": 200,
+    "len": 7012,
+    "title": "河南大学办公自动化系统",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://oa.henu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "河南大学办公自动化系统"
+ },
+ "tongda|nsmp.whu.edu.cn": {
+  "group": "tongda",
+  "host": "nsmp.whu.edu.cn",
+  "probes": [
+   {
+    "url": "https://nsmp.whu.edu.cn/",
+    "status": 200,
+    "len": 7653,
+    "title": "护理学院综合管理平台",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://nsmp.whu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "护理学院综合管理平台"
+ },
+ "tongda|oa.jzu.edu.cn": {
+  "group": "tongda",
+  "host": "oa.jzu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oa.jzu.edu.cn/",
+    "status": 200,
+    "len": 5929,
+    "title": "焦作大学网络智能办公系统",
+    "ctype": "text/html; charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://oa.jzu.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "焦作大学网络智能办公系统"
+ },
+ "ruoyi|college.gxjy.sdei.edu.cn": {
+  "group": "ruoyi",
+  "host": "college.gxjy.sdei.edu.cn",
+  "probes": [
+   {
+    "url": "https://college.gxjy.sdei.edu.cn/",
+    "status": 200,
+    "len": 11406,
+    "title": "山东省大学生就业服务平台（高校）- 登录",
+    "ctype": "text/html;charset=UTF-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://college.gxjy.sdei.edu.cn/colleage/login"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "山东省大学生就业服务平台（高校）- 登录"
+ },
+ "ruoyi|shfw.scau.edu.cn": {
+  "group": "ruoyi",
+  "host": "shfw.scau.edu.cn",
+  "probes": [
+   {
+    "url": "https://shfw.scau.edu.cn/",
+    "status": 200,
+    "len": 4851,
+    "title": "登录社会服务系统",
+    "ctype": "text/html;charset=UTF-8",
+    "login_form": true,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://shfw.scau.edu.cn/login"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "登录社会服务系统"
+ },
+ "ruoyi|gxjy.sdei.edu.cn": {
+  "group": "ruoyi",
+  "host": "gxjy.sdei.edu.cn",
+  "probes": [
+   {
+    "url": "https://gxjy.sdei.edu.cn/",
+    "status": 200,
+    "len": 61351,
+    "title": "欢迎光临山东省大学生就业服务平台!",
+    "ctype": "text/html;charset=UTF-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://gxjy.sdei.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "欢迎光临山东省大学生就业服务平台!"
+ },
+ "ruoyi|sydwgl.jxutcm.edu.cn": {
+  "group": "ruoyi",
+  "host": "sydwgl.jxutcm.edu.cn",
+  "probes": [
+   {
+    "url": "https://sydwgl.jxutcm.edu.cn/",
+    "status": 200,
+    "len": 7983,
+    "title": "",
+    "ctype": "text/html;charset=UTF-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://sydwgl.jxutcm.edu.cn/30e77ba53855679c"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "ruoyi|bigscreen.uwh.edu.cn:58080": {
+  "group": "ruoyi",
+  "host": "bigscreen.uwh.edu.cn:58080",
+  "probes": [
+   {
+    "url": "http://bigscreen.uwh.edu.cn:58080/",
+    "status": 200,
+    "len": 175,
+    "title": "",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "http://bigscreen.uwh.edu.cn:58080/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "ruoyi|ektm.uwh.edu.cn:58080": {
+  "group": "ruoyi",
+  "host": "ektm.uwh.edu.cn:58080",
+  "probes": [
+   {
+    "url": "http://ektm.uwh.edu.cn:58080/",
+    "status": 200,
+    "len": 175,
+    "title": "",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "http://ektm.uwh.edu.cn:58080/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "ruoyi|print.uwh.edu.cn:58080": {
+  "group": "ruoyi",
+  "host": "print.uwh.edu.cn:58080",
+  "probes": [
+   {
+    "url": "http://print.uwh.edu.cn:58080/",
+    "status": 200,
+    "len": 175,
+    "title": "",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "http://print.uwh.edu.cn:58080/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": ""
+ },
+ "ruoyi|zhzg.nudt.edu.cn": {
+  "group": "ruoyi",
+  "host": "zhzg.nudt.edu.cn",
+  "probes": [
+   {
+    "url": "https://zhzg.nudt.edu.cn/",
+    "status": 200,
+    "len": 11385,
+    "title": "æºæ §æ¿å·¥äººææå¡é¨æ·",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://zhzg.nudt.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æºæ §æ¿å·¥äººææå¡é¨æ·"
+ },
+ "swagger|lib.pdsu.edu.cn:6066": {
+  "group": "swagger",
+  "host": "lib.pdsu.edu.cn:6066",
+  "probes": [
+   {
+    "url": "http://lib.pdsu.edu.cn:6066/swagger-ui/index.html",
+    "status": null,
+    "err": "ConnectionError:HTTPConnectionPool(host='lib.pdsu.edu.cn', port=6066): Max retries exceeded with"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "swagger|xwksapi.jxjy.ouc.edu.cn": {
+  "group": "swagger",
+  "host": "xwksapi.jxjy.ouc.edu.cn",
+  "probes": [
+   {
+    "url": "https://xwksapi.jxjy.ouc.edu.cn/swagger-ui/index.html",
+    "status": null,
+    "err": "ConnectionError:('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "swagger|mhall.zufedfc.edu.cn:9000": {
+  "group": "swagger",
+  "host": "mhall.zufedfc.edu.cn:9000",
+  "probes": [
+   {
+    "url": "http://mhall.zufedfc.edu.cn:9000/swagger-ui/index.html",
+    "status": null,
+    "err": "ConnectionError:HTTPConnectionPool(host='mhall.zufedfc.edu.cn', port=9000): Max retries exceeded"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "swagger|tsg.xjvu.edu.cn:19999": {
+  "group": "swagger",
+  "host": "tsg.xjvu.edu.cn:19999",
+  "probes": [
+   {
+    "url": "http://tsg.xjvu.edu.cn:19999/swagger-ui/index.html",
+    "status": null,
+    "err": "ReadTimeout:HTTPConnectionPool(host='tsg.xjvu.edu.cn', port=19999): Read timed out. (read ti"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "swagger|ldgx-api.fjou.edu.cn": {
+  "group": "swagger",
+  "host": "ldgx-api.fjou.edu.cn",
+  "probes": [
+   {
+    "url": "https://ldgx-api.fjou.edu.cn/swagger-ui/index.html",
+    "status": 404,
+    "len": 1163,
+    "title": "404 - �Ҳ����ļ���Ŀ¼��",
+    "ctype": "text/html; charset=utf-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://ldgx-api.fjou.edu.cn/swagger-ui/index.html"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 - �Ҳ����ļ���Ŀ¼��"
+ },
+ "swagger|danzhao.zit.edu.cn:9990": {
+  "group": "swagger",
+  "host": "danzhao.zit.edu.cn:9990",
+  "probes": [
+   {
+    "url": "http://danzhao.zit.edu.cn:9990/swagger-ui/index.html",
+    "status": null,
+    "err": "ConnectTimeout:HTTPConnectionPool(host='danzhao.zit.edu.cn', port=9990): Max retries exceeded w"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": null,
+  "title": null
+ },
+ "swagger|yktbxgl.gxnu.edu.cn": {
+  "group": "swagger",
+  "host": "yktbxgl.gxnu.edu.cn",
+  "probes": [
+   {
+    "url": "https://yktbxgl.gxnu.edu.cn/swagger-ui/index.html",
+    "status": 404,
+    "len": 548,
+    "title": "404 Not Found",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://yktbxgl.gxnu.edu.cn/swagger-ui/index.html"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 404,
+  "title": "404 Not Found"
+ },
+ "thinkphp|jxgl.math.nuaa.edu.cn": {
+  "group": "thinkphp",
+  "host": "jxgl.math.nuaa.edu.cn",
+  "probes": [
+   {
+    "url": "https://jxgl.math.nuaa.edu.cn/",
+    "status": 500,
+    "len": 43098,
+    "title": "System Error",
+    "ctype": "text/html; charset=utf-8",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://jxgl.math.nuaa.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 500,
+  "title": "System Error"
+ },
+ "thinkphp|alumni.tjut.edu.cn": {
+  "group": "thinkphp",
+  "host": "alumni.tjut.edu.cn",
+  "probes": [
+   {
+    "url": "https://alumni.tjut.edu.cn/",
+    "status": 200,
+    "len": 25299,
+    "title": "æ ¡åä¼",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://alumni.tjut.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æ ¡åä¼"
+ },
+ "thinkphp|www.icst.pku.edu.cn": {
+  "group": "thinkphp",
+  "host": "www.icst.pku.edu.cn",
+  "probes": [
+   {
+    "url": "https://www.icst.pku.edu.cn/",
+    "status": 200,
+    "len": 22990,
+    "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://www.icst.pku.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ"
+ },
+ "thinkphp|wict.pku.edu.cn": {
+  "group": "thinkphp",
+  "host": "wict.pku.edu.cn",
+  "probes": [
+   {
+    "url": "https://wict.pku.edu.cn/",
+    "status": 200,
+    "len": 22990,
+    "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://wict.pku.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ"
+ },
+ "thinkphp|xxhc.ujs.edu.cn": {
+  "group": "thinkphp",
+  "host": "xxhc.ujs.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxhc.ujs.edu.cn/",
+    "status": 200,
+    "len": 66051,
+    "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://xxhc.ujs.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "æ±èå¤§å­¦æ°æ®ä¸ä¿¡æ¯åå¤ï¼ä¿¡æ¯åä¸­å¿ï¼"
+ },
+ "thinkphp|www.wict.pku.edu.cn": {
+  "group": "thinkphp",
+  "host": "www.wict.pku.edu.cn",
+  "probes": [
+   {
+    "url": "https://www.wict.pku.edu.cn/",
+    "status": 200,
+    "len": 22990,
+    "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://www.wict.pku.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "åäº¬å¤§å­¦çéè®¡ç®æºç ç©¶æ"
+ },
+ "thinkphp|edf.tjut.edu.cn": {
+  "group": "thinkphp",
+  "host": "edf.tjut.edu.cn",
+  "probes": [
+   {
+    "url": "https://edf.tjut.edu.cn/",
+    "status": 200,
+    "len": 22140,
+    "title": "å¤©æ´¥çå·¥å¤§å­¦æè²åå±åºéä¼",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://edf.tjut.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "å¤©æ´¥çå·¥å¤§å­¦æè²åå±åºéä¼"
+ },
+ "thinkphp|nkuaa.nankai.edu.cn": {
+  "group": "thinkphp",
+  "host": "nkuaa.nankai.edu.cn",
+  "probes": [
+   {
+    "url": "https://nkuaa.nankai.edu.cn/",
+    "status": 200,
+    "len": 41385,
+    "title": "åå¼æ ¡åç½",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://nkuaa.nankai.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 200,
+  "title": "åå¼æ ¡åç½"
+ },
+ "thinkphp|tianjinforum.nankai.edu.cn": {
+  "group": "thinkphp",
+  "host": "tianjinforum.nankai.edu.cn",
+  "probes": [
+   {
+    "url": "https://tianjinforum.nankai.edu.cn/",
+    "status": 502,
+    "len": 2770,
+    "title": "è®¿é®åºé - 502",
+    "ctype": "text/html",
+    "login_form": false,
+    "has_swagger": false,
+    "has_jumpserver": false,
+    "has_phpmyadmin": false,
+    "final_url": "https://tianjinforum.nankai.edu.cn/"
+   }
+  ],
+  "hit": false,
+  "why": "",
+  "status": 502,
+  "title": "è®¿é®åºé - 502"
+ }
+}

@@ -464,3 +464,34 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 4. 新洞按 A 的三步进库；commit 用英文一句话；每次定案/登记后 push。
 5. 汇报风格：结论先行 + 表格，结尾给一个加粗的具体下一步；不要问「要不要」，做完再汇报。
 
+## 7.37 edusrc 轮：FOFA 浏览器 edu.cn 弱密钥/RCE/N-day 全量切片（2026-11-10 晚）
+
+- **任务**：用 FOFA 浏览器扫 edusrc（edu.cn）的弱密钥、RCE、N-day 高危，遇人机验证或定案即停，**不与历史重复**。
+- **通道**：WebBridge `fofa-carrier`（用户 Chrome）。开局 `list_browser_tabs` 无 FOFA 标签 → `navigate` 新建；首查返回 `[824001] Keyword: body requires Registered User and above` + Login to View；随后 `app=`/纯 `host=` 查询直接跳 `https://en.fofa.info/captcha`（"Confirm Humanity / Please click in order on the image"）——**人机验证命中**（证据 `scan/fofa_pool/edusrc_captcha_20261110.json`）。用户 19:29 确认已登录，登录态恢复后 `body=` 放行，此后 31 个切片 **0 次验证码**。
+- **去重基线**：历史 edu.cn 候选 36 个（10-19 `ai_infra_domain_slices` / `ai_domain_fp` 矿池）；历史 edu.cn dork 只有 6 个 AI 产品（litellm/FastGPT/RAGFlow/OpenWebUI/Langflow/Dify）。本轮 31 个切片全部是全新维度，101 个合法候选与历史 **0 重叠**。
+- **切片清单（31 个，证据 `edusrc_nday_slices_20261110.json`）**：
+  - R1-Nday：GeoServer 10 / Jenkins 127 / GitLab 263 / Confluence 401 / WebLogic 11 / SpringBoot Whitelabel 1,194
+  - R1-面板：Grafana 17 / Nacos 0 / Druid 0 / Tomcat 872 / Solr 0 / 硬编码密码 28,632
+  - R1-设备：海康 doc/page/login.asp 6 / 打印机 50 / JBoss 10 / Zabbix 161 / Apollo 0 / actuator 23
+  - R2-OA/中间件：ThinkPHP 287 / Exchange 4,215 / 若依 197 / 泛微 e-cology 加载失败 / 通达OA 137 / 致远 10,341
+  - R2-弱口令面：JumpServer 15 / APISIX 1,843 / DVRDVS-Webs 0 / Kibana 0 / phpMyAdmin 6 / Swagger UI 若干
+- **只读验证**：129 个候选，只发 GET、不执行 payload、不读 env/heapdump/配置内容、不爆破；国内目标 `trust_env=False` 直连，限速 1.2s。证据 `edusrc_readonly_fp_20261110.json`（82 条）+ `edusrc_r2_fp_20261110.json`（47 条）。
+- **结果：0 确证洞**。两条命中经复核**撤销**：
+  1. `tyzf.aku.edu.cn:8084` `/actuator` 200 且 `Content-Type: application/vnd.spring-boot.actuator.v3+json`，但 `_links` 只有 `self/health/health-path` —— Spring Boot 默认暴露，无 env/heapdump/mappings，**不是洞**。
+  2. `gdcpic.stu.edu.cn:3000` Grafana 6.4.4 —— **CVE-2021-43798 仅影响 8.0.0-beta1～8.3.0**，6.x 不在范围；「版本老」≠「N-day 命中」，已撤销并把判定写死为 `v.startswith("8.")`。
+- **本轮新死线（勿重挖）**：
+  - GeoServer edu 10 条只有 `map.xjau.edu.cn` 是真实例（`GeoServer: Welcome`），但 `/geoserver/rest/about/version.json` 401、欢迎页不暴露版本号，无法落 CVE-2024-36401，不定案；`geolab.ucas` / `ifarm.xjau` 是门户页误报。
+  - **Jenkins `/script` 全 302/404**、**JBoss `/jmx-console` 全 404**、**Tomcat `/manager/html` 全 401/403** —— 三条未授权 RCE 管理面在 edu.cn 全线关闭。
+  - Nacos / Druid / Solr / Apollo / Kibana / DVRDVS-Webs / 海康真指纹域名限定 = **0 结果**；`doc/page/login.asp` 6 条全是门户页历史快照误报（丽水学院招生网等）。
+  - **Zabbix 161 条里 157 条是 `*.vpn.sqmc.edu.cn:9443` 同一个 VPN 网关**（JSP3/2.0.14），典型泛域名误报，别当 161 个资产。
+  - ThinkPHP 287 / 致远 10,341 / APISIX 1,843 / 通达OA 137 / 若依 197：FOFA body 关键词误报率极高（多为门户页含词或 SPA 登录页），**必须 title+API 双重确认**；通达 OA 9 个可见域名里 5 个跳登录页、4 个是门户；若依 8 个里 6 个是登录/门户页。
+  - JumpServer 8 个 edu.cn 堡垒机全部是登录页（SPA 前端，`type=password` 不在首屏 HTML，不能据此判「无登录」）；phpMyAdmin ustc 6 个端口全超时；Swagger UI 候选 7/9 超时或 404。
+- **教训（补进总纲）**：
+  1. **版本判定必须核对 CVE 影响范围的下界和上界**，只比「小于修复版」会把 6.x 误判成 8.x 的洞。
+  2. `/actuator` 200 只是入口，定案要看 `_links` 是否含 env/heapdump/configprops 等敏感端点；且绝不请求这些端点的**内容**。
+  3. WebBridge 恢复顺序：`list_browser_tabs` → 无 tab 则 `navigate` 建 tab → 登录墙/验证码直接停、交用户破；`list_tabs` 返回空不代表扩展掉线。
+  4. 本机 `python` 默认解释器（WorkBuddy 3.13）**没有 requests**；跑扫描脚本统一用 `C:\Python312\python.exe`（requests 2.33.1）。
+  5. 国内 edu 目标 `trust_env=False` 直连稳定；`https` 优先、显式端口 3000/8080/8082/8084/8980/58080/9000 等走 `http`。
+
+- **下一步方向（若继续）**：① 弱密钥线改走「设备类 edu.cn」（`body="ISAPI" && host="edu.cn"`、门禁/打印机管理页），Web 应用弱口令 CNVD 不发证（§7.28）；② 本轮 31 个切片只取了每 dork 第 1 页，可用 `&& port=` / `&& after=` 切片扩池；③ 单点深挖 `map.xjau.edu.cn` GeoServer 版本（需厂商公告/公开 build 信息，不打 WFS 利用面）。
+
