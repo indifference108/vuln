@@ -1,0 +1,50 @@
+{
+  "ts": "2026-11-10 19:52",
+  "target": "gdcpic.stu.edu.cn:3000 (同实例: gdc / gdcs.stu.edu.cn:3000)",
+  "version": "6.4.4",
+  "commit": "092e514",
+  "cve": "CVE-2020-13379",
+  "question": "版本落在 3.0.1~7.0.1 影响范围，SSRF 是否真的可验证？",
+  "verdict": "阴性 —— 本实例上无法证明 SSRF，撤销上一轮「待验证 N-day 活线索」定性",
+  "mechanism": "pkg/api/api.go 中 /avatar/:hash 是唯一不带 reqSignedIn 的路由；handler = GoFetch(gravatarSource + hash + '?' + reqParams)，hash 可控，理论上可注入查询参数/重定向链使服务端发起任意出站请求。",
+  "evidence": [
+    {
+      "step": "端点存在性",
+      "result": "成立",
+      "detail": "未带任何 Cookie 请求 /avatar/<hash> 返回 200 image/jpeg，说明未授权入口存在"
+    },
+    {
+      "step": "参数可控性对照（12 次 GET）",
+      "result": "全部无差异",
+      "detail": "不同 hash、?d=404、?d=blank、?d=retro、hash 内注入 %3fd%3d 等变体，一律返回同一张 1486 字节 JPEG，md5=9f51801bc14935ca，耗时恒定 2.04s"
+    },
+    {
+      "step": "图片来源比对",
+      "result": "本地内置头像",
+      "detail": "/public/img/user_profile.png 返回 1486 字节、md5=9f51801bc14935ca，与 /avatar/* 完全一致；本地静态资源 0.04s，/avatar/* 恒定 2.04s = 外部 Gravatar 请求失败/超时后回退内置头像"
+    },
+    {
+      "step": "响应头",
+      "detail": "Cache-Control: private, max-age=3600, no-cache，无 ETag/Last-Modified；/avatar/ 无 hash 时 302（本地路由，0.04s）"
+    }
+  ],
+  "why_not_ssrf": "所有用于改变服务端出站目标的输入都未产生任何可观测差异，且回显内容被证明是本地静态文件。无法证明『服务端按攻击者控制的 URL 成功发起请求』，达不到 edusrc/CNVD 报送所需的危害证明门槛。",
+  "boundary_not_claimed": "不能 100% 排除『若 Gravatar 出站链路可达 + 构造重定向链』时攻击链成立；但那需要公网回调端点和武器化链，且当前实测的出站链路不通，故不做该验证、不定案、不报送。",
+  "red_lines_observed": [
+    "只发 GET，只打 /avatar/* 与 /public/img/* 静态文件",
+    "canary 仅用公开无害地址与内置静态资源；未指向目标内网、127.0.0.1、169.254.169.254 或元数据端点",
+    "未发送 {{printf ...}} 类畸形模板 payload（会 SegFault 打挂生产 Grafana）",
+    "未做端口探测、未读取真实数据、未爆破，单次请求间隔 1.5s，失败不重试"
+  ],
+  "cve_scope_crosscheck": {
+    "CVE-2021-43798": "8.0.0-beta1~8.3.0，修复 8.0.7/8.1.8/8.2.7/8.3.1，CVSS 7.5，KEV 在册；6.4.4 不在范围",
+    "CVE-2020-13379": "3.0.1~7.0.1，修复 6.7.4/7.0.2，CVSS 8.2 High，未授权 SSRF/DoS；6.4.4 在范围内但本实例实测不可验证"
+  },
+  "lesson": "版本落在影响范围 ≠ 可利用。必须做端点存在性 + 参数可控性 + 回显来源三重对照；只凭 /api/health 的版本号判『活线索』仍会误判。",
+  "files": [
+    "scan/fofa_pool/edusrc_ssrf_probe_20261110.json",
+    "scan/fofa_pool/edusrc_ssrf_probe2_20261110.json",
+    "scan/_edusrc_ssrf_probe.py",
+    "scan/_edusrc_ssrf_probe2.py"
+  ]
+}

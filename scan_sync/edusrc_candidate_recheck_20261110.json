@@ -41,12 +41,13 @@
    ],
    "cvss": "8.2 High",
    "auth": "none",
-   "verdict": "6.4.4 在范围内 = 待验证 N-day 活线索，非死线"
+   "verdict": "19:50 实测阴性：avatar 参数注入无差异、回显为内置默认头像，SSRF 不可验证"
   },
-  "conclusion": "上一轮「撤销」动作正确但结论下重了；本轮未验证 SSRF（需目标向自建金丝雀出站，超出只读边界）"
+  "conclusion": "19:45 判定为活线索；19:50 实测后撤销，最终阴性。见 edusrc_ssrf_verdict_20261110.json"
  },
  "references": [
   "https://grafana.com/blog/grafana-8-3-1-8-2-7-8-1-8-and-8-0-7-released-with-high-severity-security-fix/",
   "https://grafana.com/blog/2020/06/03/grafana-6.7.4-and-7.0.2-released-with-important-security-fix/"
- ]
+ ],
+ "final_verdict": "两条候选均为阴性；0 确证洞"
 }

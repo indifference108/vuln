@@ -1,0 +1,69 @@
+{
+ "ts": "2026-11-10 19:50:08",
+ "target": "http://gdcpic.stu.edu.cn:3000",
+ "version": "6.4.4",
+ "cve": "CVE-2020-13379",
+ "boundary": "只读 GET /avatar/*；canary 仅公开无害地址；不碰内网/元数据/DoS payload",
+ "probes": [
+  {
+   "name": "baseline_md5",
+   "path": "/avatar/00000000000000000000000000000000",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "location": "",
+   "len": 1486,
+   "elapsed": 2.1,
+   "head_hex": "ffd8ffe000104a46494600010100000100010000fffe003b",
+   "head_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90 \u0000C\u0000\u0003\u0002\u0002\u0003\u0002\u0002\u0003\u0003\u0003\u0003\u0004\u0003\u0003\u0004\u0005\b\u0005\u0005\u0004\u0004\u0005 \u0007\u0007\u0006\b\f \f\f\u000b \u000b\u000b\r\u000e\u0012\u0010\r\u000e\u0011\u000e\u000b\u000b\u0010\u0016\u0010\u0011\u0013\u0014\u0015\u0015\u0015\f\u000f\u0017\u0018\u0016\u0014\u0018\u0012\u0014\u0015\u0014\u0000C\u0001\u0003\u0004\u0004\u0005\u0004",
+   "magic": "jpeg"
+  },
+  {
+   "name": "baseline_empty_md5",
+   "path": "/avatar/d41d8cd98f00b204e9800998ecf8427e",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "location": "",
+   "len": 1486,
+   "elapsed": 2.04,
+   "head_hex": "ffd8ffe000104a46494600010100000100010000fffe003b",
+   "head_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90 \u0000C\u0000\u0003\u0002\u0002\u0003\u0002\u0002\u0003\u0003\u0003\u0003\u0004\u0003\u0003\u0004\u0005\b\u0005\u0005\u0004\u0004\u0005 \u0007\u0007\u0006\b\f \f\f\u000b \u000b\u000b\r\u000e\u0012\u0010\r\u000e\u0011\u000e\u000b\u000b\u0010\u0016\u0010\u0011\u0013\u0014\u0015\u0015\u0015\f\u000f\u0017\u0018\u0016\u0014\u0018\u0012\u0014\u0015\u0014\u0000C\u0001\u0003\u0004\u0004\u0005\u0004",
+   "magic": "jpeg"
+  },
+  {
+   "name": "plain_string",
+   "path": "/avatar/edusrc-readonly-probe",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "location": "",
+   "len": 1486,
+   "elapsed": 2.04,
+   "head_hex": "ffd8ffe000104a46494600010100000100010000fffe003b",
+   "head_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90 \u0000C\u0000\u0003\u0002\u0002\u0003\u0002\u0002\u0003\u0003\u0003\u0003\u0004\u0003\u0003\u0004\u0005\b\u0005\u0005\u0004\u0004\u0005 \u0007\u0007\u0006\b\f \f\f\u000b \u000b\u000b\r\u000e\u0012\u0010\r\u000e\u0011\u000e\u000b\u000b\u0010\u0016\u0010\u0011\u0013\u0014\u0015\u0015\u0015\f\u000f\u0017\u0018\u0016\u0014\u0018\u0012\u0014\u0015\u0014\u0000C\u0001\u0003\u0004\u0004\u0005\u0004",
+   "magic": "jpeg"
+  },
+  {
+   "name": "param_public_url",
+   "path": "/avatar/edusrc-readonly-probe?d=https%3A%2F%2Fexample.com%2F",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "location": "",
+   "len": 1486,
+   "elapsed": 2.04,
+   "head_hex": "ffd8ffe000104a46494600010100000100010000fffe003b",
+   "head_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90 \u0000C\u0000\u0003\u0002\u0002\u0003\u0002\u0002\u0003\u0003\u0003\u0003\u0004\u0003\u0003\u0004\u0005\b\u0005\u0005\u0004\u0004\u0005 \u0007\u0007\u0006\b\f \f\f\u000b \u000b\u000b\r\u000e\u0012\u0010\r\u000e\u0011\u000e\u000b\u000b\u0010\u0016\u0010\u0011\u0013\u0014\u0015\u0015\u0015\f\u000f\u0017\u0018\u0016\u0014\u0018\u0012\u0014\u0015\u0014\u0000C\u0001\u0003\u0004\u0004\u0005\u0004",
+   "magic": "jpeg"
+  },
+  {
+   "name": "param_gravatar_def",
+   "path": "/avatar/edusrc-readonly-probe?d=retro",
+   "status": 200,
+   "ctype": "image/jpeg",
+   "location": "",
+   "len": 1486,
+   "elapsed": 2.04,
+   "head_hex": "ffd8ffe000104a46494600010100000100010000fffe003b",
+   "head_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90 \u0000C\u0000\u0003\u0002\u0002\u0003\u0002\u0002\u0003\u0003\u0003\u0003\u0004\u0003\u0003\u0004\u0005\b\u0005\u0005\u0004\u0004\u0005 \u0007\u0007\u0006\b\f \f\f\u000b \u000b\u000b\r\u000e\u0012\u0010\r\u000e\u0011\u000e\u000b\u000b\u0010\u0016\u0010\u0011\u0013\u0014\u0015\u0015\u0015\f\u000f\u0017\u0018\u0016\u0014\u0018\u0012\u0014\u0015\u0014\u0000C\u0001\u0003\u0004\u0004\u0005\u0004",
+   "magic": "jpeg"
+  }
+ ]
+}
