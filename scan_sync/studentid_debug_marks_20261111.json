@@ -1,0 +1,27 @@
+{
+ "ts": "2026-11-11 00:25",
+ "source_table": "E:/kimi/scan/逐行验证表_v2_20261111.csv",
+ "main_marked_table": "E:/kimi/scan/逐行验证表_v3_20261111.csv",
+ "debug_only_csv": "E:/kimi/scan/需调试学号清单_20261111.csv",
+ "debug_only_md": "E:/kimi/scan/需调试学号清单_20261111.md",
+ "total_rows": 82,
+ "marked_need_debug": 71,
+ "skipped": {
+  "疑似QQ/电话，建议跳过": 2,
+  "跨单位，仅留存": 9
+ },
+ "groups": {
+  "https://mzsg.csmzxy.edu.cn/index.jsp": 5,
+  "https://mzsg.csmzxy.edu.cn/info/1063/7508.htm": 2,
+  "https://mzsg.csmzxy.edu.cn/info/1063/7459.htm": 39,
+  "https://mzsg.csmzxy.edu.cn/info/1063/7426.htm": 25
+ },
+ "marks_added": [
+  "需调试",
+  "调试序号",
+  "密码实际值(你填)",
+  "调试状态(你填)",
+  "调试结果/录屏(你填)"
+ ],
+ "boundary": "真实学号只存本地；含号码的 CSV/MD 不入公开仓库；登录验证由用户本人录屏"
+}
