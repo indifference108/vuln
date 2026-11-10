@@ -1,0 +1,101 @@
+{
+ "ts": "2026-11-10 20:49:56",
+ "boundary": "只读 GET；不落地真实学号/证件号",
+ "items": [
+  {
+   "unit": "ncu",
+   "url": "https://rsc.ncu.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [],
+   "doc_count": 0,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "ncu",
+   "url": "https://jxmu.ncu.edu.cn/",
+   "status": 200,
+   "matched_links": [
+    {
+     "text": "学位点建设",
+     "href": "yxydt.jsp?urltype=tree.TreeTempUrl&wbtreeid=1291"
+    },
+    {
+     "text": "关于我校2026年全国医学博士外语统一考试准考证打印及相关通知 03.11",
+     "href": "article.jsp?urltype=news.NewsContentUrl&wbtreeid=2391&wbnewsid=18081"
+    },
+    {
+     "text": "南昌大学2025年同等学力人员申请临床医学、口腔医学硕士专业学位招生简章 12.22",
+     "href": "http://sce.ncu.edu.cn/zszx/tdxlss/zsjz/e5ca4397a8fd45419ae629512bbaf286.htm"
+    },
+    {
+     "text": "关于发布2025年临床医学专业同等学力申请硕士学位招生简章的预告公告（二） 12.22",
+     "href": "article.jsp?urltype=news.NewsContentUrl&wbtreeid=2391&wbnewsid=7711"
+    }
+   ],
+   "matched_count": 4,
+   "doc_links": [],
+   "doc_count": 0,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "lvu",
+   "url": "https://xsc.lvu.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [
+    "/_upload/article/files/07/09/6aadfbf049c8b29e46af15017ddd/98e4e247-4477-4a8c-8a7a-933af570284b.doc",
+    "/_upload/article/files/f7/68/a79ba0b24bab9f86d0a65e471050/634af86a-5504-4b51-acad-238e01d0204e.docx",
+    "/_upload/article/files/72/bf/8fcf6842447e8dca594c645fd017/d6396bbb-f975-4fd7-835a-8d70297dfeaa.docx"
+   ],
+   "doc_count": 3,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "whcp",
+   "url": "https://rs.whcp.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [
+    "/_upload/article/files/28/61/33fad3aa4127ad59cc8ede6b9585/8235bf4b-d2c4-4f11-ac06-04616c785849.pdf",
+    "/_upload/article/files/96/87/290301664c7c81c0b85aef698e4a/028abb5e-dc03-4bb7-a411-3da9f025e21d.pdf",
+    "/_upload/article/files/6e/1c/adf1a65144afb143c61f3c7fc63a/f2b07335-0daa-4f60-bd8f-4a4074907ffc.pdf"
+   ],
+   "doc_count": 3,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "whcp",
+   "url": "https://ky.whcp.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [],
+   "doc_count": 0,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "njrts",
+   "url": "https://jjy.njrts.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [],
+   "doc_count": 0,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  },
+  {
+   "unit": "tjnu",
+   "url": "https://yjszs.tjnu.edu.cn/",
+   "status": 200,
+   "matched_links": [],
+   "matched_count": 0,
+   "doc_links": [],
+   "doc_count": 0,
+   "note": "仅记录链接标题，不落地任何真实学号/证件号"
+  }
+ ]
+}

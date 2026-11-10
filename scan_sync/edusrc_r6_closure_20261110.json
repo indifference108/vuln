@@ -1,0 +1,465 @@
+{
+ "ts": "2026-11-10 20:48:02",
+ "boundary": "只读 GET；不登录、不爆破、不 POST、不执行 payload；不落地真实学号/证件号",
+ "pub_sources": [
+  {
+   "host": "txxh.njrts.edu.cn",
+   "unit_rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "title": "åäº¬ééèä¸ææ¯å­¦é¢--åè½¨ä¸å¸åäº¤éå­¦é¢",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "jjy.njrts.edu.cn",
+   "unit_rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "title": "ç»§ç»­æè²ç®¡çå¤ ç»§ç»­æè²å­¦é¢(åç½²)",
+   "id_like_count": 2,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "tdys.njrts.edu.cn",
+   "unit_rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "title": "åäº¬ééèä¸ææ¯å­¦é¢ééè¿è¾å­¦é¢",
+   "id_like_count": 1,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "zn.njrts.edu.cn",
+   "unit_rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "title": "åäº¬ééèä¸ææ¯å­¦é¢æªæ¥äº¤éå­¦é¢",
+   "id_like_count": 1,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "cgmh.njrts.edu.cn",
+   "unit_rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "title": "",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "jy.ncu.edu.cn:8085",
+   "unit_rule": "密码=ncu@身份证后六位（继教）",
+   "status": null,
+   "err": "SSLError:HTTPSConnectionPool(host='jy.ncu.edu.cn', port=8085): Max retries exce",
+   "closure_hint": false
+  },
+  {
+   "host": "jy.ncu.edu.cn:8086",
+   "unit_rule": "密码=ncu@身份证后六位（继教）",
+   "status": null,
+   "err": "SSLError:HTTPSConnectionPool(host='jy.ncu.edu.cn', port=8086): Max retries exce",
+   "closure_hint": false
+  },
+  {
+   "host": "jxmu.ncu.edu.cn",
+   "unit_rule": "密码=ncu@身份证后六位（继教）",
+   "status": 200,
+   "title": "江西医学院",
+   "id_like_count": 2,
+   "doc_attachment_count": 0,
+   "pub_keywords": [
+    "公示",
+    "名单"
+   ],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "kjy.ncu.edu.cn",
+   "unit_rule": "密码=ncu@身份证后六位（继教）",
+   "status": null,
+   "err": "ConnectTimeout:HTTPSConnectionPool(host='kjy.ncu.edu.cn', port=443): Max retries exce",
+   "closure_hint": false
+  },
+  {
+   "host": "rsc.ncu.edu.cn",
+   "unit_rule": "密码=ncu@身份证后六位（继教）",
+   "status": 200,
+   "title": "åæå¤§å­¦äººäºå¤",
+   "id_like_count": 4,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "xkb.xust.edu.cn",
+   "unit_rule": "初始密码=身份证后六位",
+   "status": 200,
+   "title": "åå±è§åä¸å­¦ç§å»ºè®¾å¤ï¼é«ç­æè²ç ç©¶æï¼",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "kjc.xust.edu.cn",
+   "unit_rule": "初始密码=身份证后六位",
+   "status": 200,
+   "title": "è¥¿å®ç§æå¤§å­¦ ç§æå¤",
+   "id_like_count": 2,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "sjzw.xust.edu.cn",
+   "unit_rule": "初始密码=身份证后六位",
+   "status": 200,
+   "title": "éè¥¿çé«ç­å­¦æ ¡æå­¦æå¯¼å§åä¼ï¼ä¸ä¸å ±åä½å»ºè®¾å§å",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "gjjl.xust.edu.cn",
+   "unit_rule": "初始密码=身份证后六位",
+   "status": 200,
+   "title": "è¥¿å®ç§æå¤§å­¦å½é äº¤æµä¸åä½å¤",
+   "id_like_count": 3,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "aqxy.xust.edu.cn",
+   "unit_rule": "初始密码=身份证后六位",
+   "status": 200,
+   "title": "è¥¿å®ç§æå¤§å­¦å®å ¨ç§å­¦ä¸å·¥ç¨å­¦é¢",
+   "id_like_count": 3,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "qc.lvu.edu.cn",
+   "unit_rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "æ±½è½¦ä¸äº¤éå­¦é¢",
+   "id_like_count": 1,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "jwc.lvu.edu.cn",
+   "unit_rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "æå¡å¤",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "xdfw.lvu.edu.cn",
+   "unit_rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "ç°ä»£æå¡å­¦é¢",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "jsxy.lvu.edu.cn",
+   "unit_rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "çèå·¥åæå¸å­¦é¢",
+   "id_like_count": 1,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "xsc.lvu.edu.cn",
+   "unit_rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "å­¦çå¤",
+   "id_like_count": 0,
+   "doc_attachment_count": 3,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "zb.whcp.edu.cn",
+   "unit_rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "æçä¿¡æ¯ç½",
+   "id_like_count": 3,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "ky.whcp.edu.cn",
+   "unit_rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "ç§ç å¤",
+   "id_like_count": 4,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "xg.whcp.edu.cn",
+   "unit_rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "å å§å­¦çå·¥ä½é¨ï¼å¤ï¼",
+   "id_like_count": 3,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "rs.whcp.edu.cn",
+   "unit_rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "äººäºå¤",
+   "id_like_count": 4,
+   "doc_attachment_count": 3,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "tw.whcp.edu.cn",
+   "unit_rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "title": "æ ¡å¢å§",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "yjszs.tjnu.edu.cn",
+   "unit_rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "title": "研究生报考服务系统",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [
+    "录取",
+    "准考证号",
+    "身份证"
+   ],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "syzx.tjnu.edu.cn",
+   "unit_rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "title": "ç§å­¦æè²ä¸­å¿",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "www.tjnu.edu.cn",
+   "unit_rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "title": "å¤©æ´¥å¸èå¤§å­¦",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "gjjl.tjnu.edu.cn",
+   "unit_rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "title": "å½é äº¤æµå¤",
+   "id_like_count": 0,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": false,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  },
+  {
+   "host": "gjxy.tjnu.edu.cn",
+   "unit_rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "title": "å½é æè²äº¤æµå­¦é¢",
+   "id_like_count": 1,
+   "doc_attachment_count": 0,
+   "pub_keywords": [],
+   "closure_hint": true,
+   "note": "仅统计数量，不保存任何真实学号/证件号"
+  }
+ ],
+ "middleware": [
+  {
+   "url": "http://nacos.cqou.edu.cn/nacos/v1/auth/users?pageNo=1&pageSize=1",
+   "status": 302,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://nacos.cqou.edu.cn/nacos/v1/auth/users?pageNo=1&pageSize=1",
+   "status": 403,
+   "len": 695,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fnacos%2Fv1%2Fauth%2Fusers%3FpageNo%3D1%26pageSize%3D1'/><script id='redirect' dat"
+  },
+  {
+   "url": "http://nacos.cqou.edu.cn/nacos/",
+   "status": 301,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://nacos.cqou.edu.cn/nacos/",
+   "status": 403,
+   "len": 605,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fnacos%2F'/><script id='redirect' data-redirect-url='/login?from=%2Fnacos%2F' src="
+  },
+  {
+   "url": "http://xxljob.cqou.edu.cn/xxl-job-admin/",
+   "status": 301,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://xxljob.cqou.edu.cn/xxl-job-admin/",
+   "status": 403,
+   "len": 621,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": true,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fxxl-job-admin%2F'/><script id='redirect' data-redirect-url='/login?from=%2Fxxl-jo"
+  },
+  {
+   "url": "http://elastic.cqou.edu.cn/actuator",
+   "status": 301,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://elastic.cqou.edu.cn/actuator",
+   "status": 403,
+   "len": 605,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Factuator'/><script id='redirect' data-redirect-url='/login?from=%2Factuator' src="
+  },
+  {
+   "url": "http://skywalking.cqou.edu.cn/actuator",
+   "status": 301,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://skywalking.cqou.edu.cn/actuator",
+   "status": 403,
+   "len": 605,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Factuator'/><script id='redirect' data-redirect-url='/login?from=%2Factuator' src="
+  },
+  {
+   "url": "http://jenkins.cqou.edu.cn/actuator",
+   "status": 301,
+   "len": 0,
+   "ctype": "text/html",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": ""
+  },
+  {
+   "url": "https://jenkins.cqou.edu.cn/actuator",
+   "status": 403,
+   "len": 605,
+   "ctype": "text/html;charset=utf-8",
+   "nacos_users": false,
+   "actuator_links": false,
+   "actuator_sensitive": false,
+   "xxljob": false,
+   "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Factuator'/><script id='redirect' data-redirect-url='/login?from=%2Factuator' src="
+  }
+ ]
+}

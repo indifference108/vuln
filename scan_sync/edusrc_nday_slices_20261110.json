@@ -945,5 +945,312 @@
   "login_required": false,
   "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n1633\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
   "dork": "title=\"BIG-IP\" && host=\"edu.cn\""
+ },
+ "edu_publist_sid": {
+  "hosts": [
+   "mzsg.csmzxy.edu.cn",
+   "yjsy.fafu.edu.cn",
+   "kjxy.hut.edu.cn",
+   "clxy.kmust.edu.cn",
+   "jiaowu.sicau.edu.cn",
+   "graduate.cug.edu.cn",
+   "www.immpec.edu.cn",
+   "job.gxgsxy.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "595",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0i5a2m5Y%2B3IiAmJiBib2R5PSLlhaznpLoiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n12\n12\n11\nMore\nTOP FIDv2\nLC5wCWtHuVL9IYGDbzTu/dc5VbQJ39h4\n12\n4oVQUfRDEYpgDvgqNMuI4qdIZrGzOvIJ\n7\nTM7f4CiemNNajDE7DHiDkeoVaShIAX2i\n6\ncMQkJhPY7jdun8fxrTXRrHlttecBlOZI\n5\nJbup/NRr4kAr6oAna0iXHrwvZMA9AG/3\n4\nTOP COUNTRIES/REGIONS\nCN\n594\nUS\n1\nTOP OPEN PORTS\n443\n320\n80\n272\n8080\n2\n8081\n1\nTOP SERVERS\nnginx\n107\nnone\n77\n**********\n51\n*********\n46\nTOP TITLES\n计算学部\n12\n常州信息职业技术大学\n10\n研究生教育管理信息系统－－拓扑软件",
+  "dork": "body=\"学号\" && body=\"公示\" && host=\"edu.cn\""
+ },
+ "edu_publist_title": {
+  "hosts": [
+   "3lists.jzmu.edu.cn",
+   "wsps.xidian.edu.cn",
+   "regre.hasu.edu.cn",
+   "gs.xjy.edu.cn"
+  ],
+  "n": 4,
+  "cnt": "4",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IuWFrOekuiIgJiYgaG9zdD0iZWR1LmNuIiAmJiBwb3J0PSI4MCI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n1\nTOP FIDv2\nsM1ypNzgisPYG0xEfmzwfxfeNq6V3IvM\n1\nikXje4eKYm02CTP+SS8ZkTrGvxsld7f0\n1\nAmOT+lgkk9uvu+nlaigy1vlRlxtuCeeI\n1\nDrKPNeAzB/XsIjZZj9LXfY3KCnO5/uT6\n1\nTOP COUNTRIES/REGIONS\nCN\n4\nTOP OPEN PORTS\n80\n4\nTOP SERVERS\n*********\n1\nTengine\n1\nrump/d\n1\nTOP TITLES\n404错误提示-评建公示\n1\n三张清单公示网站\n1\n西安电子科技大学线上公示系统\n1\n赛事报名与成绩公示系统\n1\n4\nresults\n(4 unique IP )\n,\n197\nms\n,Keyword Search.\nPast year\n3lists.jzmu.ed",
+  "dork": "title=\"公示\" && host=\"edu.cn\" && port=\"80\""
+ },
+ "edu_publist_lq": {
+  "hosts": [
+   "oec.xmu.edu.cn",
+   "zs.xmoc.edu.cn",
+   "zsb.hhtc.edu.cn",
+   "wannan.ahnu.edu.cn",
+   "bkzs.ouc.edu.cn",
+   "yz.ouc.edu.cn",
+   "www.yjszs.sdnu.edu.cn"
+  ],
+  "n": 7,
+  "cnt": "5,851",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9IuW9leWPluWQjeWNlSIgfHwgYm9keT0i5ouf5b2V5Y%2BW5ZCN5Y2VIikgJiYgaG9zdD0iZWR1LmNuIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n125\n29\n28\nMore\nTOP FIDv2\nPkcrYabbggy96ztRY0SEO7A0Ph+TwKnP\n118\nH+A5OfJgfavX+bq+Vv4SwOmLMjW093bQ\n24\n4rRkddhgCRgnvOpHGRXkU+ZoI4gcrhSu\n22\nSbGrqjUlyqQPjE/bjjOncPfJ3bCNyfnQ\n16\nGNTrb2/5NtNlmcuY0bBHlHhGqaNKBXt1\n13\nTOP COUNTRIES/REGIONS\nCN\n5,714\nUS\n125\nHong Kong Special Administrative Region\n7\nTaiwan, Province of China\n5\nTOP OPEN PORTS\n443\n3,181\n80\n2,597\n82\n24\n1443\n18\n8010\n12\nTOP SERVERS\nngi",
+  "dork": "(body=\"录取名单\" || body=\"拟录取名单\") && host=\"edu.cn\""
+ },
+ "edu_initpwd_p80": {
+  "hosts": [
+   "map.fafu.edu.cn",
+   "yjszs.tjnu.edu.cn",
+   "webvpn.dlvtc.edu.cn",
+   "pay.henu.edu.cn",
+   "authserver.wnmc.edu.cn",
+   "lib.kust.edu.cn",
+   "oa.jxnu.edu.cn",
+   "library.hmlc.edu.cn",
+   "gsas.just.edu.cn",
+   "jwxt.cqgyzy.edu.cn"
+  ],
+  "n": 10,
+  "cnt": "1,051",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0i5Yid5aeL5a%2BG56CBIiAmJiBob3N0PSJlZHUuY24iICYmIHBvcnQ9IjgwIg%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n279\n176\n37\nMore\nTOP FIDv2\nr8NE9yO47/z6/7qjo1IvLrxFS3KqZn+I\n352\n67pctwyWdUdwZHC9w8ZPbiQ3E4u1VdqS\n279\nCRmAOfJJRbh6nQzG9Xf9IrpUbJak3oXA\n6\nZ3n3ju+sp4bDDBgm6F0qvOsbphmeeWa0\n5\n5vDKM2b1akBdp6ehMe33ZvSyhePoittp\n4\nTOP COUNTRIES/REGIONS\nCN\n1,045\nHong Kong Special Administrative Region\n3\nUS\n2\nTOP OPEN PORTS\n80\n1,051\nTOP SERVERS\nopenresty\n369\nzytec\n179\nnginx\n170\nnone\n61\nTOP TITLES\n统一身份认证中心\n635\n",
+  "dork": "body=\"初始密码\" && host=\"edu.cn\" && port=\"80\""
+ },
+ "edu_initpwd_p443": {
+  "hosts": [
+   "jwxt.cqgyzy.edu.cn",
+   "sso.ecust.edu.cn",
+   "yjsy.fafu.edu.cn",
+   "yjszs.tjnu.edu.cn",
+   "www.xjyzy.edu.cn",
+   "icas.jnu.edu.cn",
+   "career.ecnu.edu.cn",
+   "webvpn.njrts.edu.cn",
+   "tsg.lnmec.edu.cn",
+   "jwgl.whvcse.edu.cn"
+  ],
+  "n": 10,
+  "cnt": "732",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0i5Yid5aeL5a%2BG56CBIiAmJiBob3N0PSJlZHUuY24iICYmIHBvcnQ9IjQ0MyI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n235\n39\n30\nMore\nTOP FIDv2\nooIADkmvelx2IBqUjXI60ph+cb10FcrU\n235\nCmqt1BAmRxwaKvIaKkxZOwrGUtAnlmTr\n10\nVHvQ5v0sy28AMhyXV/JYPHkrZl4n3bTK\n9\n+ivQqmP6vgfpb2lcvUmlll/lP2eskSLr\n9\nCRmAOfJJRbh6nQzG9Xf9IrpUbJak3oXA\n8\nTOP COUNTRIES/REGIONS\nCN\n726\nHong Kong Special Administrative Region\n5\nTaiwan, Province of China\n1\nTOP OPEN PORTS\n443\n732\nTOP SERVERS\nnginx/1.20.0\n235\nnginx\n96\nnone\n73\nopenresty\n20\nT",
+  "dork": "body=\"初始密码\" && host=\"edu.cn\" && port=\"443\""
+ },
+ "edu_idcard6_after": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=KGJvZHk9Iui6q%2BS7veivgeWQjuWFreS9jSIgfHwgYm9keT0i5a2m5Y%2B35ZCO5YWt5L2NIikgJiYgaG9zdD0iZWR1LmNuIiAmJiBhZnRlcj0iMjAyNi0wMS0wMSI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n0\nms\n,Full-text Search.\nPast year\n\n[824003] Keyword: after requires Personal members and above\n\nGo Subscribe\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "(body=\"身份证后六位\" || body=\"学号后六位\") && host=\"edu.cn\" && after=\"2026-01-01\""
+ },
+ "edu_hardcode_val": {
+  "hosts": [
+   "acjjy.aufe.edu.cn",
+   "jwxt.cqgyzy.edu.cn",
+   "2025.tfswufe.edu.cn",
+   "dangan.tfswufe.edu.cn",
+   "zcgl.hfut.edu.cn",
+   "eapp2-9443.webvpn.juwp.edu.cn",
+   "zjxjy.cqmpc.edu.cn",
+   "webplus.scst.edu.cn",
+   "tsg.hbgt.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "26,510",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0idHlwZT1wYXNzd29yZCIgJiYgYm9keT0idmFsdWU9IiAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n999+\n999+\n999+\nMore\nTOP FIDv2\noV/Sa8NO132Dx/qBmv51p+zH7m/bMa4j\n514\n8GT5QlSVoCKA3KdeaALdeDIPIl6qiMfl\n324\ne9JGHEpOQFLKA6Bb6tOpmgfw3f48OKsA\n317\nn178vdard8Obd7A0U75fYwapPauW+a+b\n316\nE8ngUvJv3eWc1+TIfuUwkllF7/VOpExy\n278\nTOP COUNTRIES/REGIONS\nCN\n25,624\nHong Kong Special Administrative Region\n790\nUS\n44\nSG\n40\nCZ\n5\nTOP OPEN PORTS\n443\n12,548\n80\n9,094\n4430\n796\n8887\n519\n8080\n328\nTOP SERVERS\nngi",
+  "dork": "body=\"type=password\" && body=\"value=\" && host=\"edu.cn\""
+ },
+ "edu_isapi_p80": {
+  "hosts": [
+   "xydc.fjjxu.edu.cn",
+   "belyapp.fld.fjjxu.edu.cn",
+   "oled.fjjxu.edu.cn",
+   "wx.fld.fjjxu.edu.cn",
+   "xyaqpt1.fjjxu.edu.cn",
+   "i.fjjxu.edu.cn",
+   "transaction.fjjxu.edu.cn",
+   "be.fld.fjjxu.edu.cn",
+   "authx-minio.fjjxu.edu.cn",
+   "cas.fjjxu.edu.cn"
+  ],
+  "n": 10,
+  "cnt": "29",
+  "url": "https://en.fofa.info/result?qbase64=Ym9keT0iL0lTQVBJLyIgJiYgaG9zdD0iZWR1LmNuIiAmJiBwb3J0PSI4MCI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nTOP FIDv2\nvtOMKYNaTEaKnhhAKMwiOMEkTHVur5d3\n28\nMm/riCbpJY99YCxOJ4WuYbipTOkGYbkF\n1\nTOP COUNTRIES/REGIONS\nCN\n29\nTOP OPEN PORTS\n80\n29\nTOP SERVERS\nMicrosoft-IIS/7.5\n28\nMicrosoft-IIS/10.0\n1\nTOP TITLES\n403.1 - 禁止访问: 执行访问被拒绝。\n28\nIIS 10.0 详细错误 - 403.503 - Forbidden\n1\n29\nresults\n(2 unique IP )\n,\n177\nms\n,Keyword Search.\nPast year\nxydc.fjjxu.edu.cn\nvtOMKYNaTEaKnhhAKMwiOMEkTHVur5d3\n999+\n80\n\n403.1 - 禁止访问",
+  "dork": "body=\"/ISAPI/\" && host=\"edu.cn\" && port=\"80\""
+ },
+ "edu_access_p8080": {
+  "hosts": [],
+  "n": 0,
+  "cnt": "0",
+  "url": "https://en.fofa.info/result?qbase64=KHRpdGxlPSLpl6jnpoEiIHx8IGJvZHk9IumXqOemgeeuoeeQhuezu%2Be7nyIpICYmIGhvc3Q9ImVkdS5jbiIgJiYgcG9ydD0iODA4MCI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\n0\nresults\n(0 unique IP )\n,\n658\nms\n,Keyword Search.\nPast year\n\nNo data for past year. Try another time range.\n\nBack\nFOFA Search Engine Version 5.5.19\nAsset Reward\nHelp Center\nAbout Us",
+  "dork": "(title=\"门禁\" || body=\"门禁管理系统\") && host=\"edu.cn\" && port=\"8080\""
+ },
+ "edu_weblogic_t": {
+  "hosts": [
+   "crm.gsm.pku.edu.cn"
+  ],
+  "n": 1,
+  "cnt": "1",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IldlYkxvZ2ljIiAmJiBob3N0PSJlZHUuY24i",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nTOP FIDv2\n5TgiaL22JRa0PYqYJfXJXFKsZjfAjzkX\n1\nTOP COUNTRIES/REGIONS\nCN\n1\nTOP OPEN PORTS\n80\n1\nTOP TITLES\nDefault BEA WebLogic Server Web Server Index Page\n1\n1\nresults\n(1 unique IP )\n,\n312\nms\n,Keyword Search.\nPast year\ncrm.gsm.pku.edu.cn\n5TgiaL22JRa0PYqYJfXJXFKsZjfAjzkX\n6\n80\n\nDefault BEA WebLogic Server Web Server Index Page\n\n222.29.90.8\n\nChina/Beijing/Beijing\n\n4538\n\nChina Education and Resear",
+  "dork": "title=\"WebLogic\" && host=\"edu.cn\""
+ },
+ "edu_jenkins_t": {
+  "hosts": [
+   "build-tux.scc.edu.cn",
+   "jenkins.cqou.edu.cn",
+   "livecourse.cqou.edu.cn",
+   "skywalking.cqou.edu.cn",
+   "nacos.cqou.edu.cn",
+   "elastic.cqou.edu.cn",
+   "xxljob.cqou.edu.cn",
+   "lodetech.ustc.edu.cn:8080"
+  ],
+  "n": 8,
+  "cnt": "8",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IkplbmtpbnMiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n8\nTOP FIDv2\nnIydiEWt59ci/u+YnXy/FPL4qIx6gTJa\n6\nAByTf/BqhPFVduVpRrBMllpDIswAa94k\n1\ntdY8qVgzS4qYsQulG0FrDcStX2E1cD0S\n1\nTOP COUNTRIES/REGIONS\nCN\n8\nTOP OPEN PORTS\n443\n6\n80\n1\n8080\n1\nTOP SERVERS\nnginx\n6\nJetty(12.0.16)\n1\nJetty(12.1.8)\n1\nTOP TITLES\n登录 [Jenkins]\n6\nSign in - Jenkins\n1\n登录 - Jenkins\n1\n8\nresults\n(4 unique IP )\n,\n794\nms\n,Keyword Search.\nPast year\nhttps://build-tux.scc.edu.cn\ntdY8",
+  "dork": "title=\"Jenkins\" && host=\"edu.cn\""
+ },
+ "edu_confluence_t": {
+  "hosts": [
+   "confluence.cts.shanghaitech.edu.cn"
+  ],
+  "n": 1,
+  "cnt": "1",
+  "url": "https://en.fofa.info/result?qbase64=dGl0bGU9IkNvbmZsdWVuY2UiICYmIGhvc3Q9ImVkdS5jbiI%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n1\nTOP FIDv2\n5NOI5Sm9bLqXen0V0PxuX4DJa0XeIXML\n1\nTOP COUNTRIES/REGIONS\nCN\n1\nTOP OPEN PORTS\n443\n1\nTOP SERVERS\nnginx\n1\nTOP TITLES\nWelcome to Confluence at CTS ShanghaiTech - 上海科技大学大科学中心Confluence平台 - CTS\n1\n1\nresults\n(1 unique IP )\n,\n318\nms\n,Keyword Search.\nPast year\nhttps://confluence.cts.shanghaitech.edu.cn\n5NOI5Sm9bLqXen0V0PxuX4DJa0XeIXML\n2\n443\n\nWelcome to Confluence at CTS ShanghaiTe",
+  "dork": "title=\"Confluence\" && host=\"edu.cn\""
+ },
+ "x_njrts": {
+  "hosts": [
+   "txxh.njrts.edu.cn",
+   "jjy.njrts.edu.cn",
+   "tdys.njrts.edu.cn",
+   "zn.njrts.edu.cn",
+   "cgmh.njrts.edu.cn",
+   "www.njrts.edu.cn"
+  ],
+  "n": 6,
+  "cnt": "20",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0ibmpydHMuZWR1LmNuIiAmJiAoYm9keT0i5YWs56S6IiB8fCBib2R5PSLlkI3ljZUiKQ%3D%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n2\nTOP FIDv2\nRo/NdfDaqq9b2ndmh6DAaDquCJPb8zYk\n4\noxYAozacfm61k+aWnMT1p6BF64m9y1v6\n4\nNn21l/FqjxN4A51OQCtCQc1yKLVJ6iOt\n3\nXKih32d6IVUBCOvTW+eO/cMiQFABNRRK\n3\n7n0quh6QldYnshRnMGjAJqXuVtKbt7DN\n2\nTOP COUNTRIES/REGIONS\nCN\n20\nTOP OPEN PORTS\n443\n11\n80\n9\nTOP SERVERS\nnone\n20\nTOP TITLES\n南京铁道职业技术学院\n4\n南京铁道职业技术学院--城轨与市域交通学院\n4\n南京铁道职业技术学院未来交通学院\n4\n继续教育管理处 继续教育学院(合署)\n4\n南京铁道职业技术学院采购网\n2\n20\nresults\n(2 uniqu",
+  "dork": "host=\"njrts.edu.cn\" && (body=\"公示\" || body=\"名单\")"
+ },
+ "x_ncu": {
+  "hosts": [
+   "jy.ncu.edu.cn:8085",
+   "jy.ncu.edu.cn:8086",
+   "jxmu.ncu.edu.cn",
+   "kjy.ncu.edu.cn",
+   "rsc.ncu.edu.cn",
+   "bms.ncu.edu.cn",
+   "ipads.ncu.edu.cn",
+   "rwxy.ncu.edu.cn",
+   "bio.ncu.edu.cn"
+  ],
+  "n": 9,
+  "cnt": "152",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0ibmN1LmVkdS5jbiIgJiYgKGJvZHk9IuWFrOekuiIgfHwgYm9keT0i5ZCN5Y2VIik%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n4\n4\n4\nMore\nTOP FIDv2\nz3nXj+sx88TGWvDaZQ40HbSzPXZcrY61\n4\n5vc4c+0dkB2XSkmEqzZshI8zKXJhPx2m\n4\nmgctdsjpCF9qN5WqruToPdhMyjPH/T4p\n4\ntP3lU9h1plQBcZkIXl4hDTuj57+QSKof\n4\nkEWvu3fC5lENatYynHcwkUbZ4tmWaFrF\n4\nTOP COUNTRIES/REGIONS\nCN\n152\nTOP OPEN PORTS\n443\n77\n80\n72\n8080\n1\n8085\n1\n8086\n1\nTOP SERVERS\n****\n100\nnone\n44\n************\n6\n*****\n1\nTOP TITLES\n南昌大学江西医学院基础医学院 - School of Basic Medical Science",
+  "dork": "host=\"ncu.edu.cn\" && (body=\"公示\" || body=\"名单\")"
+ },
+ "x_xust": {
+  "hosts": [
+   "xkb.xust.edu.cn",
+   "kjc.xust.edu.cn",
+   "sjzw.xust.edu.cn",
+   "gjjl.xust.edu.cn",
+   "aqxy.xust.edu.cn",
+   "jijinhui.xust.edu.cn",
+   "zzb.xust.edu.cn",
+   "ajxy.xust.edu.cn"
+  ],
+  "n": 8,
+  "cnt": "108",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0ieHVzdC5lZHUuY24iICYmIChib2R5PSLlhaznpLoiIHx8IGJvZHk9IuWQjeWNlSIp",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n54\n4\n4\nMore\nTOP FIDv2\nXTp47Fsu/mY8K3rplxN6GjGcv0hR0tGK\n4\nZEJoWIMfYZgz7Exwpl8ljq/XAZieFsL7\n4\nZ5eNNsfUVrZoLdFOCM98FpFD7kdKkyI7\n4\nPpNUPspKiKgCTTEItt7BnbqP2N7yRUX6\n4\nAebjVKyZ74YQ2i2YyG7modHc+8Txzw1n\n4\nTOP COUNTRIES/REGIONS\nCN\n104\nHong Kong Special Administrative Region\n4\nTOP OPEN PORTS\n443\n59\n80\n49\nTOP SERVERS\n*********\n89\nF-WEB\n4\nMicrosoft-IIS/10.0\n4\nMicrosoft-IIS/8.5\n4\nTOP TITLES\n共青团西",
+  "dork": "host=\"xust.edu.cn\" && (body=\"公示\" || body=\"名单\")"
+ },
+ "x_lvu": {
+  "hosts": [
+   "qc.lvu.edu.cn",
+   "jwc.lvu.edu.cn",
+   "xdfw.lvu.edu.cn",
+   "jsxy.lvu.edu.cn",
+   "xsc.lvu.edu.cn",
+   "cm.lvu.edu.cn",
+   "tw.lvu.edu.cn"
+  ],
+  "n": 7,
+  "cnt": "57",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0ibHZ1LmVkdS5jbiIgJiYgKGJvZHk9IuWFrOekuiIgfHwgYm9keT0i5ZCN5Y2VIik%3D",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n4\n4\n2\nTOP FIDv2\n4C3oaRkYuGDee38tbl59rnacNkis+rSA\n4\noY/JT3ZuOQlTrVp1Cb6mxHItoOkHQKCq\n4\nu445Z0y/4HwWj0UukjkYaLshOFSEGuRb\n4\nPyQJQpqwVbu287McpnO8hRRxESKJGvfh\n2\nM+luPj3DaQVUK4tRZu3MOwqLCw6jgQhY\n2\nTOP COUNTRIES/REGIONS\nCN\n57\nTOP OPEN PORTS\n443\n30\n80\n27\nTOP SERVERS\n******\n55\nnginx\n2\nTOP TITLES\n健康学院\n4\n兰州职业技术学院\n4\n兰州职业技术学院党员代表大会\n4\n团委\n4\n艺术设计学院\n4\n57\nresults\n(8 unique IP )\n,\n213\nms\n,Keyword Sear",
+  "dork": "host=\"lvu.edu.cn\" && (body=\"公示\" || body=\"名单\")"
+ },
+ "x_whcp": {
+  "hosts": [
+   "zb.whcp.edu.cn",
+   "ky.whcp.edu.cn",
+   "xg.whcp.edu.cn",
+   "rs.whcp.edu.cn",
+   "tw.whcp.edu.cn",
+   "www.whcp.edu.cn"
+  ],
+  "n": 6,
+  "cnt": "17",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0id2hjcC5lZHUuY24iICYmIChib2R5PSLlhaznpLoiIHx8IGJvZHk9IuWQjeWNlSIp",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n2\nTOP FIDv2\nzhjA/KqXrIqeOWoeRf91tdJebErpTEuH\n2\nDezd88tjAKJ7p4AK9qf1vYViF6axdYC4\n2\nyoNv/g7ILs95pZuvM0tSlMqmYOgfs2Yb\n2\nW1MyfnQ+rJCeV22WFsV/7nVLBFcUG+Sz\n2\nyeUX2iTtvYhqPKA8FruyFJpPSA+nyKLH\n2\nTOP COUNTRIES/REGIONS\nCN\n17\nTOP OPEN PORTS\n443\n9\n80\n8\nTOP SERVERS\nrump/c\n17\nTOP TITLES\n人事处\n2\n党委学生工作部（处）\n2\n创业学院\n2\n招生信息网\n2\n教务处\n2\n17\nresults\n(1 unique IP )\n,\n196\nms\n,Keyword Search.\nPast year\nhttps://z",
+  "dork": "host=\"whcp.edu.cn\" && (body=\"公示\" || body=\"名单\")"
+ },
+ "x_tjnu": {
+  "hosts": [
+   "yjszs.tjnu.edu.cn",
+   "syzx.tjnu.edu.cn",
+   "www.tjnu.edu.cn",
+   "gjjl.tjnu.edu.cn",
+   "gjxy.tjnu.edu.cn",
+   "xgwzxs.tjnu.edu.cn",
+   "qkcbzx.tjnu.edu.cn"
+  ],
+  "n": 7,
+  "cnt": "102",
+  "url": "https://en.fofa.info/result?qbase64=aG9zdD0idGpudS5lZHUuY24iICYmIChib2R5PSLlhaznpLoiIHx8IGJvZHk9IuWHhuiAg%2BivgeWPtyIp",
+  "gate": false,
+  "login_required": false,
+  "head": "Syntax\nPHP Spotlight\nHOT\nPricing\nSupport\nFOFA Search Engine\nSearch Results\nStatistics\nHistorical Trend\nAPI\nFavicon\n3\n2\n2\nTOP FIDv2\nLakEDmLuY0kVfUSY4DPk58LgQUnsVjy7\n4\nqcmRGbAv5rJAn6kvvYcTutoTpRZSPeCJ\n4\npJM8G3nkTbi6oF97pNDMkTKQqYBVmTRu\n4\nhoF7NEI424Sr9wWaxollo0mSXOjaL1Jh\n3\nJs2YZGnclUbAJRNmmgPLU4ptrjaqn5B/\n3\nTOP COUNTRIES/REGIONS\nCN\n102\nTOP OPEN PORTS\n443\n55\n80\n47\nTOP SERVERS\n*********\n100\nrump/c\n2\nTOP TITLES\nMPA教育中心\n4\n党委学生工作部(学生处)\n4\n国有资产管理处\n4\n国际交流处\n4\n研究生院\n4\n102\nresults\n(4 unique IP )\n,\n1074\nms\n,Key",
+  "dork": "host=\"tjnu.edu.cn\" && (body=\"公示\" || body=\"准考证号\")"
  }
 }

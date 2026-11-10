@@ -97,8 +97,35 @@ BATCH10 = {
     "edu_vcenter_t":  'title="VMware vCenter" && host="edu.cn"',
     "edu_bigip_t":    'title="BIG-IP" && host="edu.cn"',
 }
+# 第五轮：扩池（此前每 dork 只取免费版第 1 页）+ 补「公示明文学号」这一环
+BATCH11 = {   # 公示名单 = 成功模式的另一半（§7.14/§7.16）
+    "edu_publist_sid":  'body="学号" && body="公示" && host="edu.cn"',
+    "edu_publist_title":'title="公示" && host="edu.cn" && port="80"',
+    "edu_publist_lq":   '(body="录取名单" || body="拟录取名单") && host="edu.cn"',
+    "edu_initpwd_p80":  'body="初始密码" && host="edu.cn" && port="80"',
+    "edu_initpwd_p443": 'body="初始密码" && host="edu.cn" && port="443"',
+    "edu_idcard6_after":'(body="身份证后六位" || body="学号后六位") && host="edu.cn" && after="2026-01-01"',
+}
+BATCH12 = {   # 设备弱密钥 / RCE 判定点扩池 + edu 限定的前端硬编码密码
+    "edu_hardcode_val": 'body="type=password" && body="value=" && host="edu.cn"',
+    "edu_isapi_p80":    'body="/ISAPI/" && host="edu.cn" && port="80"',
+    "edu_access_p8080": '(title="门禁" || body="门禁管理系统") && host="edu.cn" && port="8080"',
+    "edu_weblogic_t":   'title="WebLogic" && host="edu.cn"',
+    "edu_jenkins_t":    'title="Jenkins" && host="edu.cn"',
+    "edu_confluence_t": 'title="Confluence" && host="edu.cn"',
+}
+# 第六轮：同单位交叉——为已找到「初始密码规则」的单位，找它们自己的公示名单/学号源
+BATCH13 = {
+    "x_njrts": 'host="njrts.edu.cn" && (body="公示" || body="名单")',
+    "x_ncu":   'host="ncu.edu.cn" && (body="公示" || body="名单")',
+    "x_xust":  'host="xust.edu.cn" && (body="公示" || body="名单")',
+    "x_lvu":   'host="lvu.edu.cn" && (body="公示" || body="名单")',
+    "x_whcp":  'host="whcp.edu.cn" && (body="公示" || body="名单")',
+    "x_tjnu":  'host="tjnu.edu.cn" && (body="公示" || body="准考证号")',
+}
 ALL = {"1": BATCH1, "2": BATCH2, "3": BATCH3, "4": BATCH4, "5": BATCH5,
        "6": BATCH6, "7": BATCH7, "8": BATCH8, "9": BATCH9, "10": BATCH10,
+       "11": BATCH11, "12": BATCH12, "13": BATCH13,
        "probe": {"probe_jenkins": '(title="Jenkins" || body="Jenkins") && host="edu.cn"'}}
 
 

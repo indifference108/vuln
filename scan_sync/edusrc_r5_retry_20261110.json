@@ -1,0 +1,129 @@
+{
+ "ts": "2026-11-10 20:41:24",
+ "boundary": "只读 GET；不登录、不爆破、不执行 payload",
+ "items": [
+  {
+   "group": "confluence",
+   "host": "confluence.cts.shanghaitech.edu.cn",
+   "probes": [
+    {
+     "url": "https://confluence.cts.shanghaitech.edu.cn/",
+     "status": null,
+     "err": "ConnectTimeout:HTTPSConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=443): Max re"
+    },
+    {
+     "url": "https://confluence.cts.shanghaitech.edu.cn/login.action",
+     "status": null,
+     "err": "ConnectTimeout:HTTPSConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=443): Max re"
+    },
+    {
+     "url": "https://confluence.cts.shanghaitech.edu.cn/rest/api/space",
+     "status": null,
+     "err": "ConnectTimeout:HTTPSConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=443): Max re"
+    },
+    {
+     "url": "http://confluence.cts.shanghaitech.edu.cn/",
+     "status": null,
+     "err": "ConnectTimeout:HTTPConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=80): Max retr"
+    },
+    {
+     "url": "http://confluence.cts.shanghaitech.edu.cn/login.action",
+     "status": null,
+     "err": "ConnectTimeout:HTTPConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=80): Max retr"
+    },
+    {
+     "url": "http://confluence.cts.shanghaitech.edu.cn/rest/api/space",
+     "status": null,
+     "err": "ConnectTimeout:HTTPConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=80): Max retr"
+    }
+   ]
+  },
+  {
+   "group": "weblogic",
+   "host": "crm.gsm.pku.edu.cn",
+   "probes": [
+    {
+     "url": "https://crm.gsm.pku.edu.cn/",
+     "status": null,
+     "err": "ConnectTimeout:HTTPSConnectionPool(host='crm.gsm.pku.edu.cn', port=443): Max retries exceeded w"
+    },
+    {
+     "url": "https://crm.gsm.pku.edu.cn/console/login/LoginForm.jsp",
+     "status": null,
+     "err": "ConnectTimeout:HTTPSConnectionPool(host='crm.gsm.pku.edu.cn', port=443): Max retries exceeded w"
+    },
+    {
+     "url": "http://crm.gsm.pku.edu.cn/",
+     "status": null,
+     "err": "ConnectTimeout:HTTPConnectionPool(host='crm.gsm.pku.edu.cn', port=80): Max retries exceeded wit"
+    },
+    {
+     "url": "http://crm.gsm.pku.edu.cn/console/login/LoginForm.jsp",
+     "status": null,
+     "err": "ConnectTimeout:HTTPConnectionPool(host='crm.gsm.pku.edu.cn', port=80): Max retries exceeded wit"
+    }
+   ]
+  },
+  {
+   "group": "jenkins",
+   "host": "jenkins.cqou.edu.cn",
+   "probes": [
+    {
+     "url": "https://jenkins.cqou.edu.cn/login",
+     "status": 200,
+     "len": 2309,
+     "title": "登录 [Jenkins]",
+     "ctype": "text/html;charset=utf-8",
+     "server": "nginx",
+     "version_hints": [],
+     "has_login_form": true,
+     "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/image"
+    }
+   ]
+  },
+  {
+   "group": "jenkins",
+   "host": "lodetech.ustc.edu.cn:8080",
+   "probes": [
+    {
+     "url": "https://lodetech.ustc.edu.cn:8080/login",
+     "status": null,
+     "err": "SSLError:HTTPSConnectionPool(host='lodetech.ustc.edu.cn', port=8080): Max retries exceede"
+    },
+    {
+     "url": "https://lodetech.ustc.edu.cn:8080/about/",
+     "status": null,
+     "err": "SSLError:HTTPSConnectionPool(host='lodetech.ustc.edu.cn', port=8080): Max retries exceede"
+    },
+    {
+     "url": "http://lodetech.ustc.edu.cn:8080/login",
+     "status": 200,
+     "len": 2427,
+     "title": "Sign in - Jenkins",
+     "ctype": "text/html;charset=utf-8",
+     "server": "Jetty(12.1.8)",
+     "version_hints": [],
+     "has_login_form": true,
+     "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"en\"><head resURL=\"/static/d14edf34\" data-rooturl=\"\" data-resurl=\"/static/d14edf34\" data-imagesurl=\"/static/d14edf34/images\">"
+    }
+   ]
+  },
+  {
+   "group": "jenkins",
+   "host": "build-tux.scc.edu.cn",
+   "probes": [
+    {
+     "url": "https://build-tux.scc.edu.cn/login",
+     "status": 200,
+     "len": 1740,
+     "title": "Sign in - Jenkins",
+     "ctype": "text/html;charset=utf-8",
+     "server": "Jetty(12.0.16)",
+     "version_hints": [],
+     "has_login_form": true,
+     "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"en-US\"><head resURL=\"/static/b400be09\" data-rooturl=\"\" data-resurl=\"/static/b400be09\" data-imagesurl=\"/static/b400be09/image"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,909 @@
+{
+ "jenkins_t|build-tux.scc.edu.cn": {
+  "group": "jenkins_t",
+  "host": "build-tux.scc.edu.cn",
+  "probes": [
+   {
+    "url": "https://build-tux.scc.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.0.16)",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/b40"
+   },
+   {
+    "url": "https://build-tux.scc.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.0.16)",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/b400be09/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://build-tux.scc.edu.cn/login",
+    "status": 200,
+    "len": 1740,
+    "title": "Sign in - Jenkins",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.0.16)",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"en-US\"><head resURL=\"/static/b400be09\" data-rooturl=\"\" data-resurl=\"/static/b400be09\" data-imagesurl=\"/static/b400be09/images\"><title>Sign in - "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|jenkins.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "jenkins.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://jenkins.cqou.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/fd5"
+   },
+   {
+    "url": "https://jenkins.cqou.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/fd530d8e/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://jenkins.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2309,
+    "title": "登录 [Jenkins]",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/images\"><title>登录 [Jenkin"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|livecourse.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "livecourse.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://livecourse.cqou.edu.cn/api/json?tree=version",
+    "status": 404,
+    "len": 18,
+    "title": "",
+    "ctype": "text/plain",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "404 page not found"
+   },
+   {
+    "url": "https://livecourse.cqou.edu.cn/script",
+    "status": 200,
+    "len": 2703,
+    "title": "ç³»ç»",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html>\n<html lang=\"zh-cn\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"google\" content=\"notranslate\">\n  <meta name=\"viewport\" "
+   },
+   {
+    "url": "https://livecourse.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2703,
+    "title": "ç³»ç»",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html>\n<html lang=\"zh-cn\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"google\" content=\"notranslate\">\n  <meta name=\"viewport\" "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|skywalking.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "skywalking.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://skywalking.cqou.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/fd5"
+   },
+   {
+    "url": "https://skywalking.cqou.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/fd530d8e/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://skywalking.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2309,
+    "title": "登录 [Jenkins]",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/images\"><title>登录 [Jenkin"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|nacos.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "nacos.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://nacos.cqou.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/fd5"
+   },
+   {
+    "url": "https://nacos.cqou.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/fd530d8e/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://nacos.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2309,
+    "title": "登录 [Jenkins]",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/images\"><title>登录 [Jenkin"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|elastic.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "elastic.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://elastic.cqou.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/fd5"
+   },
+   {
+    "url": "https://elastic.cqou.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/fd530d8e/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://elastic.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2309,
+    "title": "登录 [Jenkins]",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/images\"><title>登录 [Jenkin"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|xxljob.cqou.edu.cn": {
+  "group": "jenkins_t",
+  "host": "xxljob.cqou.edu.cn",
+  "probes": [
+   {
+    "url": "https://xxljob.cqou.edu.cn/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/fd5"
+   },
+   {
+    "url": "https://xxljob.cqou.edu.cn/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/fd530d8e/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "https://xxljob.cqou.edu.cn/login",
+    "status": 200,
+    "len": 2309,
+    "title": "登录 [Jenkins]",
+    "ctype": "text/html;charset=utf-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"zh-CN\"><head resURL=\"/static/fd530d8e\" data-rooturl=\"\" data-resurl=\"/static/fd530d8e\" data-imagesurl=\"/static/fd530d8e/images\"><title>登录 [Jenkin"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "jenkins_t|lodetech.ustc.edu.cn:8080": {
+  "group": "jenkins_t",
+  "host": "lodetech.ustc.edu.cn:8080",
+  "probes": [
+   {
+    "url": "http://lodetech.ustc.edu.cn:8080/api/json?tree=version",
+    "status": 403,
+    "len": 643,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.1.8)",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fapi%2Fjson%3Ftree%3Dversion'/><script id='redirect' data-redirect-url='/login?from=%2Fapi%2Fjson%3Ftree%3Dversion' src='/static/d14"
+   },
+   {
+    "url": "http://lodetech.ustc.edu.cn:8080/script",
+    "status": 403,
+    "len": 601,
+    "title": "",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.1.8)",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fscript'/><script id='redirect' data-redirect-url='/login?from=%2Fscript' src='/static/d14edf34/scripts/redirect.js'></script></head"
+   },
+   {
+    "url": "http://lodetech.ustc.edu.cn:8080/login",
+    "status": 200,
+    "len": 2427,
+    "title": "Sign in - Jenkins",
+    "ctype": "text/html;charset=utf-8",
+    "server": "Jetty(12.1.8)",
+    "www_auth": "",
+    "jenkins": true,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n      \n      \n    \n    \n    <!DOCTYPE html><html lang=\"en\"><head resURL=\"/static/d14edf34\" data-rooturl=\"\" data-resurl=\"/static/d14edf34\" data-imagesurl=\"/static/d14edf34/images\"><title>Sign in - Jen"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "confluence_t|confluence.cts.shanghaitech.edu.cn": {
+  "group": "confluence_t",
+  "host": "confluence.cts.shanghaitech.edu.cn",
+  "probes": [
+   {
+    "url": "https://confluence.cts.shanghaitech.edu.cn/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=443): Max re"
+   },
+   {
+    "url": "https://confluence.cts.shanghaitech.edu.cn/rest/api/space",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='confluence.cts.shanghaitech.edu.cn', port=443): Max re"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "weblogic_t|crm.gsm.pku.edu.cn": {
+  "group": "weblogic_t",
+  "host": "crm.gsm.pku.edu.cn",
+  "probes": [
+   {
+    "url": "https://crm.gsm.pku.edu.cn/",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='crm.gsm.pku.edu.cn', port=443): Max retries exceeded w"
+   },
+   {
+    "url": "https://crm.gsm.pku.edu.cn/console/login/LoginForm.jsp",
+    "status": null,
+    "err": "ConnectTimeout:HTTPSConnectionPool(host='crm.gsm.pku.edu.cn', port=443): Max retries exceeded w"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|acjjy.aufe.edu.cn": {
+  "group": "hardcode_val",
+  "host": "acjjy.aufe.edu.cn",
+  "probes": [
+   {
+    "url": "https://acjjy.aufe.edu.cn/",
+    "status": 200,
+    "len": 5121,
+    "title": "管理平台",
+    "ctype": "text/html;charset=UTF-8",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!doctype html>\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\">\r\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n\t\t<title>管理平台</title>\r\n\t\t<link rel=\"shortcut icon\"\r\n\t\t\t  href=\"/"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|jwxt.cqgyzy.edu.cn": {
+  "group": "hardcode_val",
+  "host": "jwxt.cqgyzy.edu.cn",
+  "probes": [
+   {
+    "url": "https://jwxt.cqgyzy.edu.cn/",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "",
+    "server": "",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|2025.tfswufe.edu.cn": {
+  "group": "hardcode_val",
+  "host": "2025.tfswufe.edu.cn",
+  "probes": [
+   {
+    "url": "https://2025.tfswufe.edu.cn/",
+    "status": 200,
+    "len": 3407,
+    "title": "西南财经大学天府学院前置登录认证",
+    "ctype": "",
+    "server": "nginx",
+    "www_auth": "Basic realm=\"Restricted\"",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|dangan.tfswufe.edu.cn": {
+  "group": "hardcode_val",
+  "host": "dangan.tfswufe.edu.cn",
+  "probes": [
+   {
+    "url": "https://dangan.tfswufe.edu.cn/",
+    "status": 404,
+    "len": 999,
+    "title": "404 Unknown Virtual Host",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>404 Unknown Virtual Host</title><style>div{font-size:12px;}a{color:#1463da;text-decoration:none}a:hover{color:#146"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|zcgl.hfut.edu.cn": {
+  "group": "hardcode_val",
+  "host": "zcgl.hfut.edu.cn",
+  "probes": [
+   {
+    "url": "https://zcgl.hfut.edu.cn/",
+    "status": 200,
+    "len": 43,
+    "title": "",
+    "ctype": "text/html",
+    "server": "nginx",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<script>window.location='/sfw2/';</script>\n"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|eapp2-9443.webvpn.juwp.edu.cn": {
+  "group": "hardcode_val",
+  "host": "eapp2-9443.webvpn.juwp.edu.cn",
+  "probes": [
+   {
+    "url": "https://eapp2-9443.webvpn.juwp.edu.cn/",
+    "status": 404,
+    "len": 1074,
+    "title": "HTTP Status 404 – Not Found",
+    "ctype": "text/html;charset=utf-8",
+    "server": "",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|zjxjy.cqmpc.edu.cn": {
+  "group": "hardcode_val",
+  "host": "zjxjy.cqmpc.edu.cn",
+  "probes": [
+   {
+    "url": "https://zjxjy.cqmpc.edu.cn/",
+    "status": 301,
+    "len": 162,
+    "title": "301 Moved Permanently",
+    "ctype": "text/html",
+    "server": "",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|webplus.scst.edu.cn": {
+  "group": "hardcode_val",
+  "host": "webplus.scst.edu.cn",
+  "probes": [
+   {
+    "url": "https://webplus.scst.edu.cn/",
+    "status": 302,
+    "len": 0,
+    "title": "",
+    "ctype": "text/html;charset=UTF-8",
+    "server": "******",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": ""
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "hardcode_val|tsg.hbgt.edu.cn": {
+  "group": "hardcode_val",
+  "host": "tsg.hbgt.edu.cn",
+  "probes": [
+   {
+    "url": "https://tsg.hbgt.edu.cn/",
+    "status": 200,
+    "len": 24814,
+    "title": "æ¹åå½åèµæºèä¸å­¦é¢å¾ä¹¦é¦",
+    "ctype": "text/html",
+    "server": "***********",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "ï»¿<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n\r\n    <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n        <meta http-equiv=\"pragma\" content=\"no-cach"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|xydc.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "xydc.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xydc.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|belyapp.fld.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "belyapp.fld.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://belyapp.fld.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='belyapp.fld.fjjxu.edu.cn', port=443): Max retries exce"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|oled.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "oled.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://oled.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|wx.fld.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "wx.fld.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://wx.fld.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='wx.fld.fjjxu.edu.cn', port=443): Max retries exceeded "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|xyaqpt1.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "xyaqpt1.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://xyaqpt1.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|i.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "i.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://i.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|transaction.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "transaction.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://transaction.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|be.fld.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "be.fld.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://be.fld.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": null,
+    "err": "ConnectionError:HTTPSConnectionPool(host='be.fld.fjjxu.edu.cn', port=443): Max retries exceeded "
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|authx-minio.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "authx-minio.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://authx-minio.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ },
+ "isapi_p80|cas.fjjxu.edu.cn": {
+  "group": "isapi_p80",
+  "host": "cas.fjjxu.edu.cn",
+  "probes": [
+   {
+    "url": "https://cas.fjjxu.edu.cn/ISAPI/System/deviceInfo",
+    "status": 403,
+    "len": 1224,
+    "title": "403.1 - ç¦æ­¢è®¿é®: æ§è¡è®¿é®è¢«æç»ã",
+    "ctype": "text/html",
+    "server": "Microsoft-IIS/7.5",
+    "www_auth": "",
+    "jenkins": false,
+    "jenkins_version": null,
+    "groovy_console": false,
+    "hardcoded_pwd_values": [],
+    "device_info": false,
+    "confluence_ver": null,
+    "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content"
+   }
+  ],
+  "hit": false,
+  "why": ""
+ }
+}

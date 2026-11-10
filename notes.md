@@ -531,3 +531,20 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - **工具修正**：FOFA 门禁判定原来用 `body.indexOf('captcha')` 过宽，Citrix Gateway 结果条目的 CSP 响应头含 `captcha` 字样导致 BATCH8 误停；已收紧为「URL 含 `/captcha` 且页面含 `Confirm Humanity`」才停机。
 - **诚实结论**：在「FOFA 免费版第 1 页 + 只发 GET + 不登录」的边界内，**弱密钥和 RCE 都无法定案**，继续堆切片不会改变结果。要出洞必须放宽到：①用户参与找公示明文学号源并录屏；②单入口 ≤5 组默认凭据的实际登录验证（§7.14 模式）；③或换 N-day 情报源（厂商公告/KEV 新条目）而非 FOFA 指纹。
 
+## 7.39 扩池 + 闭环补全（2026-11-10 20:33 起，「继续」）
+
+- **用户指令**：继续（承接 §7.38 的下一步）。本轮针对 §7.38 指出的两个缺口做实：①每个 dork 只取第 1 页 → `&& port=` / `&& after=` 扩池；②「规则 + 明文学号」不同单位 → 同单位交叉切片。
+- **新增切片 BATCH11/12/13 共 18 个，累计 79 个**（证据 `edusrc_nday_slices_20261110.json`）：
+  - 公示名单：`body="学号" && body="公示"` 595、`录取名单` 5,851、`title=公示 && port=80` 4；规则扩池 `初始密码 && port=80/443` 1,051/732、`身份证后六位 && after=2026-01-01` 0。
+  - 判定点扩池：edu 限定前端硬编码密码 26,510、`ISAPI && port=80` 若干、`门禁 && port=8080` 0；精确 title：WebLogic 1、Jenkins 8、Confluence 1。
+  - 同单位交叉：`host=<6 个规则单位> && (公示||名单)` → njrts 20 / ncu 152 / xust 108 / lvu 57 / whcp 17 / tjnu 102，共 43 个站点。
+- **只读验证（新增约 100 个目标）**：
+  - 精确 title 组 29 个（`edusrc_r5_fp_20261110.json`）：**Jenkins 8 个 `/script` 全 403**（3 个确认真登录页 `jenkins.cqou.edu.cn`、`lodetech.ustc.edu.cn:8080`、`build-tux.scc.edu.cn`，双 scheme 复核 `/login` 200 但版本串不外露）；Confluence `confluence.cts.shanghaitech.edu.cn` 与 WebLogic `crm.gsm.pku.edu.cn` **双 scheme 全超时**（FOFA 历史快照，当前不可达）；edu 硬编码密码 9 个可见 host 无明文 `value`；ISAPI p80 扩池 10 个 fjjxu 子域全 403.1。
+  - `cqou.edu.cn` 中间件群 12 个判定点（`edusrc_r6_closure_20261110.json`）：Nacos `/v1/auth/users` 302/403、XXL-JOB `/xxl-job-admin/` 301/403、Actuator 301/403，**无未授权、无敏感端点**。
+  - 公示名单 19 个（`edusrc_r5_publist_20261110.json`）+ 同单位 30 个（同 closure 文件）：只统计明文学号形态数字与附件数量，**不落地任何真实学号/证件号**。民政职院 5 个公示链接、川农教务处 10 个文档附件、`jxmu.ncu.edu.cn` 4 个公示链接（但均为招生简章/准考证通知，非名单）、`xsc.lvu.edu.cn` / `rs.whcp.edu.cn` 各 3 个附件。
+  - 公示链接标题细查（`edusrc_r6_doclinks_20261110.json`）：7 个同单位站点里**没有一份带明文学号的名单页**，`jxmu.ncu.edu.cn` 只有「博士外语考试准考证打印通知」「同等学力招生简章」等。
+- **结论（与 §7.38 一致，且证据更足）**：扩池 18 个切片 + ~100 个只读验证后，**弱密钥和 RCE 仍 0 定案**。
+  - RCE：edu.cn 上精确 title 命中的真组件（Jenkins/Confluence/WebLogic）**管理面全关或当前不可达**；Nacos/XXL-JOB/Actuator 未授权面全闭。这条线在 FOFA 可见面 + 只读 GET 边界内已穷尽。
+  - 弱密钥：10 条公示规则仍在（§7.38 表），同单位公示站也找到了，但**缺「明文学号源」这一半**——同单位站点只有招生简章/准考证通知，没有可直接取学号的名单页。要闭环必须：用户给一份带明文学号/证件号的公开公示材料，或放行跨站检索 + 单入口 ≤5 组只读登录验证 + 录屏。
+- **经验补充**：①「扩池」不能只加 dork，要用 `port/after/host` 切片把免费版第 1 页的盲区补掉；②精确 `title=` 是去误报的关键，但命中真组件不等于有洞（管理面关闭是常态）；③FOFA 历史快照会保留已下线资产（Confluence/WebLogic 双 scheme 全超时），定案前必须实测可达；④公示名单检索只统计存在性、不落地个人号码，是合规红线。
+
