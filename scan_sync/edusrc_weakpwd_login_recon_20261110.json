@@ -1,0 +1,446 @@
+{
+ "ts": "2026-11-10 21:27:03",
+ "boundary": "只读 GET 登录页；未 POST、未提交凭据、未爆破、未落地真实学号/证件号",
+ "items": [
+  {
+   "name": "南京铁道职院",
+   "url": "https://webvpn.njrts.edu.cn/",
+   "rule": "初始密码=身份证后六位@njrts",
+   "status": 200,
+   "final_url": "https://webvpn.njrts.edu.cn/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/login?s",
+   "len": 20770,
+   "forms": [
+    {
+     "action": "/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/logi",
+     "method": "POST",
+     "fields": [
+      "_eventId",
+      "username",
+      "responseJson",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/logi",
+     "method": "POST",
+     "fields": [
+      "username",
+      "captcha",
+      "dynamicCode",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/logi",
+     "method": "POST",
+     "fields": [
+      "username",
+      "passwordText",
+      "password",
+      "captcha",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/http/77726476706e69737468656265737421f1e2559434357a467b1ac7a292473726f4d9f0319f9b1c/authserver/logi",
+     "method": "POST",
+     "fields": [
+      "lt",
+      "uuid",
+      "cllt",
+      "dllt",
+      "execution",
+      "_eventId",
+      "rmShown"
+     ]
+    }
+   ],
+   "form_count": 4,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": false,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "南昌大学继教",
+   "url": "https://scept.ncu.edu.cn/",
+   "rule": "账号=身份证号或学号，密码=ncu@身份证后六位",
+   "status": 200,
+   "final_url": "https://scept.ncu.edu.cn/login",
+   "len": 13358,
+   "forms": [
+    {
+     "action": "",
+     "method": "POST",
+     "fields": [
+      "enToken",
+      "elserolestustatus",
+      "userName",
+      "passWord"
+     ]
+    },
+    {
+     "action": "",
+     "method": "POST",
+     "fields": [
+      "enToken",
+      "elserolestustatus",
+      "isphone",
+      "userName",
+      "passWord"
+     ]
+    }
+   ],
+   "form_count": 2,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "西安科技大学",
+   "url": "https://ids.xust.edu.cn/",
+   "rule": "初始密码=身份证后六位（2016级前=学号）",
+   "status": 200,
+   "final_url": "http://ids.xust.edu.cn/authserver/login",
+   "len": 39589,
+   "forms": [
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "lt",
+      "uuid",
+      "cllt",
+      "dllt",
+      "execution",
+      "_eventId",
+      "rmShown"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "_eventId",
+      "username",
+      "responseJson",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "username",
+      "captcha",
+      "dynamicCode",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "username",
+      "passwordText",
+      "password",
+      "captcha",
+      "rememberMe",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "lt",
+      "uuid",
+      "cllt",
+      "dllt",
+      "execution",
+      "_eventId",
+      "rmShown"
+     ]
+    }
+   ],
+   "form_count": 5,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "兰州职院支付",
+   "url": "https://pay.lvu.edu.cn/",
+   "rule": "账号=学号，初始密码=身份证后六位",
+   "status": 200,
+   "final_url": "https://pay.lvu.edu.cn/",
+   "len": 25945,
+   "forms": [
+    {
+     "action": "",
+     "method": "POST",
+     "fields": [
+      "__EVENTTARGET",
+      "__EVENTARGUMENT",
+      "__LASTFOCUS",
+      "__VIEWSTATE",
+      "__EVENTVALIDATION",
+      "hiden_local",
+      "ts",
+      "p1",
+      "p2",
+      "pbk"
+     ]
+    }
+   ],
+   "form_count": 1,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "武汉城市职院支付",
+   "url": "https://jfxt.whcp.edu.cn/",
+   "rule": "用户名=学号，初始密码=身份证后六位",
+   "status": 200,
+   "final_url": "https://jfxt.whcp.edu.cn/",
+   "len": 25513,
+   "forms": [
+    {
+     "action": "./",
+     "method": "POST",
+     "fields": [
+      "__EVENTTARGET",
+      "__EVENTARGUMENT",
+      "__VIEWSTATE",
+      "__VIEWSTATEGENERATOR",
+      "__EVENTVALIDATION",
+      "hiden_local",
+      "ts",
+      "p1",
+      "p2",
+      "pbk"
+     ]
+    }
+   ],
+   "form_count": 1,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "天津师大研招",
+   "url": "https://yjszs.tjnu.edu.cn/",
+   "rule": "用户名=准考证号，初始密码=居民身份证号",
+   "status": 200,
+   "final_url": "https://yjszs.tjnu.edu.cn/logon",
+   "len": 10799,
+   "forms": [
+    {
+     "action": "/logon",
+     "method": "POST",
+     "fields": [
+      "randSesion",
+      "username",
+      "password",
+      "validateCode"
+     ]
+    }
+   ],
+   "form_count": 1,
+   "captcha": true,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "湖南物流职院图书馆",
+   "url": "https://library.hmlc.edu.cn/",
+   "rule": "账号=学号/工号，初始密码=身份证后六位",
+   "status": 200,
+   "final_url": "https://library.hmlc.edu.cn/",
+   "len": 54763,
+   "forms": [],
+   "form_count": 0,
+   "captcha": false,
+   "needs_idcard_last6": true,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "大连职院统一身份",
+   "url": "https://webvpn.dlvtc.edu.cn/",
+   "rule": "账号=10位学号，初始密码=原门户密码",
+   "status": 200,
+   "final_url": "https://webvpn.dlvtc.edu.cn/http/77726476706e69737468656265737421f3f652d2233c7e447d468ca88d1b203b/cas/login?service=https%3A%2F%2F",
+   "len": 13353,
+   "forms": [
+    {
+     "action": "/http/77726476706e69737468656265737421f3f652d2233c7e447d468ca88d1b203b/cas/login;jsessionid=_EXFpDCN",
+     "method": "POST",
+     "fields": [
+      "username",
+      "password",
+      "errors",
+      "imageCodeName",
+      "lt",
+      "_eventId"
+     ]
+    }
+   ],
+   "form_count": 1,
+   "captcha": true,
+   "needs_idcard_last6": false,
+   "needs_student_id": true,
+   "publicly_derivable_with_sid_only": true,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "浙江工商大学研究生",
+   "url": "https://yjszhgl.zjgsu.edu.cn/",
+   "rule": "首次登录强制改密（死线）",
+   "status": 200,
+   "final_url": "https://yjszhgl.zjgsu.edu.cn/cas/login?service=https%3A%2F%2Fyjszhgl.zjgsu.edu.cn%2Fallogene%2Fpage%2Fhome.htm",
+   "len": 3241,
+   "forms": [
+    {
+     "action": "/cas/login;jsessionid=D9EFD29D4B1B0368BB2C23A7A1281E27?service=https%3A%2F%2Fyjszhgl.zjgsu.edu.cn%2F",
+     "method": "POST",
+     "fields": [
+      "username",
+      "password",
+      "authcode",
+      "Fruit",
+      "lt",
+      "execution",
+      "_eventId"
+     ]
+    }
+   ],
+   "form_count": 1,
+   "captcha": true,
+   "needs_idcard_last6": false,
+   "needs_student_id": false,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  },
+  {
+   "name": "某统一身份认证",
+   "url": "https://authservernew.caii.edu.cn/",
+   "rule": "首次登录强制改密（死线）",
+   "status": 200,
+   "final_url": "https://authservernew.caii.edu.cn/authserver/login",
+   "len": 26538,
+   "forms": [
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "lt",
+      "uuid",
+      "cllt",
+      "dllt",
+      "execution",
+      "_eventId",
+      "rmShown"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "_eventId",
+      "username",
+      "responseJson",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "username",
+      "captcha",
+      "dynamicCode",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "username",
+      "passwordText",
+      "password",
+      "captcha",
+      "rememberMe",
+      "_eventId",
+      "cllt",
+      "dllt",
+      "lt",
+      "execution"
+     ]
+    },
+    {
+     "action": "/authserver/login",
+     "method": "POST",
+     "fields": [
+      "lt",
+      "uuid",
+      "cllt",
+      "dllt",
+      "execution",
+      "_eventId",
+      "rmShown"
+     ]
+    }
+   ],
+   "form_count": 5,
+   "captcha": true,
+   "needs_idcard_last6": false,
+   "needs_student_id": false,
+   "publicly_derivable_with_sid_only": false,
+   "note": "只读 GET，未提交任何凭据"
+  }
+ ]
+}

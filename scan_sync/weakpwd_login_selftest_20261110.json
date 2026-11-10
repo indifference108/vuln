@@ -1,0 +1,31 @@
+{
+ "ts": "2026-11-10 21:30:24",
+ "target": "http://127.0.0.1:8792",
+ "selftest": true,
+ "attempts": 3,
+ "results": [
+  {
+   "seq": 1,
+   "status": 302,
+   "http": 302,
+   "vulnerable": true,
+   "note": "仅记录成功/失败判定，未保存响应正文与真实凭据"
+  },
+  {
+   "seq": 2,
+   "status": 200,
+   "http": 200,
+   "vulnerable": false,
+   "note": "仅记录成功/失败判定，未保存响应正文与真实凭据"
+  },
+  {
+   "seq": 3,
+   "status": 200,
+   "http": 200,
+   "vulnerable": false,
+   "note": "仅记录成功/失败判定，未保存响应正文与真实凭据"
+  }
+ ],
+ "confirmed": 1,
+ "note": "输出不含真实学号/证件号；生产登录未执行"
+}
