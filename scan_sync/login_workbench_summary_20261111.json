@@ -1,0 +1,14 @@
+{
+ "ts": "2026-11-11 00:45",
+ "channel": "WebBridge 127.0.0.1:10086 session edusrc-login",
+ "console": "http://127.0.0.1:8795",
+ "entry": "https://ehall.csmzxy.edu.cn/",
+ "form": "CAS authserver pwdFromId: username/passwordText/password(saltPassword,hidden)/captcha/lt/execution",
+ "division": "script fills student ID, judges result, writes back CSV, opens next row; user types password+captcha and clicks login",
+ "rows": 71,
+ "current": "D01",
+ "captcha_first_screen": "hidden, no image",
+ "hard_gap": "4 public roster pages contain no ID-card numbers; password cannot be derived from public data",
+ "redlines": "no password/captcha read or autofill; no post-login data; max 5 attempts per entry; stop on hit/lock/forced password change",
+ "boundary": "CSV with real student IDs stays local; console and evidence are local only"
+}
