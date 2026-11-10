@@ -1,0 +1,70 @@
+{
+ "ts": "2026-11-11 00:12:09",
+ "boundary": "只读 GET 公开页面；不登录、不爆破、不采集真实凭据",
+ "pages": [
+  {
+   "url": "https://www.csmzxy.edu.cn/",
+   "tag": "(入口)",
+   "http": 200,
+   "len": 50450,
+   "rules_found": [],
+   "title": "é¿æ²æ°æ¿èä¸ææ¯å­¦é¢"
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/",
+   "tag": "(入口)",
+   "http": 200,
+   "len": 48858,
+   "rules_found": [],
+   "title": "民政与社会工作学院（new）"
+  },
+  {
+   "url": "https://cas.csmzxy.edu.cn/",
+   "tag": "(入口)",
+   "http": 200,
+   "len": 7447,
+   "rules_found": [],
+   "title": ""
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/javascript:;",
+   "tag": "通知公示&nbsp;&nbsp;&nbsp;/NOT",
+   "http": 404,
+   "len": 1693,
+   "rules_found": [],
+   "title": "404éè¯¯æç¤º"
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/info/1063/7508.htm",
+   "tag": "2025-2026学年民政与社会工作学院奋涛励志扶贫",
+   "http": 200,
+   "len": 26934,
+   "rules_found": [],
+   "title": "2025-2026å­¦å¹´æ°æ¿ä¸ç¤¾ä¼å·¥ä½å­¦é¢å¥æ¶å±å¿æ¶è´«å¥å­¦éè"
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/info/1063/7426.htm",
+   "tag": "民政与社会工作学院2025-2026学年 拟表彰优秀",
+   "http": 200,
+   "len": 416788,
+   "rules_found": [],
+   "title": "æ°æ¿ä¸ç¤¾ä¼å·¥ä½å­¦é¢2025-2026å­¦å¹´ æè¡¨å½°ä¼ç§å­¦çå¥å­¦"
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/info/1063/7423.htm",
+   "tag": "民政与社会工作学院2026年国家奖学金学院评审结果公",
+   "http": 200,
+   "len": 27290,
+   "rules_found": [],
+   "title": "æ°æ¿ä¸ç¤¾ä¼å·¥ä½å­¦é¢2026å¹´å½å®¶å¥å­¦éå­¦é¢è¯å®¡ç»æå¬"
+  },
+  {
+   "url": "https://mzsg.csmzxy.edu.cn/info/1063/7147.htm",
+   "tag": "民政与社会工作学院2025-2026年度“五四”评优",
+   "http": 200,
+   "len": 45477,
+   "rules_found": [],
+   "title": "æ°æ¿ä¸ç¤¾ä¼å·¥ä½å­¦é¢2025-2026å¹´åº¦âäºåâè¯ä¼è¡¨å½°ææ"
+  }
+ ]
+}

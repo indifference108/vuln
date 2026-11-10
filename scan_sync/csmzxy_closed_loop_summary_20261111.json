@@ -1,0 +1,13 @@
+{
+ "ts": "2026-11-11 00:15",
+ "closed_loop": true,
+ "entry": "https://ehall.csmzxy.edu.cn/",
+ "redirect": "https://authserver.csmzxy.edu.cn/authserver/login",
+ "account_rule": "学号（新生为身份证件号）",
+ "password_rule": "默认身份证后六位（字母大写）",
+ "rule_source": "https://xxc.csmzxy.edu.cn/__local/6/0A/38/EB4DCBB8FA2CBE4887CCFB91023_D816AD06_16B9F3.pdf",
+ "captcha": true,
+ "form_fields": "username/password/captcha/lt/execution/_eventId/dllt/cllt/rememberMe",
+ "verify_table": "E:////kimi////scan////逐行验证表_v2_20261111.csv（82 行；71 学号形态可试 / 9 跨单位 / 2 疑似QQ）",
+ "boundary": "真实学号清单只存本地，不推公开仓库；密码列为公示规则占位符，需本人证件号后六位；登录验证本人录屏"
+}
