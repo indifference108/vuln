@@ -408,3 +408,59 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - 产出：`危害证明补充_20261031.docx`（3 节文字+3 截图内嵌）+ `evidence/危害证明_20261031/`（3 PNG 渲染截图 + 3 resp json）；重制版 zip 已并入（17 条目），旧重制版备份 `_重制版_20261014备份.zip`
 - 渲染截图复用脚本 `scan/_render_harm_proof.py`（font.monospace=["NSimSun"]，DejaVu 会出豆腐块）；若再被打回，改用 WebBridge 真实浏览器截屏
 - **10-31 23:10 更新**：用户反馈 zip 被审核嫌「匿名化太多」→ 重跑全量脚本（`poc/check_cve_2026_40351_全量.py`，输出含完整 root JWT token，vulnerable:true），产出 `验证输出_全量_20261031.txt`；补充 docx 措辞改为「保留完整原文未脱敏便于审核核实」；重建补充 zip 与整体包 `_报送附件_完整版_全量_20261031.zip`（旧「完整版_20261031.zip」被占用删不掉，以全量版为准）。**以后报送材料默认不脱敏，真实 token/URL/原文全保留**（用户 10-31 钦定）。
+
+## 7.36 接管交接：既有经验总纲（2026-11-10）
+
+> 新会话接管 `github.com/indifference108/vuln` 时先读本节，再按需回溯 7.1–7.35。本节只做索引与提炼，不替代原文。
+
+### A. 仓库与同步基线
+
+- 仓库 `git@github.com:indifference108/vuln.git`，分支 `main`，**公开仓库**（2026-11-10 核实 `private=false`，约 541 MB）。工作副本 `E:\kimi\repos\vuln-repo`；本地素材源 `E:\kimi\vulns\`（五类同名目录）；主页索引 `README.md`；总笔记 `notes.md` 同步进仓库根目录。
+- 五类归档（2026-10-09 起由年份制改类别制）：`弱密钥` / `SQL注入` / `RCE` / `SSRF` / `逆向`；一洞一目录，标准件 `audit-findings.md` + `report-zh/en.md` + `STATUS.md` + `poc/` + `evidence/` + `submission/` + `README.md`。
+- 三步同步：`git add -A` → `git commit -m "英文一句话"` → `git push origin main`。新素材先落 `E:\kimi\vulns\<类>\`，再复制进工作副本，commit 用英文。
+- 剔除项（别的项目源码克隆）已写进 `.gitignore` 且从索引移除：`SSRF/src/`、`逆向/vuln-clone/`、`*.tmp`。**本地文件仍在，不受影响**。
+- 本地 `E:\kimi\vulns` 共 **25 个一级子目录**（弱密钥 6 / SQL注入 8 / RCE 6 / SSRF 4 / 逆向 1）；仓库另保留 5 个历史目录（Pharmacy SQLi、labring_FastGPT_79483、ItzCrazyKns_Vane、zaidmukaddam_Scira、3 个 Tenda），**只增不删**。
+- 2026-11-10 接管核对：本地/仓库逐文件比对，23 个有效目录 0 差异；仅 `SQL注入\北京智慧学习课程_..._手动复现手册_20261105.docx` 漏同步，已补推；远端 `main` 与本地一致（38 个历史提交此前已推送）。
+
+### B. 工具链踩坑（别重踩）
+
+- **WebBridge**：Windows 下必须用 Write 工具写 JSON 文件再 `curl.exe -s -X POST --data-binary "@文件"`，用完即删，绝不 inline JSON；`evaluate` 的 args 键是 `code`；**JS 禁正则字面量**（daemon 会炸，用 indexOf/split）；扩展不能开 `file://`（先 `python -m http.server 8791`）。
+- **FOFA 免费版切片法**：每 dork 只给第 1 页，用 `&& port=` / `&& after=` / `&& title=` 切片合并去重；结果页 URL 必须完整保存，`slice(0,90)` 会截断 qbase64 变 Params Error。
+- **网络**：外网/FOFA 走 `127.0.0.1:7897`；**国内目标一律直连**（requests 默认 `trust_env=True` 会假超时，须 `trust_env=False` 或显式 proxies）；litellm 启动脚本必须清空全套 HTTP(S)_PROXY/NO_PROXY，否则 httpx 解析 `[::1]` 崩。
+- **指纹判定**：FastGPT 用登录接口 JSON 格式（code/statusText/data.token）+ `/api/common/system/getInitData` 的 `feConfigs`；门户页 body 关键词误报极多；LiteLLM 判版本必须验 JSON（catch-all 会返回 HTML 200）。
+- **本地靶场**：无 docker，改 pip venv 部署（`E:\kimi\venvs\openwebui` 8181 / `E:\kimi\venvs\litellm` 8400），用于 0day 挖→验闭环与修复版行为对照；AutoCVE 4 个审计 Agent + 模板已集成到 `tools/autocve_*`；轻量漏洞库 `tools/vulndb/vulndb.py`（KEV 1748 条）。
+- **报告生成**：中文 docx 用 python-docx；截图用 cv2 从录屏抽帧（**cv2.imwrite 不支持中文路径**，先写 ASCII 临时目录再 copy）；渲染文本截图字体 `font.monospace=["NSimSun"]`，DejaVu 会出豆腐块。
+
+### C. 主线与雷达
+
+- 钦定主线：**三大运营商 + 中央部委**；优先级 0day/Nday 高危 > 设备类弱密钥 > RCE > SSRF > 固件；CVE 只挖 0day。
+- 10-19 新标准：国内目标必须 CNVD 认可单位（edu.cn / gov.cn / 运营商域名可坐实），**纯 IP 云主机不报**（59822 阿里云案因此降级归档，材料保留备查）。
+- 部委/运营商对外资产=业务门户+SSO 统一登录，社区产品/管理控制台不暴露主域；弱口令面在域名体系外的 IP 直挂控制台，但常撞「宽带池客户自建」归属死结（7.24/7.25/7.27 三次同类）。
+- FOFA `body=产品 && host=edu.cn/gov.cn` 域名矿池见 7.34；指纹必须 title+API 双重确认。
+
+### D. CNVD 报送经验
+
+- **报送包六件套（用户 10-14 钦定标准）**：①《漏洞复现过程.docx》八节结构（基本信息含详细 URL/原理/环境/逐步截图/POC 全文/危害摘要/修复建议/证据清单）②危害说明.docx ③POC 源码 ④请求响应包 ⑤录屏 mp4 ⑥复测记录。模板脚本 `scan/_gen_repro_docx.py`。
+- 表单口径：命令执行类名称、类型/中间件选「其他」、利用工具「Python 自研验证脚本」；**NoSQLi 选「未授权访问」不选 SQL 注入**；漏洞 URL 写多个；临时方案写两层（升级版本 + 接口校验/WAF）。
+- **给证规则**（7.28 复盘）：事件型给证=三大运营商中高危 或 党政机关/重要行业/科研院所高危；通用型=中危+CVSS≥4.0+厂商注册≥5000万+黑盒 10 案例；**弱口令只有网络设备类（打印机/摄像头/门禁/交换机/路由器）给证，Web/CMS 弱口令不发证**。
+- 被退回补材料是常态（武汉 40351 一级/二级过、三级要危害截图，两次补件）；复测→取证 HTML→本地 http.server→WebBridge 截图→打包已走通。
+- **10-31 钦定：报送材料默认不脱敏**，真实 token/URL/原文全保留（CNVD 审核嫌匿名化太多）；但注意仓库是公开的，标注「内部/禁止公开披露」的授权测试材料除外。
+- 事件型归属：edu 云子域先确认运营方；一个后端多学校入口 = 一条报送写多个 URL（智学客模式）。
+
+### E. 死线/证伪清单（勿重挖）
+
+- RAGFlow 28797 三条事件型全部「暂不归档不受理」（621091 章节零一、博商、陈玮伦）→ 转厂商直报，勿重报 CNVD。
+- Langflow 9198：CN 范围内实例 auto_login 全关，无受害实例可报；39.107.240.252 为 0.2.7 且 validate/code 恒 502，不可验。
+- MaxKB 54149 注册全关（351/351 探完）、77521 前置苛刻仅适合单点；9router 56681/56682 国内目标不生效。
+- 8.138.131.119「sk-1234 弱密钥」**已证伪撤销**：随机对照 key 同样 400 no_db；教训——db 未连接实例上任意 key 都 400，弱密钥判定必须加随机对照 key。
+- 海康 49 候选 0/49：老固件 userCheck 对口令错误也回 HTTP 200+XML 401，判定必须验 `statusValue=200`；2026 年 admin/12345 裸奔面基本绝迹。
+- FOFA `cert=` 归属路线、grep.app 代码情报路线、Bing dork 路线均已穷尽；CMNET 河南 /20 海康面榨干；方城 NVR 16 台全改密。
+
+### F. 接管检查清单
+
+1. 读 `notes.md`（本文件）→ `INDEX.md` → `README.md`（漏洞总表）→ `HANDOFF_PROMPT.md`。
+2. `git fetch origin` 刷新远端跟踪（本地 `origin/main` 可能滞后，别只看 `git status` 的 ahead 计数）。
+3. 比对本节 A 的 25 个目录与 `.gitignore` 三项；确认 `git ls-files` 无 `SSRF/src/`、`逆向/vuln-clone/`、`*.tmp`。
+4. 新洞按 A 的三步进库；commit 用英文一句话；每次定案/登记后 push。
+5. 汇报风格：结论先行 + 表格，结尾给一个加粗的具体下一步；不要问「要不要」，做完再汇报。
+
