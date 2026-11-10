@@ -49,5 +49,6 @@ CVSS v3.1 评分 9.8（严重，Critical），CWE-94/CWE-1336。利用条件极�
 商祺
 
 安全研究者 indifference108
-联系邮箱：（请填写您的常用邮箱）
+联系邮箱：indifference.mao@qq.com
+
 2026-10-10

