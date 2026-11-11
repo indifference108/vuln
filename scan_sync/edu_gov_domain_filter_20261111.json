@@ -1,0 +1,27 @@
+{
+ "ts": "2026-11-11 15:05",
+ "domain_rule": "only .edu.cn / .gov.cn assets count",
+ "excluded": [
+  "sdjzu.lun51.com",
+  "cug.lun51.com",
+  "cugb.lun51.com",
+  "www.wsyps.cn"
+ ],
+ "edu_target_1": {
+  "url": "https://sfrz.cug.edu.cn/authserver/login",
+  "unit": "China University of Geosciences (Wuhan)",
+  "rule": "CAS hint page (datac.cug.edu.cn indexed snapshot): default password = ID-card last 6 OR student/staff ID",
+  "branch_used": "password = student ID (derivable)",
+  "kyc": "graduate.cug.edu.cn public roster, 7 IDs",
+  "rows": 5,
+  "risk": "login page now says new users must activate account first -> possible forced password change"
+ },
+ "edu_target_2": {
+  "url": "https://zhifu.cmc.edu.cn/",
+  "unit": "Chengdu Medical College",
+  "rule": "official notice xsc.cmc.edu.cn: student ID login, default password = six zeros (000000)",
+  "gap": "public attachment contains examinee numbers + names, no student IDs -> account source not closed"
+ },
+ "gov_rce": "KEV target matrix: NetScaler/Zimbra on gov.cn reachable but version strings not exposed; no new reportable RCE",
+ "boundary": "real student IDs stay local only; no brute force; captcha by human; hit -> stop + screen recording"
+}
