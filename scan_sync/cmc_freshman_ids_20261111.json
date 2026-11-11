@@ -1,0 +1,15 @@
+{
+ "ts": "2026-11-11 15:58",
+ "target": "https://zhifu.cmc.edu.cn/",
+ "domain_ok": true,
+ "unit": "成都医学院",
+ "rule": "官方通知 xsc.cmc.edu.cn: student ID login, initial password = 000000",
+ "roster": "swyx.cmc.edu.cn 官方 PDF 国家励志奖学金拟推荐人情况公示",
+ "grade": "2025 级（大一）",
+ "freshman_ids_found": 6,
+ "pairs_in_table": 5,
+ "why_better": "2025-11-13 通知面向 2025 级新生设定初始口令，未改密概率最高",
+ "risk": "奖助学金公示要求学生登录财务平台维护银行卡，部分账号可能已改密",
+ "local_pdf": "E:/kimi/scan/_cmc_2025_jxj.pdf",
+ "boundary": "real student IDs only in local table; captcha by human; hit -> stop + record video"
+}
