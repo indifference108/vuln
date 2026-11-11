@@ -1,0 +1,20 @@
+{
+ "ts": "2026-11-11 16:40",
+ "target": "https://sf.gdpu.edu.cn/",
+ "domain_ok": true,
+ "unit": "广东药科大学",
+ "rule": "platform manual: ID-card last 6 OR six zeros (000000)",
+ "rule_url": "https://sf.gdpu.edu.cn/统一支付平台学生使用说明.doc",
+ "roster": "yyxxgc.gdpu.edu.cn/info/1096/2034.htm (2026-11-04 扬子江卓越奖学金公示)",
+ "pairs": 5,
+ "why_selected": "school manual advises students to pay via unified-auth portal without logging into this payment platform -> initial password likely unchanged",
+ "vendor_family": "校园统一支付平台 (same product at tjufe / henu / gpnu / zuel / cmc)",
+ "backup_platforms": [
+  "pay.tjufe.edu.cn",
+  "pay.henu.edu.cn",
+  "xyzfpt.gpnu.edu.cn",
+  "xssf.zuel.edu.cn"
+ ],
+ "status": "200 reachable, captcha present, no account-activation dead line",
+ "boundary": "real student IDs local only; captcha by human; hit -> stop + record video"
+}

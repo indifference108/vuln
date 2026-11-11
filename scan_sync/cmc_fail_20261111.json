@@ -1,0 +1,18 @@
+{
+ "ts": "2026-11-11 16:33",
+ "target": "https://zhifu.cmc.edu.cn/",
+ "domain_ok": true,
+ "unit": "成都医学院",
+ "rule": "platform manual: ID-card last 6 OR six zeros (000000)",
+ "cohort": "2025 级（大一）",
+ "pairs_tested": 5,
+ "result": "用户实测全部失败",
+ "verdict": "死线·勿重挖",
+ "cause": "初始口令已被首次登录改密；2025 级入学一年且完成缴费/奖助学金流程",
+ "related_deadlines": [
+  "7.17 wsyps",
+  "7.21 热海大 zfsoft",
+  "7.49 地大 CAS"
+ ],
+ "note": "2026 级规则仍适用但学号未公示；即使拿到学号，也需在公示后尽快试（改密窗口短）"
+}
