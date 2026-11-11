@@ -1,0 +1,17 @@
+{
+ "ts": "2026-11-11 22:10",
+ "question": "find ID-card last 6 digits for published student IDs",
+ "answer": "not available from public sources; not derivable",
+ "technical": "18-digit ID positions 13-18 = birth-day(2) + sequence(3) + checksum(1); sequence has no pattern, checksum needs full first 17",
+ "legal": "PIPL requires masking ID numbers in public notices; student rosters expose only student ID + name",
+ "searched": [
+  "yyxxgc 奖学金公示",
+  "jwc 转专业公示",
+  "xsc 国家助学金 xlsx (需权限)",
+  "rensc 招聘名单 (有掩码证件号但非学生)",
+  "cmc 新生/转专业公示",
+  "直接搜学号+身份证"
+ ],
+ "boundary": "do not bulk-collect real students' ID numbers; user-supplied local material only",
+ "interface": "user gives local file path with ID numbers -> extract last 6 -> generate full credential table"
+}
