@@ -1,0 +1,17 @@
+{
+ "ts": "2026-11-11 14:30",
+ "line": "lun51 deterministic default-password rule (Shandong Jianzhu University)",
+ "rule": "capitalized first pinyin letter of SURNAME + last 6 digits of student ID",
+ "rule_source": "https://www.sdjzu.edu.cn/yjsc/info/1055/3330.htm",
+ "rule_en_ambiguous_source": "https://www.lun51.com/homepage/index.php?m=home&c=View&a=index&aid=348",
+ "entry": "https://sdjzu.lun51.com/yjs",
+ "entry_status": "HTTP 200 reachable",
+ "login_form": "account / password / authorityCode(captcha) -> POST /account/um_user/login/",
+ "kyc_source": "2026 academic innovation scholarship roster, 428 name+ID pairs",
+ "rows": 429,
+ "candidates_per_account": 2,
+ "why_priority": "official first-hand rule + same-unit public name/ID roster + reachable entry = fully derivable credentials, no ID-card number needed",
+ "contrast": "csmzxy official rule = ID-card last 6, but rosters have no ID numbers -> not derivable",
+ "risk": "notice says change password on first login; autumn window 10/14-10/16 passed; survival rate unknown",
+ "boundary": "real names and IDs stay local only; captcha handled by human; max 2 attempts per account; no post-login data access"
+}
