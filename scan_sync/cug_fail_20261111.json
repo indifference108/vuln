@@ -1,0 +1,14 @@
+{
+ "ts": "2026-11-11 15:31",
+ "target": "https://sfrz.cug.edu.cn/authserver/login",
+ "domain_ok": true,
+ "unit": "中国地质大学（武汉）",
+ "rule": "CAS hint: default password = ID-card last 6 OR student/staff ID",
+ "branch_tested": "password = student ID",
+ "pairs_tested": 5,
+ "result": "用户实测全部失败",
+ "verdict": "死线·勿重挖",
+ "cause": "登录页要求新用户先账号激活并自设密码，初始口令分支不存在（同 7.21 / 7.17）",
+ "source_table": "E:/kimi/scan/验证表_edu.cn_5组_20261111.md（结果列已回填）",
+ "next": "https://zhifu.cmc.edu.cn/"
+}
