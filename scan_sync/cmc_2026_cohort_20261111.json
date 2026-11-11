@@ -1,0 +1,20 @@
+{
+ "ts": "2026-11-11 16:15",
+ "target": "https://zhifu.cmc.edu.cn/",
+ "domain_ok": true,
+ "rule_source": "https://zhifu.cmc.edu.cn/统一支付平台学生使用说明.doc",
+ "rule_quote": "在校生登陆时，用户名为学号，密码为身份证号后6位（末尾大写）或6个0",
+ "grade_independent": true,
+ "applies_to_2026": true,
+ "cohort_2026_ids_found": 0,
+ "searched": [
+  "xsc.cmc.edu.cn 新生奖学金名单(考生号only)",
+  "swyx.cmc.edu.cn 奖助学金PDF(至2025级)",
+  "2026年评优公示(大一不参评)",
+  "jxjyxy.cmc.edu.cn 2026级学籍公示(404,成教平台)",
+  "yjsy.cmc.edu.cn 硕士拟录取(考生编号only)"
+ ],
+ "conclusion": "规则对2026级有效，但公开公示尚无2026级普通本科学号；不编造账号",
+ "trigger": "任一2026级公示出现学号即套 000000 出 5 组",
+ "local_manual": "E:/kimi/scan/_cmc_pay_manual.doc"
+}
