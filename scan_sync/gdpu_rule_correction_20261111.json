@@ -1,0 +1,17 @@
+{
+ "ts": "2026-11-11 18:15",
+ "target": "https://sf.gdpu.edu.cn/",
+ "login_page_rule": "在校生登陆用户名为学号，初始登陆密码为身份证号后6位(末尾字母大写)或学号",
+ "manual_rule": "身份证号后6位(末尾大写)或6个0",
+ "conflict": true,
+ "derivable_candidates": [
+  "学号全号（登录页）",
+  "000000（使用说明）",
+  "学号后六位（同类常见截位）"
+ ],
+ "no_id_card_needed": true,
+ "roster": "yyxxgc.gdpu.edu.cn/info/1096/2034.htm",
+ "pairs": 5,
+ "vendor_family_note": "pay.tjufe.edu.cn 登录页另提示：输入身份证后6位若报『该用户名不存在』，改输 6 个 0 即可登录",
+ "xyzfpt_note": "广东技术师范大学说明写明『第一次使用初始密码登录后需要立刻修改初始密码』→ 改密死线，优先级低"
+}
