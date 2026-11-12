@@ -1,0 +1,18 @@
+{
+ "ts": "2026-11-12 16:35",
+ "target": "https://pay.tjufe.edu.cn/",
+ "domain_ok": true,
+ "unit": "天津财经大学",
+ "rule_source": "login page first-hand text",
+ "rule_quote": "用户名为学号，密码为身份证号后6位或6个0；如提示用户名不存在，请输入6个0即可正常登陆",
+ "fixed_password": "000000",
+ "no_id_card_needed": true,
+ "roster": "yjsy.tjufe.edu.cn/info/1027/3879.htm 2026 博士学业奖学金公示（学号+入学年月）",
+ "cohort": "2026 级（202609 入学）",
+ "pairs": 5,
+ "entry_status": "200 reachable; fields txt_yhm/txt_pwd/txt_yzm",
+ "deadline_keywords": "none (no 账号激活 / 首次登录改密)",
+ "only_human_step": "captcha txt_yzm",
+ "why_no_gap": "domain + fixed rule + public plaintext IDs + newest cohort + reachable entry + no activation/forced-change",
+ "boundary": "real IDs local only; 1 attempt per account; hit -> stop + record video"
+}
