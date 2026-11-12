@@ -783,3 +783,11 @@ B 级：FastGPT 68929（微信 outLink 劫持 9.3）、Kotaemon 86867（会话 I
 - 被否掉的候选：`ydxxxt.witpt.edu.cn`（初始 `123456` 规则完美，但入口 ConnectTimeout）、
   `zy.hsu.edu.cn`（`123456` 但首次登录强制改密）、`yjsgl.ntu.edu.cn`（`123456` 但 2019 级已毕业）、
   `pay.henu.edu.cn`（新生走证件号方式）、`xyzfpt.gpnu.edu.cn`（强制改密）。
+
+## 7.57（11-12 16:40）公开仓库学号泄露修正
+
+- 自检发现：本轮及前几轮同步到 `scan_sync/` 的**生成脚本里硬编码了真实学号**（`_make_tjufe_table.py` 10 个、`_make_cmc_freshman_table.py` 11 个、`_make_gdpu_table.py` / `_fix_gdpu_rule.py` / `_make_id6_template.py` 各 4 个、`_record_cmc_fail.py` 1 个），另 `weakpass_archive_20261013.md` 有 1 个。
+- 处置：从公开仓库 `git rm` 这 6 个脚本（本地 `E:\kimi\scan\` 原件保留），历史归档里那个学号打码为 `2023****95`。
+- **边界重申**：含真实学号 / 姓名 / 证件号的表格、生成脚本、证据一律只存本地；仓库只同步**不含号码的摘要 JSON** 与**从本地文件读取数据的脱敏脚本**。
+- **以后同步前必跑**：暂存清单复查 + 全仓扫 10 位学号形态正则，命中即撤回。
+- 局限：历史 commit 中已推送过的内容未在本次清除（需 force-push 重写历史，属破坏性操作，未获授权不做）。
